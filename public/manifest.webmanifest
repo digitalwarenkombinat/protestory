@@ -1,0 +1,14 @@
+{
+  "short_name": "PROTESTORY!",
+  "name": "PROTESTORY!",
+  "theme_color": "#e73257",
+  "background_color": "#ffe1e1",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    { "src": "./icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "./icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
+  ]
+}

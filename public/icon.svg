@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg12757"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Zeichnung-favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12759"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3528978"
+     inkscape:cx="396.92576"
+     inkscape:cy="498.18987"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs12754" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ff0066;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 68.522862,128.36489 34.434498,-25.27062 -24.156248,28.98751 61.755978,-9.45244 -55.454348,14.7038 50.833148,18.48478 -44.951628,-7.77201 27.727178,15.54402 -43.691308,-17.22445 15.54402,27.30706 -22.28018,-26.96547 c 0,0 5.40444,-3.67739 5.44698,-8.71322 0.046,-5.44441 -5.20809,-9.62896 -5.20809,-9.62896 z"
+       id="path9070"
+       sodipodi:nodetypes="cccccccccccsc" />
+    <path
+       d="m 58.553858,138.06983 c -1.75164,9.68486 10.772643,10.69192 11.768213,0.48638 0.984452,-10.09158 -9.872185,-10.96956 -11.768213,-0.48638 z"
+       style="fill:#000000;stroke-width:0.0700042"
+       id="path12890"
+       sodipodi:nodetypes="sss" />
+  </g>
+</svg>
