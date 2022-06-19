@@ -6,13 +6,8 @@ import { ChatSpeaker } from 'context/data'
 export const title = 'PROTESTORY!'
 
 export const sections = [
-  { title: 'Antifaschimus', url: 'antifascism' },
-  { title: 'Frieden', url: 'peace' },
-  { title: 'Arbeit & Bildung', url: 'work' },
-  { title: 'Umwelt', url: 'environment' },
-  { title: 'Solidarität', url: 'solidarity' },
-  { title: 'Gleichberechtigung', url: 'equality' },
-  { title: 'Antirassimus', url: 'antiracism' },
+  { title: 'Kunst des Protestes', url: 'artofprotest' },
+  { title: 'Protestkunst', url: 'protestart' },
 ]
 
 export const chat = {

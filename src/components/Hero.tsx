@@ -9,7 +9,7 @@ export const Hero = ({ title }: HeroProps) => (
   <Container
     disableGutters
     maxWidth="lg"
-    component="main"
+    component="section"
     sx={{ pt: 4, pb: 4 }}
   >
     <Typography

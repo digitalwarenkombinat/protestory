@@ -4,6 +4,7 @@ import Button from '@mui/material/Button'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardMedia from '@mui/material/CardMedia'
+import Link from '@mui/material/Link'
 
 interface ArticleProps {
   sections: ReadonlyArray<{
@@ -21,7 +22,7 @@ export const Article = ({ sections = [] }: ArticleProps) => (
           key={section.title}
           xs={12}
           sm={6}
-          md={1.7}
+          md={3}
           sx={{
             transition: '0.25s',
             transform: 'skew(-10deg)',
@@ -50,35 +51,37 @@ export const Article = ({ sections = [] }: ArticleProps) => (
             },
           }}
         >
-          <Card
-            sx={{
-              bgcolor: 'transparent',
-              height: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              '&::after': {
-                transform: 'skew(10deg) scale(1.2)',
-                transition: '0.25s',
-              },
-            }}
-          >
-            <CardMedia
-              component="img"
-              image={`./article/${section.url}.webp`}
-              alt={section.title}
-            />
-            <CardActions>
-              <Button
-                fullWidth
-                variant="outlined"
-                sx={{
-                  color: 'secondary.main',
-                }}
-              >
-                {section.title}
-              </Button>
-            </CardActions>
-          </Card>
+          <Link color="inherit" href={section.url}>
+            <Card
+              sx={{
+                bgcolor: 'transparent',
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                '&::after': {
+                  transform: 'skew(10deg) scale(1.2)',
+                  transition: '0.25s',
+                },
+              }}
+            >
+              <CardMedia
+                component="img"
+                image={`./home/${section.url}.webp`}
+                alt={section.title}
+              />
+              <CardActions>
+                <Button
+                  fullWidth
+                  variant="outlined"
+                  sx={{
+                    color: 'secondary.main',
+                  }}
+                >
+                  {section.title}
+                </Button>
+              </CardActions>
+            </Card>
+          </Link>
         </Grid>
       ))}
     </Grid>
