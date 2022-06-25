@@ -1,46 +1,44 @@
-import Typography from '@mui/material/Typography'
+import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded'
 import Container from '@mui/material/Container'
+import IconButton from '@mui/material/IconButton'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
 
 interface HeroProps {
   title: string
 }
 
 export const Hero = ({ title }: HeroProps) => (
-  <Container
-    disableGutters
-    maxWidth="lg"
-    component="section"
-    sx={{ pt: 4, pb: 4 }}
-  >
-    <Typography
-      component="h1"
-      variant="h1"
-      align="center"
-      color="text.secondary"
-      gutterBottom
+  <Container disableGutters maxWidth="xl" component="section">
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="flex-end"
+      sx={{ height: 'calc(100vh - 306px)' }}
     >
-      {title}
-    </Typography>
-    <Typography
-      variant="h5"
-      align="center"
-      color="text.primary"
-      component="p"
-      sx={{ mt: 2, mb: 2 }}
-    >
-      Durch Protest verschaffen sich junge Menschen heute wie gestern
-      Gehör, üben politischen Einfluss aus und partizipieren aktiv und
-      kreativ an der demokratischen Gesellschaft.
-    </Typography>
-    <Typography
-      variant="h5"
-      align="center"
-      color="text.primary"
-      component="p"
-    >
-      PROTESTORY! als cross-mediale, multiperspektivische Webplattform
-      bietet eine Auseinandersetzung mit Protestkulturen der
-      Arbeiter:innenjugend seit dem frühen 20. Jahrhundert bis heute.
-    </Typography>
+      <Grid item xs={12}>
+        <Typography
+          component="h1"
+          variant="h1"
+          align="center"
+          color="secondary.main"
+          gutterBottom
+          sx={{ fontSize: { lg: '16rem' } }}
+        >
+          {title}
+        </Typography>
+      </Grid>
+      <Grid item>
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          sx={{ mb: 4 }}
+        >
+          <ArrowDownwardRoundedIcon />
+        </IconButton>
+      </Grid>
+    </Grid>
   </Container>
 )

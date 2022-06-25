@@ -30,19 +30,21 @@ interface FooterProps {
 
 export const Footer = ({ title }: FooterProps) => (
   <Container
-    maxWidth="lg"
+    maxWidth={false}
+    disableGutters
     component="footer"
     sx={{
-      borderTop: (theme) => `1px solid ${theme.palette.divider}`,
+      bgcolor: 'accent.main',
+      mx: 0,
       mt: 8,
-      py: [3, 6],
+      p: 2,
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
     }}
   >
-    <Typography variant="h6" color="text.primary" gutterBottom>
+    <Typography variant="h6" color="text.primary">
       {title}
     </Typography>
     <Image
@@ -52,6 +54,6 @@ export const Footer = ({ title }: FooterProps) => (
       height={96}
     />
 
-    <Copyright sx={{ mt: 5 }} />
+    <Copyright />
   </Container>
 )

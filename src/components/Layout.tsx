@@ -2,13 +2,15 @@ import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 
 import { Header } from './Header'
-import { Footer } from './Footer'
+import { Help } from './Help'
+//import { Footer } from './Footer'
 
-import { title } from '../config'
+//import { title } from '../config'
 
-export default function Layout({ children }) {
+export default function Layout({ headerTitle, children }) {
   return (
     <Container
+      disableGutters
       maxWidth={false}
       sx={{
         bgcolor: 'primary.main',
@@ -19,12 +21,12 @@ export default function Layout({ children }) {
         flexFlow: 'row wrap',
       }}
     >
-      <Header />
+      <Header title={headerTitle} />
       <Grid container component="main">
         {children}
       </Grid>
-
-      <Footer title={title} />
+      <Help />
+      {/* <Footer title={title} /> */}
     </Container>
   )
 }

@@ -1,39 +1,49 @@
 import Image from 'next/image'
 
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import IconButton from '@mui/material/IconButton'
+import Link from '@mui/material/Link'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import AppBar from '@mui/material/AppBar'
-import Button from '@mui/material/Button'
-import Link from '@mui/material/Link'
 
-import logo from '../../public/logo.svg'
+import icon from '../../public/icon.svg'
 
-export const Header = () => (
-  <AppBar
-    position="static"
-    elevation={0}
-    sx={{
-      borderBottom: (theme) => `1px solid ${theme.palette.divider}`,
-    }}
-  >
-    <Toolbar sx={{ flexWrap: 'wrap' }}>
-      <Typography variant="h5" noWrap sx={{ flexGrow: 1 }}>
-        <Link color="inherit" href="/">
-          <Image
-            src={logo}
-            alt={'Logo von PROTESTORY!'}
-            width={128}
-            height={128}
-          />
-        </Link>
-      </Typography>
-      <Button
-        href="#"
-        variant="contained"
-        sx={{ bgcolor: 'secondary.main' }}
-      >
-        English
-      </Button>
-    </Toolbar>
-  </AppBar>
+interface HeaderProps {
+  title: false | string
+}
+
+export const Header = ({ title }: HeaderProps) => (
+  <Box sx={{ flexGrow: 1 }}>
+    <AppBar position="static" elevation={0}>
+      <Toolbar sx={{ px: [0, 2] }}>
+        <Typography>
+          <Link color="inherit" href="/">
+            <Image
+              src={icon}
+              alt={'Logo von PROTESTORY!'}
+              width={300}
+              height={300}
+            />
+          </Link>
+        </Typography>
+        <Typography
+          variant="h1"
+          sx={{ flexGrow: 1, fontSize: ['16rem', '24rem'] }}
+        >
+          {title}
+        </Typography>
+        <IconButton
+          size="large"
+          edge="start"
+          color="inherit"
+          aria-label="menu"
+          sx={{ mr: 4, height: '4rem', width: '4rem' }}
+        >
+          <MenuRoundedIcon />
+        </IconButton>
+      </Toolbar>
+    </AppBar>
+  </Box>
 )

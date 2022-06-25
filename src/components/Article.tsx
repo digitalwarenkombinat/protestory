@@ -1,9 +1,9 @@
-import Grid from '@mui/material/Grid'
-import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardMedia from '@mui/material/CardMedia'
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid'
 import Link from '@mui/material/Link'
 
 interface ArticleProps {
@@ -22,7 +22,7 @@ export const Article = ({ sections = [] }: ArticleProps) => (
           key={section.title}
           xs={12}
           sm={6}
-          md={3}
+          md={4}
           sx={{
             transition: '0.25s',
             transform: 'skew(-10deg)',
