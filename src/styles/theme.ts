@@ -3,9 +3,10 @@ import {
   responsiveFontSizes,
 } from '@mui/material/styles'
 
-const primaryColor = '#e73257'
-const secondaryColor = '#292780'
-const accentColor = '#ffe1e1'
+const primaryColor = '#f50057'
+const secondaryColor = '#311b92'
+const accentColor = '#00f59f'
+const backgroundColor = '#ffe1e1'
 
 let theme = createTheme({
   palette: {
@@ -19,15 +20,20 @@ let theme = createTheme({
     },
     accent: {
       main: accentColor,
-      contrastText: '#000000',
+    },
+    background: {
+      default: backgroundColor,
     },
     text: {
-      secondary: accentColor,
+      primary: '#000',
+      secondary: '#FFF',
     },
   },
   typography: {
+    fontFamily: 'Fabrik, Arial',
     h1: {
       fontFamily: 'Hey August',
+      fontSize: '10rem',
     },
     h2: {
       fontFamily: 'Hey August',
@@ -42,8 +48,52 @@ let theme = createTheme({
           fontDisplay: 'swap';
           fontWeight: 400;
           src: local('Hey August'), url(./fonts/HeyAugust.otf) format('opentype');
-        }
+        },
+        @font-face {
+          fontFamily: 'Fabrik';
+          fontStyle: 'normal';
+          fontDisplay: 'swap';
+          fontWeight: 400;
+          src: local('Fabrik'), url(./fonts/Fabrik.otf) format('opentype');
+        },
       `,
+    },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          fontSize: '6rem',
+        },
+      },
+    },
+    MuiFab: {
+      styleOverrides: {
+        root: {
+          backgroundColor: secondaryColor,
+          position: 'fixed',
+          bottom: 64,
+          right: 64,
+        },
+      },
+    },
+    MuiDialog: {
+      styleOverrides: {
+        root: {
+          bottom: 64,
+          right: 64,
+          alignItems: 'flex-end',
+        },
+        container: {
+          alignItems: 'flex-end',
+          justifyContent: 'flex-end',
+        },
+        paper: {
+          minWidth: 400,
+          minHeight: 400,
+          marginBottom: '96px',
+          marginRight: '24px',
+          border: 'none',
+        },
+      },
     },
   },
 })
