@@ -1,8 +1,8 @@
 {
   "short_name": "PROTESTORY!",
   "name": "PROTESTORY!",
-  "theme_color": "#e73257",
-  "background_color": "#ffe1e1",
+  "theme_color": "#f50057",
+  "background_color": "#311b92",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
