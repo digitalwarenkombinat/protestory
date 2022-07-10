@@ -8,7 +8,6 @@ module.exports = {
     "plugin:@next/next/recommended",
     "plugin:react/recommended",
     "prettier",
-    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
