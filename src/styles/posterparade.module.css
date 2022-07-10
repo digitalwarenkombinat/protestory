@@ -1,0 +1,136 @@
+.imageTransistion {
+  transition: transform 1.5s !important;
+  /* opacity: 0.5; */
+}
+
+.antifascism_0 {
+  transform: scale(1) translate(0%);
+}
+
+.antifascism_1,
+.antifascism_2,
+.antifascism_3,
+.antifascism_4 {
+  transform: scale(1.1) translate(-0.5%, 33%);
+}
+
+.antifascism_5,
+.antifascism_6 {
+  transform: scale(1.5) translate(12.5%, -55%);
+}
+
+.antifascism_7,
+.antifascism_8,
+.antifascism_9 {
+  transform: scale(2.5) translate(24.5%, 10%);
+}
+
+.antifascism_10,
+.antifascism_11,
+.antifascism_12 {
+  transform: scale(2.4) translate(-26.5%, 9%);
+}
+
+.antifascism_13,
+.antifascism_14 {
+  transform: scale(1.2) translate(-4.5%, -8%);
+}
+
+.antifascism_15,
+.antifascism_16,
+.antifascism_17 {
+  transform: scale(2.2) translate(21.5%, -20%);
+}
+
+.antifascism_18,
+.antifascism_19,
+.antifascism_20,
+.antifascism_21 {
+  transform: scale(3.8) translate(-23.5%, -22%);
+}
+
+.antifascism_22,
+.antifascism_23,
+.antifascism_24 {
+  transform: scale(1) translate(0%);
+}
+
+.peace_0 {
+  transform: scale(1) translate(0%);
+}
+
+.peace_1 {
+  transform: scale(2) translate(20%, 1%);
+}
+
+.peace_2 {
+  transform: scale(7) translate(22.8%, 14%);
+}
+
+.peace_3 {
+  transform: scale(2.7) translate(-15.2%, 10%);
+}
+
+.peace_4 {
+  transform: scale(1.6) translate(13.2%, 33%);
+}
+
+.peace_5 {
+  transform: scale(2) translate(17.5%, -33%);
+}
+
+.peace_6 {
+  transform: scale(6) translate(-40%, 0%);
+}
+
+.peace_7 {
+  transform: scale(4) translate(7%, -45%);
+}
+
+.peace_8 {
+  transform: scale(2.5) translate(-28%, -28%);
+}
+
+.peace_9 {
+  transform: scale(1) translate(0%);
+}
+
+.peace_2_0 {
+  transform: scale(1) translate(0%);
+}
+
+.peace_2_1 {
+  transform: scale(1.1) translate(0%, -33%);
+}
+
+.peace_2_2 {
+  transform: scale(3.2) translate(29.8%, 25%);
+}
+
+.peace_2_3 {
+  transform: scale(3.2) translate(-0%, 24%);
+}
+
+.peace_2_4 {
+  transform: scale(3.2) translate(-30%, 24%);
+}
+
+.peace_2_5 {
+  transform: scale(3.2) translate(30%, -7%);
+}
+
+.peace_2_6 {
+  transform: scale(3.2) translate(0%, -7%);
+}
+
+.peace_2_7 {
+  transform: scale(3.2) translate(-30%, -7%);
+}
+
+.peace_2_8 {
+  transform: scale(1.2) translate(0%, 33%);
+}
+
+.peace_2_9 {
+  transform: scale(1) translate(0%);
+}
