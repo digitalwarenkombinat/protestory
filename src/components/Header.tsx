@@ -12,11 +12,18 @@ import icon from '../../public/icon.svg'
 
 interface HeaderProps {
   title: false | string
+  startPage: boolean
 }
 
-export const Header = ({ title }: HeaderProps) => (
+export const Header = ({ title, startPage = false }: HeaderProps) => (
   <Box sx={{ flexGrow: 1 }}>
-    <AppBar position="static" elevation={0}>
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{
+        bgcolor: 'transparent',
+      }}
+    >
       <Toolbar sx={{ px: [0, 2] }}>
         <Typography>
           <Link color="inherit" href="/">
@@ -29,8 +36,12 @@ export const Header = ({ title }: HeaderProps) => (
           </Link>
         </Typography>
         <Typography
-          variant="h1"
-          sx={{ flexGrow: 1, fontSize: ['16rem', '24rem'] }}
+          variant="h2"
+          sx={{
+            color: startPage ? 'secondary.main' : 'primary.main',
+            flexGrow: 1,
+            fontSize: ['16rem'],
+          }}
         >
           {title}
         </Typography>

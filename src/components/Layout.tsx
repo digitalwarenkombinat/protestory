@@ -7,13 +7,17 @@ import { Help } from './Help'
 
 //import { title } from '../config'
 
-export default function Layout({ headerTitle, children }) {
+export default function Layout({
+  headerTitle,
+  children,
+  startPage = false,
+}) {
   return (
     <Container
       disableGutters
       maxWidth={false}
       sx={{
-        bgcolor: 'primary.main',
+        bgcolor: startPage ? 'primary.main' : 'primary.secondary',
         color: 'primary.contrastText',
         height: '100%',
         minHeight: '100vh',
@@ -21,7 +25,7 @@ export default function Layout({ headerTitle, children }) {
         flexFlow: 'row wrap',
       }}
     >
-      <Header title={headerTitle} />
+      <Header title={headerTitle} startPage={startPage} />
       <Grid container component="main">
         {children}
       </Grid>
