@@ -9,7 +9,7 @@ import { title, sections } from '../config'
 
 const Home: NextPage = () => {
   return (
-    <Layout headerTitle={false}>
+    <Layout headerTitle={false} startPage>
       <Head>
         <title>{title}</title>
       </Head>
