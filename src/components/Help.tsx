@@ -2,13 +2,12 @@ import { useState } from 'react'
 
 import CancelRoundedIcon from '@mui/icons-material/CancelRounded'
 import Dialog from '@mui/material/Dialog'
-import DialogTitle from '@mui/material/DialogTitle'
 import Fab from '@mui/material/Fab'
 import HelpIcon from '@mui/icons-material/Help'
 
 import { Chat } from './Chat'
 
-import { chat } from '../config'
+import { chat } from '../config/chat'
 
 const HelpDialog = ({ onClose, open }) => {
   const handleClose = () => {
@@ -16,22 +15,46 @@ const HelpDialog = ({ onClose, open }) => {
   }
   return (
     <Dialog
+      sx={{
+        '& .MuiDialog-paper': {
+          backgroundColor: 'background.default',
+          maxHeight: '75vh',
+          minWidth: '600px',
+        },
+      }}
+      maxWidth="sm"
       onClose={handleClose}
-      aria-labelledby="help-dialog"
       open={open}
-      maxWidth={'sm'}
     >
-      <DialogTitle
-        id="help-dialog"
-        sx={{
-          backgroundColor: 'secondary.main',
-          color: 'text.secondary',
-        }}
-      >
-        {chat.title}
-      </DialogTitle>
       <Chat {...chat} />
     </Dialog>
+
+    // <Dialog
+    //   onClose={handleClose}
+    //   aria-labelledby="help-dialog"
+    //   open={open}
+    //   maxWidth={'sm'}
+    // >
+    //   <DialogTitle
+    //     id="help-dialog"
+    //     component="div"
+    //     sx={{
+    //       display: 'flex',
+    //       alignItems: 'center',
+    //       backgroundColor: 'secondary.main',
+    //     }}
+    //   >
+    //     <Avatar
+    //       sx={{ height: '6rem', width: '6rem', mr: '1rem' }}
+    //       alt="Bot"
+    //       src="avatar-chatbot.png"
+    //     />
+    //     <Typography variant="h3" color="text.secondary">
+    //       {chat.title}
+    //     </Typography>
+    //   </DialogTitle>
+    //   <Chat {...chat} />
+    // </Dialog>
   )
 }
 
