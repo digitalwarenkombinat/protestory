@@ -1,89 +1,172 @@
-import Button from '@mui/material/Button'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardMedia from '@mui/material/CardMedia'
+import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined'
+import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
+import IconButton from '@mui/material/IconButton'
 import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
 
-interface ArticleProps {
-  sections: ReadonlyArray<{
-    title: string
-    url: string
-  }>
-}
-
-export const Article = ({ sections = [] }: ArticleProps) => (
-  <Container maxWidth="xl" component="article">
-    <Grid container alignItems="flex-end" justifyContent="center">
-      {sections.map((section) => (
-        <Grid
-          item
-          key={section.title}
-          xs={12}
-          sm={6}
-          md={4}
+export const Article = () => (
+  <Container maxWidth={false} component="article">
+    <Box
+      sx={{
+        height: '100vh',
+        position: 'relative',
+      }}
+    >
+      <Link
+        color="text.secondary"
+        href="artofprotest"
+        sx={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: '5px',
+          bottom: '5px',
+          textDecoration: 'none',
+          background: "url('./home/artofprotest.webp') center/cover",
+          clipPath: 'polygon(0 0, 100% 0, 0 100%)',
+        }}
+      >
+        <Box
           sx={{
-            transition: '0.25s',
-            transform: 'skew(-10deg)',
+            opacity: 0,
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            transition: '.5s ease',
+            backgroundColor: 'secondary.main',
             '&:hover': {
-              transform:
-                'translateX(-0.5rem) translateY(-0.5rem) skew(-10deg)',
-              filter: 'opacity(50%)',
-            },
-            '&::before': {
-              content: '""',
-              left: 0,
-              top: 0,
-              height: 'calc(100% - 10px)',
-              width: 'calc(100% - 10px)',
-              borderRadius: '40px',
-              opacity: 0,
-              border: (theme) =>
-                `2px solid ${theme.palette.accent.main}`,
-              position: 'absolute',
-              zIndex: -1,
-              transition: '0.5s 0.05s',
-            },
-            '&:hover::before': {
-              opacity: 1,
-              transform: 'translateY(1.5rem) translateX(1.5rem)',
+              opacity: 0.5,
             },
           }}
+        />
+        <Grid
+          container
+          justifyContent="flex-start"
+          alignItems="center"
+          pt={8}
+          pl={8}
+          height="50%"
+          width="50%"
         >
-          <Link color="inherit" href={section.url}>
-            <Card
+          <Grid item>
+            <Typography
+              variant="h2"
               sx={{
-                bgcolor: 'transparent',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                '&::after': {
-                  transform: 'skew(10deg) scale(1.2)',
-                  transition: '0.25s',
-                },
+                backgroundImage: `linear-gradient(0, transparent 0.2em, #f50057 0.2em, #f50057 0.8em, transparent 0.8em)`,
+                backgroundSize: '1px 1.6em',
+                backgroundPosition: '1px center',
+                backgroundRepeat: 'repeat',
+                paddingLeft: '0.2em',
+                paddingRight: '0.2em',
+                marginLeft: '-0.2em',
+                marginRight: '-0.2em',
               }}
             >
-              <CardMedia
-                component="img"
-                image={`./home/${section.url}.webp`}
-                alt={section.title}
-              />
-              <CardActions>
-                <Button
-                  fullWidth
-                  variant="outlined"
-                  sx={{
-                    color: 'secondary.main',
-                  }}
-                >
-                  {section.title}
-                </Button>
-              </CardActions>
-            </Card>
-          </Link>
+              Kunst des Protests
+            </Typography>
+          </Grid>
+          <Grid item>
+            <IconButton
+              size="large"
+              edge="start"
+              aria-label="Read more"
+              sx={{
+                color: 'accent.main',
+              }}
+            >
+              <ArrowForwardOutlinedIcon />
+            </IconButton>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography component="h3" variant="h4">
+              Wie wird eigentlich protestiert?
+            </Typography>
+            <Typography component="h3" variant="h4" pt={4}>
+              In welchen Formen wird Protest sichtbar?
+            </Typography>
+            <Typography component="h3" variant="h4" pt={4}>
+              Wie melde ich eine Demo an?
+            </Typography>
+          </Grid>
         </Grid>
-      ))}
-    </Grid>
+      </Link>
+      <Link
+        color="text.secondary"
+        href="protestart"
+        sx={{
+          position: 'absolute',
+          top: '5px',
+          left: '5px',
+          right: 0,
+          bottom: 0,
+          textDecoration: 'none',
+          background: "url('./home/protestart.webp') center/cover",
+          clipPath: 'polygon(100% 100%, 100% 0, 0 100%)',
+        }}
+      >
+        <Box
+          sx={{
+            opacity: 0,
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            transition: '.5s ease',
+            backgroundColor: 'secondary.main',
+            '&:hover': {
+              opacity: 0.5,
+            },
+          }}
+        />
+        <Grid
+          container
+          justifyContent="flex-end"
+          alignItems="center"
+          pr={8}
+          height="100%"
+          width="100%"
+          pt="50vw"
+          pl="50vh"
+        >
+          <Grid item>
+            <Typography component="h3" variant="h4">
+              Lieder, Gedichte, Bilder, Plakate, Postkarten,
+              Transparente, Objekte, usw., all das, was im Rahmen von
+              Protesten (künstlerisch) geschaffen wird.
+            </Typography>
+          </Grid>
+          <Grid item>
+            <IconButton
+              size="large"
+              edge="start"
+              aria-label="Read more"
+              sx={{
+                color: 'accent.main',
+              }}
+            >
+              <ArrowForwardOutlinedIcon />
+            </IconButton>
+          </Grid>
+          <Grid item>
+            <Typography
+              variant="h2"
+              sx={{
+                backgroundImage: `linear-gradient(0, transparent 0.2em, #f50057 0.2em, #f50057 0.8em, transparent 0.8em)`,
+                backgroundSize: '1px 1.6em',
+                backgroundPosition: '1px center',
+                backgroundRepeat: 'repeat',
+                paddingLeft: '0.2em',
+                paddingRight: '0.2em',
+                marginLeft: '-0.2em',
+                marginRight: '-0.2em',
+              }}
+            >
+              Protestkunst
+            </Typography>
+          </Grid>
+        </Grid>
+      </Link>
+    </Box>
   </Container>
 )

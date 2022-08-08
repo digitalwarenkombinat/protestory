@@ -5,7 +5,7 @@ import Layout from 'components/Layout'
 import { Hero } from '../components/Hero'
 import { Article } from '../components/Article'
 
-import { title, sections } from '../config'
+import { title } from '../config'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <title>{title}</title>
       </Head>
       <Hero title={title} />
-      <Article sections={sections} />
+      <Article />
     </Layout>
   )
 }
