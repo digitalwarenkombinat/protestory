@@ -18,6 +18,7 @@ interface MessageProps {
   from: ChatSpeaker
   image?: string
   alt?: string
+  isPortrait?: boolean
 }
 
 interface ChatProps {
@@ -25,6 +26,18 @@ interface ChatProps {
   relation: object
   list: MessageProps[]
 }
+
+const ChatImage = ({ image = '', alt = '', isPortrait = true }) => (
+  <figure>
+    <Image
+      src={image}
+      alt={alt}
+      width={isPortrait ? 225 : 400}
+      height={isPortrait ? 400 : 225}
+    />
+    <figcaption>{alt}</figcaption>
+  </figure>
+)
 
 export const Chat = ({ title, relation, list }: ChatProps) => {
   const [messageList, setMessageList] = useState([] as MessageProps[])
@@ -94,7 +107,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
           alt="Avatar Chat"
           src="avatar-chat.png"
         />
-        <Typography variant="h3" color="text.secondary">
+        <Typography variant="h2" color="text.secondary">
           {title}
         </Typography>
       </DialogTitle>
@@ -126,17 +139,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
             }}
           >
             {message.text}
-            {message.alt && (
-              <figure>
-                <Image
-                  src={message.image}
-                  alt={message.alt}
-                  width={300}
-                  height={500}
-                />
-                <figcaption>{message.alt}</figcaption>
-              </figure>
-            )}
+            {message.image && <ChatImage {...message} />}
           </DialogContentText>
         ))}
         {isTyping && Wave}

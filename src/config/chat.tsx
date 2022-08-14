@@ -75,8 +75,9 @@ export const chat = {
       id: 6,
       text: 'Bild eines Protestplakates',
       from: ChatSpeaker.BOT,
-      image: '/home/protestart.webp',
+      image: '/chat/1983.webp',
       alt: 'Bild eines Protestplakates',
+      isPortrait: true,
     },
     {
       id: 7,
@@ -170,15 +171,16 @@ export const chat = {
     },
     {
       id: 25,
-      text: 'Na klar. Protestory erzählt die Geschichte jugendlichen Protests in Deutschland von den 1920er Jahren bis heute. Dabei war die Sozialistische Arbeiterjugend (SAJ) bereits seit dieser Zeit engagiert, wie du auf diesem Bild sehen kannst.',
+      text: 'Na klar. PROTESTORY! erzählt die Geschichte jugendlichen Protests in Deutschland von den 1920er Jahren bis heute. Dabei war die Sozialistische Arbeiterjugend (SAJ) bereits seit dieser Zeit engagiert, wie du auf diesem Bild sehen kannst.',
       from: ChatSpeaker.BOT,
     },
     {
       id: 26,
-      text: 'Bild einer SAJ Aktion',
+      text: 'Bild von 1928',
       from: ChatSpeaker.BOT,
-      image: '/home/artofprotest.webp',
-      alt: 'Bild einer SAJ Aktion',
+      image: '/chat/1928.webp',
+      alt: 'Bild von 1928',
+      isPortrait: false,
     },
     {
       id: 27,
@@ -219,8 +221,8 @@ export const chat = {
       id: 34,
       text: 'Klar, sehr gern. Hör hier mal rein!',
       from: ChatSpeaker.BOT,
-      image: '/home/artofprotest.webp',
-      alt: 'Bild einer SAJ Aktion',
+      image: '/chat/1928.webp',
+      alt: 'Bild von 1928',
     },
     {
       id: 35,
