@@ -91,8 +91,8 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
       >
         <Avatar
           sx={{ height: '6rem', width: '6rem', mr: '1rem' }}
-          alt="Bot"
-          src="avatar-chatbot.png"
+          alt="Avatar Chat"
+          src="avatar-chat.png"
         />
         <Typography variant="h3" color="text.secondary">
           {title}

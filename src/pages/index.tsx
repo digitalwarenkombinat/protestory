@@ -4,8 +4,10 @@ import Layout from 'components/Layout'
 
 import { Hero } from '../components/Hero'
 import { Article } from '../components/Article'
+import { Banner } from '../components/Banner'
 
-import { title } from '../config'
+import { title, startPage } from '../config'
+import { Footer } from 'components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +16,9 @@ const Home: NextPage = () => {
         <title>{title}</title>
       </Head>
       <Hero title={title} />
-      <Article />
+      <Banner />
+      <Article startPage={startPage} />
+      <Footer />
     </Layout>
   )
 }

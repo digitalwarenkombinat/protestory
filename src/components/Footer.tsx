@@ -1,10 +1,13 @@
 import Image from 'next/image'
 
 import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
 import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
 
-import logo from '../../public/copyright.svg'
+import ArchivIcon from '../../public/home/archiv.png'
+import DigitalwarenkombinatIcon from '../../public/copyright.svg'
+import KulturstiftungIcon from '../../public/home/kulturstiftung.svg'
 
 function Copyright(props: any) {
   return (
@@ -24,36 +27,53 @@ function Copyright(props: any) {
   )
 }
 
-interface FooterProps {
-  title: string
-}
-
-export const Footer = ({ title }: FooterProps) => (
+export const Footer = () => (
   <Container
     maxWidth={false}
     disableGutters
     component="footer"
     sx={{
-      bgcolor: 'accent.main',
-      mx: 0,
-      mt: 8,
-      p: 2,
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
+      bgcolor: 'primary.main',
     }}
   >
-    <Typography variant="h6" color="text.primary">
-      {title}
-    </Typography>
-    <Image
-      src={logo}
-      alt={'Digitalwarenkombinat'}
-      width={96}
-      height={96}
-    />
-
-    <Copyright />
+    <Grid
+      container
+      alignItems="center"
+      textAlign="center"
+      flexWrap="wrap"
+      justifyContent="center"
+      my="2em"
+    >
+      <Grid item minWidth="258px">
+        <Image
+          src={ArchivIcon}
+          alt={'Archiv der Arbeiter:innenjugend'}
+          width={258}
+          height={101}
+        />
+      </Grid>
+      <Grid item minWidth="258px">
+        <Image
+          src={DigitalwarenkombinatIcon}
+          alt={'Digitalwarenkombinat'}
+          width={96}
+          height={96}
+        />
+        <Typography variant="h6" color="text.primary">
+          Digitalwarenkombinat
+        </Typography>
+      </Grid>
+      <Grid item minWidth="258px">
+        <Image
+          src={KulturstiftungIcon}
+          alt={'Kulturstiftung des Bundes'}
+          width={160}
+          height={160}
+        />
+      </Grid>
+      <Grid item xs={12} mt={2}>
+        <Copyright />
+      </Grid>
+    </Grid>
   </Container>
 )
