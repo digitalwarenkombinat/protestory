@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Grid from '@mui/material/Grid'
-import Link from '@mui/material/Link'
+import Container from '@mui/material/Container'
 
 import Layout from 'components/Layout'
+import StartTheDemo from 'components/games/StartTheDemo'
 import { title } from '../config'
 
 export default function ArtOfProtest() {
@@ -11,13 +11,9 @@ export default function ArtOfProtest() {
       <Head>
         <title>Kunst des Protestes</title>
       </Head>
-      <Grid container alignItems="center" justifyContent="center">
-        <Grid item>
-          <Link color="inherit" href="/posterparade">
-            Poster parade
-          </Link>
-        </Grid>
-      </Grid>
+      <Container maxWidth={false} component="section">
+        <StartTheDemo />
+      </Container>
     </Layout>
   )
 }
