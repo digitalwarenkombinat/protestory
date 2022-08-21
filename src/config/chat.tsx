@@ -43,7 +43,7 @@ export const chat = {
   list: [
     {
       id: 0,
-      text: 'Hier geht es um die Kunst jugendlichen Protests. Ist Dir schon mal aufgefallen, dass es wirklich viele kreative Protestmaterialien und Aktionsformen gibt? Wir wollen das mit dieser Seite sichtbar machen.',
+      text: 'Hier geht es um die Kunst jugendlichen Protestes. Ist Dir schon mal aufgefallen, dass es wirklich viele kreative Protestmaterialien und Aktionsformen gibt? Wir wollen das mit dieser Seite sichtbar machen.',
       from: ChatSpeaker.BOT,
     },
     {
@@ -86,7 +86,7 @@ export const chat = {
     },
     {
       id: 8,
-      text: 'Gibt es noch etwas anderes für mich. Etwas Interaktives wo ich auch mitmachen kann?',
+      text: 'Gibt es noch etwas anderes für mich. Etwas Interaktives, wo ich auch mitmachen kann?',
       from: ChatSpeaker.QUESTION,
     },
     {
@@ -96,7 +96,7 @@ export const chat = {
     },
     {
       id: 10,
-      text: 'Na klar! Wir haben eine Reihe von Mini-Anwendungen für dich, in denen Du dich spielerisch mit dem Thema Protest auseinandersetzen kannst. Betritt unser WG-Zimmer und erkunde von hier aus die Welt des Protests.',
+      text: 'Na klar! Wir haben eine Reihe von Mini-Anwendungen für dich, in denen Du dich spielerisch mit dem Thema Protest auseinandersetzen kannst. Betritt unser WG-Zimmer und erkunde von hier aus die Welt des Protestes.',
       from: ChatSpeaker.BOT,
     },
     {
@@ -171,7 +171,7 @@ export const chat = {
     },
     {
       id: 25,
-      text: 'Na klar. PROTESTORY! erzählt die Geschichte jugendlichen Protests in Deutschland von den 1920er Jahren bis heute. Dabei war die Sozialistische Arbeiterjugend (SAJ) bereits seit dieser Zeit engagiert, wie du auf diesem Bild sehen kannst.',
+      text: 'Na klar. PROTESTORY! erzählt die Geschichte jugendlichen Protestes in Deutschland von den 1920er Jahren bis heute. Dabei war die Sozialistische Arbeiterjugend (SAJ) bereits seit dieser Zeit engagiert, wie du auf diesem Bild sehen kannst.',
       from: ChatSpeaker.BOT,
     },
     {
@@ -209,12 +209,12 @@ export const chat = {
     },
     {
       id: 32,
-      text: 'Dann zeigt mir mal Eure Materialien!',
+      text: 'Dann zeig mir mal Eure Materialien!',
       from: ChatSpeaker.QUESTION,
     },
     {
       id: 33,
-      text: 'Gibt es noch etwas anderes für mich. Etwas Interaktives wo ich auch mitmachen kann?',
+      text: 'Gibt es noch etwas anderes für mich. Etwas Interaktives, wo ich auch mitmachen kann?',
       from: ChatSpeaker.QUESTION,
     },
     {
@@ -241,7 +241,7 @@ export const chat = {
     },
     {
       id: 38,
-      text: 'Gibt es noch etwas anderes für mich. Etwas Interaktives wo ich auch mitmachen kann?',
+      text: 'Gibt es noch etwas anderes für mich. Etwas Interaktives, wo ich auch mitmachen kann?',
       from: ChatSpeaker.QUESTION,
     },
     {

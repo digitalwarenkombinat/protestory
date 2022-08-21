@@ -40,7 +40,7 @@ export const Article = ({ startPage }: ArticleProps) => (
           flexGrow={1}
           flexBasis="15rem"
           pt="1em"
-          px="8em"
+          px={[0, 0, 0, '8em']}
           sx={{
             '* + *': {
               marginTop: '0.5em',

@@ -157,8 +157,8 @@ function PosterParade({
                 Analyse
               </Typography>
               <Typography
-                component="h1"
-                variant="h1"
+                component="h2"
+                variant="h2"
                 color="accent.contrastText"
                 gutterBottom
                 className="appHeading"

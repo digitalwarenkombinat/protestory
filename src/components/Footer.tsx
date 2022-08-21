@@ -48,8 +48,8 @@ export const Footer = () => (
         <Image
           src={ArchivIcon}
           alt={'Archiv der Arbeiter:innenjugend'}
-          width={258}
-          height={101}
+          width={160}
+          height={138}
         />
       </Grid>
       <Grid item minWidth="258px">
@@ -59,7 +59,7 @@ export const Footer = () => (
           width={96}
           height={96}
         />
-        <Typography variant="h6" color="text.primary">
+        <Typography component="h3" variant="h6" color="text.primary">
           Digitalwarenkombinat
         </Typography>
       </Grid>

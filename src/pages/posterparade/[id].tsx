@@ -16,13 +16,15 @@ export default function PosterParadeItem() {
       <Head>
         <title>Bildanalyse {id}</title>
       </Head>
-      <PosterParade
-        id={id as string}
-        image={`/posterParade/${id}.webp`}
-        header={posterParadeTexts[id as string].header}
-        texts={posterParadeTexts[id as string].texts}
-        styles={styles}
-      />
+      {id && (
+        <PosterParade
+          id={id as string}
+          image={`/posterParade/${id}.webp`}
+          header={posterParadeTexts[id as string].header}
+          texts={posterParadeTexts[id as string].texts}
+          styles={styles}
+        />
+      )}
     </Layout>
   )
 }

@@ -67,7 +67,7 @@ const LeftTriangle = () => (
         </Grid>
       </Grid>
     </Box>
-    <Grid container pt={12} pl={20}>
+    <Grid container pt={[4, 12]} pl={[4, 20]}>
       <Grid item>
         <Typography
           variant="h2"
@@ -82,7 +82,7 @@ const LeftTriangle = () => (
             marginRight: '-0.2em',
           }}
         >
-          Kunst des Protests
+          Kunst des Protestes
         </Typography>
       </Grid>
     </Grid>
@@ -119,13 +119,13 @@ const RightTriangle = () => (
     >
       <Grid
         container
-        justifyContent="flex-end"
-        pr={40}
+        justifyContent="center"
+        pr={4}
         pt="50vh"
         pl="50vw"
         textAlign="right"
       >
-        <Grid item xs={2}>
+        <Grid item>
           <IconButton
             size="large"
             edge="start"
@@ -142,7 +142,7 @@ const RightTriangle = () => (
             Aus Parolen wurden Sticker,
           </Typography>
           <Typography component="h3" variant="h4" pt={4}>
-            aus Sticker wird Merchandise.
+            aus Stickern wird Merchandise.
           </Typography>
           <Typography component="h3" variant="h4" pt={4}>
             Welche künstlerischen Formen gingen aus Protesten hervor?
@@ -150,7 +150,7 @@ const RightTriangle = () => (
         </Grid>
       </Grid>
     </Box>
-    <Grid container justifyContent="flex-end" pr={8} pt="50vh">
+    <Grid container justifyContent="flex-end" pr={[2, 4]} pt="50vh">
       <Grid item>
         <Typography
           variant="h2"

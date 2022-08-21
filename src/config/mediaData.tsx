@@ -1,35 +1,39 @@
 export const mediaData = [
   {
-    name: 'antifascism_full',
-    source: 'home/antifascism_full.webp',
+    name: 'antifascism',
+    source: 'home/antifascism.webp',
   },
   {
-    name: 'education_full',
-    source: 'home/education_full.webp',
+    name: 'artofprotest',
+    source: 'home/artofprotest.webp',
   },
   {
-    name: 'equality_full',
-    source: 'home/equality_full.webp',
+    name: 'equality',
+    source: 'home/equality.webp',
   },
   {
-    name: 'peace_full',
-    source: 'home/peace_full.webp',
+    name: 'peace',
+    source: 'home/peace.webp',
   },
   {
-    name: 'solidarity2_full',
-    source: 'home/solidarity2_full.webp',
+    name: 'protestart',
+    source: 'home/protestart.webp',
   },
   {
-    name: 'solidarity_full',
-    source: 'home/solidarity_full.webp',
+    name: 'solidarity',
+    source: 'home/solidarity.webp',
   },
   {
-    name: 'women_full',
-    source: 'home/women_full.webp',
+    name: 'solidarity2',
+    source: 'home/solidarity2.webp',
   },
   {
-    name: 'work_full',
-    source: 'home/work_full.webp',
+    name: 'women',
+    source: 'home/women.webp',
+  },
+  {
+    name: 'work',
+    source: 'home/work.webp',
   },
   {
     name: 'antifascism',

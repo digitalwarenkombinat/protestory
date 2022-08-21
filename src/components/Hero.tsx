@@ -23,7 +23,7 @@ export const Hero = ({ title }: HeroProps) => (
           align="center"
           color="secondary.main"
           gutterBottom
-          sx={{ fontSize: { lg: '16rem' } }}
+          sx={{ fontSize: { xs: '4em', lg: '16rem' } }}
         >
           {title}
         </Typography>

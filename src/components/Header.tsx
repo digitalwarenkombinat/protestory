@@ -25,16 +25,14 @@ export const Header = ({ title, startPage = false }: HeaderProps) => (
       }}
     >
       <Toolbar sx={{ px: [0, 2] }}>
-        <Typography>
+        <Typography sx={{ transform: 'rotate(-10deg)' }}>
           <Link color="inherit" href="/">
-            <Box sx={{ transform: 'rotate(-10deg)' }}>
-              <Image
-                src={icon}
-                alt={'Logo von PROTESTORY!'}
-                width={300}
-                height={300}
-              />
-            </Box>
+            <Image
+              src={icon}
+              alt={'Logo von PROTESTORY!'}
+              width={300}
+              height={300}
+            />
           </Link>
         </Typography>
         <Typography
