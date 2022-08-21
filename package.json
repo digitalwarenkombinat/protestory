@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "media-data": "node createMediaData.mjs"
   },
   "dependencies": {
@@ -20,7 +21,8 @@
     "next": "^12.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-material-ui-carousel": "^3.4.2"
+    "react-material-ui-carousel": "^3.4.2",
+    "react-use-audio-player": "^1.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
