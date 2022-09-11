@@ -73,7 +73,7 @@ const Banner = ({ item, contentPosition = 'left' }) => {
       >
         <Typography
           component="h3"
-          variant="h3"
+          variant="h2"
           align="center"
           color="text.secondary"
           gutterBottom

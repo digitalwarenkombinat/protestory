@@ -151,7 +151,7 @@ function PosterParade({
               <Typography
                 component="p"
                 variant="body1"
-                color="accent.contrastText"
+                color="text.primary"
                 className="close-read-kicker"
               >
                 Analyse
@@ -159,7 +159,7 @@ function PosterParade({
               <Typography
                 component="h2"
                 variant="h2"
-                color="accent.contrastText"
+                color="text.primary"
                 gutterBottom
                 className="appHeading"
               >
