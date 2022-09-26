@@ -11,32 +11,32 @@
     "media-data": "node createMediaData.mjs"
   },
   "dependencies": {
-    "@emotion/cache": "^11.9.3",
-    "@emotion/react": "^11.9.3",
-    "@emotion/server": "^11.4.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/lab": "^5.0.0-alpha.89",
-    "@mui/material": "^5.8.7",
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/lab": "^5.0.0-alpha.100",
+    "@mui/material": "^5.10.6",
     "clsx": "^1.2.1",
-    "next": "^12.2.1",
+    "next": "^12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-material-ui-carousel": "^3.4.2",
     "react-use-audio-player": "^1.2.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@next/eslint-plugin-next": "^12.2.1",
-    "@types/node": "^18.0.3",
-    "@types/react": "^18.0.15",
-    "@typescript-eslint/eslint-plugin": "^5.30.5",
-    "@typescript-eslint/parser": "^5.30.5",
+    "@babel/core": "^7.19.1",
+    "@next/eslint-plugin-next": "^12.3.1",
+    "@types/node": "^18.7.22",
+    "@types/react": "^18.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
     "babel-loader": "^8.2.5",
-    "eslint": "^8.19.0",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react": "^7.31.8",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.3"
   }
 }
