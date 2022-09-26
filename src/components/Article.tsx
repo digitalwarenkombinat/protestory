@@ -14,7 +14,7 @@ export const Article = ({ startPage }: ArticleProps) => (
     maxWidth={false}
     component="article"
     sx={{
-      padding: '8em 1em 12em',
+      padding: ['2rem', '8em 1em 12em'],
       position: 'relative',
       backgroundColor: 'secondary.main',
       color: 'text.secondary',
@@ -31,7 +31,7 @@ export const Article = ({ startPage }: ArticleProps) => (
             flexDirection: [null, null, null, 'row-reverse'],
           },
           '&:not(:first-of-type)': {
-            marginTop: '8em',
+            marginTop: ['4em', '8em'],
           },
         }}
       >

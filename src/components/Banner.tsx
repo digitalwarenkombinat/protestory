@@ -1,4 +1,4 @@
-import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined'
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
@@ -51,7 +51,7 @@ const LeftTriangle = () => (
               color: 'accent.main',
             }}
           >
-            <ArrowForwardOutlinedIcon />
+            <ArrowForwardRoundedIcon />
           </IconButton>
         </Grid>
         <Grid item xs={12}>
@@ -134,7 +134,7 @@ const RightTriangle = () => (
               color: 'accent.main',
             }}
           >
-            <ArrowForwardOutlinedIcon />
+            <ArrowForwardRoundedIcon />
           </IconButton>
         </Grid>
         <Grid item xs={12}>

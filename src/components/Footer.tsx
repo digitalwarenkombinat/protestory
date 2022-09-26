@@ -44,7 +44,7 @@ export const Footer = () => (
       justifyContent="center"
       my="2em"
     >
-      <Grid item minWidth="258px">
+      <Grid item minWidth="220px">
         <Image
           src={ArchivIcon}
           alt={'Archiv der Arbeiter:innenjugend'}
@@ -52,7 +52,7 @@ export const Footer = () => (
           height={138}
         />
       </Grid>
-      <Grid item minWidth="258px">
+      <Grid item minWidth="220px">
         <Image
           src={DigitalwarenkombinatIcon}
           alt={'Digitalwarenkombinat'}
@@ -63,7 +63,7 @@ export const Footer = () => (
           Digitalwarenkombinat
         </Typography>
       </Grid>
-      <Grid item minWidth="258px">
+      <Grid item minWidth="220px">
         <Image
           src={KulturstiftungIcon}
           alt={'Kulturstiftung des Bundes'}

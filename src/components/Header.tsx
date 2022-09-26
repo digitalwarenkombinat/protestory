@@ -25,7 +25,12 @@ export const Header = ({ title, startPage = false }: HeaderProps) => (
       }}
     >
       <Toolbar sx={{ px: [0, 2] }}>
-        <Typography sx={{ transform: 'rotate(-10deg)' }}>
+        <Typography
+          sx={{
+            transform: 'rotate(-10deg)',
+            width: ['6rem', '8rem', '16rem'],
+          }}
+        >
           <Link color="inherit" href="/">
             <Image
               src={icon}
@@ -40,7 +45,7 @@ export const Header = ({ title, startPage = false }: HeaderProps) => (
           sx={{
             color: startPage ? 'secondary.main' : 'primary.main',
             flexGrow: 1,
-            fontSize: ['16rem'],
+            fontSize: ['4rem', '4rem', '16rem'],
           }}
         >
           {title}

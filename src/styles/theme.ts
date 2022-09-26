@@ -58,6 +58,19 @@ let theme = createTheme({
         },
       `,
     },
+    MuiAvatar: {
+      styleOverrides: {
+        root: {
+          margin: '2rem',
+          padding: '1rem',
+          height: '3rem',
+          width: '3rem',
+        },
+        img: {
+          objectFit: 'contain',
+        },
+      },
+    },
     MuiSvgIcon: {
       styleOverrides: {
         root: {

@@ -8,7 +8,7 @@ export default function Slogangenerator() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Revolutionstelefon</title>
+        <title>Slogan Generator</title>
       </Head>
       <Container maxWidth="xl" component="section">
         <SloganGenerator />

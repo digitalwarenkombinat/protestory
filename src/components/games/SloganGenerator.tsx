@@ -11,10 +11,11 @@ const SloganGenerator = () => {
   const roll = () => {
     setRolling(true)
     setTimeout(() => {
+      setSlogan(triggerSlotRotation())
+    }, 800)
+    setTimeout(() => {
       setRolling(false)
-    }, 1500)
-
-    setSlogan(triggerSlotRotation())
+    }, 2000)
   }
 
   const triggerSlotRotation = () => {
@@ -44,7 +45,7 @@ const SloganGenerator = () => {
           variant="h4"
           color="secondary.main"
         >
-          Keine Demo kommt ohne qute Parolen und Sprechchöre aus.
+          Keine Demo kommt ohne gute Parolen und Sprechchöre aus.
         </Typography>
         <Typography
           component="h3"
@@ -63,7 +64,7 @@ const SloganGenerator = () => {
           welche Parole es dir auswirft.
         </Typography>
       </Grid>
-      <Grid item>
+      <Grid item sx={{ width: '100%' }}>
         <style>{`
         .cls-1{
           fill:#ffe1e1;
@@ -81,38 +82,59 @@ const SloganGenerator = () => {
           cursor: pointer;
         }
         .show {
+          animation: fadeIn ease 1.5s;
           opacity: 1;
         }
         .hide {
+          animation: fadeOut ease .2s;
           opacity: 0;
         }
         .slogan {
           font-size: 3rem
         }
         .roll {
-          animation: fadeIn ease 2s;
+          animation: rollY ease 2s;
         }
-          @keyframes fadeIn {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
           }
+          100% {
+            opacity: 1;
+          }
+        }
+        @keyframes fadeOut {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+        @keyframes rollY {
+          0% {
+            transform: translateY(0px);
+            opacity: 1;
+          }
+          49% {
+            transform: translateY(100px);
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(-100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
         `}</style>
         <svg
           id="Ebene_1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1742.48 825.12"
         >
-          <defs>
-            <path
-              id="p1"
-              d="M118.98,572.3c0,9.95,1296,10.03,1296,0V262.7c0-10.03-1296-5.82-1296"
-            ></path>
-          </defs>
-
           <g
             id="Hebel_oben"
             onClick={!rolling ? roll : undefined}
