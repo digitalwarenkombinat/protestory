@@ -6,7 +6,7 @@ export const items = [
     name: 'Rucksack mit Essen, Trinken, Regenkleidung und Demoshirt',
     source: 'startthedemo/verpflegung.svg',
     description:
-      'Bei einer Demo kann viele dazwischen kommen – meist ist es das Wetter. Während ihr als Teilnehmer:in bei strömenden Regen vielleicht eher zu Hause bleiben würdet, geht das als Organisationsteam natürlich nicht. Regenkleidung, Essen und Trinken sind also ein Muss - wer weiß, wie lang der Tag noch wird. Und um euren Protest gegen den Tagebau-Ausbau auch an anderen Tagen öffentlich zu zeigen, habt ihr direkt auch noch T-Shirts aus Biobaumwolle mit dem Demoslogan drucken lassen.',
+      'Bei einer Demo kann viel dazwischen kommen – meist ist es das Wetter. Während ihr als Teilnehmer:innen bei strömenden Regen vielleicht eher zu Hause bleiben würdet, geht das als Organisationsteam natürlich nicht. Regenkleidung, Essen und Trinken sind also ein Muss - wer weiß, wie lang der Tag noch wird.',
   },
   {
     active: false,
@@ -34,7 +34,7 @@ export const items = [
     source: 'startthedemo/baseball.svg',
     leave: true,
     description:
-      'Ihr wollt nach der Demo noch zum Baseball-Training? Klingt logisch für euch, aber wahrscheinlich nicht für die Polizei. Die wird darin eher eine potentielle Waffe sehen. Wenn ihr also keinen Anlass für Stress bieten wollt, lasst ihn lieber zu Hause.',
+      'Ihr wollt nach der Demo noch zum Baseball-Training? Klingt logisch für euch, aber wahrscheinlich nicht für die Polizei. Die wird darin eher eine potentielle Waffe und einen Verstoß gegen die Demoauflagen sehen. Wenn ihr also keinen Anlass für Stress bieten wollt, lasst ihn lieber zu Hause.',
   },
   {
     active: false,
@@ -52,7 +52,7 @@ export const items = [
     name: 'Demoshirt',
     source: 'startthedemo/demoshirt.svg',
     description:
-      'Bei einer Demo kann viele dazwischen kommen – meist ist es das Wetter. Während ihr als Teilnehmer:in bei strömenden Regen vielleicht eher zu Hause bleiben würdet, geht das als Organisationsteam natürlich nicht. Regenkleidung, Essen und Trinken sind also ein Muss - wer weiß, wie lang der Tag noch wird. Und um euren Protest gegen den Tagebau-Ausbau auch an anderen Tagen öffentlich zu zeigen, habt ihr direkt auch noch T-Shirts aus Biobaumwolle mit dem Demoslogan drucken lassen.',
+      'Um euren Protest gegen den Tagebau-Ausbau auch an anderen Tagen öffentlich zu zeigen, habt ihr T-Shirts aus Biobaumwolle mit dem Demoslogan drucken lassen. Das tragt ihr natürlich auch auf der Demo.',
   },
   {
     active: false,
@@ -71,20 +71,20 @@ export const items = [
     source: 'startthedemo/books_floor.svg',
     leave: true,
     description:
-      'Eine Demo kann chillig sein, aber wahrscheinlich gitb es immer genug zu tun. Du wirst also eher keine Zeit haben, nebenbei noch was zu lesen. Also mach lieber deinen Rucksack leichter und lass die Bücher zu Hause.',
-  },
-  {
-    active: false,
-    link: '',
-    id: 'smartphone',
-    name: 'Social Media für Demomobilisierung',
-    source: 'startthedemo/smartphone.svg',
-    description:
-      'Je jünger eure Zielgruppe für die Demo, desto wichtiger ist Social Media – das ist klar. Wenn ihr sehr früh mit der Demoplanung angefangen habt, ist es gut, bereits einige Wochen vorher den Termin bekannt zu machen, denn die wenigsten entscheiden sich sponatn an einer Demo teilzunehmen.',
+      'Eine Demo kann chillig sein, aber wahrscheinlich gibt es immer genug zu tun. Du wirst also eher keine Zeit haben, nebenbei noch was zu lesen. Also mach lieber deinen Rucksack leichter und lass die Bücher zu Hause.',
   },
   {
     active: false,
     link: 'concert',
+    id: 'smartphone',
+    name: 'Playlist für Demo',
+    source: 'startthedemo/smartphone.svg',
+    description:
+      'Die beste Demo ist die, bei der gute Musik läuft und Lieder auch mal mitgesungen werden. Ihr habt eine Playlist mit klassischen Protestliedern zusammengestellt, aber auch mit einigen neueren empowernden Songs. Falls ihr noch Inspiration sucht, schaut mal bei "If I can´t cance to it, it is not my revolution" rein.',
+  },
+  {
+    active: false,
+    link: '',
     id: 'gitarre',
     name: 'Gitarre für Live-Musik',
     source: 'startthedemo/gitarre.svg',
@@ -108,7 +108,7 @@ export const items = [
     name: 'Lautsprecher und Mikro',
     source: 'startthedemo/lautsprecher_mikro.svg',
     description:
-      'Da ihr einen Transporter mit offener Ladefläche als Bühne nutzen wollt, ist es dort praktisch, ein Mikrofon mit Lautsprecher zu haben. Gerade eure Redner:innen wollen gut von allen gehört werden. Testet am Besten vorab, wie gut die Qualität und die Lautstärke der Anlage ist.',
+      'Da ihr einen Transporter mit offener Ladefläche als Bühne nutzen wollt, ist es praktisch, ein Mikrofon mit Lautsprecher zu haben. Gerade eure Redner:innen wollen gut von allen gehört werden. Testet am Besten vorab, wie gut die Qualität und die Lautstärke der Anlage ist.',
   },
   {
     active: false,
@@ -143,9 +143,10 @@ export const items = [
     active: false,
     link: '',
     id: 'papierstapel',
-    name: '',
+    name: 'Anmeldebestätigung',
     source: 'startthedemo/papierstapel.svg',
-    description: '',
+    description:
+      'Du hast die Anmeldebestätigung der Stadt gefunden! Das ist wichtig, denn sie bestätigt, dass ihr eure Demo korrekt bei der Stadt angezeigt habt. Meist folgt darauf ein Vorgespräch mit der Polizei, bei dem Rahmenbedingungen und Auflagen geklärt werden.',
   },
   {
     active: false,
@@ -158,7 +159,7 @@ export const items = [
   },
   {
     active: false,
-    link: 'posterparade',
+    link: '',
     id: 'transparente',
     name: 'Transparente',
     source: 'startthedemo/transparente.svg',
@@ -169,25 +170,19 @@ export const items = [
     active: false,
     link: '',
     id: 'laptop',
-    name: '',
+    name: 'Social Media',
     source: 'startthedemo/laptop.svg',
-    description: '',
-  },
-  {
-    active: false,
-    link: '',
-    id: 'poster',
-    name: '',
-    source: 'startthedemo/poster.svg',
-    description: '',
+    description:
+      'Je jünger eure Zielgruppe für die Demo, desto wichtiger ist Social Media – das ist klar. Wenn ihr sehr früh mit der Demoplanung angefangen habt, ist es gut, bereits einige Wochen vorher den Termin bekannt zu machen, denn die wenigsten entscheiden sich spontan an einer Demo teilzunehmen.',
   },
   {
     active: false,
     link: '',
     id: 'adressen',
-    name: '',
+    name: 'Mailingliste',
     source: 'startthedemo/adressen.svg',
-    description: '',
+    description:
+      'Stell dir vor, es ist eine Demo und keiner geht hin. Um das zu vermeiden, braucht es im Vorfeld viel Mobilisierung vor Ort und im Internet, z.B. über Social Media oder Mailinglisten. Letztere haben den Vorteil, dass sie meist über Verbände und Vereine weiter in die Strukturen durchgereicht werden und auch Leute erreichen, die nicht auf Social Media Kanälen unterwegs sind.',
   },
   {
     active: false,
@@ -195,6 +190,15 @@ export const items = [
     id: 'ordner_weste',
     name: 'Kontakte zu Demo- Ordner:innen (gelbe Warnweste)',
     source: 'startthedemo/ordner_weste.svg',
+    description:
+      'Diesen Job macht keiner gern und auf vielen Demos werden noch spontan Ordner:innen gesucht. Ihr habt zum Glück schon eine Liste mit Menschen, die sich freiwillig bereit erklärt haben, als Ordner:innen die Demo zu flankieren. Ordner:innen sollen vorallem die Demo-Auflagen durchsetzen, also z.B. eingreifen, wenn jemand aggressiv wird oder Gegenstände dabei hat, die untersagt sind.',
+  },
+  {
+    active: false,
+    link: '',
+    id: 'formular',
+    name: 'Offizielle Demoanmeldung bei der Stadt',
+    source: 'startthedemo/formular.svg',
     description:
       'Diesen Job macht keiner gern und auf vielen Demos werden noch spontan Ordner:innen gesucht. Ihr habt zum Glück schon eine Liste mit Menschen, die sich freiwillig bereit erklärt haben, als Ordner:innen die Demo zu flankieren. Ordner:innen sollen vorallem die Demo-Auflagen durchsetzen, also z.B. eingreifen, wenn jemand aggressiv wird oder Gegenstände dabei hat, die untersagt sind.',
   },

@@ -1,6 +1,13 @@
 import { useState } from 'react'
+import HelpRoundedIcon from '@mui/icons-material/HelpRounded'
 import Grid from '@mui/material/Grid'
-import { Avatar, AvatarGroup, Link, Typography } from '@mui/material'
+import {
+  Avatar,
+  AvatarGroup,
+  Box,
+  Link,
+  Typography,
+} from '@mui/material'
 import { StartTheDemoSVG } from 'services/StartTheDemoSVG'
 import { items } from 'config/startthedemo'
 
@@ -71,7 +78,7 @@ const StartTheDemo = () => {
           variant="h4"
           color="primary.main"
         >
-          Hilf Karla, in ihrem WG-Zimmer alle 16 Objekte zu finden,
+          Hilf Karla, in ihrem WG-Zimmer alle 17 Objekte zu finden,
           die für die Demo wichtig sind. Tippe oder klicke dazu auf
           die verschiedenen Gegenstände.
         </Typography>
@@ -94,21 +101,27 @@ const StartTheDemo = () => {
                 <Avatar
                   key={index}
                   alt="Fragezeichen"
-                  src="startthedemo/checkliste.svg"
                   sx={{
-                    backgroundColor: 'text.secondary',
+                    backgroundColor: 'text.primary',
                     opacity: '0.8',
                   }}
-                />
+                >
+                  <HelpRoundedIcon />
+                </Avatar>
               )
             )}
         </AvatarGroup>
         <Typography component="p" variant="h5" color="primary.main">
           {description}
         </Typography>
-        <Grid item>
+        <Box
+          sx={{
+            width: '100%',
+            height: '100%',
+          }}
+        >
           <StartTheDemoSVG handleItem={handleItem} />
-        </Grid>
+        </Box>
       </Grid>
     </Grid>
   )
