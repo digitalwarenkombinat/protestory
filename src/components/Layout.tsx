@@ -3,9 +3,6 @@ import Grid from '@mui/material/Grid'
 
 import { Header } from './Header'
 import { Help } from './Help'
-//import { Footer } from './Footer'
-
-//import { title } from '../config'
 
 export default function Layout({
   headerTitle,
@@ -30,7 +27,6 @@ export default function Layout({
         {children}
       </Grid>
       <Help />
-      {/* <Footer title={title} /> */}
     </Container>
   )
 }

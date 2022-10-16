@@ -6,7 +6,7 @@ import { Hero } from '../components/Hero'
 import { Article } from '../components/Article'
 import { Banner } from '../components/Banner'
 
-import { title, startPage } from '../config'
+import { title } from '../config'
 import { Footer } from 'components/Footer'
 
 const Home: NextPage = () => {
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <Hero title={title} />
       <Banner />
-      <Article startPage={startPage} />
+      <Article />
       <Footer />
     </Layout>
   )

@@ -5,9 +5,9 @@ import Grid from '@mui/material/Grid'
 import Link from '@mui/material/Link'
 import Typography from '@mui/material/Typography'
 
-import ArchivIcon from '../../public/footer/archiv.png'
-import DigitalwarenkombinatIcon from '../../public/copyright.svg'
-import KulturstiftungIcon from '../../public/footer/kulturstiftung.svg'
+import ArchivIcon from '/public/footer/archiv.png'
+import DigitalwarenkombinatIcon from '/public/copyright.svg'
+import KulturstiftungIcon from '/public/footer/kulturstiftung.svg'
 
 function Copyright(props: any) {
   return (

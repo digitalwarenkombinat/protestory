@@ -28,33 +28,6 @@ const HelpDialog = ({ onClose, open }) => {
     >
       <Chat {...chat} />
     </Dialog>
-
-    // <Dialog
-    //   onClose={handleClose}
-    //   aria-labelledby="help-dialog"
-    //   open={open}
-    //   maxWidth={'sm'}
-    // >
-    //   <DialogTitle
-    //     id="help-dialog"
-    //     component="div"
-    //     sx={{
-    //       display: 'flex',
-    //       alignItems: 'center',
-    //       backgroundColor: 'secondary.main',
-    //     }}
-    //   >
-    //     <Avatar
-    //       sx={{ height: '6rem', width: '6rem', mr: '1rem' }}
-    //       alt="Bot"
-    //       src="avatar-chatbot.png"
-    //     />
-    //     <Typography variant="h3" color="text.secondary">
-    //       {chat.title}
-    //     </Typography>
-    //   </DialogTitle>
-    //   <Chat {...chat} />
-    // </Dialog>
   )
 }
 

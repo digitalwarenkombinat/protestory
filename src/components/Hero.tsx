@@ -14,7 +14,7 @@ export const Hero = ({ title }: HeroProps) => (
       container
       justifyContent="center"
       alignItems="flex-end"
-      sx={{ height: 'calc(100vh - 306px)' }}
+      sx={{ height: 'calc(100vh - 6rem)' }}
     >
       <Grid item xs={12}>
         <Typography
