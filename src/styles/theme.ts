@@ -61,8 +61,8 @@ let theme = createTheme({
     MuiAvatar: {
       styleOverrides: {
         root: {
-          margin: '2rem',
-          padding: '1rem',
+          margin: '1rem',
+          padding: '0.5rem',
           height: '3rem',
           width: '3rem',
         },

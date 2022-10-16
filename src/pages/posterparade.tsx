@@ -5,8 +5,8 @@ import Grid from '@mui/material/Grid'
 import Carousel from 'react-material-ui-carousel'
 
 import Layout from 'components/Layout'
-import next from '../../public/icons/next.svg'
-import prev from '../../public/icons/prev.svg'
+import left from '/public/icons/left.svg'
+import right from '/public/icons/right.svg'
 import { title } from '../config'
 import { posterParadeItems } from '../config/analysis'
 import CardMedia from '@mui/material/CardMedia'
@@ -40,10 +40,20 @@ export default function PosterParade() {
             },
           }}
           NextIcon={
-            <Image src={next} alt={'Next'} width={120} height={120} />
+            <Image
+              src={right}
+              alt={'Show next image'}
+              width={120}
+              height={120}
+            />
           }
           PrevIcon={
-            <Image src={prev} alt={'Prev'} width={120} height={120} />
+            <Image
+              src={left}
+              alt={'Show previous image'}
+              width={120}
+              height={120}
+            />
           }
         >
           {posterParadeItems.map((item, index) => {
@@ -135,13 +145,12 @@ const Banner = ({ item, contentPosition = 'left' }) => {
         color: 'text.secondary',
         backgroundColor: 'rgba(0, 0, 0, 0)',
         boxShadow: 'none',
-        border: '30px solid transparent',
-        borderImage: 'url(/icons/frame.svg) 25 25 round',
+        border: '48px solid transparent',
+        borderImage: 'url(/icons/frame.svg) 30 30 round',
       }}
     >
       <Grid
         container
-        spacing={4}
         sx={{
           height: '100%',
           position: 'relative',
