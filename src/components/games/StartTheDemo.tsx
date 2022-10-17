@@ -1,25 +1,24 @@
-import Image from 'next/image'
-import dynamic from 'next/dynamic'
-import { useState, useEffect, Suspense } from 'react'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import { useTheme } from '@mui/material/styles'
+import Avatar from '@mui/material/Avatar'
+import AvatarGroup from '@mui/material/AvatarGroup'
+import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
-import { Avatar, AvatarGroup, Link, Typography } from '@mui/material'
-
-import useStore from 'utils/store'
+import NoSsr from '@mui/material/NoSsr'
+import { useTheme } from '@mui/material/styles'
+import Typography from '@mui/material/Typography'
+import useMediaQuery from '@mui/material/useMediaQuery'
 import { startTheDemo } from 'config'
+import Image from 'next/future/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { StartTheDemoSVG } from 'services/StartTheDemoSVG'
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
 import left from '/public/icons/left.svg'
 import right from '/public/icons/right.svg'
 
-const DynamicComponent = dynamic(() =>
-  import('services/StartTheDemoSVG').then(
-    (mod) => mod.StartTheDemoSVG
-  )
-)
-
 const StartTheDemo = () => {
-  const { items, language } = useStore()
-  const [description, setDescription] = useState('')
+  const hasHydrated = useHasHydrated()
+  const { getLinkedItems, language } = useStore()
   const [imagePart, setImagePart] = useState(1)
   const theme = useTheme()
   const splitSVG = useMediaQuery(theme.breakpoints.down('xl'))
@@ -39,13 +38,6 @@ const StartTheDemo = () => {
     setViewBox(`${imageNumber * 450} 0 450 800`)
   }
 
-  const handleItem = (itemId: string) => {
-    useStore.getState().activateItem(itemId)
-    setDescription(
-      items.find((item) => item.id === itemId)?.description
-    )
-  }
-
   return (
     <Grid
       container
@@ -54,16 +46,28 @@ const StartTheDemo = () => {
       flexWrap="wrap"
       justifyContent="center"
     >
-      <Grid item sx={{ mb: 2 }}>
+      <Grid item sx={{ mt: 4 }}>
         <Typography
-          component="h2"
+          sx={{ mb: 4 }}
           variant="h2"
-          color="secondary.main"
+          color="text.secondary"
         >
           Get the Protest started!
         </Typography>
-        <Typography component="p" variant="h5" color="secondary.main">
-          {startTheDemo[language].description}
+        <Typography
+          component="h3"
+          variant="h4"
+          color="text.secondary"
+        >
+          {hasHydrated && startTheDemo[language].description}
+        </Typography>
+        <Typography
+          sx={{ my: 2 }}
+          component="h3"
+          variant="h4"
+          color="text.secondary"
+        >
+          {hasHydrated && startTheDemo[language].subDescription}
         </Typography>
       </Grid>
       <Grid
@@ -72,42 +76,9 @@ const StartTheDemo = () => {
           width: '100%',
           height: '100%',
           position: 'relative',
-          backgroundColor: 'secondary.main',
-          boxShadow: 'none',
-          border: '48px solid transparent',
-          borderImage: 'url(/icons/frame.svg) 45 45 round',
           backgroundClip: 'padding-box',
         }}
       >
-        <Typography
-          sx={{ mt: 4 }}
-          component="h3"
-          variant="h4"
-          color="primary.main"
-        >
-          {startTheDemo[language].subDescription}
-        </Typography>
-        <AvatarGroup
-          sx={{ justifyContent: 'center', flexWrap: 'wrap' }}
-          max={6}
-        >
-          {items.map((item) => (
-            <Link key={item.id} href={item.link}>
-              <Avatar
-                alt={item.name}
-                src={item.source}
-                sx={{
-                  backgroundColor: 'text.secondary',
-                  cursor: 'pointer',
-                  //display: item.active ? 'block' : 'none',
-                }}
-              />
-            </Link>
-          ))}
-        </AvatarGroup>
-        <Typography component="p" variant="h5" color="primary.main">
-          {description}
-        </Typography>
         <Grid container alignItems="center">
           {splitSVG && (
             <Grid
@@ -127,12 +98,9 @@ const StartTheDemo = () => {
             </Grid>
           )}
           <Grid item xs={splitSVG ? 10 : 12}>
-            <Suspense fallback={`Loading...`}>
-              <DynamicComponent
-                handleItem={handleItem}
-                viewBox={viewBox}
-              />
-            </Suspense>
+            <NoSsr defer>
+              <StartTheDemoSVG viewBox={viewBox} />
+            </NoSsr>
           </Grid>
           {splitSVG && (
             <Grid
@@ -151,8 +119,47 @@ const StartTheDemo = () => {
               />
             </Grid>
           )}
-          {splitSVG}
         </Grid>
+        <AvatarGroup
+          sx={{
+            alignContent: 'center',
+            flexWrap: 'wrap',
+            flexDirection: 'column',
+          }}
+          max={6}
+        >
+          {getLinkedItems().map((item) => (
+            <Link key={item.id} href={item.link} passHref>
+              <Box sx={{ display: 'flex', cursor: 'pointer' }}>
+                <Avatar
+                  alt={item.name}
+                  src={item.source}
+                  sx={{
+                    backgroundColor: 'text.secondary',
+                    display:
+                      hasHydrated && item.active ? 'block' : 'none',
+                  }}
+                />
+                <Box sx={{ textAlign: 'left' }}>
+                  <Typography
+                    component="h4"
+                    variant="h2"
+                    color="text.secondary"
+                  >
+                    {hasHydrated && item.active ? item.name : ''}
+                  </Typography>
+                  <Typography
+                    component="p"
+                    variant="h6"
+                    color="text.secondary"
+                  >
+                    {hasHydrated && item.active && item.linkText}
+                  </Typography>
+                </Box>
+              </Box>
+            </Link>
+          ))}
+        </AvatarGroup>
       </Grid>
     </Grid>
   )
