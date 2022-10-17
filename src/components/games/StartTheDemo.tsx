@@ -45,6 +45,8 @@ const StartTheDemo = () => {
       textAlign="center"
       flexWrap="wrap"
       justifyContent="center"
+      maxWidth="lg"
+      mx="auto"
     >
       <Grid item sx={{ mt: 4 }}>
         <Typography
