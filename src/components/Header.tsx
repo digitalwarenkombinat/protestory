@@ -1,16 +1,11 @@
-import Image from 'next/future/image'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import IconButton from '@mui/material/IconButton'
 import Link from '@mui/material/Link'
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-
-import useStore from 'utils/store'
+import Image from 'next/future/image'
+import BasicMenu from './Menu'
 import icon from '/public/icon.svg'
-import Button from '@mui/material/Button'
-import { useHasHydrated } from 'utils/useHasHydrated'
 
 interface HeaderProps {
   title: false | string
@@ -18,8 +13,6 @@ interface HeaderProps {
 }
 
 export const Header = ({ title, startPage = false }: HeaderProps) => {
-  const hasHydrated = useHasHydrated()
-  const { language } = useStore()
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
@@ -56,23 +49,7 @@ export const Header = ({ title, startPage = false }: HeaderProps) => {
           >
             {title}
           </Typography>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 4, height: '4rem', width: '4rem' }}
-          >
-            <MenuRoundedIcon />
-          </IconButton>
-          <Button
-            sx={{
-              color: 'secondary.main',
-            }}
-            onClick={() => useStore.getState().changeLanguage()}
-          >
-            {hasHydrated && language === 'de' ? 'EN' : 'DE'}
-          </Button>
+          <BasicMenu />
         </Toolbar>
       </AppBar>
     </Box>
