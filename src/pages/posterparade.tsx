@@ -1,4 +1,4 @@
-import Image from 'next/future/image'
+import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import Grid from '@mui/material/Grid'
@@ -56,15 +56,13 @@ export default function PosterParade() {
             />
           }
         >
-          {posterParadeItems.map((item, index) => {
-            return (
-              <Banner
-                item={item}
-                key={index}
-                contentPosition={item.contentPosition}
-              />
-            )
-          })}
+          {posterParadeItems.map((item, index) => (
+            <Banner
+              item={item}
+              key={index}
+              contentPosition={item.contentPosition}
+            />
+          ))}
         </Carousel>
       </Container>
     </Layout>
@@ -74,7 +72,7 @@ export default function PosterParade() {
 const Banner = ({ item, contentPosition = 'left' }) => {
   let items = []
   const content = (
-    <Grid item xs={4} key="content">
+    <Grid item xs={4} key={item.name}>
       <CardContent
         sx={{
           height: '600px',
@@ -107,7 +105,7 @@ const Banner = ({ item, contentPosition = 'left' }) => {
     const mediaItem = item.items[i]
 
     const media = (
-      <Grid item xs={4} key={mediaItem.name} sx={{ p: 2 }}>
+      <Grid item xs={4} key={mediaItem.href} sx={{ p: 2 }}>
         <Link
           href={`/posterparade/${encodeURIComponent(mediaItem.href)}`}
           passHref

@@ -17,6 +17,8 @@ type Store = {
   language: string
   items: Item[]
   getLinkedItems: () => Item[]
+  getCorrectItems: () => Item[]
+  allCorrectItemsActivated: () => boolean
   // eslint-disable-next-line no-unused-vars
   activateItem: (itemId: string) => void
   changeLanguage: () => void
@@ -31,6 +33,16 @@ const useStore = create<Store>()(
 
       getLinkedItems: () =>
         get().items.filter((linkItems) => linkItems.link !== ''),
+
+      getCorrectItems: () =>
+        get().items.filter(
+          (correctItems) => correctItems.leave !== true
+        ),
+
+      allCorrectItemsActivated: () =>
+        get()
+          .getCorrectItems()
+          .every((item) => item.active === true),
 
       activateItem: (itemId) =>
         set((state) => ({

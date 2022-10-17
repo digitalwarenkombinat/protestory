@@ -1,3 +1,8 @@
+export const completeMessage = {
+  de: 'Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Unten findest du noch weitere Inspiration für den nächsten Protest.',
+  en: 'EN Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Unten findest du noch weitere Inspiration für den nächsten Protest.',
+}
+
 export const items = [
   {
     active: false,
