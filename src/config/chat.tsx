@@ -76,7 +76,6 @@ export const chat = {
       text: 'Bild eines Protestplakates',
       from: ChatSpeaker.BOT,
       image: '/chat/1983.webp',
-      alt: 'Bild eines Protestplakates',
       isPortrait: true,
     },
     {
@@ -179,7 +178,6 @@ export const chat = {
       text: 'Bild von 1928',
       from: ChatSpeaker.BOT,
       image: '/chat/1928.webp',
-      alt: 'Bild von 1928',
       isPortrait: false,
     },
     {

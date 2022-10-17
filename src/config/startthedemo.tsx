@@ -20,8 +20,9 @@ export const items = [
   {
     active: false,
     link: 'revolutiontelephone',
+    name: 'Revolutionstelefon',
+    linkText: 'Gedanken von historischen Personen zum Thema Protest',
     id: 'festnetz',
-    name: 'Presse informieren (Festnetztelefon)',
     source: 'startthedemo/festnetz.svg',
     description:
       'Du hast den Pressekontakt gefunden! Social Media ist wichtig, aber viel Berichterstattung findet immer noch über normale Tageszeitungen und deren Portale statt. Insbesondere wenn ihr ältere und unbeteiligte Menschen von eurer Sache überzeugen wollt, solltet ihr auch klassische Medien kontaktieren, um euer Anliegen publik zu machen.',
@@ -57,8 +58,9 @@ export const items = [
   {
     active: false,
     link: 'slogangenerator',
+    linkText: 'Inspiration für deinen nächsten Demo-Rufe',
     id: 'megafon',
-    name: 'Megafon',
+    name: 'Slogan-Generator',
     source: 'startthedemo/megafon.svg',
     description:
       'Ein Megafon ist wichtig, z.B. um Sprechchöre anzustimmen. Als Ergänzung zu Lautsprechern und Mikrofon ist es auch mobiler einsetzbar, sobald sich die Demonstration in Bewegung setzt. Und deine Stimme ist vielleicht nicht kräftig genug, um über einige Hundert Meter hinweg hörbar zu sein.',
@@ -76,8 +78,9 @@ export const items = [
   {
     active: false,
     link: 'concert',
+    linkText: 'Protestsongs aus mehreren Jahrzehnten - zum Mitsingen',
     id: 'smartphone',
-    name: 'Playlist für Demo',
+    name: 'If I can`t dance to it, it`s not my revolution',
     source: 'startthedemo/smartphone.svg',
     description:
       'Die beste Demo ist die, bei der gute Musik läuft und Lieder auch mal mitgesungen werden. Du hast eine Playlist mit klassischen Protestliedern zusammengestellt, aber auch mit neueren empowernden Songs. Falls ihr noch Inspiration sucht, schaut mal bei "If I can´t cance to it, it is not my revolution" rein.',
@@ -151,26 +154,30 @@ export const items = [
   {
     active: false,
     link: 'posterparade',
+    linkText: 'Demoplakate und ihre Geschichte',
     id: 'plakate',
-    name: 'Plakate für Demoaufruf',
+    name: 'Posterparade',
     source: 'startthedemo/plakate.svg',
     description:
       'Instagram, Twitter, Mailinglists, alles schön und gut. Aber manche Leute werden auch einfach durch Plakate in ihrem Kiez auf eine Demo aufmerksam. Vergesst also nicht, auch im Analogen Werbung für eure Demo zu machen, damit sich möglichst verschiedene Menschen für euer Anliegen einsetzen und euch unterstützen können.',
   },
   {
     active: false,
-    link: '',
+    link: 'protestart',
+    linkText:
+      'Ein Blick in die Sammlung des Archivs der Arbeiterjugendbewegung',
     id: 'transparente',
-    name: 'Transparente',
+    name: 'Protestkunst',
     source: 'startthedemo/transparente.svg',
     description:
       'Keine Demo kommt ohne Palakate, Parolen und Transparente aus. Für die erste Reihe habt ihr ein großes Banner drucken lassen, auf dem "Kohle stoppen, Klima und Dörfer retten!" steht.',
   },
   {
     active: false,
-    link: '',
+    link: 'tweetwall',
+    linkText: 'PROTESTORY! im Netz',
     id: 'laptop',
-    name: 'Social Media',
+    name: 'Tweetwall',
     source: 'startthedemo/laptop.svg',
     description:
       'Je jünger eure Zielgruppe für die Demo, desto wichtiger ist Social Media – das ist klar. Wenn ihr sehr früh mit der Demoplanung angefangen habt, ist es gut, bereits einige Wochen vorher den Termin bekannt zu machen, denn die wenigsten entscheiden sich spontan an einer Demo teilzunehmen.',
