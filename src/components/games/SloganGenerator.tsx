@@ -1,12 +1,18 @@
-import { useState } from 'react'
 import Grid from '@mui/material/Grid'
-import { Typography } from '@mui/material'
-
+import Typography from '@mui/material/Typography'
+import { sloganGenerator } from 'config'
 import { slogans } from 'config/slogangenerator'
+import { useEffect, useState } from 'react'
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
 
 const SloganGenerator = () => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const [slogan, setSlogan] = useState('Drücke den roten Hebel!')
   const [rolling, setRolling] = useState(false)
+
+  useEffect(() => setSlogan(sloganGenerator[language].slogan), [])
 
   const roll = () => {
     setRolling(true)
@@ -45,23 +51,21 @@ const SloganGenerator = () => {
           variant="h4"
           color="secondary.main"
         >
-          Keine Demo kommt ohne gute Parolen und Sprechchöre aus.
+          {hasHydrated && sloganGenerator[language].description1}
         </Typography>
         <Typography
           component="h3"
           variant="h4"
           color="secondary.main"
         >
-          Hier kannst du dir Inspiration holen und zu verschiedenen
-          Protestthemen Demoslogans und Parolen finden.
+          {hasHydrated && sloganGenerator[language].description2}
         </Typography>
         <Typography
           component="h3"
           variant="h4"
           color="secondary.main"
         >
-          Drücke einfach auf den roten runden Hebel und sei gespannt,
-          welche Parole es dir auswirft.
+          {hasHydrated && sloganGenerator[language].description3}
         </Typography>
       </Grid>
       <Grid item sx={{ width: '100%' }}>

@@ -5,8 +5,8 @@ import PosterParade from 'components/games/PosterParade'
 import Layout from 'components/Layout'
 
 import styles from 'styles/posterparade.module.css'
-import { title } from '../../config'
-import { posterParadeTexts } from '../../config/analysis'
+import { title } from 'config'
+import { posterParadeTexts } from 'config/analysis'
 
 export default function PosterParadeItem() {
   const router = useRouter()
@@ -14,7 +14,7 @@ export default function PosterParadeItem() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Bildanalyse {id}</title>
+        <title>Poster Parade {id}</title>
       </Head>
       {id && (
         <PosterParade

@@ -1,5 +1,4 @@
-import Image from 'next/image'
-
+import Image from 'next/future/image'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
@@ -39,8 +38,9 @@ export const Header = ({ title, startPage = false }: HeaderProps) => {
           >
             <Link color="inherit" href="/">
               <Image
+                priority
                 src={icon}
-                alt={'Logo von PROTESTORY!'}
+                alt={'Logo PROTESTORY!'}
                 width={300}
                 height={300}
               />

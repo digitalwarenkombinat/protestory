@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import Grid from '@mui/material/Grid'
-import { Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
+import { useState } from 'react'
 
 const RevolutionTelephone = () => {
   const [telephoneNumber, setTelephoneNumber] = useState('')

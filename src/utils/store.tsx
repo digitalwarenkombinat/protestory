@@ -5,8 +5,9 @@ import { items } from 'config/startthedemo'
 interface Item {
   active: boolean
   link: string
-  id: string
+  linkText?: string
   name: string
+  id: string
   source: string
   description: string
   leave?: boolean
@@ -15,6 +16,7 @@ interface Item {
 type Store = {
   language: string
   items: Item[]
+  getLinkedItems: () => Item[]
   // eslint-disable-next-line no-unused-vars
   activateItem: (itemId: string) => void
   changeLanguage: () => void
@@ -22,10 +24,13 @@ type Store = {
 
 const useStore = create<Store>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       language: 'de',
 
-      items: items.filter((linkItems) => linkItems.link !== ''),
+      items: items,
+
+      getLinkedItems: () =>
+        get().items.filter((linkItems) => linkItems.link !== ''),
 
       activateItem: (itemId) =>
         set((state) => ({

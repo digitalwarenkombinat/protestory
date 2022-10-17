@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
@@ -45,31 +45,44 @@ export const Footer = () => (
       my="2em"
     >
       <Grid item minWidth="220px">
-        <Image
-          src={ArchivIcon}
-          alt={'Archiv der Arbeiter:innenjugend'}
-          width={160}
-          height={138}
-        />
+        <Link color="inherit" href="https://www.arbeiterjugend.de">
+          <Image
+            src={ArchivIcon}
+            alt={'Archiv der Arbeiter:innenjugend'}
+            width={160}
+            height={138}
+          />
+        </Link>
       </Grid>
       <Grid item minWidth="220px">
-        <Image
-          src={DigitalwarenkombinatIcon}
-          alt={'Digitalwarenkombinat'}
-          width={96}
-          height={96}
-        />
-        <Typography component="h3" variant="h6" color="text.primary">
-          Digitalwarenkombinat
-        </Typography>
+        <Link color="inherit" href="https://digitalwarenkombinat.de/">
+          <Image
+            src={DigitalwarenkombinatIcon}
+            alt={'Digitalwarenkombinat'}
+            width={96}
+            height={96}
+          />
+          <Typography
+            component="h3"
+            variant="h6"
+            color="text.primary"
+          >
+            Digitalwarenkombinat
+          </Typography>
+        </Link>
       </Grid>
       <Grid item minWidth="220px">
-        <Image
-          src={KulturstiftungIcon}
-          alt={'Kulturstiftung des Bundes'}
-          width={160}
-          height={160}
-        />
+        <Link
+          color="inherit"
+          href="https://www.kulturstiftung-des-bundes.de"
+        >
+          <Image
+            src={KulturstiftungIcon}
+            alt={'Kulturstiftung des Bundes'}
+            width={160}
+            height={160}
+          />
+        </Link>
       </Grid>
       <Grid item xs={12} mt={2}>
         <Copyright />

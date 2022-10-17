@@ -7,7 +7,7 @@ import HelpIcon from '@mui/icons-material/Help'
 
 import { Chat } from './Chat'
 
-import { chat } from '../config/chat'
+import { chat } from 'config/chat'
 
 const HelpDialog = ({ onClose, open }) => {
   const handleClose = () => {

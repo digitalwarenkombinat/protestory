@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Container from '@mui/material/Container'
 import Masonry from '@mui/lab/Masonry'
-
-import { mediaData } from '../config/mediaData'
-import { Box, Typography } from '@mui/material'
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+import { mediaData } from 'config/mediaData'
 
 export const MediaGallery = () => (
   <Container maxWidth={false} component="section">

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/future/image'
 import { useState, useEffect, useRef } from 'react'
 
 import Avatar from '@mui/material/Avatar'
@@ -17,7 +17,6 @@ interface MessageProps {
   text: string
   from: ChatSpeaker
   image?: string
-  alt?: string
   isPortrait?: boolean
 }
 
@@ -28,15 +27,12 @@ interface ChatProps {
 }
 
 const ChatImage = ({ image = '', alt = '', isPortrait = true }) => (
-  <figure>
-    <Image
-      src={image}
-      alt={alt}
-      width={isPortrait ? 225 : 400}
-      height={isPortrait ? 400 : 225}
-    />
-    <figcaption>{alt}</figcaption>
-  </figure>
+  <Image
+    src={image}
+    alt={alt}
+    width={isPortrait ? 225 : 400}
+    height={isPortrait ? 400 : 257.5}
+  />
 )
 
 export const Chat = ({ title, relation, list }: ChatProps) => {
@@ -146,11 +142,26 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
         <div ref={messagesEndRef} />
       </DialogContent>
       {showQuestion && (
-        <DialogActions sx={{ justifyContent: 'center' }}>
-          <Button onClick={() => selectAnswer(messageIndex)}>
+        <DialogActions
+          sx={{
+            justifyContent: 'center',
+            textTransform: 'none',
+          }}
+        >
+          <Button
+            sx={{
+              textTransform: 'none',
+            }}
+            onClick={() => selectAnswer(messageIndex)}
+          >
             {list[messageIndex].text}
           </Button>
-          <Button onClick={() => selectAnswer(messageIndex + 1)}>
+          <Button
+            sx={{
+              textTransform: 'none',
+            }}
+            onClick={() => selectAnswer(messageIndex + 1)}
+          >
             {list[messageIndex + 1].text}
           </Button>
         </DialogActions>

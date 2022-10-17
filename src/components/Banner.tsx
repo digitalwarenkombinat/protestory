@@ -37,7 +37,7 @@ const LeftTriangle = () => {
           transition: '.5s ease',
           backgroundColor: 'secondary.main',
           '&:hover': {
-            opacity: 0.5,
+            opacity: 0.75,
           },
         }}
       >
@@ -124,7 +124,7 @@ const RightTriangle = () => {
           transition: '.5s ease',
           backgroundColor: 'secondary.main',
           '&:hover': {
-            opacity: 0.5,
+            opacity: 0.75,
           },
         }}
       >
