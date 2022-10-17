@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
+    "export": "next build && next export && next-export-optimize-images",
     "media-data": "node createMediaData.mjs"
   },
   "dependencies": {
@@ -37,6 +37,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.8",
+    "next-export-optimize-images": "^1.9.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.3"
   }
