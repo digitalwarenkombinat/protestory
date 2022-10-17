@@ -3,8 +3,8 @@ import { AppProps } from 'next/app'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import { CacheProvider, EmotionCache } from '@emotion/react'
-import theme from '../styles/theme'
-import createEmotionCache from '../styles/createEmotionCache'
+import theme from 'styles/theme'
+import createEmotionCache from 'styles/createEmotionCache'
 
 const clientSideEmotionCache = createEmotionCache()
 

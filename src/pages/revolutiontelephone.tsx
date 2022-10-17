@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Layout from 'components/Layout'
-import { title } from '../config'
+import { title } from 'config'
 import Container from '@mui/material/Container'
 import RevolutionTelephone from 'components/games/RevolutionTelephone'
 
-export default function Revolutiontelephone() {
+export default function revolutiontelephone() {
   return (
     <Layout headerTitle={title}>
       <Head>

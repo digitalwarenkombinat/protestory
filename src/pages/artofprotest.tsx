@@ -3,15 +3,19 @@ import Container from '@mui/material/Container'
 
 import Layout from 'components/Layout'
 import StartTheDemo from 'components/games/StartTheDemo'
-import { title } from '../config'
+import { title } from 'config'
 
-export default function ArtOfProtest() {
+export default function artofprotest() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Kunst des Protestes</title>
+        <title>Get the Protest started!</title>
       </Head>
-      <Container maxWidth={false} component="section">
+      <Container
+        sx={{ backgroundColor: 'secondary.main' }}
+        maxWidth={false}
+        component="section"
+      >
         <StartTheDemo />
       </Container>
     </Layout>

@@ -4,9 +4,9 @@ import Container from '@mui/material/Container'
 import Layout from 'components/Layout'
 import { Concert } from 'components/games/Concert'
 
-import { title } from '../config'
+import { title } from 'config'
 
-export default function startthedemo() {
+export default function concert() {
   return (
     <Layout headerTitle={title}>
       <Head>

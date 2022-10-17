@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import Grid from '@mui/material/Grid'
@@ -7,8 +7,8 @@ import Carousel from 'react-material-ui-carousel'
 import Layout from 'components/Layout'
 import left from '/public/icons/left.svg'
 import right from '/public/icons/right.svg'
-import { title } from '../config'
-import { posterParadeItems } from '../config/analysis'
+import { title } from 'config'
+import { posterParadeItems } from 'config/analysis'
 import CardMedia from '@mui/material/CardMedia'
 import Card from '@mui/material/Card'
 import Container from '@mui/material/Container'
@@ -19,7 +19,7 @@ export default function PosterParade() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Gallerie der Bildanalysen</title>
+        <title>Poster Parade</title>
       </Head>
       <Container maxWidth={false} component="section">
         <Carousel

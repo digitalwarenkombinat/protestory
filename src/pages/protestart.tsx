@@ -3,13 +3,13 @@ import Grid from '@mui/material/Grid'
 
 import Layout from 'components/Layout'
 import { MediaGallery } from 'components/MediaGallery'
-import { title } from '../config'
+import { title } from 'config'
 
-export default function ProtestArt() {
+export default function protestart() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Protestkunst</title>
+        <title>Protest Art</title>
       </Head>
       <Grid container alignItems="center" justifyContent="center">
         <Grid item>
