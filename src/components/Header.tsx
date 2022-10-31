@@ -9,24 +9,22 @@ import icon from '/public/icon.svg'
 
 interface HeaderProps {
   title: false | string
-  startPage: boolean
 }
 
-export const Header = ({ title, startPage = false }: HeaderProps) => {
+export const Header = ({ title }: HeaderProps) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
         elevation={0}
         sx={{
-          bgcolor: 'transparent',
+          bgcolor: 'primary.main',
         }}
       >
         <Toolbar sx={{ px: [0, 2] }}>
           <Typography
             sx={{
               transform: 'rotate(-10deg)',
-              width: ['6rem', '8rem', '16rem'],
             }}
           >
             <Link color="inherit" href="/">
@@ -34,11 +32,10 @@ export const Header = ({ title, startPage = false }: HeaderProps) => {
             </Link>
           </Typography>
           <Typography
-            variant="h2"
+            variant="h1"
             sx={{
-              color: startPage ? 'secondary.main' : 'primary.main',
+              color: 'secondary.main',
               flexGrow: 1,
-              fontSize: ['4rem', '4rem', '16rem'],
             }}
           >
             {title}

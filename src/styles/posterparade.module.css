@@ -55,6 +55,58 @@
   transform: scale(1) translate(0%);
 }
 
+.antifascism2_0 {
+  transform: scale(1) translate(0%);
+}
+
+.antifascism2_1,
+.antifascism2_2,
+.antifascism2_3,
+.antifascism2_4 {
+  transform: scale(1.1) translate(-0.5%, 33%);
+}
+
+.antifascism2_5,
+.antifascism2_6 {
+  transform: scale(1.5) translate(12.5%, -55%);
+}
+
+.antifascism2_7,
+.antifascism2_8,
+.antifascism2_9 {
+  transform: scale(2.5) translate(24.5%, 10%);
+}
+
+.antifascism2_10,
+.antifascism2_11,
+.antifascism2_12 {
+  transform: scale(2.4) translate(-26.5%, 9%);
+}
+
+.antifascism2_13,
+.antifascism2_14 {
+  transform: scale(1.2) translate(-4.5%, -8%);
+}
+
+.antifascism2_15,
+.antifascism2_16,
+.antifascism2_17 {
+  transform: scale(2.2) translate(21.5%, -20%);
+}
+
+.antifascism2_18,
+.antifascism2_19,
+.antifascism2_20,
+.antifascism2_21 {
+  transform: scale(3.8) translate(-23.5%, -22%);
+}
+
+.antifascism2_22,
+.antifascism2_23,
+.antifascism2_24 {
+  transform: scale(1) translate(0%);
+}
+
 .peace_0 {
   transform: scale(1) translate(0%);
 }
@@ -95,42 +147,42 @@
   transform: scale(1) translate(0%);
 }
 
-.peace_2_0 {
+.peace2_0 {
   transform: scale(1) translate(0%);
 }
 
-.peace_2_1 {
+.peace2_1 {
   transform: scale(1.1) translate(0%, -33%);
 }
 
-.peace_2_2 {
+.peace2_2 {
   transform: scale(3.2) translate(29.8%, 25%);
 }
 
-.peace_2_3 {
+.peace2_3 {
   transform: scale(3.2) translate(-0%, 24%);
 }
 
-.peace_2_4 {
+.peace2_4 {
   transform: scale(3.2) translate(-30%, 24%);
 }
 
-.peace_2_5 {
+.peace2_5 {
   transform: scale(3.2) translate(30%, -7%);
 }
 
-.peace_2_6 {
+.peace2_6 {
   transform: scale(3.2) translate(0%, -7%);
 }
 
-.peace_2_7 {
+.peace2_7 {
   transform: scale(3.2) translate(-30%, -7%);
 }
 
-.peace_2_8 {
+.peace2_8 {
   transform: scale(1.2) translate(0%, 33%);
 }
 
-.peace_2_9 {
+.peace2_9 {
   transform: scale(1) translate(0%);
 }

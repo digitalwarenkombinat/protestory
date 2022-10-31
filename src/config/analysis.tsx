@@ -1,9 +1,9 @@
 export const posterParadeItems = [
   {
-    name: 'Zur Jugend',
+    name: 'Jugend',
     caption:
       'Unter Jugend versteht man die Lebensphase zwischen Kindheit und Erwachsensein. Wegen ihrer Länge wird die Lebensphase Jugend auch oft in Abschnitte untergliedert. Der erste Abschnitt bis zum Alter von 18 Jahren wird als Adoleszenz bezeichnet, wobei bei juristischen Auseinandersetzungen das Jugendrecht zum Tragen kommt.',
-    contentPosition: 'left',
+    contentPosition: 'middle',
     items: [
       {
         image: '/posterParade/youth.webp',
@@ -16,7 +16,7 @@ export const posterParadeItems = [
     ],
   },
   {
-    name: 'Zum Frieden',
+    name: 'Frieden',
     caption:
       'Frieden ist allgemein definiert als ein heilsamer Zustand der Stille oder Ruhe, als die Abwesenheit von Störung oder Beunruhigung und besonders von Krieg. Frieden ist das Ergebnis der Tugend der „Friedfertigkeit“ und damit verbundener Friedensbemühungen.',
     contentPosition: 'middle',
@@ -32,9 +32,9 @@ export const posterParadeItems = [
     ],
   },
   {
-    name: 'Bildanalysen',
-    caption: 'zur Demokratie',
-    contentPosition: 'right',
+    name: 'Demokratie',
+    caption: '',
+    contentPosition: 'middle',
     items: [
       {
         image: '/posterParade/peace3.webp',
@@ -47,9 +47,9 @@ export const posterParadeItems = [
     ],
   },
   {
-    name: 'Bildanalyse',
-    caption: 'zur Solidarität',
-    contentPosition: 'left',
+    name: 'Solidarität',
+    caption: '',
+    contentPosition: 'middle',
     items: [
       {
         image: '/posterParade/solidarity.webp',
@@ -62,24 +62,24 @@ export const posterParadeItems = [
     ],
   },
   {
-    name: 'Bildanalysen zum Thema Antifaschismus',
+    name: 'Faschismus',
     caption: 'Antifaschismus spielte für die Arbeiter:innenjugendbewegung schon seit den frühen 1920er Jahren eine wichtige Rolle.',
     contentPosition: 'middle',
     items: [
       {
-        image: '/posterParade/antifascism.webp',
-        href: 'antifascism',
-      },
-      {
         image: '/posterParade/antifascism2.webp',
         href: 'antifascism2',
+      },
+      {
+        image: '/posterParade/antifascism.webp',
+        href: 'antifascism',
       },
     ],
   },
   {
-    name: 'Bildanalyse',
-    caption: 'zur Umwelt',
-    contentPosition: 'right',
+    name: 'Umwelt',
+    caption: '',
+    contentPosition: 'middle',
     items: [
       {
         image: '/posterParade/youth3.webp',
@@ -92,8 +92,8 @@ export const posterParadeItems = [
     ],
   },
   {
-    name: 'Bildanalyse',
-    caption: 'zum Antirassismus',
+    name: 'Antirassismus',
+    caption: '',
     contentPosition: 'middle',
     items: [
       {

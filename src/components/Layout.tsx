@@ -19,7 +19,7 @@ export default function Layout({ headerTitle, children, startPage = false }) {
         flexFlow: 'row wrap',
       }}
     >
-      <Header title={headerTitle} startPage={startPage} />
+      <Header title={headerTitle} />
       <Grid container component="main">
         {children}
       </Grid>
