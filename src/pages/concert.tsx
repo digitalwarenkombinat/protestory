@@ -10,9 +10,7 @@ export default function concert() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>
-          If I can&apos;t dance to it, it&apos;s not my revolution
-        </title>
+        <title>If I can&apos;t dance to it, it&apos;s not my revolution</title>
       </Head>
       <Container maxWidth={false} component="section">
         <Concert />

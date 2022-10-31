@@ -53,10 +53,7 @@ export const Article = () => {
               {hasHydrated && section.text}
             </Typography>
           </Grid>
-          <Grid
-            item
-            sx={{ minWidth: [null, null, null, '38.2vw'] }}
-          ></Grid>
+          <Grid item sx={{ minWidth: [null, null, null, '38.2vw'] }}></Grid>
         </Grid>
       ))}
     </Container>

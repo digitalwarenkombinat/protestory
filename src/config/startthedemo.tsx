@@ -19,8 +19,7 @@ export const items = [
     id: 'schluessel',
     name: 'Transporterschlüssel',
     source: 'startthedemo/schluessel.svg',
-    description:
-      'Ein Freund hat einen Transporter mit offener Ladefläche organisiert. Da du den Autoschlüssel gefunden hast, kann es nun auch losgehen.',
+    description: 'Ein Freund hat einen Transporter mit offener Ladefläche organisiert. Da du den Autoschlüssel gefunden hast, kann es nun auch losgehen.',
   },
   {
     active: false,
@@ -169,8 +168,7 @@ export const items = [
   {
     active: false,
     link: 'protestart',
-    linkText:
-      'Ein Blick in die Sammlung des Archivs der Arbeiterjugendbewegung',
+    linkText: 'Ein Blick in die Sammlung des Archivs der Arbeiterjugendbewegung',
     id: 'transparente',
     name: 'Protestkunst',
     source: 'startthedemo/transparente.svg',

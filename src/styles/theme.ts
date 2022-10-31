@@ -1,7 +1,4 @@
-import {
-  createTheme,
-  responsiveFontSizes,
-} from '@mui/material/styles'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 
 const primaryColor = '#f50057'
 const secondaryColor = '#311b92'
@@ -54,7 +51,7 @@ let theme = createTheme({
           fontStyle: 'normal';
           fontDisplay: 'swap';
           fontWeight: 400;
-          src: local('Fabrik'), url(./fonts/Fabrik.otf) format('opentype');
+          src: local('Fabrik'), url(./fonts/Fabrik.ttf) format('truetype');
         },
       `,
     },

@@ -41,14 +41,7 @@ const LeftTriangle = () => {
           },
         }}
       >
-        <Grid
-          container
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          pt={8}
-          pl={8}
-          height="50vh"
-        >
+        <Grid container justifyContent="flex-start" alignItems="flex-start" pt={8} pl={8} height="50vh">
           <Grid item>
             <IconButton
               size="large"
@@ -128,14 +121,7 @@ const RightTriangle = () => {
           },
         }}
       >
-        <Grid
-          container
-          justifyContent="center"
-          pr={4}
-          pt="50vh"
-          pl="50vw"
-          textAlign="right"
-        >
+        <Grid container justifyContent="center" pr={4} pt="50vh" pl="50vw" textAlign="right">
           <Grid item>
             <IconButton
               size="large"

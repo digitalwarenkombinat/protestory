@@ -63,8 +63,7 @@ export const posterParadeItems = [
   },
   {
     name: 'Bildanalysen zum Thema Antifaschismus',
-    caption:
-      'Antifaschismus spielte für die Arbeiter:innenjugendbewegung schon seit den frühen 1920er Jahren eine wichtige Rolle.',
+    caption: 'Antifaschismus spielte für die Arbeiter:innenjugendbewegung schon seit den frühen 1920er Jahren eine wichtige Rolle.',
     contentPosition: 'middle',
     items: [
       {
@@ -187,17 +186,7 @@ export const posterParadeTexts = {
   },
   peace: {
     header: 'Bildanalyse Frieden',
-    texts: [
-      'Text 1',
-      'Text 2',
-      'Text 3',
-      'Text 4',
-      'Text 5',
-      'Text 6',
-      'Text 7',
-      'Text 8',
-      'Text 9',
-    ],
+    texts: ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5', 'Text 6', 'Text 7', 'Text 8', 'Text 9'],
   },
   peace2: {
     header: 'Bildanalyse 6 vor 12',

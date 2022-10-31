@@ -64,11 +64,7 @@ export default function BasicMenu() {
           }}
           onClick={() => useStore.getState().changeLanguage()}
         >
-          <Typography
-            component="h3"
-            variant="h4"
-            color="text.secondary"
-          >
+          <Typography component="h3" variant="h4" color="text.secondary">
             {hasHydrated && language === 'de' ? 'EN' : 'DE'}
           </Typography>
         </Button>
@@ -83,11 +79,7 @@ export default function BasicMenu() {
             />
             <Link href={item.href} passHref>
               <MenuItem onClick={handleClose}>
-                <Typography
-                  component="h3"
-                  variant="h4"
-                  color="text.secondary"
-                >
+                <Typography component="h3" variant="h4" color="text.secondary">
                   {hasHydrated && item.title}
                 </Typography>
               </MenuItem>

@@ -44,8 +44,7 @@ export const banner = {
     rightTitle: 'Protestkunst',
     rightDescription1: 'Aus Parolen wurden Sticker,',
     rightDescription2: 'aus Stickern wird Merchandise.',
-    rightDescription3:
-      'Welche künstlerischen Formen gingen aus Protesten hervor?',
+    rightDescription3: 'Welche künstlerischen Formen gingen aus Protesten hervor?',
   },
   en: {
     leftTitle: 'Art of Protest',
@@ -55,8 +54,7 @@ export const banner = {
     rightTitle: 'Protest art',
     rightDescription1: 'EN  Aus Parolen wurden Sticker,',
     rightDescription2: 'EN aus Stickern wird Merchandise.',
-    rightDescription3:
-      'EN Welche künstlerischen Formen gingen aus Protesten hervor?',
+    rightDescription3: 'EN Welche künstlerischen Formen gingen aus Protesten hervor?',
   },
 }
 
@@ -78,21 +76,15 @@ export const startTheDemo = {
 export const sloganGenerator = {
   de: {
     slogan: 'Drücke den roten Hebel!',
-    description1:
-      'Keine Demo kommt ohne gute Parolen und Sprechchöre aus.',
-    description2:
-      'Hier kannst du dir Inspiration holen und zu verschiedenen Protestthemen Demoslogans und Parolen finden.',
-    description3:
-      'Drücke einfach auf den roten runden Hebel und sei gespannt, welche Parole es dir auswirft.',
+    description1: 'Keine Demo kommt ohne gute Parolen und Sprechchöre aus.',
+    description2: 'Hier kannst du dir Inspiration holen und zu verschiedenen Protestthemen Demoslogans und Parolen finden.',
+    description3: 'Drücke einfach auf den roten runden Hebel und sei gespannt, welche Parole es dir auswirft.',
   },
   en: {
     slogan: 'EN Drücke den roten Hebel!',
-    description1:
-      'EN Keine Demo kommt ohne gute Parolen und Sprechchöre aus.',
-    description2:
-      'EN Hier kannst du dir Inspiration holen und zu verschiedenen Protestthemen Demoslogans und Parolen finden.',
-    description3:
-      'EN Drücke einfach auf den roten runden Hebel und sei gespannt, welche Parole es dir auswirft.',
+    description1: 'EN Keine Demo kommt ohne gute Parolen und Sprechchöre aus.',
+    description2: 'EN Hier kannst du dir Inspiration holen und zu verschiedenen Protestthemen Demoslogans und Parolen finden.',
+    description3: 'EN Drücke einfach auf den roten runden Hebel und sei gespannt, welche Parole es dir auswirft.',
   },
 }
 

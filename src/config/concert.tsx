@@ -2,15 +2,8 @@ export const concert = {
   timeline: [
     {
       index: 0,
-      decade: 1900,
-      title: 'Dem Morgenrot entgegen',
-      author: 'Arbeiterjugendbewegung',
-    },
-    {
-      index: 1,
       decade: 1910,
-      title: 'Der Graben',
-      author: 'Militarismus',
+      title: 'Dem Morgenrot entgegen',
     },
     {
       index: 2,

@@ -43,11 +43,7 @@ export const Help = () => {
   }
   return (
     <>
-      <Fab
-        color="primary"
-        aria-label="help"
-        onClick={handleClickOpen}
-      >
+      <Fab color="primary" aria-label="help" onClick={handleClickOpen}>
         {open && <CancelRoundedIcon />}
         {!open && <HelpIcon />}
       </Fab>

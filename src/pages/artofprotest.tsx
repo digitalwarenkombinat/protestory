@@ -11,11 +11,7 @@ export default function artofprotest() {
       <Head>
         <title>Get the Protest started!</title>
       </Head>
-      <Container
-        sx={{ backgroundColor: 'secondary.main' }}
-        maxWidth={false}
-        component="section"
-      >
+      <Container sx={{ backgroundColor: 'secondary.main' }} maxWidth={false} component="section">
         <StartTheDemo />
       </Container>
     </Layout>

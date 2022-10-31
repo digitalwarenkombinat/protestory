@@ -39,36 +39,15 @@ const StartTheDemo = () => {
   }
 
   return (
-    <Grid
-      container
-      alignItems="center"
-      textAlign="center"
-      flexWrap="wrap"
-      justifyContent="center"
-      maxWidth="lg"
-      mx="auto"
-    >
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto">
       <Grid item sx={{ mt: 4 }}>
-        <Typography
-          sx={{ mb: 4 }}
-          variant="h2"
-          color="text.secondary"
-        >
+        <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
           Get the Protest started!
         </Typography>
-        <Typography
-          component="h3"
-          variant="h4"
-          color="text.secondary"
-        >
+        <Typography component="h3" variant="h4" color="text.secondary">
           {hasHydrated && startTheDemo[language].description}
         </Typography>
-        <Typography
-          sx={{ my: 2 }}
-          component="h3"
-          variant="h4"
-          color="text.secondary"
-        >
+        <Typography sx={{ my: 2 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && startTheDemo[language].subDescription}
         </Typography>
       </Grid>
@@ -90,13 +69,7 @@ const StartTheDemo = () => {
                 cursor: 'pointer',
               }}
             >
-              <Image
-                src={left}
-                alt={'Show previous image'}
-                width={60}
-                height={60}
-                onClick={() => updateViewBox(imagePart - 1)}
-              />
+              <Image src={left} alt={'Show previous image'} width={60} height={60} onClick={() => updateViewBox(imagePart - 1)} />
             </Grid>
           )}
           <Grid item xs={splitSVG ? 10 : 12}>
@@ -112,13 +85,7 @@ const StartTheDemo = () => {
                 cursor: 'pointer',
               }}
             >
-              <Image
-                src={right}
-                alt={'Show next image'}
-                width={60}
-                height={60}
-                onClick={() => updateViewBox(imagePart + 1)}
-              />
+              <Image src={right} alt={'Show next image'} width={60} height={60} onClick={() => updateViewBox(imagePart + 1)} />
             </Grid>
           )}
         </Grid>
@@ -138,23 +105,14 @@ const StartTheDemo = () => {
                   src={item.source}
                   sx={{
                     backgroundColor: 'text.secondary',
-                    display:
-                      hasHydrated && item.active ? 'block' : 'none',
+                    display: hasHydrated && item.active ? 'block' : 'none',
                   }}
                 />
                 <Box sx={{ textAlign: 'left' }}>
-                  <Typography
-                    component="h4"
-                    variant="h2"
-                    color="text.secondary"
-                  >
+                  <Typography component="h4" variant="h2" color="text.secondary">
                     {hasHydrated && item.active ? item.name : ''}
                   </Typography>
-                  <Typography
-                    component="p"
-                    variant="h6"
-                    color="text.secondary"
-                  >
+                  <Typography component="p" variant="h6" color="text.secondary">
                     {hasHydrated && item.active && item.linkText}
                   </Typography>
                 </Box>

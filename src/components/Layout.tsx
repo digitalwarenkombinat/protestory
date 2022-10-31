@@ -4,11 +4,7 @@ import Grid from '@mui/material/Grid'
 import { Header } from './Header'
 import { Help } from './Help'
 
-export default function Layout({
-  headerTitle,
-  children,
-  startPage = false,
-}) {
+export default function Layout({ headerTitle, children, startPage = false }) {
   return (
     <Container
       disableGutters

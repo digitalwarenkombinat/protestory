@@ -13,23 +13,15 @@ interface MyAppProps extends AppProps {
 }
 
 export default function MyApp(props: MyAppProps) {
-  const {
-    Component,
-    emotionCache = clientSideEmotionCache,
-    pageProps,
-  } = props
+  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
   return (
     <CacheProvider value={emotionCache}>
       <Head>
         <title>PROTESTORY!</title>
-        <meta
-          name="viewport"
-          content="initial-scale=1, width=device-width"
-        />
-        <meta
-          name="description"
-          content="PROTESTORY! - jugendkulturellen Protest digital erleben und historisches Wissen nutzen"
-        />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta name="description" content="PROTESTORY! - jugendkulturellen Protest digital erleben und historisches Wissen nutzen" />
+        <link rel="preload" href="/fonts/HeyAugust.otf" as="font" crossOrigin="" />
+        <link rel="preload" href="./fonts/Fabrik.ttf" as="font" crossOrigin="" />
         <link rel="icon" href="./favicon.ico" sizes="any" />
         <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="./apple-touch-icon.png" />

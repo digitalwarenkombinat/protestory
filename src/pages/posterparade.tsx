@@ -39,29 +39,11 @@ export default function PosterParade() {
               padding: '5px',
             },
           }}
-          NextIcon={
-            <Image
-              src={right}
-              alt={'Show next image'}
-              width={120}
-              height={120}
-            />
-          }
-          PrevIcon={
-            <Image
-              src={left}
-              alt={'Show previous image'}
-              width={120}
-              height={120}
-            />
-          }
+          NextIcon={<Image src={right} alt={'Show next image'} width={120} height={120} />}
+          PrevIcon={<Image src={left} alt={'Show previous image'} width={120} height={120} />}
         >
           {posterParadeItems.map((item, index) => (
-            <Banner
-              item={item}
-              key={index}
-              contentPosition={item.contentPosition}
-            />
+            <Banner item={item} key={index} contentPosition={item.contentPosition} />
           ))}
         </Carousel>
       </Container>
@@ -79,22 +61,10 @@ const Banner = ({ item, contentPosition = 'left' }) => {
           position: 'relative',
         }}
       >
-        <Typography
-          component="h3"
-          variant="h2"
-          align="center"
-          color="text.secondary"
-          gutterBottom
-        >
+        <Typography component="h3" variant="h2" align="center" color="text.secondary" gutterBottom>
           {item.name}
         </Typography>
-        <Typography
-          component="h4"
-          variant="h5"
-          align="center"
-          color="text.secondary"
-          gutterBottom
-        >
+        <Typography component="h4" variant="h5" align="center" color="text.secondary" gutterBottom>
           {item.caption}
         </Typography>
       </CardContent>
@@ -106,10 +76,7 @@ const Banner = ({ item, contentPosition = 'left' }) => {
 
     const media = (
       <Grid item xs={4} key={mediaItem.href} sx={{ p: 2 }}>
-        <Link
-          href={`/posterparade/${encodeURIComponent(mediaItem.href)}`}
-          passHref
-        >
+        <Link href={`/posterparade/${encodeURIComponent(mediaItem.href)}`} passHref>
           <CardMedia
             sx={{
               p: 4,

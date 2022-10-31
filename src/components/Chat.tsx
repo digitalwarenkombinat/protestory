@@ -26,14 +26,7 @@ interface ChatProps {
   list: MessageProps[]
 }
 
-const ChatImage = ({ image = '', alt = '', isPortrait = true }) => (
-  <Image
-    src={image}
-    alt={alt}
-    width={isPortrait ? 225 : 400}
-    height={isPortrait ? 400 : 257.5}
-  />
-)
+const ChatImage = ({ image = '', alt = '', isPortrait = true }) => <Image src={image} alt={alt} width={isPortrait ? 225 : 400} height={isPortrait ? 400 : 257.5} />
 
 export const Chat = ({ title, relation, list }: ChatProps) => {
   const [messageList, setMessageList] = useState([] as MessageProps[])
@@ -81,11 +74,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
   let timer = setTimeout(() => showNextMessage(), 3000)
   useEffect(() => {
     if (!list[messageIndex]) return clearTimeout(timer)
-    if (
-      messageIndex > 0 &&
-      list[messageIndex].from === ChatSpeaker.QUESTION
-    )
-      return clearTimeout(timer)
+    if (messageIndex > 0 && list[messageIndex].from === ChatSpeaker.QUESTION) return clearTimeout(timer)
   }, [list, timer])
 
   return (
@@ -98,11 +87,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
           backgroundColor: 'secondary.main',
         }}
       >
-        <Avatar
-          sx={{ height: '6rem', width: '6rem', mr: '1rem' }}
-          alt="Avatar Chat"
-          src="avatar-chat.png"
-        />
+        <Avatar sx={{ height: '6rem', width: '6rem', mr: '1rem' }} alt="Avatar Chat" src="avatar-chat.png" />
         <Typography variant="h2" color="text.secondary">
           {title}
         </Typography>
@@ -124,14 +109,8 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
               p: 2,
               borderRadius: 1,
               width: '66%',
-              alignSelf:
-                message.from === ChatSpeaker.QUESTION
-                  ? 'flex-end'
-                  : 'flex-start',
-              backgroundColor:
-                message.from === ChatSpeaker.QUESTION
-                  ? 'secondary.dark'
-                  : 'secondary.light',
+              alignSelf: message.from === ChatSpeaker.QUESTION ? 'flex-end' : 'flex-start',
+              backgroundColor: message.from === ChatSpeaker.QUESTION ? 'secondary.dark' : 'secondary.light',
             }}
           >
             {message.text}

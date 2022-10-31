@@ -10,10 +10,7 @@ export const useIntersection = (ref, selector, handler, options) => {
       }
 
       ref.current.querySelectorAll(selector).forEach((node, idx) => {
-        const observer = new IntersectionObserver(
-          handleIntersect(idx),
-          options
-        )
+        const observer = new IntersectionObserver(handleIntersect(idx), options)
         observer.observe(node)
         observers.push(observer)
       })

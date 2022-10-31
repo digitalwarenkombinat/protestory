@@ -30,13 +30,7 @@ export const Header = ({ title, startPage = false }: HeaderProps) => {
             }}
           >
             <Link color="inherit" href="/">
-              <Image
-                priority
-                src={icon}
-                alt={'Logo PROTESTORY!'}
-                width={300}
-                height={300}
-              />
+              <Image priority src={icon} alt={'Logo PROTESTORY!'} width={300} height={300} />
             </Link>
           </Typography>
           <Typography

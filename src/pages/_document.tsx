@@ -8,10 +8,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="de">
         <Head>
-          <meta
-            name="theme-color"
-            content={theme.palette.primary.main}
-          />
+          <meta name="theme-color" content={theme.palette.primary.main} />
           {(this.props as any).emotionStyleTags}
         </Head>
         <body>

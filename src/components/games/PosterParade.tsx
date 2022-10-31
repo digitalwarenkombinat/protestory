@@ -14,13 +14,7 @@ interface PosterParadeProps {
   styles: any
 }
 
-function PosterParade({
-  id,
-  image,
-  header,
-  texts,
-  styles,
-}: PosterParadeProps) {
+function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
   const ScrollContainerRef = useRef(null)
   const [activeTransform, setActiveTransform] = useState(0)
   const handler = useMemo(
@@ -137,33 +131,16 @@ function PosterParade({
       `}</style>
       <Box className="imageWrapper">
         <Box className="imageContainer">
-          <Image
-            className={className}
-            src={image}
-            sizes="100vw"
-            fill
-            alt="Poster Parade"
-          />
+          <Image className={className} src={image} sizes="100vw" fill alt="Poster Parade" />
         </Box>
 
         <Box className="textContainer" ref={ScrollContainerRef}>
           <Box className="caption-wrapper cover">
             <Box className="appHeader">
-              <Typography
-                component="p"
-                variant="body1"
-                color="text.primary"
-                className="close-read-kicker"
-              >
+              <Typography component="p" variant="body1" color="text.primary" className="close-read-kicker">
                 Analyse
               </Typography>
-              <Typography
-                component="h2"
-                variant="h2"
-                color="text.primary"
-                gutterBottom
-                className="appHeading"
-              >
+              <Typography component="h2" variant="h2" color="text.primary" gutterBottom className="appHeading">
                 {header}
               </Typography>
             </Box>
@@ -172,13 +149,7 @@ function PosterParade({
 
           {texts.map((text, index) => (
             <Box key={index} className="caption-wrapper">
-              <Typography
-                component="p"
-                variant="body1"
-                color="text.primary"
-                sx={{ bgcolor: 'background.default' }}
-                className="appText"
-              >
+              <Typography component="p" variant="body1" color="text.primary" sx={{ bgcolor: 'background.default' }} className="appText">
                 {text}
               </Typography>
             </Box>

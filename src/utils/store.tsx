@@ -1,6 +1,7 @@
 import create from 'zustand'
 import { persist } from 'zustand/middleware'
 import { items } from 'config/startthedemo'
+import { CookieDialogCategory } from './CookieDialog'
 
 interface Item {
   active: boolean
@@ -15,6 +16,7 @@ interface Item {
 
 type Store = {
   language: string
+  acceptedCategories: CookieDialogCategory[]
   items: Item[]
   getLinkedItems: () => Item[]
   getCorrectItems: () => Item[]
@@ -22,6 +24,10 @@ type Store = {
   // eslint-disable-next-line no-unused-vars
   activateItem: (itemId: string) => void
   changeLanguage: () => void
+  changeAcceptedCategories: (
+    // eslint-disable-next-line no-unused-vars
+    categories: CookieDialogCategory[]
+  ) => void
 }
 
 const useStore = create<Store>()(
@@ -29,15 +35,13 @@ const useStore = create<Store>()(
     (set, get) => ({
       language: 'de',
 
+      acceptedCategories: [],
+
       items: items,
 
-      getLinkedItems: () =>
-        get().items.filter((linkItems) => linkItems.link !== ''),
+      getLinkedItems: () => get().items.filter((linkItems) => linkItems.link !== ''),
 
-      getCorrectItems: () =>
-        get().items.filter(
-          (correctItems) => correctItems.leave !== true
-        ),
+      getCorrectItems: () => get().items.filter((correctItems) => correctItems.leave !== true),
 
       allCorrectItemsActivated: () =>
         get()
@@ -46,16 +50,17 @@ const useStore = create<Store>()(
 
       activateItem: (itemId) =>
         set((state) => ({
-          items: state.items.map((item) =>
-            item.id === itemId
-              ? { ...item, active: !item.leave || true }
-              : item
-          ),
+          items: state.items.map((item) => (item.id === itemId ? { ...item, active: !item.leave || true } : item)),
         })),
 
       changeLanguage: () =>
         set((state) => ({
           language: state.language === 'de' ? 'en' : 'de',
+        })),
+
+      changeAcceptedCategories: (categories) =>
+        set(() => ({
+          acceptedCategories: categories,
         })),
     }),
 
