@@ -27,7 +27,7 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Fabrik, Arial',
+    fontFamily: 'Fabrik',
     h1: {
       fontFamily: 'Hey August',
       fontSize: '10rem',
@@ -37,24 +37,6 @@ let theme = createTheme({
     },
   },
   components: {
-    MuiCssBaseline: {
-      styleOverrides: `
-        @font-face {
-          fontFamily: 'Hey August';
-          fontStyle: 'normal';
-          fontDisplay: 'swap';
-          fontWeight: 400;
-          src: local('Hey August'), url(./fonts/HeyAugust.otf) format('opentype');
-        },
-        @font-face {
-          fontFamily: 'Fabrik';
-          fontStyle: 'normal';
-          fontDisplay: 'swap';
-          fontWeight: 400;
-          src: local('Fabrik'), url(./fonts/Fabrik.ttf) format('truetype');
-        },
-      `,
-    },
     MuiAvatar: {
       styleOverrides: {
         root: {
