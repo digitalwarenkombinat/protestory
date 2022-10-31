@@ -3,12 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@next/next/recommended',
-    'plugin:react/recommended',
-    'prettier',
-  ],
+  extends: ['eslint:recommended', 'plugin:@next/next/recommended', 'plugin:react/recommended', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -25,10 +20,10 @@ module.exports = {
       {
         singleQuote: true,
         semi: false,
-        printWidth: 70,
+        printWidth: 180,
       },
     ],
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
   },
   settings: {
     react: {
