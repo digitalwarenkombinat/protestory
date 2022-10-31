@@ -7,7 +7,6 @@ import { Article } from 'components/Article'
 import { Banner } from 'components/Banner'
 
 import { title } from 'config'
-import { Footer } from 'components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +17,6 @@ const Home: NextPage = () => {
       <Hero title={title} />
       <Banner />
       <Article />
-      <Footer />
     </Layout>
   )
 }

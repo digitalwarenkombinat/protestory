@@ -1,6 +1,7 @@
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 
+import { Footer } from 'components/Footer'
 import { Header } from './Header'
 import { Help } from './Help'
 
@@ -23,6 +24,7 @@ export default function Layout({ headerTitle, children, startPage = false }) {
         {children}
       </Grid>
       <Help />
+      <Footer />
     </Container>
   )
 }
