@@ -10,7 +10,7 @@ export default function tweetwall() {
       <Head>
         <title>Tweetwall</title>
       </Head>
-      <Container maxWidth="xl" component="section">
+      <Container sx={{ backgroundColor: 'secondary.main' }} maxWidth={false} component="section">
         <TweetWall />
       </Container>
     </Layout>

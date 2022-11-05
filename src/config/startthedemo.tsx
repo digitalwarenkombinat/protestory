@@ -177,10 +177,10 @@ export const items = [
   },
   {
     active: false,
-    link: 'tweetwall',
+    link: 'socialmediawall',
     linkText: 'PROTESTORY! im Netz',
     id: 'laptop',
-    name: 'Tweetwall',
+    name: 'Social Media Wall',
     source: 'startthedemo/laptop.svg',
     description:
       'Je jünger eure Zielgruppe für die Demo, desto wichtiger ist Social Media – das ist klar. Wenn ihr sehr früh mit der Demoplanung angefangen habt, ist es gut, bereits einige Wochen vorher den Termin bekannt zu machen, denn die wenigsten entscheiden sich spontan an einer Demo teilzunehmen.',

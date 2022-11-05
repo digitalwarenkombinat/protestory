@@ -2,61 +2,69 @@ export const menu = {
   de: [
     {
       title: 'Kunst des Protestes',
-      href: 'artofprotest',
+      href: '/artofprotest',
     },
     {
       title: 'Protestkunst',
-      href: 'protestart',
+      href: '/protestart',
     },
     {
-      title: 'Tweetwall',
-      href: 'tweetwall',
+      title: 'Social Media Wall',
+      href: '/socialmediawall',
     },
     {
       title: 'Posterparade',
-      href: 'posterparade',
+      href: '/posterparade',
     },
     {
       title: 'If I can`t dance to it, it`s not my revolution',
-      href: 'concert',
+      href: '/concert',
     },
     {
       title: 'Slogan-Generator',
-      href: 'slogangenerator',
+      href: '/slogangenerator',
     },
     {
       title: 'Revolutionstelefon',
-      href: 'revolutiontelephone',
+      href: '/revolutiontelephone',
+    },
+    {
+      title: 'Impressum',
+      href: '/legal',
     },
   ],
   en: [
     {
       title: 'Art of Protest',
-      href: 'artofprotest',
+      href: '/artofprotest',
     },
     {
       title: 'Protest art',
-      href: 'protestart',
+      href: '/protestart',
     },
     {
-      title: 'Tweetwall',
-      href: 'tweetwall',
+      title: 'Social Media Wall',
+      href: '/socialmediawall',
     },
     {
       title: 'Posterparade',
-      href: 'posterparade',
+      href: '/posterparade',
     },
     {
       title: 'If I can`t dance to it, it`s not my revolution',
-      href: 'concert',
+      href: '/concert',
     },
     {
       title: 'Slogan-Generator',
-      href: 'slogangenerator',
+      href: '/slogangenerator',
     },
     {
       title: 'Revolutionstelefon',
-      href: 'revolutiontelephone',
+      href: '/revolutiontelephone',
+    },
+    {
+      title: 'Legal Notice',
+      href: '/legal',
     },
   ],
 }

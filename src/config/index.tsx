@@ -104,6 +104,17 @@ export const revolutionstelephone = {
   },
 }
 
+export const tweetwall = {
+  de: {
+    description1: 'Auf dieser Seite sammeln wir Social Media Beiträge mit Bezug zum Projekt PROTESTORY!',
+    description2: 'Verwende den Hashtag #protestory und finde deinen Post hier.',
+  },
+  en: {
+    description1: 'EN Auf dieser Seite sammeln wir Social Media Beiträge mit Bezug zum Projekt PROTESTORY!',
+    description2: 'EN Verwende den Hashtag #protestory und finde deinen Post hier.',
+  },
+}
+
 export const posterParade = {
   de: {
     description1: 'In vielen Jahrzehnten linker jugendlicher Protestkultur sind vielfältige Plakate entstanden, die im Archiv der Arbeiterjugendbewegung gesammelt wurden.',
@@ -116,6 +127,35 @@ export const posterParade = {
     description2:
       'EN Einige davon kannst du dir hier näher anschauen, Details über ihren protestgeschichtlichen Kontext erfahren sowie Metaphern und Symbole erkunden, die auf den Postern genutzt werden.',
     description3: 'EN Klick einfach auf ein Poster, um mehr dazu zu erfahren.',
+  },
+}
+
+export const legalNotice = {
+  de: {
+    title: 'Über das Projekt',
+    description1:
+      'PROTESTORY! bietet als Webanwendung eine spielerische Auseinandersetzung mit Protestkulturen der Arbeiter:innenjugend seit dem frühen 20. Jahrhundert bis heute. Das Ziel ist es, Gestaltungspotentiale jugendkulturellen Protests digital erlebbar und historisches Wissen für heutige Herausforderungen nutzbar zu machen. Die „Kunst des Protestes“, d. h. die Herausforderungen bei der Organisation von Protesten und Demonstrationen, steht genauso wie die im Kontext von Protesten entstandene „Protestkunst“ thematisch im Mittelpunkt.',
+    description2:
+      'PROTESTORY! zeigt die Vielfältigkeit von Materialien, die in den vergangenen Jahrzehnten im Kontext von Jugendprotesten entstanden sind und auch heute noch unseren Eindruck dieser Proteste prägen. Im Rahmen verschiedener ästhetisch-erzählerischer Mini-Anwendungen können Nutzer:innen die spannende Welt vergangener jugendlicher Protestkulturen entdecken. Die historischen Materialien, allesamt aus den Beständen des Archivs der Arbeiterjugendbewegung, dienen dabei dem Wissenserwerb und zugleich der Inspiration. Zudem soll es die Nutzer:innen ermuntern, Archive als Ort der Geschichtsschreibung und der gezielten Sammlung aktueller Jugendproteste wahrzunehmen.',
+    description3:
+      'PROTESTORY! ist ein Projekt des Archiv der Arbeiterjugendbewegung und wurde gemeinsam mit dem Digitalwarenkombinat umgesetzt. Das Projekt PROTESTORY! wurde entwickelt im Rahmen von „dive in. Programm für digitale Interaktionen“ der Kulturstiftung des Bundes, gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien (BKM) im Programm NEUSTART KULTUR.',
+    description4:
+      'Die Digitalisate entstammen allesamt der Sammlung des Archiv der Arbeiterjugendbewegung. Noch ein Abschnitt zu Lizenzen und Nutzungsrechten. Der Quellcode läuft unter einer MIT license. ',
+    description5: 'PROTESTORY! ist ein Angebot des Archiv der Arbeiterjugendbewegung',
+    description6: 'PROTESTORY! ist eine Produktion des Digitalwarenkombinat',
+  },
+  en: {
+    title: 'EN Über das Projekt',
+    description1:
+      'EN PROTESTORY! bietet als Webanwendung eine spielerische Auseinandersetzung mit Protestkulturen der Arbeiter:innenjugend seit dem frühen 20. Jahrhundert bis heute. Das Ziel ist es, Gestaltungspotentiale jugendkulturellen Protests digital erlebbar und historisches Wissen für heutige Herausforderungen nutzbar zu machen. Die „Kunst des Protestes“, d. h. die Herausforderungen bei der Organisation von Protesten und Demonstrationen, steht genauso wie die im Kontext von Protesten entstandene „Protestkunst“ thematisch im Mittelpunkt.',
+    description2:
+      'EN PROTESTORY! zeigt die Vielfältigkeit von Materialien, die in den vergangenen Jahrzehnten im Kontext von Jugendprotesten entstanden sind und auch heute noch unseren Eindruck dieser Proteste prägen. Im Rahmen verschiedener ästhetisch-erzählerischer Mini-Anwendungen können Nutzer:innen die spannende Welt vergangener jugendlicher Protestkulturen entdecken. Die historischen Materialien, allesamt aus den Beständen des Archivs der Arbeiterjugendbewegung, dienen dabei dem Wissenserwerb und zugleich der Inspiration. Zudem soll es die Nutzer:innen ermuntern, Archive als Ort der Geschichtsschreibung und der gezielten Sammlung aktueller Jugendproteste wahrzunehmen.',
+    description3:
+      'EN PROTESTORY! ist ein Projekt des Archiv der Arbeiterjugendbewegung und wurde gemeinsam mit dem Digitalwarenkombinat umgesetzt. Das Projekt PROTESTORY! wurde entwickelt im Rahmen von „dive in. Programm für digitale Interaktionen“ der Kulturstiftung des Bundes, gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien (BKM) im Programm NEUSTART KULTUR.',
+    description4:
+      'EN Die Digitalisate entstammen allesamt der Sammlung des Archiv der Arbeiterjugendbewegung. Noch ein Abschnitt zu Lizenzen und Nutzungsrechten. Der Quellcode läuft unter einer MIT license. ',
+    description5: 'EN PROTESTORY! ist ein Angebot des Archiv der Arbeiterjugendbewegung',
+    description6: 'EN PROTESTORY! ist eine Produktion des Digitalwarenkombinat',
   },
 }
 
