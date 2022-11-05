@@ -7,12 +7,12 @@ import Typography from '@mui/material/Typography'
 
 import ArchivIcon from '/public/footer/archiv.png'
 import DigitalwarenkombinatIcon from '/public/copyright.svg'
-import KulturstiftungIcon from '/public/footer/kulturstiftung.svg'
+import KSBIcon from '/public/footer/ksb.png'
 
 function Copyright(props: any) {
   return (
     <Typography variant="body2" color="text.primary" align="center" {...props}>
-      {'Copyright © Gerd Müller'}{' '}
+      {'Copyright © '}
       <Link color="inherit" href="https://digitalwarenkombinat.de/">
         Digitalwarenkombinat
       </Link>{' '}
@@ -39,15 +39,15 @@ export const Footer = () => (
       </Grid>
       <Grid item minWidth="220px">
         <Link color="inherit" href="https://digitalwarenkombinat.de/">
-          <Image src={DigitalwarenkombinatIcon} alt={'Digitalwarenkombinat'} width={96} height={96} />
+          <Image src={DigitalwarenkombinatIcon} alt={'Digitalwarenkombinat'} width={138} height={138} />
           <Typography component="h3" variant="h6" color="text.primary">
             Digitalwarenkombinat
           </Typography>
         </Link>
       </Grid>
-      <Grid item minWidth="220px">
-        <Link color="inherit" href="https://www.kulturstiftung-des-bundes.de">
-          <Image src={KulturstiftungIcon} alt={'Kulturstiftung des Bundes'} width={160} height={160} />
+      <Grid item xs={12} mt={2}>
+        <Link color="inherit" href="https://www.kulturstiftung-des-bundes.de/dive-in">
+          <Image src={KSBIcon} alt={'Kulturstiftung des Bundes'} height={138} />
         </Link>
       </Grid>
       <Grid item xs={12} mt={2}>
