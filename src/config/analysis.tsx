@@ -1,13 +1,13 @@
 export const posterParadeItems = [
   {
-    name: 'Jugend',
+    name: 'Arbeit & Bildung',
     caption:
-      'Unter Jugend versteht man die Lebensphase zwischen Kindheit und Erwachsensein. Wegen ihrer Länge wird die Lebensphase Jugend auch oft in Abschnitte untergliedert. Der erste Abschnitt bis zum Alter von 18 Jahren wird als Adoleszenz bezeichnet, wobei bei juristischen Auseinandersetzungen das Jugendrecht zum Tragen kommt.',
+      'Da für die Arbeiter:innen das Versprechen des Aufstiegs durch Bildung sowie gute Arbeitsbedingungen wichtige und identitätsprägende Themen waren, fanden sich diese auf viele Demoplakaten. BAFöG-Reform, die Aufhebung des Numerus Clausus, aber auch Lohnerhöhungen, gerechte Behandlung von Lehrlingen und gleichberechtigte Arbeitsbedingungen für Frauen gehörten dabei immer wieder zu den Forderungen.',
     contentPosition: 'middle',
     items: [
       {
-        image: '/posterParade/youth.webp',
-        href: 'youth',
+        image: '/posterParade/youth3.webp',
+        href: 'youth3',
       },
       {
         image: '/posterParade/youth2.webp',
@@ -18,7 +18,7 @@ export const posterParadeItems = [
   {
     name: 'Frieden',
     caption:
-      'Frieden ist allgemein definiert als ein heilsamer Zustand der Stille oder Ruhe, als die Abwesenheit von Störung oder Beunruhigung und besonders von Krieg. Frieden ist das Ergebnis der Tugend der „Friedfertigkeit“ und damit verbundener Friedensbemühungen.',
+      'Der Frieden nach dem Zweiten Weltkrieg fühlte sich durch die Teilung der Welt in politische Blöcke und den darauffolgenden Kalten Krieg fragil an. Linke Kritik fokussierte sich seit den 1950er Jahren insbesondere auf die Wiederbewaffnung in der BRD und später auf die NATO und die Stationierung von (Atom-)Waffen in Westeuropa. Einer der grundlegenden Gedanken dabei war, dass von Deutschland nie wieder Waffengewalt ausgehen sollte. In diesem Kontext ist u.a. das Plakat aus den 1950er Jahren zu sehen, dass gewaltsame Räumungen im Grenzstreifen zwischen DDR und BRD thematisiert.',
     contentPosition: 'middle',
     items: [
       {
@@ -26,19 +26,20 @@ export const posterParadeItems = [
         href: 'peace',
       },
       {
-        image: '/posterParade/peace2.webp',
-        href: 'peace2',
+        image: '/posterParade/peace3.webp',
+        href: 'peace3',
       },
     ],
   },
   {
-    name: 'Demokratie',
-    caption: '',
+    name: 'Partizipation',
+    caption:
+      'Partizipation ist ein sehr umfassender Begriff, der hier insbesondere für das Eintreten für die eigenen Bedürfnisse und Forderungen steht. Themen, wie der Aufruf zur Wahl bestimmter Parteiprogramme (meist der SPD), die Schaffung selbstorganisierter Jugendeinrichtungen oder auch das Engagement gegen Hass und Rassismus können darunter verstanden werden und waren immer wieder Demonstrationsanlässe.',
     contentPosition: 'middle',
     items: [
       {
-        image: '/posterParade/peace3.webp',
-        href: 'peace3',
+        image: '/posterParade/youth.webp',
+        href: 'youth',
       },
       {
         image: '/posterParade/democracy.webp',
@@ -47,8 +48,9 @@ export const posterParadeItems = [
     ],
   },
   {
-    name: 'Solidarität',
-    caption: '',
+    name: 'Internationale Solidarität',
+    caption:
+      'Linke Protestbewegungen (darunter auch jene, die von Arbeiter:innen angeführt wurden) unterstützten in vielen außereuropäischen Ländern emanzipatorische Bewegungen und demokratische Entwicklungen. Chile war dabei ein Beispiel, bei dem sich die Solidarität auch aus einer Kritik an den Einmischungen der USA entzündete. Ein anderes Beispiel ist die Unterstützung Nelson Mandelas und den Kampf gegen das südafrikanische Apartheidsregime.',
     contentPosition: 'middle',
     items: [
       {
@@ -62,8 +64,9 @@ export const posterParadeItems = [
     ],
   },
   {
-    name: 'Faschismus',
-    caption: 'Antifaschismus spielte für die Arbeiter:innenjugendbewegung schon seit den frühen 1920er Jahren eine wichtige Rolle.',
+    name: 'Antifaschismus',
+    caption:
+      'Seit den Anfängen der Bundesrepublik Deutschland nach dem Zweiten Weltkrieg war der Kampf gegen den Faschismus ein wichtiges Thema linker Arbeiter:innenjugendproteste. Die Tatsache, dass viele ehemalige NSDAP-Angehörige nach 1949 wichtige Positionen des Staates begleiteten, befeuerte immer wieder die öffentliche Debatte. Auch das Gedenken an nationalsozialistische Verbrechen gehöre und gehört zu den Kernthemen u.a. der Falken.',
     contentPosition: 'middle',
     items: [
       {
@@ -78,12 +81,13 @@ export const posterParadeItems = [
   },
   {
     name: 'Umwelt',
-    caption: '',
+    caption:
+      'Das Thema Umwelt spielte in linken Arbeiter:innenjugendprotesten der Nachkriegszeit eine eher untergeordnete Rolle und trat expliziter erst in den 1980er Jahren hervor. Insbesondere im Kontext mit Atomenergie werden die Themen Umwelt und Frieden aber auch verknüpft, denn die Gefahr, die von Atomwaffen ausgeht, wurde nicht nur als Bedrohung für den Menschen, sondern auch für seine Umwelt betrachtet. Die staatlich propagierte Differenzierung zwischen ziviler und militärischer Nutzung von Atomenergie wurde dabei immer seltener von Seiten linker Proteste übernommen.',
     contentPosition: 'middle',
     items: [
       {
-        image: '/posterParade/youth3.webp',
-        href: 'youth3',
+        image: '/posterParade/peace2.webp',
+        href: 'peace2',
       },
       {
         image: '/posterParade/environment.webp',
@@ -91,43 +95,26 @@ export const posterParadeItems = [
       },
     ],
   },
-  {
-    name: 'Antirassismus',
-    caption: '',
-    contentPosition: 'middle',
-    items: [
-      {
-        image: '/posterParade/antirascism.webp',
-        href: 'antirascism',
-      },
-      {
-        image: '/posterParade/democracy.webp',
-        href: 'democracy',
-      },
-    ],
-  },
 ]
 
 export const posterParadeTexts = {
   antifascism: {
-    header: 'Bildanalyse Antifaschismus',
+    header: 'Der Schoß ist fruchtbar noch...',
     texts: [
-      'Die Zeile „Der Schoß ist fruchtbar noch…“ stammt aus Theaterstück »Der aufhaltsame Aufstieg des Arturo Ui« von Bertolt Brecht.',
-      'Darin geht es parabelhaft um den Aufstieg Adolf Hitlers.',
-      'Der Epilog des Stückes endet mit den Worten:',
-      '„So was hätt einmal fast die Welt regiert! Die Völker wurden seiner Herr, jedoch Dass keiner uns zu früh da triumphiert - Der Schoß ist fruchtbar noch, aus dem das kroch!“',
-      'Der Halbsatz „Nie wieder!“ gilt als ein Willy Brandt zugeschriebenes Zitat, dass von deutschem Boden nie wieder Krieg ausgehen dürfe.',
+      'Die Zeile „Der Schoß ist fruchtbar noch…“ stammt aus dem Theaterstück »Der aufhaltsame Aufstieg des Arturo Ui« von Bertolt Brecht. Darin geht es parabelhaft um den Aufstieg Adolf Hitlers.',
+      'Der Epilog des Stückes endet mit den Worten: „So was hätt einmal fast die Welt regiert! Die Völker wurden seiner Herr, jedoch dass keiner uns zu früh da triumphiert - Der Schoß ist fruchtbar noch, aus dem das kroch!“',
+      'Der Halbsatz „Nie wieder!“ gilt als ein Willy Brandt zugeschriebenes Zitat, welches fordert, dass von deutschem Boden nie wieder Krieg ausgehen dürfe.',
       '„Nie wieder!“ gilt im allgemeinen Sprachgebrauch aber auch generell für die Forderung, dass sich etwas wie der Holocaust und der Zweite Weltkrieg nicht wiederholen dürfen.',
-      'Das Foto zeigt exemplarisch die Verbrechen der deutschen Nationalsozialisten anhand von Leichen, die die Alliierten nach Kriegsende im Konzentrations- und Vernichtungslager Auschwitz fanden (oder anderes Lager im Bild???).',
-      'Solche Bilder symbolisierten oft das unmenschliche Leid, dass Menschen durch andere Menschen aufgrund ihrer Herkunft, ihres Glaubens, ihrer Sexualität usw. angetan wurde.',
+      'Das Foto zeigt exemplarisch die Verbrechen der deutschen Nationalsozialisten anhand von Menschenleichen, die durch die Alliierten nach Kriegsende im Konzentrationslager Bergen-Belsen aufgefunden worden waren.',
+      'Solche Bilder symbolisierten oft das unmenschliche Leid, das Menschen durch die Hand anderer Menschen aufgrund ihrer Herkunft, ihres Glaubens, ihrer Sexualität usw. angetan wurde.',
       'Dieses Bild symbolisiert also die Opfer nationalsozialistischer Herrschaft.',
       'Ergänzend zeigt das nebenstehende Foto die symbolisch die Täter nationalsozialistischer Herrschaft:',
-      'ein Angehöriger der Leibstandarte Adolf Hitler, der eine Trompete, vermutlich anlässlich eines Aufmarsches oder Appells spielt.',
-      'Dieser paramilitärische Verband spielte eine relevante Rolle bei der Niederschlagung des Röhm-Putsches und den damit verbundenen Tötungen von SA-Mitlgiedern.',
-      'Der rote Blitz markiert symbolisch das Ende des Zweiten Weltkrieges und des Faschismus.',
-      'Er erinnert aber auch an die spezielle Rolle, die der Kommunismus in der Gestalt von Stalin und der Sowjetunion dabei spielt.',
+      'Ein Angehöriger der Leibstandarte Adolf Hitler, der eine Trompete, vermutlich anlässlich eines Aufmarsches oder Appells spielt.',
+      'Dieser paramilitärische Verband spielte eine relevante Rolle bei der Niederschlagung des Röhm-Putsches und den damit verbundenen Tötungen von SA-Mitgliedern.',
+      'Der rote Blitz markiert symbolisch das Ende des Zweiten Weltkrieges und des Faschismus in Deutschland.',
+      'Er erinnert durch seine rote Farbgebung aber auch an die spezielle Rolle, die der Sowjet-Kommunismus in der Gestalt von Stalin und Roten Armee dabei gespielt hat.',
       'In der unteren Bildreihe sieht man Fotografien aus der Zeit nach dem Zweiten Weltkrieg.',
-      'Das erste Foto zeigt eine Gruppe von Neonazis in den 1950er Jahren mit Hakenkreuz, dem Symbol des deutschen Nationalsozialismus, im Hintergrund.',
+      'Das erste Foto zeigt eine Gruppe von Neonazis mit Hakenkreuz, dem Symbol des deutschen Nationalsozialismus, im Hintergrund.',
       'Alle zeigen den Hitlergruß.',
       'In dem Bild sieht man einen trommelnden Jungen vor Fahnen mit dem Othala-Symbol.',
       'Othala ist die germanische Rune und bedeutet wahrscheinlich Erbbesitz, Heimat.',
@@ -139,21 +126,20 @@ export const posterParadeTexts = {
     ],
   },
   antifascism2: {
-    header: '',
+    header: 'Nie wieder',
     texts: [
       'Das Erscheinungsbild der deutschen Soldaten im Zweiten Weltkrieg wurde vor allem durch die Marschstiefel geprägt.',
       'In der nationalsozialistischen Propaganda wurde eine permanente Assoziation zwischen den Stiefeln, dem Marschieren und den Paraden geschaffen.',
       'Die Intention dieser Assoziation war es ein Bild zu erschaffen, das die marschierenden Soldaten mit der Idee der geografischen Erweiterung verknüpft.',
       'Demnach sind die Marschstiefel in diesem Kontext nicht bloß ein Kleidungsstück der Soldaten, sondern sind ein propagandiertes Symbol für die Eroberungspläne des nationalsozialistischen Regimes.',
-      'An dieser Stelle sind drei Hände zu sehen, die den Stiefel, als Symbol für die nationalsozialistische Herrschaft, wegdrücken.',
+      'An dieser Stelle sind mehrere Hände zu sehen, die den Stiefel, als Symbol für die nationalsozialistische Herrschaft, wegdrücken.',
       'Die erhobenen geballten Fäuste sind ein Symbol für Solidarität, Stärke und den Befreiungskampf. Im Laufe der Geschichte haben sich viele verschiedene soziale Bewegungen die erhobene Faust zu eigen gemacht.',
       'Der Begriff „Reichskristallnacht“ ist eine veraltete Bezeichnung für die Novemberpogrome, welche vor allem in der Nacht vom 9.11.1938 auf den 10.11.1938 und in den Folgetagen im Deutschen Reich und im annektierten Österreich stattfanden.',
       'Die verharmlosende und euphemistische Bezeichnung „Reichkristallnacht“ ist auf die vielen Fensterglasscherben der zerstörten Wohnungen und Geschäfte jüdischer Bürger:innen zurück zu führen, weswegen der Begriff als problematisch gilt und heute durch die Begriffe „Novemberpogrome“ oder „Reichspogromnacht“ ersetzt wurde.',
       'Die Aktionen waren von oben angeordnet und wurden kurz nach dem Bekanntwerden des Attentats auf Ernst vom Rath initiiert. Dieses Attentat nutzte das nationalsozialistische Regime als rechtfertigenden Anlass für die Zerstörung jüdischen Eigentums sowie für die körperliche Misshandlung und Ermordung jüdischer Mitmenschen.',
       'In diesem Zeitraum haben Schlägertrupps des nationalsozialistischen Regimes Synagogen, jüdische Geschäfte und Wohnungen zerstört und in Brand gesetzt.',
       'Jüdisch gelesene Menschen wurden körperlich misshandelt, ermordet und in Konzentrationslager deportiert. Die Novemberpogrome gelten als radikalisierter Wendepunkt von der Diskriminierung der jüdischen Bevölkerung ab 1933 hin zur systematischen Vertreibung und Ermordung derselben.',
-      'Zum 30-jährigen Gedenken trägt das Plakat die Überschrift „Nie wieder Reichskristallnacht“ und lud zu einem Fackelzug und einer Kundgebung am Platz der ehemaligen Synagoge in Gelsenkirchen ein.',
-      'Der ehemalige SPD-Bundestagsabgeordnete Klaus Thüsing hielt anlässlich dessen eine Rede.',
+      'Zum 30-jährigen Gedenken trägt das Plakat die Überschrift „Nie wieder Reichskristallnacht“ und lud zu einem Fackelzug und einer Kundgebung am Platz der ehemaligen Synagoge in Gelsenkirchen ein. Der ehemalige SPD-Bundestagsabgeordnete Klaus Thüsing hielt anlässlich dessen eine Rede.',
       'Es stellt sich die Frage: Ist in diesem Kontext ein Fackelzug angebracht oder doch eher problematisch?',
       'Die Herausgeberin des Plakates ist die Sozialistische Jugend Deutschlands – Die Falken – Unterbezirk Gelsenkirchen. Die Falken setzen sich für mehr Demokratie, soziale Gerechtigkeit, Selbstbestimmung und Frieden für alle ein.',
     ],
@@ -167,7 +153,7 @@ export const posterParadeTexts = {
     texts: [],
   },
   environment: {
-    header: '',
+    header: 'Demo gegen THTR-Probelauf',
     texts: [
       'Die im Jahr 1986 geschehenen Störfälle im Thorium-Hoch-Temperatur-Reaktor (THTR) markierten einen Wendepunkt in der Geschichte des Widerstandes gegen den THTR.',
       'Insgesamt beteiligten sich bei dieser Demonstration rund 3000 Bürger:innen, die gegen das THTR demonstrierten. Der Großteil der Demonstrant:innen stammte aus Hamm, das überregionale Interesse hielt sich in Grenzen.',
@@ -189,7 +175,7 @@ export const posterParadeTexts = {
     texts: ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5', 'Text 6', 'Text 7', 'Text 8', 'Text 9'],
   },
   peace2: {
-    header: 'Bildanalyse 6 vor 12',
+    header: 'Plakat 6 vor 12',
     texts: [
       'Am 21./22. November 1983 wurde im Deutschen Bundestag über die Stationierung von 108 Pershing II-Raketen und 96 Marschflugkörpern auf dem Territorium der BRD entschieden.',
       'Die CDU/CSU hatte gemeinsam mit der FDP angekündigt, der Stationierung neuer Atomwaffen in der BRD zuzustimmen, was sie schließlich auch taten.',
@@ -198,8 +184,7 @@ export const posterParadeTexts = {
       'Im Jahr 1969 trat Herbert Werner in die CDU ein. Von 1972 bis 1994 vertrat er den Wahlkreis Ulm im Deutschen Bundestag.',
       'Hermann Schwörer wurde 1922 in Oberstetten (Württemberg) geboren.',
       'Nach einem durch den Kriegseinsatz im Zweiten Weltkrieg unterbrochenen Studium der Rechts- und Staatswissenschaften promovierte er 1950 und trat im selben Jahr in den familieneigenen Baustoffbetrieb ein.',
-      'Im Jahr 1951 folgte der Eintritt in die CDU, für die er ab 1958 als Abgeordneter im Bundestag saß.',
-      'Er engagierte er sich unter anderem seit November 1958 im Ausschuss für Atomkernenergie und Wasserwirtschaft.',
+      'Im Jahr 1951 folgte der Eintritt in die CDU, für die er ab 1958 als Abgeordneter im Bundestag saß. Er engagierte er sich unter anderem seit November 1958 im Ausschuss für Atomkernenergie und Wasserwirtschaft.',
       'Manfred Abelein wurde 1930 in Stuttgart geboren. Nach dem Studium der Rechtswissenschaft, Volkswirtschaft und Politikwissenschaft promovierte er 1954 an der Universität Basel.',
       'Als CDU-Abgeordneter des Wahlkreises Aalen-Heidenheim gehörte er von 1965 bis 1990 dem Bundestag an.',
       'Elmar Kolb wurde 1936 in Bad Neustadt (Saale) geboren. Nach einer kaufmännische Lehre und einem Maschinenbaustudium in Nürnberg trat er 1965 der Jungen Union bei.',
@@ -210,8 +195,7 @@ export const posterParadeTexts = {
       'Zwischen 1980 und 2005 vertrat er den Wahlkreis Konstanz im Bundestag. Hans-Peter Repnik war von 2010 bis 2012 Mitglied und Vorsitzender des Rates für Nachhaltige Entwicklung.',
       'Der Atompilz der „Fat Man“ genannten Bombe, die am 09.08.1945 über Nagasaki abgeworfen wurde, ist zum Sinnbild für die US-amerikanischen Atombombenabwürfe auf Hiroshima und Nagasaki sowie die atomare Zerstörung geworden.',
       'Insgesamt töteten die Explosionen circa 100.000 Menschen. An den Folgeschäden starben allein bis Ende 1945 weitere 130.000 Menschen.',
-      'Den Befehl zum Abwurf der Atombomben gab der amerikanische Präsident Harry S. Truman.',
-      'Am 02.09.1945 endete der Zweite Weltkrieg mit der Kapitulation Japans auch in Asien.',
+      'Den Befehl zum Abwurf der Atombomben gab der amerikanische Präsident Harry S. Truman. Am 02.09.1945 endete der Zweite Weltkrieg mit der Kapitulation Japans auch in Asien.',
       'Trotz der Atombombenabwürfe auf Hiroshima und Nagasaki entstand durch propagandistische Trennung zwischen ziviler und militärischer Atomenergienutzung eine Gleichzeitigkeit von Atomeuphorie und Atomangst.',
       'Die metaphorische Weltuntergangsuhr beziehungsweise Atomkriegsuhr soll der Öffentlichkeit verdeutlichen, wie groß das Risiko einer globalen Katastrophe insbesondere im Hinblick auf einen Atomkrieg oder einer Klimakatastrophe ist.',
       'Die im Fokus dieses Plakats stehenden Porträts der Politiker haben allesamt eine Zahl im rechten unteren Winkel vermerkt.',
@@ -219,9 +203,9 @@ export const posterParadeTexts = {
     ],
   },
   peace3: {
-    header: '',
+    header: 'Ostermarsch 1984',
     texts: [
-      'Hier ist eine demonstrierende Menschenmenge abgebildet. Der hier thematisierte Protest kritisiert den NATO-Doppelbeschluss, welcher in insbesondere in der BRD für Konflikte und Großdemonstrationen sorgte.',
+      'Auf dem Plakat ist eine demonstrierende Menschenmenge abgebildet. Der hier thematisierte Protest kritisiert den NATO-Doppelbeschluss, welcher in insbesondere in der BRD für Konflikte und Großdemonstrationen sorgte.',
       'Auch wenn zumeist die jüngere Generation die Mehrheit bei solchen Demonstrationen bzw. Ostermärschen bildete, sind häufig viele Altersgruppen sowie alle sozialen Klassen vertreten.',
       'Typisch für die Ostermärsche sind die hier abgebildeten Fahnen und Schilder mit der symbolischen Friedenstaube oder kurzen Leitsprüchen wie „Nein zu Atom“.',
       'Der erste Ostermarsch in Deutschland fand im Jahr 1960 statt und führte als mehrtägiger Marsch von Hamburg über Bremen, Hannover und Braunschweig nach Bergen-Hohne.',
@@ -235,37 +219,36 @@ export const posterParadeTexts = {
       'Seit 1970 wurden die Pershing II und Cruise Missiles entwickelt. Sie galten als „Innovation“, da sie als treffgenau galten und eine flexible Reichweite boten.',
       'Im Dezember 1979 wurde von den Außen- und Verteidigungsministern der NATO-Mitgliedstaaten in Brüssel beschlossen, die Pershing II als auch die Cruise Missiles in Europa zu stationieren.',
       'Zeitgleich sollten der Sowjetunion aber Verhandlungen über eine beidseitige Reduzierung nuklearer Waffen angeboten werden.',
-      'Dieses karikative Abbild zeigt den damaligen deutschen Bundeskanzler Helmut Kohl. Helmut Kohl, geboren l930 und gestorben 2017, führte von 1982 bis 1998 als sechster Bundeskanzler der Bundesrepublik Deutschland eine CDU/CSU/FDP Koalition.',
+      'Dieses karikative Abbild zeigt den damaligen deutschen Bundeskanzler Helmut Kohl. Dieser führte von 1982 bis 1998 als sechster Bundeskanzler der Bundesrepublik Deutschland eine CDU/CSU/FDP Koalition.',
       'Kohl war Gegenstand unzähliger Karikaturen. In diesem Plakat ist er als „Eierkopf“ dargestellt, eine umgangssprachliche Bezeichnung, die abwertend oder ironisch für Intellektuelle genutzt wird.',
       'Ein Demonstrant tritt Helmut Kohl, dargestellt als „Eierkopf“, ins Gesicht, woraufhin seine „Schale“ anfängt aufzubrechen - sinnbildlich für den gedanklichen Widerstand innerhalb der Bevölkerung.',
       'An dieser Stelle wird über den Ablauf des Ostermarsches informiert: Angefangen mit einer Blockade der US-Kaserne in der Garlstedter Heide vor Ostern, ist für den Ostersonntag ein Ostermarsch von Neuengamme (Standort eines ehemaligen Konzentrationslagers) nach Hamburg geplant.',
       'Es folgen Sternmärsche aus allen Hamburger Stadtteilen zum Rathausmarkt. Bei Sternmärschen kommen Demonstrierende von verschiedenen Ausgangspunkten zu einem gemeinsamen Endziel zusammen. Daraufhin erfolgt eine Abschlusskundgebung.',
       'Zwischen Ostern und dem 1. Mai ist dann eine Aktionswoche betrieblicher Friedensinitiativen geplant.',
       'Das Plakat stammt von den Jungsozialist:innen der SPD. Sie positionieren sich explizit gegen die Stationierung von Atomwaffen und sind grundlegend gegen eine Rüstungspolitik.',
-      'An dieser Stelle rufen sie die Bevölkerung dazu auf, aktiv zu werden und bei den Ostermärschen mitzumachen.',
+      'Mit diesem Plakat rufen sie die Bevölkerung dazu auf, aktiv zu werden und bei den Ostermärschen mitzumachen.',
     ],
   },
   solidarity: {
-    header: '',
+    header: 'Save their lives',
     texts: [
       '„Freiheit für alle politischen Gefangenen in Chile!“ - Nach dem Putsch am 11.09.1973 gegen den gewählten Präsidenten Salvador Allende begann unter Augusto Pinochet eine brutale Diktatur.',
       'Das Militär hatte binnen kürzester Zeit das Land unter seine Kontrolle gebracht. Mehr als 27.000 (vermeintlich) Regimegegner:innen wurden verfolgt, gefangen genommen und gefoltert.',
-      'An dieser Stelle ist eine „Friedenstaube“ abgebildet. Ursprünglich geht das Symbol der Friedenstaube auf die Geschichte Noahs im Alten Testament zurück.',
-      'Im Zentrum dieses Plakates steht allerdings die grafische Form der Friedenstaube, die auf Pablo Picassos Werk basiert.',
+      'An dieser Stelle ist eine „Friedenstaube“ abgebildet. Ursprünglich geht das Symbol der Friedenstaube auf die Geschichte Noahs im Alten Testament zurück. Im Zentrum dieses Plakates steht allerdings die grafische Form der Friedenstaube, die auf Pablo Picassos Werk basiert.',
       'Picasso, engagiertes Mitglied der kommunistischen Partei, gestaltete mit der Friedenstaube Plakate in Wrocław, Paris, Stockholm, Sheffield und Rom. Während des Kalten Krieges wurde die Friedenstaube auf diesem Weg zum wichtigsten Hoffnungssymbol.',
       'Er unterstützte mit verschiedenen Varianten dieses Motivs die kommunistische Partei in Frankreich, anderen Ländern und radikalen Organisationen in Westeuropa.',
       'Mit seinen Arbeiten drückte Picasso seine eigene politische Haltung künstlerisch aus, propagierte für die Friedensbewegung und protestierte gegen Krieg und Unterdrückung.',
       'In jüngster Zeit hat sich das Symbol der Friedenstaube vom Kommunismus gelöst und wird in vielfältigen Kontexten genutzt.',
-      'Hier ist eine erhobene geballte Faust als Zeichen für Solidarität, Stärke und Widerstand zu sehen.',
+      'Hier sind mehrere erhobene Fäuste als Zeichen für Solidarität, Stärke und Widerstand dargestellt.',
       'Außerdem sind Bücher abgebildet, die das Recht auf (Meinungs-)Bildung und Pressefreiheit symbolisieren.',
-      '„Rette ihr Leben“ - Die chilenische Diktatur hinterlässt eine traurige Menschenrechtsbilanz: 2095 Ermordete oder Hingerichtete, 1102 spurlos Verschwundene, circa 250000 Exilierte.',
+      '„Rettet ihre Leben“ - Die chilenische Diktatur hinterlässt eine traurige Menschenrechtsbilanz: 2095 Ermordete oder Hingerichtete, 1102 spurlos Verschwundene, circa 250000 Exilierte.',
       'Der Auftraggeber dieses Plakates ist die World Federation of Democratic Youth (WFDY). Der Weltbund der Demokratischen Jugend wurde 1945 gegründet.',
       'Mittlerweile gehören ihm 150 Mitgliedsorganisationen aus 109 Ländern an und somit werden 30 Millionen Jugendliche weltweit durch den Verband vertreten.',
       'Der Weltbund ist sozialistisch ausgerichtet und macht mit diesem Plakat auf die menschenunwürdigen Zustände innerhalb der chilenischen Diktatur unter Pinochet aufmerksam.',
     ],
   },
   solidarity2: {
-    header: '',
+    header: 'Solidarität mit dem chilenischen Volk',
     texts: [
       'Das Plakat ist ein Nachdruck eines chilenischen Wahlplakats. Das Original aus dem Jahr 1970 stammt von der Radikalen Partei.',
       'An der Stelle, an der hier „Solidarität mit dem chilenischen Volk. Wahlkampfplakat aus Chile 1973: Vereinte Front gegen die Agression – immer mit der Linken -“ steht, stand im Original „B-18 M. Leon Prado; Diputado“.',
@@ -286,28 +269,22 @@ export const posterParadeTexts = {
     texts: [],
   },
   youth: {
-    header: '',
+    header: 'Jugend für Ausländerfreundlichkeit',
     texts: [
       'An dieser Stelle ist das Falken-Logo zu sehen: Die sozialistische Jugend Deutschlands – Die Falken. Die Falken setzen sich für mehr Demokratie, soziale Gerechtigkeit, Selbstbestimmung und Frieden für alle ein.',
       'Die rote Fahne als Symbol bringt eine lange Geschichte mit sich. Sie begann im Jahr 1830, als Arbeiter:innen einer Tuchfabrik für bessere wirtschaftliche Bedingungen demonstrierten.',
-      'Warum sie eine rote Fahne als Zeichen ihres Widerstandes wählten, ist unklar.',
-      'Eine Vermutung ist, dass das Rot den oftmals blutigen Kampf, den die Arbeiter:innen für ihre Rechte und Freiheiten führten, symbolisierte.',
+      'Warum sie eine rote Fahne als Zeichen ihres Widerstandes wählten, ist unklar. Eine Vermutung ist, dass das Rot den oftmals blutigen Kampf, den die Arbeiter:innen für ihre Rechte und Freiheiten führten, symbolisierte.',
       'Auch beim Schlesischen Weberaufstand 1844 versammelten sich die Arbeiter:innen unter einer roten Fahne. Durch die Revolutionsjahre 1848/49 gewann die rote Fahne größere Popularität und die rote Farbe wurde zum Symbol der Arbeiterbewegung.',
       'Mit dem 1863 gegründeten Allgemeinen Deutschen Arbeiterverein (ADAV), der ebenfalls die Rote Fahne als Symbol wählte, wurde das Rot zur Farbe der Sozialdemokratie.',
       'In den Folgejahrzehnten wählten auch sozialistische und kommunistische Bewegungen die rote Fahne zu ihrem Symbol. In Deutschland haben daher sowohl die SPD als auch die Linke die Farbe Rot als prägende Parteifarbe.',
       'Auch Staaten, deren Gesellschaftsform der Kommunismus oder Sozialismus ist, haben häufig einen roten Grundton in ihrer Flagge.',
-      'Die Parole „Dem Hass keine Chance“ soll ein Zeichen für Vielfalt, Offenheit und Toleranz setzen.',
-      'Gleichzeitig ruft sie zum Widerstand gegen Hass, Gewalt und Rassismus auf.',
-      'Solidarität bezeichnet ein Zusammengehörigkeitsgefühl von Individuen und Gruppen.',
-      'Das Konzept der Solidarität erlebte sowohl innergesellschaftlich als auch auf internationaler Ebene in der zweiten Hälfte des 20. Jahrhunderts ihre Blütezeit.',
+      'Die Parole „Dem Hass keine Chance“ soll ein Zeichen für Vielfalt, Offenheit und Toleranz setzen. Gleichzeitig ruft sie zum Widerstand gegen Hass, Gewalt und Rassismus auf.',
+      'Solidarität bezeichnet ein Zusammengehörigkeitsgefühl von Individuen und Gruppen. Das Konzept der Solidarität erlebte sowohl innergesellschaftlich als auch auf internationaler Ebene in der zweiten Hälfte des 20. Jahrhunderts ihre Blütezeit.',
       'In der Arbeiterbewegung steht Solidarität für den Zusammenhalt der Arbeit:innen untereinander. Hiermit eng verbunden ist die internationale Solidarität, insbesondere die Beziehungen zwischen Industrie- und Entwicklungsländern.',
-      'In den Jahren 1978 bis 1979 wurde in Nicaragua der Diktator Anastasio Somoza gestürzt und der linksorientierte Frente Sandinista de Liberación Nacional kam an die Macht.',
-      'Mit der Nicaraguanischen Revolution ging eine gesellschaftliche Umwälzung sowie ab 1980 der Contra-Krieg einher.',
-      'Die rechtsgerichteten Contras begannen mit der Unterstützung der US-Regierung einen Kampf gegen das linksgerichtete sandinistische Regime.',
-      'Zu der Contra-Gruppierung gehörten Anhänger:innen Somozas, Teile der bürgerlichen Opposition, Landwirte, enttäuschte Sandinist:innen und Teile der indigenen Bevölkerung.',
+      'In den Jahren 1978 bis 1979 wurde in Nicaragua der Diktator Anastasio Somoza gestürzt und der linksorientierte Frente Sandinista de Liberación Nacional kam an die Macht. Mit der Nicaraguanischen Revolution ging eine gesellschaftliche Umwälzung sowie ab 1980 der Contra-Krieg einher.',
+      'Die rechtsgerichteten Contras begannen mit der Unterstützung der US-Regierung einen Kampf gegen das linksgerichtete sandinistische Regime. Zu der Contra-Gruppierung gehörten Anhänger:innen Somozas, Teile der bürgerlichen Opposition, Landwirte, enttäuschte Sandinist:innen und Teile der indigenen Bevölkerung.',
       'Die US-Regierung führte durch ihre finanzielle und logistische Unterstützung einen Stellvertreterkrieg gegen den Einfluss der Sowjetunion in Mittelamerika.',
-      'Der Contra-Krieg dauerte bis 1990 an und forderte zahlreiche zivile Todesopfer.',
-      'Mit dem Ende des Krieges wurde der politischen Gewalt jedoch kein Ende gesetzt. Bis in die zweite Hälfte der 1990 Jahre starben knapp 2000 weitere Menschen.',
+      'Der Contra-Krieg dauerte bis 1990 an und forderte zahlreiche zivile Todesopfer. Mit dem Ende des Krieges wurde der politischen Gewalt jedoch kein Ende gesetzt. Bis in die zweite Hälfte der 1990 Jahre starben knapp 2000 weitere Menschen.',
       'Der Begriff „Ausländerfeindlichkeit“ bezeichnet eine negative Einstellung gegenüber Migrant:innen. Von Vorurteilen gestützt, werden diese ausgegrenzt und angefeindet.',
       'Der hier verwendete Begriff „AusländerFREUNDlichkeit“ soll das Gegenteil ausdrücken und dem Hass gegenüber Migrant:innen entgegenwirken.',
       'Die „Gelbe Hand“ ist ein Symbol für Toleranz und gegen Ausländerfeindlichkeit. Hinter dem Logo steht der Verein „Mach meinen Kumpel nicht an!“.',
