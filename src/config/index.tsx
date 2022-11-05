@@ -88,6 +88,22 @@ export const sloganGenerator = {
   },
 }
 
+export const revolutionstelephone = {
+  de: {
+    description1:
+      'Über Protest und Gesellschaft haben sich in den letzten 100 Jahren viele Menschen Gedanken gemacht. Hier kannst du einige von ihnen anrufen und dir anhören, was sie zu dem Thema zu sagen haben.',
+    description2: 'Wähle dir dazu eine Person aus dem Telefonbuch aus und wähle ihre Nummer, indem du nacheinander die Ziffern auf dem Telefon drückst.',
+    callText: 'Gewählte Nummer:',
+    speakText: 'spricht',
+  },
+  en: {
+    description1: 'Many people have thought about protest and society over the last 100 years. Here you can call some of them and listen to what they have to say on the subject',
+    description2: 'Choose a person from the phone book and dial their number by pressing the digits on the phone one after the other.',
+    callText: 'Call number',
+    speakText: 'on the phone',
+  },
+}
+
 export const posterParade = {
   de: {
     description1: 'In vielen Jahrzehnten linker jugendlicher Protestkultur sind vielfältige Plakate entstanden, die im Archiv der Arbeiterjugendbewegung gesammelt wurden.',

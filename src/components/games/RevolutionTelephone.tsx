@@ -1,29 +1,117 @@
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-import { useState } from 'react'
+import Box from '@mui/material/Box'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemText from '@mui/material/ListItemText'
+import IconButton from '@mui/material/IconButton'
+import MusicNoteIcon from '@mui/icons-material/MusicNote'
+import { useEffect, useState } from 'react'
+import { AudioPlayerProvider, useAudioPlayer } from 'react-use-audio-player'
+
+import { names } from 'config/revolutionstelephone'
+import { revolutionstelephone } from 'config'
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
+
+const Call = ({ number, caller, onEnd }) => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
+  const { ready, loading, load, playing, ended } = useAudioPlayer({
+    format: 'mp3',
+    autoplay: false,
+  })
+
+  useEffect(() => {
+    number &&
+      caller !== null &&
+      load({
+        src: `./revolutionstelephone/${number}.mp3`,
+        autoplay: true,
+        onend: () => onEnd(),
+      })
+  }, [number, caller])
+
+  return (
+    <Grid item xs={12}>
+      {!ready && !loading && (
+        <Box p={2}>
+          <Typography component="p" variant="h4">
+            {hasHydrated && revolutionstelephone[language].callText}
+            {` `}
+            {number}
+          </Typography>
+        </Box>
+      )}
+      {loading && (
+        <Box p={2}>
+          <Typography component="p" variant="h4">
+            {hasHydrated && revolutionstelephone[language].callText}
+            {` `}
+            {number}
+          </Typography>
+        </Box>
+      )}
+      {(playing || ended) && !caller && (
+        <Box p={2}>
+          <Typography component="p" variant="h4">
+            {hasHydrated && revolutionstelephone[language].callText}
+            {` `}
+            {number}
+          </Typography>
+        </Box>
+      )}
+      {ready && caller && (
+        <Box p={2}>
+          <Typography component="p" variant="h4">
+            {caller?.name}
+            {` `}
+            {hasHydrated && revolutionstelephone[language].speakText}
+          </Typography>
+        </Box>
+      )}
+    </Grid>
+  )
+}
 
 const RevolutionTelephone = () => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const [telephoneNumber, setTelephoneNumber] = useState('')
+  const [activeElement, setActiveElement] = useState(null)
+
+  function isElementActive(element: { name: string; value: string }) {
+    return telephoneNumber.length === 4 && telephoneNumber === element.value
+  }
 
   function dialNumber(digit: string) {
-    return setTelephoneNumber((previousNumber) =>
-      previousNumber.concat(digit)
-    )
+    telephoneNumber.length === 4 && resetTelephoneNumber()
+    telephoneNumber.length === 3 && setActiveElement(names.find((element) => element.value === telephoneNumber.concat(digit)))
+    return setTelephoneNumber((previousNumber) => previousNumber.concat(digit))
+  }
+
+  function resetTelephoneNumber() {
+    setTelephoneNumber('')
+    setActiveElement(null)
   }
 
   return (
-    <Grid
-      container
-      alignItems="center"
-      textAlign="center"
-      flexWrap="wrap"
-      justifyContent="center"
-      my="2em"
-    >
-      <Grid item sx={{ width: '100%' }}>
-        <Typography component="h2" variant="h2">
-          {telephoneNumber}
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em">
+      <Grid item maxWidth="lg" mx="auto">
+        <Typography component="h2" variant="h2" color="text.secondary">
+          Protest-Telefon
         </Typography>
+        <Typography component="h3" variant="h4" color="text.secondary">
+          {hasHydrated && revolutionstelephone[language].description1}
+        </Typography>
+        <Typography component="h3" variant="h4" color="text.secondary">
+          {hasHydrated && revolutionstelephone[language].description2}
+        </Typography>
+      </Grid>
+      <AudioPlayerProvider>
+        <Call number={telephoneNumber} caller={activeElement} onEnd={resetTelephoneNumber} />
+      </AudioPlayerProvider>
+      <Grid item maxWidth="lg" sx={{ width: '67%' }}>
         <style>{`
           #Feld0:hover,
           #Feld1:hover,
@@ -74,11 +162,7 @@ const RevolutionTelephone = () => {
             }
           }
         `}</style>
-        <svg
-          id="Revolutionstelefon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 537.46 361.7"
-        >
+        <svg id="Revolutionstelefon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537.46 361.7">
           <defs></defs>
           <g id="b">
             <path
@@ -154,16 +238,7 @@ const RevolutionTelephone = () => {
                 dialNumber('2')
               }}
             >
-              <rect
-                id="l"
-                className="al"
-                x="256.37"
-                y="146.36"
-                width="29.25"
-                height="29.73"
-                rx="8.25"
-                ry="8.25"
-              />
+              <rect id="l" className="al" x="256.37" y="146.36" width="29.25" height="29.73" rx="8.25" ry="8.25" />
               <g className="aq">
                 <path
                   className="an"
@@ -178,21 +253,9 @@ const RevolutionTelephone = () => {
                 dialNumber('1')
               }}
             >
-              <rect
-                id="n"
-                className="al"
-                x="219.26"
-                y="146.28"
-                width="29.25"
-                height="29.73"
-                rx="9.33"
-                ry="9.33"
-              />
+              <rect id="n" className="al" x="219.26" y="146.28" width="29.25" height="29.73" rx="9.33" ry="9.33" />
               <g className="aq">
-                <path
-                  className="an"
-                  d="m231.16 158.19-1.92-1.71 5.1-5.52v21.75h-2.43v-15.3l-.75.78Z"
-                />
+                <path className="an" d="m231.16 158.19-1.92-1.71 5.1-5.52v21.75h-2.43v-15.3l-.75.78Z" />
               </g>
             </g>
             <g
@@ -202,16 +265,7 @@ const RevolutionTelephone = () => {
                 dialNumber('3')
               }}
             >
-              <rect
-                id="p"
-                className="al"
-                x="293.9"
-                y="146.88"
-                width="29.25"
-                height="29.73"
-                rx="9.57"
-                ry="9.57"
-              />
+              <rect id="p" className="al" x="293.9" y="146.88" width="29.25" height="29.73" rx="9.57" ry="9.57" />
               <g className="aq">
                 <path
                   className="an"
@@ -226,21 +280,9 @@ const RevolutionTelephone = () => {
                 dialNumber('4')
               }}
             >
-              <rect
-                id="r"
-                className="al"
-                x="218.91"
-                y="181.53"
-                width="29.25"
-                height="29.73"
-                rx="8.83"
-                ry="8.83"
-              />
+              <rect id="r" className="al" x="218.91" y="181.53" width="29.25" height="29.73" rx="8.83" ry="8.83" />
               <g className="aq">
-                <path
-                  className="an"
-                  d="m237.84 186.39-8.58 13.14h4.95v-3.73l2.37-3.83v7.53h2.55v2.46h-2.52v4.71h-2.46v-4.74h-9.27l11.13-16.86 1.83 1.32Z"
-                />
+                <path className="an" d="m237.84 186.39-8.58 13.14h4.95v-3.73l2.37-3.83v7.53h2.55v2.46h-2.52v4.71h-2.46v-4.74h-9.27l11.13-16.86 1.83 1.32Z" />
               </g>
             </g>
             <g
@@ -250,16 +292,7 @@ const RevolutionTelephone = () => {
                 dialNumber('5')
               }}
             >
-              <rect
-                id="t"
-                className="al"
-                x="256.63"
-                y="181.53"
-                width="29.25"
-                height="29.73"
-                rx="9.19"
-                ry="9.19"
-              />
+              <rect id="t" className="al" x="256.63" y="181.53" width="29.25" height="29.73" rx="9.19" ry="9.19" />
               <g className="aq">
                 <path
                   className="an"
@@ -274,16 +307,7 @@ const RevolutionTelephone = () => {
                 dialNumber('6')
               }}
             >
-              <rect
-                id="v"
-                className="al"
-                x="293.64"
-                y="180.96"
-                width="29.25"
-                height="29.73"
-                rx="9.62"
-                ry="9.62"
-              />
+              <rect id="v" className="al" x="293.64" y="180.96" width="29.25" height="29.73" rx="9.62" ry="9.62" />
               <g className="aq">
                 <path
                   className="an"
@@ -298,16 +322,7 @@ const RevolutionTelephone = () => {
                 dialNumber('0')
               }}
             >
-              <rect
-                id="x"
-                className="al"
-                x="256.69"
-                y="248.26"
-                width="29.25"
-                height="29.73"
-                rx="8.85"
-                ry="8.85"
-              />
+              <rect id="x" className="al" x="256.69" y="248.26" width="29.25" height="29.73" rx="8.85" ry="8.85" />
               <g className="aq">
                 <path
                   className="an"
@@ -322,21 +337,9 @@ const RevolutionTelephone = () => {
                 dialNumber('*')
               }}
             >
-              <rect
-                id="a`"
-                className="al"
-                x="219.39"
-                y="248.52"
-                width="29.25"
-                height="29.73"
-                rx="9.85"
-                ry="9.85"
-              />
+              <rect id="a`" className="al" x="219.39" y="248.52" width="29.25" height="29.73" rx="9.85" ry="9.85" />
               <g className="aq">
-                <path
-                  className="an"
-                  d="M235.38 254.49v6l5.6-1.8 1.3 4-5.7 1.9 3.5 4.8-3.4 2.5-3.5-4.8-3.5 4.8-3.4-2.5 3.5-4.8-5.7-1.9 1.3-4 5.7 1.9v-6.1h4.3Z"
-                />
+                <path className="an" d="M235.38 254.49v6l5.6-1.8 1.3 4-5.7 1.9 3.5 4.8-3.4 2.5-3.5-4.8-3.5 4.8-3.4-2.5 3.5-4.8-5.7-1.9 1.3-4 5.7 1.9v-6.1h4.3Z" />
               </g>
             </g>
             <g
@@ -346,16 +349,7 @@ const RevolutionTelephone = () => {
                 dialNumber('#')
               }}
             >
-              <rect
-                id="ab"
-                className="al"
-                x="293.73"
-                y="248.52"
-                width="29.25"
-                height="29.73"
-                rx="9.98"
-                ry="9.98"
-              />
+              <rect id="ab" className="al" x="293.73" y="248.52" width="29.25" height="29.73" rx="9.98" ry="9.98" />
               <g className="aq">
                 <path
                   className="an"
@@ -370,21 +364,9 @@ const RevolutionTelephone = () => {
                 dialNumber('7')
               }}
             >
-              <rect
-                id="ad"
-                className="al"
-                x="219.14"
-                y="215.12"
-                width="29.25"
-                height="29.73"
-                rx="8.88"
-                ry="8.88"
-              />
+              <rect id="ad" className="al" x="219.14" y="215.12" width="29.25" height="29.73" rx="8.88" ry="8.88" />
               <g className="aq">
-                <path
-                  className="an"
-                  d="m239.71 219.34-9.69 20.67h-2.64l8.46-18.27h-7.68v-2.4h11.55Z"
-                />
+                <path className="an" d="m239.71 219.34-9.69 20.67h-2.64l8.46-18.27h-7.68v-2.4h11.55Z" />
               </g>
             </g>
             <g
@@ -394,16 +376,7 @@ const RevolutionTelephone = () => {
                 dialNumber('8')
               }}
             >
-              <rect
-                id="af"
-                className="al"
-                x="256.63"
-                y="215.38"
-                width="29.25"
-                height="29.73"
-                rx="9.5"
-                ry="9.5"
-              />
+              <rect id="af" className="al" x="256.63" y="215.38" width="29.25" height="29.73" rx="9.5" ry="9.5" />
               <g className="aq">
                 <path
                   className="an"
@@ -418,16 +391,7 @@ const RevolutionTelephone = () => {
                 dialNumber('9')
               }}
             >
-              <rect
-                id="ah"
-                className="al"
-                x="293.9"
-                y="215.72"
-                width="29.25"
-                height="29.73"
-                rx="9.63"
-                ry="9.63"
-              />
+              <rect id="ah" className="al" x="293.9" y="215.72" width="29.25" height="29.73" rx="9.63" ry="9.63" />
               <g className="aq">
                 <path
                   className="an"
@@ -437,6 +401,46 @@ const RevolutionTelephone = () => {
             </g>
           </g>
         </svg>
+      </Grid>
+      <Grid
+        item
+        sx={{
+          flexGrow: 1,
+          maxWidth: '300px',
+          border: '4px solid black',
+          backgroundColor: 'background.default',
+          color: 'text.primary',
+          transform: 'rotate(5deg)',
+        }}
+      >
+        <List dense={true} sx={{ py: 0 }}>
+          {names.map((element, index) => (
+            <ListItem
+              key={index}
+              sx={{ py: 0, pl: 0 }}
+              secondaryAction={
+                isElementActive(element) ? (
+                  <IconButton edge="end" aria-label="play" disabled>
+                    <MusicNoteIcon sx={{ fontSize: '1.5rem', color: 'accent.main' }} />
+                  </IconButton>
+                ) : (
+                  <IconButton edge="end" aria-label="play" disabled></IconButton>
+                )
+              }
+            >
+              <ListItemText sx={{ mx: '1rem', flex: '0 0 50%' }} primary={element.name} primaryTypographyProps={{ fontSize: '1.2rem' }} />
+              <Box
+                sx={{
+                  flex: '0 0 10%',
+                  height: '40px',
+                  width: '40px',
+                  borderLeft: '4px solid #000',
+                }}
+              />
+              <ListItemText sx={{ flex: '0 0 50%', mx: '1rem' }} primary={element.value} primaryTypographyProps={{ fontSize: '1.2rem' }} />
+            </ListItem>
+          ))}
+        </List>
       </Grid>
     </Grid>
   )
