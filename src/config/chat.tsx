@@ -63,7 +63,8 @@ export const chat = {
     },
     {
       id: 4,
-      text: 'Klar, hier geht´s lang. -> LINK zur Protestkunst (Materialsammlung)',
+      text: 'Klar, hier geht´s lang.',
+      link: '/protestart',
       from: ChatSpeaker.BOT,
     },
     {
@@ -135,17 +136,20 @@ export const chat = {
     },
     {
       id: 18,
-      text: 'Hier geht´s lang: -> LINK zum Protestsongkaraoke',
+      text: 'Hier geht´s lang.',
+      link: '/concert',
       from: ChatSpeaker.BOT,
     },
     {
       id: 19,
-      text: 'Klar, hier geht´s lang. -> LINK zur Protestkunst (Materialsammlung)',
+      text: 'Klar, hier geht´s lang.',
+      link: '/protestart',
       from: ChatSpeaker.BOT,
     },
     {
       id: 20,
-      text: 'Sehr schön :) Hier geht´s los. -> LINK zu Start the Demo',
+      text: 'Sehr schön :) Hier geht´s los.',
+      link: '/artofprotest',
       from: ChatSpeaker.BOT,
     },
     {
@@ -219,8 +223,7 @@ export const chat = {
       id: 34,
       text: 'Klar, sehr gern. Hör hier mal rein!',
       from: ChatSpeaker.BOT,
-      image: '/chat/1928.webp',
-      alt: 'Bild von 1928',
+      audio: '/chat/audio.mp3',
     },
     {
       id: 35,

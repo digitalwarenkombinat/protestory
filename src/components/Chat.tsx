@@ -1,5 +1,6 @@
 import Image from 'next/future/image'
 import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/router'
 
 import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
@@ -11,11 +12,15 @@ import Typography from '@mui/material/Typography'
 
 import { ChatSpeaker } from 'context/data'
 import { Wave } from './Wave'
+import { AudioPlayerProvider } from 'react-use-audio-player'
+import { Sound } from 'services/Sound'
 
 interface MessageProps {
   id: number
   text: string
   from: ChatSpeaker
+  link?: string
+  audio?: string
   image?: string
   isPortrait?: boolean
 }
@@ -26,13 +31,16 @@ interface ChatProps {
   list: MessageProps[]
 }
 
-const ChatImage = ({ image = '', alt = '', isPortrait = true }) => <Image src={image} alt={alt} width={isPortrait ? 225 : 400} height={isPortrait ? 400 : 257.5} />
+const ChatImage = ({ image = '', alt = '', isPortrait = true }) => <Image src={image} alt={alt} width={isPortrait ? 225 : 300} height={isPortrait ? 400 : 258} />
+
+const timeoutValue = 3000
 
 export const Chat = ({ title, relation, list }: ChatProps) => {
   const [messageList, setMessageList] = useState([] as MessageProps[])
   const [isTyping, setIsTyping] = useState(true)
   const [showQuestion, setShowQuestion] = useState(false)
   const [messageIndex, setMessageIndex] = useState(0)
+  const Router = useRouter()
 
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
@@ -42,6 +50,12 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
       messagesEnd.scrollIntoView({ behavior: 'smooth' })
     }
   }, [messageList])
+
+  let timer = setTimeout(() => showNextMessage(), timeoutValue)
+  useEffect(() => {
+    if (!list[messageIndex]) return clearTimeout(timer)
+    if (messageIndex > 0 && list[messageIndex].from === ChatSpeaker.QUESTION) return clearTimeout(timer)
+  }, [list, timer])
 
   const showNextMessage = (id: number = null) => {
     setIsTyping(false)
@@ -54,9 +68,10 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
     checkForQuestion(activeMessage)
   }
 
-  const selectAnswer = (id: number) => {
+  const selectAnswer = (event, id: number) => {
+    event.currentTarget.disabled = true
     setIsTyping(true)
-    timer = setTimeout(() => showNextMessage(id), 3000)
+    timer = setTimeout(() => showNextMessage(id), timeoutValue)
   }
 
   const showAnswer = (id: number) => {
@@ -64,6 +79,10 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
   }
 
   const checkForQuestion = (activeMessage: MessageProps) => {
+    if (activeMessage.link) {
+      setTimeout(() => Router.push(activeMessage.link), 1000)
+    }
+
     if (list[activeMessage.id + 1]) {
       const nextSpeaker = list[activeMessage.id + 1].from
       setIsTyping(nextSpeaker !== ChatSpeaker.QUESTION)
@@ -71,27 +90,9 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
     }
   }
 
-  let timer = setTimeout(() => showNextMessage(), 3000)
-  useEffect(() => {
-    if (!list[messageIndex]) return clearTimeout(timer)
-    if (messageIndex > 0 && list[messageIndex].from === ChatSpeaker.QUESTION) return clearTimeout(timer)
-  }, [list, timer])
-
   return (
     <>
-      <DialogTitle
-        component="div"
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          backgroundColor: 'secondary.main',
-        }}
-      >
-        <Avatar sx={{ height: '6rem', width: '6rem', mr: '1rem' }} alt="Avatar Chat" src="avatar-chat.png" />
-        <Typography variant="h2" color="text.secondary">
-          {title}
-        </Typography>
-      </DialogTitle>
+      <ChatTitle title={title} />
       <DialogContent
         dividers
         sx={{
@@ -115,6 +116,11 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
           >
             {message.text}
             {message.image && <ChatImage {...message} />}
+            {message.audio && (
+              <AudioPlayerProvider>
+                <Sound {...message} />
+              </AudioPlayerProvider>
+            )}
           </DialogContentText>
         ))}
         {isTyping && Wave}
@@ -131,7 +137,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
             sx={{
               textTransform: 'none',
             }}
-            onClick={() => selectAnswer(messageIndex)}
+            onClick={(event) => selectAnswer(event, messageIndex)}
           >
             {list[messageIndex].text}
           </Button>
@@ -139,12 +145,30 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
             sx={{
               textTransform: 'none',
             }}
-            onClick={() => selectAnswer(messageIndex + 1)}
+            onClick={(event) => selectAnswer(event, messageIndex + 1)}
           >
             {list[messageIndex + 1].text}
           </Button>
         </DialogActions>
       )}
     </>
+  )
+}
+
+const ChatTitle = ({ title }) => {
+  return (
+    <DialogTitle
+      component="div"
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        backgroundColor: 'secondary.main',
+      }}
+    >
+      <Avatar sx={{ height: '6rem', width: '6rem', mr: '1rem' }} alt="Avatar Chat" src="avatar-chat.png" />
+      <Typography variant="h2" color="text.secondary">
+        {title}
+      </Typography>
+    </DialogTitle>
   )
 }
