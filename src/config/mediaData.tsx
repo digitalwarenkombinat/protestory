@@ -1,39 +1,51 @@
 export const mediaData = [
   {
-    name: 'antifascism',
-    source: 'home/antifascism.webp',
+    name: '7_231_DGB Demo zu Frauenarbeitslosigkeit_Hamburg_1978_Fotograf',
+    source: 'protestart/7_231_DGB Demo zu Frauenarbeitslosigkeit_Hamburg_1978_Fotograf.webp',
   },
   {
-    name: 'artofprotest',
-    source: 'home/artofprotest.webp',
+    name: '7_246 (24)',
+    source: 'protestart/7_246 (24).webp',
   },
   {
-    name: 'equality',
-    source: 'home/equality.webp',
+    name: '7_75_Antimilitarismus_Demo',
+    source: 'protestart/7_75_Antimilitarismus_Demo.webp',
   },
   {
-    name: 'peace',
-    source: 'home/peace.webp',
+    name: '9_52_Demo gegen NPD_Polizei_1986_Ciesla',
+    source: 'protestart/9_52_Demo gegen NPD_Polizei_1986_Ciesla.webp',
   },
   {
-    name: 'protestart',
-    source: 'home/protestart.webp',
+    name: 'Aufkleber_130',
+    source: 'protestart/Aufkleber_130.webp',
   },
   {
-    name: 'solidarity',
-    source: 'home/solidarity.webp',
+    name: 'Aufkleber_138',
+    source: 'protestart/Aufkleber_138.webp',
   },
   {
-    name: 'solidarity2',
-    source: 'home/solidarity2.webp',
+    name: 'Aufkleber_449',
+    source: 'protestart/Aufkleber_449.webp',
   },
   {
-    name: 'women',
-    source: 'home/women.webp',
+    name: 'Dortmund_1975',
+    source: 'protestart/Dortmund_1975.webp',
   },
   {
-    name: 'work',
-    source: 'home/work.webp',
+    name: 'PK 238_1',
+    source: 'protestart/PK 238_1.webp',
+  },
+  {
+    name: 'PK_171_1',
+    source: 'protestart/PK_171_1.webp',
+  },
+  {
+    name: 'PL-C 1202',
+    source: 'protestart/PL-C 1202.webp',
+  },
+  {
+    name: 'PL_B_175',
+    source: 'protestart/PL_B_175.webp',
   },
   {
     name: 'antifascism',
@@ -76,10 +88,6 @@ export const mediaData = [
     source: 'posterParade/solidarity2.webp',
   },
   {
-    name: 'solidarity3',
-    source: 'posterParade/solidarity3.webp',
-  },
-  {
     name: 'youth',
     source: 'posterParade/youth.webp',
   },
@@ -90,5 +98,13 @@ export const mediaData = [
   {
     name: 'youth3',
     source: 'posterParade/youth3.webp',
+  },
+  {
+    name: '1928',
+    source: 'chat/1928.webp',
+  },
+  {
+    name: '1983',
+    source: 'chat/1983.webp',
   },
 ]
