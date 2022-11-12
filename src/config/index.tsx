@@ -91,8 +91,8 @@ export const sloganGenerator = {
 export const revolutionstelephone = {
   de: {
     description1:
-      'Über Protest und Gesellschaft haben sich in den letzten 100 Jahren viele Menschen Gedanken gemacht. Hier kannst du einige von ihnen anrufen und dir anhören, was sie zu dem Thema zu sagen haben.',
-    description2: 'Wähle dir dazu eine Person aus dem Telefonbuch aus und wähle ihre Nummer, indem du nacheinander die Ziffern auf dem Telefon drückst.',
+      'Über Protest und Gesellschaft haben sich in der Vergangenheit viele Menschen Gedanken gemacht. Hier kannst du einige von ihnen anrufen und dir anhören, was sie zu dem Thema zu sagen haben.',
+    description2: 'Wähle dir dazu eine Person aus dem Telefonbuch aus und wähle ihre Nummer, indem du nacheinander die Ziffern auf dem Telefon tippst.',
     callText: 'Gewählte Nummer:',
     speakText: 'spricht',
   },

@@ -6,73 +6,14 @@ import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 import IconButton from '@mui/material/IconButton'
 import MusicNoteIcon from '@mui/icons-material/MusicNote'
-import { useEffect, useState } from 'react'
-import { AudioPlayerProvider, useAudioPlayer } from 'react-use-audio-player'
+import { useState } from 'react'
+import { AudioPlayerProvider } from 'react-use-audio-player'
 
 import { names } from 'config/revolutionstelephone'
 import { revolutionstelephone } from 'config'
 import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
-
-const Call = ({ number, caller, onEnd }) => {
-  const hasHydrated = useHasHydrated()
-  const { language } = useStore()
-  const { ready, loading, load, playing, ended } = useAudioPlayer({
-    format: 'mp3',
-    autoplay: false,
-  })
-
-  useEffect(() => {
-    number &&
-      caller !== null &&
-      load({
-        src: `./revolutionstelephone/${number}.mp3`,
-        autoplay: true,
-        onend: () => onEnd(),
-      })
-  }, [number, caller])
-
-  return (
-    <Grid item xs={12}>
-      {!ready && !loading && (
-        <Box p={2}>
-          <Typography component="p" variant="h4">
-            {hasHydrated && revolutionstelephone[language].callText}
-            {` `}
-            {number}
-          </Typography>
-        </Box>
-      )}
-      {loading && (
-        <Box p={2}>
-          <Typography component="p" variant="h4">
-            {hasHydrated && revolutionstelephone[language].callText}
-            {` `}
-            {number}
-          </Typography>
-        </Box>
-      )}
-      {(playing || ended) && !caller && (
-        <Box p={2}>
-          <Typography component="p" variant="h4">
-            {hasHydrated && revolutionstelephone[language].callText}
-            {` `}
-            {number}
-          </Typography>
-        </Box>
-      )}
-      {ready && caller && (
-        <Box p={2}>
-          <Typography component="p" variant="h4">
-            {caller?.name}
-            {` `}
-            {hasHydrated && revolutionstelephone[language].speakText}
-          </Typography>
-        </Box>
-      )}
-    </Grid>
-  )
-}
+import { Call } from 'services/Call'
 
 const RevolutionTelephone = () => {
   const hasHydrated = useHasHydrated()
@@ -81,12 +22,12 @@ const RevolutionTelephone = () => {
   const [activeElement, setActiveElement] = useState(null)
 
   function isElementActive(element: { name: string; value: string }) {
-    return telephoneNumber.length === 4 && telephoneNumber === element.value
+    return telephoneNumber.length === 5 && telephoneNumber === element.value
   }
 
   function dialNumber(digit: string) {
-    telephoneNumber.length === 4 && resetTelephoneNumber()
-    telephoneNumber.length === 3 && setActiveElement(names.find((element) => element.value === telephoneNumber.concat(digit)))
+    telephoneNumber.length === 5 && resetTelephoneNumber()
+    telephoneNumber.length === 4 && setActiveElement(names.find((element) => element.value === telephoneNumber.concat(digit)))
     return setTelephoneNumber((previousNumber) => previousNumber.concat(digit))
   }
 
@@ -407,13 +348,9 @@ const RevolutionTelephone = () => {
         sx={{
           flexGrow: 1,
           maxWidth: '300px',
-          border: '4px solid black',
-          backgroundColor: 'background.default',
-          color: 'text.primary',
-          transform: 'rotate(5deg)',
         }}
       >
-        <List dense={true} sx={{ py: 0 }}>
+        <List dense={true} sx={{ py: 0, border: '4px solid black', backgroundColor: 'background.default', color: 'text.primary', transform: 'rotate(5deg)' }}>
           {names.map((element, index) => (
             <ListItem
               key={index}
@@ -428,20 +365,23 @@ const RevolutionTelephone = () => {
                 )
               }
             >
-              <ListItemText sx={{ mx: '1rem', flex: '0 0 50%' }} primary={element.name} primaryTypographyProps={{ fontSize: '1.2rem' }} />
+              <ListItemText sx={{ mx: '.75rem', flex: '0 0 49%' }} primary={element.name} primaryTypographyProps={{ fontSize: '1.2rem' }} />
               <Box
                 sx={{
-                  flex: '0 0 10%',
                   height: '40px',
-                  width: '40px',
                   borderLeft: '4px solid #000',
                 }}
               />
-              <ListItemText sx={{ flex: '0 0 50%', mx: '1rem' }} primary={element.value} primaryTypographyProps={{ fontSize: '1.2rem' }} />
+              <ListItemText sx={{ flex: '0 0 49%', mx: '2rem' }} primary={element.value} primaryTypographyProps={{ fontSize: '1.2rem' }} />
             </ListItem>
           ))}
         </List>
       </Grid>
+      {activeElement && (
+        <Typography component="h4" variant="h6" color="text.secondary" sx={{ pt: 2 }}>
+          {activeElement.description}
+        </Typography>
+      )}
     </Grid>
   )
 }
