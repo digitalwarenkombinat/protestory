@@ -19,7 +19,7 @@ async function getImages(dir) {
 }
 
 export async function createData() {
-  const mediaDataHome = await getImages('public/home')
+  const mediaDataHome = await getImages('public/protestart')
   const mediaDataPoster = await getImages('public/posterParade')
   const mediaDataChat = await getImages('public/chat')
   const mediaData = mediaDataHome.concat(mediaDataPoster.concat(mediaDataChat))

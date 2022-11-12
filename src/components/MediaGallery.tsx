@@ -7,7 +7,7 @@ import { mediaData } from 'config/mediaData'
 
 export const MediaGallery = () => (
   <Container maxWidth={false} component="section">
-    <Masonry columns={4} spacing={2}>
+    <Masonry columns={4} spacing={2} sx={{ pt: 2 }}>
       {mediaData.map((item, index) => (
         <Box key={index}>
           <Box
