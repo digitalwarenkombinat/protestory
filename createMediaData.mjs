@@ -21,13 +21,10 @@ async function getImages(dir) {
 export async function createData() {
   const mediaDataHome = await getImages('public/home')
   const mediaDataPoster = await getImages('public/posterParade')
-  const mediaData = mediaDataHome.concat(mediaDataPoster)
+  const mediaDataChat = await getImages('public/chat')
+  const mediaData = mediaDataHome.concat(mediaDataPoster.concat(mediaDataChat))
 
-  const mediaDataFile = `export const mediaData = ${JSON.stringify(
-    mediaData,
-    null,
-    2
-  )};`
+  const mediaDataFile = `export const mediaData = ${JSON.stringify(mediaData, null, 2)};`
   const mediaDataFilePath = 'src/config/mediaData.tsx'
   await fs.writeFile(mediaDataFilePath, mediaDataFile, 'utf-8')
 }
