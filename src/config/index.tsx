@@ -130,6 +130,17 @@ export const posterParade = {
   },
 }
 
+export const concert = {
+  de: {
+    description: 'Bitte wähle ein Jahr aus!',
+    loading: 'Audio lädt',
+  },
+  en: {
+    description: 'Please choose a year!',
+    loading: 'Audio loading',
+  },
+}
+
 export const legalNotice = {
   de: {
     title: 'Über das Projekt',

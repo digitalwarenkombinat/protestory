@@ -1,28 +1,20 @@
-import {
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-  FunctionComponent,
-  MouseEvent,
-} from 'react'
+import { useEffect, useState, FunctionComponent } from 'react'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import PauseIcon from '@mui/icons-material/Pause'
 import StopIcon from '@mui/icons-material/Stop'
-import VolumeMuteIcon from '@mui/icons-material/VolumeMute'
+import VolumeUpIcon from '@mui/icons-material/VolumeUp'
+import VolumeOffIcon from '@mui/icons-material/VolumeOff'
 import Grid from '@mui/material/Grid'
-import {
-  AudioPlayerProvider,
-  useAudioPlayer,
-  useAudioPosition,
-} from 'react-use-audio-player'
+import { AudioPlayerProvider, useAudioPlayer, useAudioPosition } from 'react-use-audio-player'
+
 import { formatTime } from 'utils/util'
+import useStore from 'utils/store'
+import { concert } from 'config'
+import { useHasHydrated } from 'utils/useHasHydrated'
 
 const TimeLabel = () => {
   const { duration, position } = useAudioPosition({
@@ -31,61 +23,7 @@ const TimeLabel = () => {
   if (duration === Infinity) return null
   const elapsed = typeof position === 'number' ? position : 0
 
-  return (
-    <Box m={2} minWidth={100}>{`${formatTime(elapsed)} / ${formatTime(
-      duration
-    )}`}</Box>
-  )
-}
-
-const AudioSeekBar: FunctionComponent = () => {
-  const { duration, seek, percentComplete } = useAudioPosition({
-    highRefreshRate: true,
-  })
-  const { playing } = useAudioPlayer()
-  const [barWidth, setBarWidth] = useState('0%')
-
-  const seekBarElem = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    setBarWidth(`${percentComplete}%`)
-  }, [percentComplete])
-
-  const goTo = useCallback(
-    (event: MouseEvent) => {
-      const { pageX: eventOffsetX } = event
-
-      if (seekBarElem.current) {
-        const elementOffsetX = seekBarElem.current.offsetLeft
-        const elementWidth = seekBarElem.current.clientWidth
-        const percent = (eventOffsetX - elementOffsetX) / elementWidth
-        seek(percent * duration)
-      }
-    },
-    [duration, playing, seek]
-  )
-
-  return (
-    <Box
-      ref={seekBarElem}
-      onClick={goTo}
-      sx={{
-        cursor: 'pointer',
-        backgroundColor: 'background.default',
-        overflow: 'hidden',
-        width: '50px',
-        height: '25px',
-      }}
-    >
-      <Box
-        style={{ width: barWidth }}
-        sx={{
-          backgroundColor: 'accent.main',
-          height: '100%',
-        }}
-      />
-    </Box>
-  )
+  return <Typography component="p" variant="h5">{`${formatTime(elapsed)} / ${formatTime(duration)}`}</Typography>
 }
 
 const AudioControls: FunctionComponent<{}> = () => {
@@ -98,95 +36,134 @@ const AudioControls: FunctionComponent<{}> = () => {
 
   return (
     <Box
-      p={2}
       sx={{
         display: 'flex',
         justifyContent: 'center',
       }}
     >
-      <IconButton
-        aria-label="play/pause"
-        onClick={() => (playing ? pause() : play())}
-      >
+      <IconButton aria-label="play/pause" onClick={() => (playing ? pause() : play())}>
         {playing ? (
           <PauseIcon
-            sx={{ height: 38, width: 38, color: 'accent.main' }}
+            sx={{
+              height: 64,
+              width: 64,
+              color: 'accent.main',
+            }}
           />
         ) : (
           <PlayArrowIcon
-            sx={{ height: 38, width: 38, color: 'accent.main' }}
+            sx={{
+              height: 64,
+              width: 64,
+              color: 'accent.main',
+            }}
           />
         )}
       </IconButton>
       <IconButton aria-label="stop" onClick={() => stop()}>
         <StopIcon
-          sx={{ height: 38, width: 38, color: 'accent.main' }}
+          sx={{
+            height: 64,
+            width: 64,
+            color: 'accent.main',
+          }}
         />
       </IconButton>
-      <IconButton
-        aria-label="mute"
-        onClick={() => setMuted((lastState) => !lastState)}
-      >
-        <VolumeMuteIcon
-          sx={{ height: 38, width: 38, color: 'accent.main' }}
-        />
+      <IconButton aria-label="mute" onClick={() => setMuted((lastState) => !lastState)}>
+        {muted ? (
+          <VolumeUpIcon
+            sx={{
+              height: 64,
+              width: 64,
+              color: 'accent.main',
+            }}
+          />
+        ) : (
+          <VolumeOffIcon
+            sx={{
+              height: 64,
+              width: 64,
+              color: 'accent.main',
+            }}
+          />
+        )}
       </IconButton>
     </Box>
   )
 }
 
 const Player = ({ activeDecade }) => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const { ready, loading, load } = useAudioPlayer({
     format: 'mp3',
     autoplay: false,
-    onend: () => console.log('sound has ended!'),
   })
 
   useEffect(() => {
     activeDecade &&
       load({
-        src: `./concert/song${activeDecade.decade}.mp3`,
+        src: `./concert/${activeDecade.key}.mp3`,
         autoplay: true,
       })
   }, [activeDecade])
 
   return (
-    <Card sx={{ display: 'flex' }}>
+    <Card
+      sx={{
+        display: 'flex',
+        backgroundColor: 'background.default',
+        justifyContent: 'center',
+      }}
+    >
       {!ready && !loading && (
         <Box p={2}>
-          <Typography component="div" variant="h4">
-            Bitte wähle ein Jahrzehnt aus!
+          <Typography component="p" variant="h4">
+            {hasHydrated && concert[language].description}
           </Typography>
         </Box>
       )}
       {loading && (
         <Box p={2}>
-          <Typography component="div" variant="h4">
-            Audio lädt
+          <Typography component="p" variant="h4">
+            {hasHydrated && concert[language].loading}
           </Typography>
         </Box>
       )}
       {ready && (
         <>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <CardContent sx={{ flex: '1 0 auto' }}>
-              <Typography component="div" variant="h4">
+          <Grid container alignItems="center" justifyContent="space-evenly" textAlign="center" spacing={1}>
+            <Grid item xs={2}>
+              <AudioControls />
+            </Grid>
+            {/* <AudioSeekBar /> */}
+            <Grid
+              item
+              xs={2}
+              sx={{
+                backgroundColor: 'text.secondary',
+                border: '2px solid black',
+                borderRadius: '20px',
+              }}
+            >
+              <TimeLabel />
+            </Grid>
+            <Grid
+              item
+              xs={10}
+              sx={{
+                backgroundColor: 'text.secondary',
+                border: '2px solid black',
+                borderRadius: '20px',
+                padding: '4px',
+                marginBottom: '1rem',
+              }}
+            >
+              <Typography component="p" variant="h5">
                 {activeDecade.title}
               </Typography>
-              <Typography component="div" variant="subtitle1">
-                {activeDecade.author}
-              </Typography>
-            </CardContent>
-            <AudioControls />
-            <AudioSeekBar />
-            <TimeLabel />
-          </Box>
-          <CardMedia
-            component="img"
-            sx={{ width: 151 }}
-            image={`./concert/cover${activeDecade.decade}.webp`}
-            alt={`Albumcover ${activeDecade.author}`}
-          />
+            </Grid>
+          </Grid>
         </>
       )}
     </Card>
@@ -194,7 +171,7 @@ const Player = ({ activeDecade }) => {
 }
 
 export const AudioPlayer = ({ activeDecade }) => (
-  <Grid item>
+  <Grid item xs={12}>
     <AudioPlayerProvider>
       <Player activeDecade={activeDecade} />
     </AudioPlayerProvider>
