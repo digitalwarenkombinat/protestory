@@ -37,16 +37,17 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
   return (
     <Container maxWidth="lg" component="section">
       <style>{`
+      .imageWrapper {
+          margin-top: 2rem;
+        }
 
       .imageContainer {
         position: sticky;
-        top: 0;
+        top: 4rem;
         width: 100%;
         height: 75vh;
         overflow: hidden;
         box-sizing: border-box;
-        border: 8px solid white;
-        padding: 8px;
       }
 
       .imageInnerContainer {
@@ -69,7 +70,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
       }
 
       .caption-wrapper {
-        min-height: 100vh;
+        min-height: 75vh;
         display: flex;
         align-items: center;
       }
@@ -78,6 +79,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
       .appHeading {
         text-align: center;
         width: 100%;
+        hyphens: auto;
       }
 
       .close-read-kicker {
@@ -131,7 +133,17 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
       `}</style>
       <Box className="imageWrapper">
         <Box className="imageContainer">
-          <Image className={className} src={image} sizes="100vw" fill alt="Poster Parade" />
+          <Image
+            className={className}
+            src={image}
+            width={800}
+            height={600}
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+            alt="Poster Parade"
+          />
         </Box>
 
         <Box className="textContainer" ref={ScrollContainerRef}>
@@ -140,7 +152,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
               <Typography component="p" variant="body1" color="text.primary" className="close-read-kicker">
                 Analyse
               </Typography>
-              <Typography component="h2" variant="h2" color="text.primary" gutterBottom className="appHeading">
+              <Typography component="h2" variant="h2" color="text.primary" className="appHeading">
                 {header}
               </Typography>
             </Box>
@@ -149,7 +161,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
 
           {texts.map((text, index) => (
             <Box key={index} className="caption-wrapper">
-              <Typography component="p" variant="body1" color="text.primary" sx={{ bgcolor: 'background.default' }} className="appText">
+              <Typography component="p" variant="h5" color="text.primary" sx={{ bgcolor: 'background.default' }} className="appText">
                 {text}
               </Typography>
             </Box>
