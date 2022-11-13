@@ -5,10 +5,8 @@ import DialogActions from '@mui/material/DialogActions'
 import DialogContent from '@mui/material/DialogContent'
 import DialogTitle from '@mui/material/DialogTitle'
 import FormControlLabel from '@mui/material/FormControlLabel'
-import { useTheme } from '@mui/material/styles'
 import Switch from '@mui/material/Switch'
 import Typography from '@mui/material/Typography'
-import useMediaQuery from '@mui/material/useMediaQuery'
 import { useState, useEffect, ChangeEvent } from 'react'
 
 export type CookieDialogProps = {
@@ -64,9 +62,6 @@ export const cookieDialogText: CookieDialogStrings = {
 }
 
 export const CookieDialog = (props: CookieDialogProps) => {
-  const theme = useTheme()
-  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'))
-
   const [visible, setVisible] = useState(props.visible)
   const [optionsVisible, setOptionsVisible] = useState(false)
   const [categories, setCategories] = useState<{
@@ -96,7 +91,7 @@ export const CookieDialog = (props: CookieDialogProps) => {
   }
 
   return (
-    <Dialog open={visible} fullScreen={fullScreen} scroll="paper">
+    <Dialog open={visible} scroll="paper">
       {!optionsVisible && (
         <>
           <DialogTitle>{cookieDialogText.mainDialogTitle}</DialogTitle>
