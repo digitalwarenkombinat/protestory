@@ -25,23 +25,23 @@ const SloganGenerator = () => {
   }
 
   const triggerSlotRotation = () => {
-    let randomOption = Math.floor(Math.random() * slogans.length)
-    return slogans[randomOption]
+    let randomOption = Math.floor(Math.random() * slogans[language].length)
+    return slogans[language][randomOption]
   }
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em">
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2rem">
       <Grid item>
-        <Typography component="h2" variant="h2" color="secondary.main">
+        <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
           Slogan-Generator
         </Typography>
-        <Typography component="h3" variant="h4" color="secondary.main">
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
           {hasHydrated && sloganGenerator[language].description1}
         </Typography>
-        <Typography component="h3" variant="h4" color="secondary.main">
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
           {hasHydrated && sloganGenerator[language].description2}
         </Typography>
-        <Typography component="h3" variant="h4" color="secondary.main">
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
           {hasHydrated && sloganGenerator[language].description3}
         </Typography>
       </Grid>
@@ -70,8 +70,10 @@ const SloganGenerator = () => {
           animation: fadeOut ease .2s;
           opacity: 0;
         }
-        .slogan {
-          font-size: 3rem
+        .sloganText {
+          font-size: 3rem;          
+          font-weight: 400;
+          line-height: 1.235;
         }
         .roll {
           animation: rollY ease 2s;
@@ -139,8 +141,8 @@ const SloganGenerator = () => {
           </g>
           <g id="Slot_Anzeige">
             <path className="cls-1" id="slot" d="M118.98,572.3c0,9.95,1296,10.03,1296,0V262.7c0-10.03-1296-5.82-1296,7.2v302.4Z" />
-            <text className={rolling ? 'slogan roll' : 'slogan stop'} textAnchor="middle" id="sloganText" dy="-150">
-              <textPath xlinkHref="#slot" startOffset="672">
+            <text className={rolling ? 'roll' : 'stop'} textAnchor="middle" id="sloganText" dy="-150">
+              <textPath xlinkHref="#slot" startOffset="660" className="sloganText">
                 {slogan}
               </textPath>
             </text>
