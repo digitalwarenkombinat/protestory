@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 import Link from '@mui/material/Link'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import BasicMenu from './Menu'
 import icon from '/public/icon.svg'
 
@@ -21,14 +21,24 @@ export const Header = ({ title }: HeaderProps) => {
           bgcolor: 'primary.main',
         }}
       >
-        <Toolbar sx={{ px: [0, 2] }}>
+        <Toolbar disableGutters>
           <Typography
             sx={{
               transform: 'rotate(-10deg)',
             }}
           >
             <Link color="inherit" href="/">
-              <Image priority src={icon} alt={'Logo PROTESTORY!'} width={300} height={300} />
+              <Image
+                priority
+                src={icon}
+                alt={'Logo PROTESTORY!'}
+                width={300}
+                style={{
+                  width: title ? '25vw' : '50vw',
+                  height: 'auto',
+                  maxHeight: '200px',
+                }}
+              />
             </Link>
           </Typography>
           <Typography

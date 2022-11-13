@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Grid from '@mui/material/Grid'
+import Container from '@mui/material/Container'
 
 import Layout from 'components/Layout'
 import { MediaGallery } from 'components/MediaGallery'
@@ -11,11 +11,9 @@ export default function protestart() {
       <Head>
         <title>Protest Art</title>
       </Head>
-      <Grid container alignItems="center" justifyContent="center">
-        <Grid item>
-          <MediaGallery />
-        </Grid>
-      </Grid>
+      <Container maxWidth={false} component="section">
+        <MediaGallery />
+      </Container>
     </Layout>
   )
 }

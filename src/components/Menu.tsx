@@ -35,7 +35,6 @@ export default function BasicMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        sx={{ mr: 4, height: '4rem', width: '4rem' }}
       >
         <MenuRoundedIcon />
       </IconButton>
@@ -77,7 +76,7 @@ export default function BasicMenu() {
                 borderColor: '#FFF',
               }}
             />
-            <Link href={item.href} passHref>
+            <Link href={item.href} passHref style={{ textDecoration: 'none' }}>
               <MenuItem onClick={handleClose}>
                 <Typography component="h3" variant="h4" color="text.secondary">
                   {hasHydrated && item.title}
