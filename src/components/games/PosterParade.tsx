@@ -1,4 +1,4 @@
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { useRef, useMemo, useState } from 'react'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
