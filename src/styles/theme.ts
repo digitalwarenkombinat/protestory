@@ -30,7 +30,7 @@ let theme = createTheme({
     fontFamily: 'Fabrik',
     h1: {
       fontFamily: 'Hey August',
-      fontSize: '10rem',
+      fontSize: '4rem',
     },
     h2: {
       fontFamily: 'Hey August',
@@ -64,26 +64,6 @@ let theme = createTheme({
           position: 'fixed',
           bottom: 64,
           right: 64,
-        },
-      },
-    },
-    MuiDialog: {
-      styleOverrides: {
-        root: {
-          bottom: 64,
-          right: 64,
-          alignItems: 'flex-end',
-        },
-        container: {
-          alignItems: 'flex-end',
-          justifyContent: 'flex-end',
-        },
-        paper: {
-          minWidth: 400,
-          minHeight: 400,
-          marginBottom: '96px',
-          marginRight: '24px',
-          border: 'none',
         },
       },
     },

@@ -91,7 +91,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
   }
 
   return (
-    <>
+    <div>
       <ChatTitle title={title} />
       <DialogContent
         dividers
@@ -151,7 +151,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
           </Button>
         </DialogActions>
       )}
-    </>
+    </div>
   )
 }
 

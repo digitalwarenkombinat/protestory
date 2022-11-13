@@ -16,10 +16,23 @@ const HelpDialog = ({ onClose, open }) => {
   return (
     <Dialog
       sx={{
+        '& .MuiDialog-root': {
+          bottom: 64,
+          right: 64,
+          alignItems: 'flex-end',
+        },
+        '& .MuiDialog-container': {
+          alignItems: 'flex-end',
+          justifyContent: 'flex-end',
+        },
         '& .MuiDialog-paper': {
           backgroundColor: 'background.default',
           maxHeight: '75vh',
           minWidth: '600px',
+          minHeight: 400,
+          marginBottom: '96px',
+          marginRight: '24px',
+          border: 'none',
         },
       }}
       maxWidth="sm"
