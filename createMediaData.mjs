@@ -9,6 +9,7 @@ async function getImages(dir) {
         return {
           name: file.substr(0, file.lastIndexOf('.')),
           source: `${dir.split('/')[1]}/${file}`,
+          description: file.substr(0, file.lastIndexOf('.')),
         }
       })
 
