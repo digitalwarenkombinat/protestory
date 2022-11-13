@@ -38,21 +38,21 @@ const RevolutionTelephone = () => {
 
   return (
     <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em">
-      <Grid item maxWidth="lg" mx="auto">
-        <Typography component="h2" variant="h2" color="text.secondary">
-          Protest-Telefon
+      <Grid item>
+        <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
+          Revolutions-Telefon
         </Typography>
-        <Typography component="h3" variant="h4" color="text.secondary">
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && revolutionstelephone[language].description1}
         </Typography>
-        <Typography component="h3" variant="h4" color="text.secondary">
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && revolutionstelephone[language].description2}
         </Typography>
       </Grid>
       <AudioPlayerProvider>
         <Call number={telephoneNumber} caller={activeElement} onEnd={resetTelephoneNumber} />
       </AudioPlayerProvider>
-      <Grid item maxWidth="lg" sx={{ width: '67%' }}>
+      <Grid item maxWidth="lg" sm={12} md={8} sx={{ width: '100%' }}>
         <style>{`
           #Feld0:hover,
           #Feld1:hover,
