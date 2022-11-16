@@ -54,6 +54,7 @@ export default function BasicMenu() {
             width: 'auto',
             border: 'none',
             borderRadius: '4px',
+            m: '-1rem',
           },
         }}
       >

@@ -36,7 +36,7 @@ export const Footer = () => {
         bgcolor: 'primary.main',
       }}
     >
-      <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em">
+      <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2rem">
         <Grid item minWidth="220px">
           <Link color="inherit" href="https://www.arbeiterjugend.de">
             <Image src={ArchivIcon} alt={'Archiv der Arbeiter:innenjugend'} width={160} height={138} />
