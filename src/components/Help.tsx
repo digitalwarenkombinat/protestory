@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import CancelRoundedIcon from '@mui/icons-material/CancelRounded'
+import HelpIcon from '@mui/icons-material/Help'
 import Dialog from '@mui/material/Dialog'
 import Fab from '@mui/material/Fab'
-import HelpIcon from '@mui/icons-material/Help'
-
-import { Chat } from './Chat'
 
 import { chat } from 'config/chat'
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
+import { Chat } from './Chat'
 
 const HelpDialog = ({ onClose, open }) => {
   const handleClose = () => {
@@ -38,6 +39,8 @@ const HelpDialog = ({ onClose, open }) => {
       maxWidth="sm"
       onClose={handleClose}
       open={open}
+      hideBackdrop={true}
+      disableScrollLock
     >
       <Chat {...chat} />
     </Dialog>
@@ -45,7 +48,10 @@ const HelpDialog = ({ onClose, open }) => {
 }
 
 export const Help = () => {
+  const hasHydrated = useHasHydrated()
+  const { showChatInitial } = useStore()
   const [open, setOpen] = useState(false)
+  useEffect(() => setOpen(hasHydrated && showChatInitial), [hasHydrated, showChatInitial])
 
   const handleClickOpen = () => {
     setOpen(true)
@@ -53,6 +59,7 @@ export const Help = () => {
 
   const handleClose = () => {
     setOpen(false)
+    useStore.getState().chatInitialDisplayed()
   }
   return (
     <>

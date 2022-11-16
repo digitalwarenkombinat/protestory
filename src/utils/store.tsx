@@ -16,6 +16,7 @@ interface Item {
 
 type Store = {
   language: string
+  showChatInitial: boolean
   acceptedCategories: CookieDialogCategory[]
   items: Item[]
   getLinkedItems: () => Item[]
@@ -24,6 +25,7 @@ type Store = {
   // eslint-disable-next-line no-unused-vars
   activateItem: (itemId: string) => void
   changeLanguage: () => void
+  chatInitialDisplayed: () => void
   changeAcceptedCategories: (
     // eslint-disable-next-line no-unused-vars
     categories: CookieDialogCategory[]
@@ -34,6 +36,8 @@ const useStore = create<Store>()(
   persist(
     (set, get) => ({
       language: 'de',
+
+      showChatInitial: true,
 
       acceptedCategories: [],
 
@@ -56,6 +60,11 @@ const useStore = create<Store>()(
       changeLanguage: () =>
         set((state) => ({
           language: state.language === 'de' ? 'en' : 'de',
+        })),
+
+      chatInitialDisplayed: () =>
+        set(() => ({
+          showChatInitial: false,
         })),
 
       changeAcceptedCategories: (categories) =>
