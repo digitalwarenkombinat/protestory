@@ -23,7 +23,7 @@ const TimeLabel = () => {
   if (duration === Infinity) return null
   const elapsed = typeof position === 'number' ? position : 0
 
-  return <Typography component="p" variant="h5">{`${formatTime(elapsed)} / ${formatTime(duration)}`}</Typography>
+  return <Typography component="p" variant="h4">{`${formatTime(elapsed)} / ${formatTime(duration)}`}</Typography>
 }
 
 const AudioControls: FunctionComponent<{}> = () => {
@@ -45,16 +45,16 @@ const AudioControls: FunctionComponent<{}> = () => {
         {playing ? (
           <PauseIcon
             sx={{
-              height: 64,
-              width: 64,
+              height: '3rem',
+              width: '3rem',
               color: 'accent.main',
             }}
           />
         ) : (
           <PlayArrowIcon
             sx={{
-              height: 64,
-              width: 64,
+              height: '3rem',
+              width: '3rem',
               color: 'accent.main',
             }}
           />
@@ -63,8 +63,8 @@ const AudioControls: FunctionComponent<{}> = () => {
       <IconButton aria-label="stop" onClick={() => stop()}>
         <StopIcon
           sx={{
-            height: 64,
-            width: 64,
+            height: '3rem',
+            width: '3rem',
             color: 'accent.main',
           }}
         />
@@ -73,16 +73,16 @@ const AudioControls: FunctionComponent<{}> = () => {
         {muted ? (
           <VolumeUpIcon
             sx={{
-              height: 64,
-              width: 64,
+              height: '3rem',
+              width: '3rem',
               color: 'accent.main',
             }}
           />
         ) : (
           <VolumeOffIcon
             sx={{
-              height: 64,
-              width: 64,
+              height: '3rem',
+              width: '3rem',
               color: 'accent.main',
             }}
           />
@@ -132,34 +132,34 @@ const Player = ({ activeDecade }) => {
       )}
       {ready && (
         <>
-          <Grid container alignItems="center" justifyContent="space-evenly" textAlign="center" spacing={1}>
-            <Grid item xs={2}>
+          <Grid container alignItems="center" justifyContent="center" textAlign="center">
+            <Grid item xs={12}>
               <AudioControls />
             </Grid>
             {/* <AudioSeekBar /> */}
             <Grid
               item
-              xs={2}
+              xs={12}
               sx={{
                 backgroundColor: 'text.secondary',
                 border: '2px solid black',
                 borderRadius: '20px',
+                margin: '.5rem',
               }}
             >
               <TimeLabel />
             </Grid>
             <Grid
               item
-              xs={10}
+              xs={12}
               sx={{
                 backgroundColor: 'text.secondary',
                 border: '2px solid black',
                 borderRadius: '20px',
-                padding: '4px',
-                marginBottom: '1rem',
+                margin: '.5rem',
               }}
             >
-              <Typography component="p" variant="h5">
+              <Typography component="p" variant="h4">
                 {activeDecade.title}
               </Typography>
             </Grid>

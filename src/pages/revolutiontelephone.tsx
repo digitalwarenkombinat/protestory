@@ -10,7 +10,7 @@ export default function revolutiontelephone() {
       <Head>
         <title>Revolutionstelefon</title>
       </Head>
-      <Container sx={{ backgroundColor: 'secondary.main' }} maxWidth="xl" component="section">
+      <Container sx={{ backgroundColor: 'secondary.main' }} maxWidth={false} component="section">
         <RevolutionTelephone />
       </Container>
     </Layout>

@@ -19,8 +19,9 @@ export const Timeline = ({ setActiveDecade }) => (
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         borderBottom: '8px solid black',
+        overflow: 'auto',
       }}
     >
       {concert.timeline.map(({ index, decade }) => (

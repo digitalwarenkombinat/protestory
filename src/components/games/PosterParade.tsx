@@ -26,8 +26,8 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
     []
   )
 
-  const options = { threshold: 0.5 }
-  const paragraph = 'p'
+  const options = { threshold: 0.75 }
+  const paragraph = '.caption-wrapper'
 
   let className = styles[id + '_' + activeTransform]
   className += ' ' + styles.imageTransistion
@@ -70,6 +70,12 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
       }
 
       .caption-wrapper {
+        min-height: 75vh;
+        display: flex;
+        align-items: center;
+      }
+
+      .caption-spacer {
         min-height: 75vh;
         display: flex;
         align-items: center;
@@ -157,7 +163,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
               </Typography>
             </Box>
           </Box>
-          <Box className="caption-wrapper cover"></Box>
+          <Box className="caption-spacer cover"></Box>
 
           {texts.map((text, index) => (
             <Box key={index} className="caption-wrapper">

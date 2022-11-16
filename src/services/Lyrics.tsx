@@ -11,7 +11,11 @@ export const Lyrics = ({ activeDecade }) => (
         alignItems: 'center',
       }}
     >
-      {activeDecade?.decade && <CardMedia component="img" sx={{ width: '80%' }} image={`./concert/${activeDecade.key}.webp`} alt={`Lyrics ${activeDecade.name}`} />}
+      {activeDecade?.decade ? (
+        <CardMedia component="img" image={`./concert/${activeDecade.key}.webp`} alt={`Lyrics ${activeDecade.name}`} />
+      ) : (
+        <CardMedia component="img" image={`./concert/start.webp`} alt={`If I can't dance to it, it's not my revolution`} />
+      )}
     </Card>
   </Grid>
 )

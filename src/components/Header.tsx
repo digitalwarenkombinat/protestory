@@ -34,7 +34,7 @@ export const Header = ({ title }: HeaderProps) => {
                 alt={'Logo PROTESTORY!'}
                 width={300}
                 style={{
-                  width: title ? '20vw' : '50vw',
+                  width: '20vw',
                   height: 'auto',
                   maxHeight: '200px',
                 }}

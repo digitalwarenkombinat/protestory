@@ -27,10 +27,10 @@ export const Call = ({ number, caller, onEnd }) => {
   }, [number, caller])
 
   return (
-    <Grid item xs={12}>
+    <Grid item xs={12} sx={{ minHeight: ['12rem', '8rem'], display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {!ready && !loading && (
         <Box p={2}>
-          <Typography component="p" variant="h4">
+          <Typography component="p" variant="h5" color="text.secondary">
             {hasHydrated && revolutionstelephone[language].callText}
             {` `}
             {number}
@@ -39,7 +39,7 @@ export const Call = ({ number, caller, onEnd }) => {
       )}
       {loading && (
         <Box p={2}>
-          <Typography component="p" variant="h4">
+          <Typography component="p" variant="h5" color="text.secondary">
             {hasHydrated && revolutionstelephone[language].callText}
             {` `}
             {number}
@@ -48,7 +48,7 @@ export const Call = ({ number, caller, onEnd }) => {
       )}
       {(playing || ended) && !caller && (
         <Box p={2}>
-          <Typography component="p" variant="h4">
+          <Typography component="p" variant="h5" color="text.secondary">
             {hasHydrated && revolutionstelephone[language].callText}
             {` `}
             {number}
@@ -57,10 +57,8 @@ export const Call = ({ number, caller, onEnd }) => {
       )}
       {ready && caller && (
         <Box p={2}>
-          <Typography component="p" variant="h4">
-            {caller?.name}
-            {` `}
-            {hasHydrated && revolutionstelephone[language].speakText}
+          <Typography component="p" variant="h5" color="text.secondary">
+            {caller?.description}
           </Typography>
         </Box>
       )}

@@ -1,3 +1,4 @@
+/* eslint-disable no-sparse-arrays */
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
@@ -8,6 +9,8 @@ import IconButton from '@mui/material/IconButton'
 import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { useState } from 'react'
 import { AudioPlayerProvider } from 'react-use-audio-player'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 import { names } from 'config/revolutionstelephone'
 import { revolutionstelephone } from 'config'
@@ -18,6 +21,8 @@ import { Call } from 'services/Call'
 const RevolutionTelephone = () => {
   const hasHydrated = useHasHydrated()
   const { language } = useStore()
+  const theme = useTheme()
+  const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
   const [telephoneNumber, setTelephoneNumber] = useState('')
   const [activeElement, setActiveElement] = useState(null)
 
@@ -37,7 +42,7 @@ const RevolutionTelephone = () => {
   }
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em">
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em" maxWidth="xl" mx="auto">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
           Revolutions-Telefon
@@ -52,7 +57,7 @@ const RevolutionTelephone = () => {
       <AudioPlayerProvider>
         <Call number={telephoneNumber} caller={activeElement} onEnd={resetTelephoneNumber} />
       </AudioPlayerProvider>
-      <Grid item maxWidth="lg" sm={12} md={8} sx={{ width: '100%' }}>
+      <Grid item maxWidth="lg" sm={12} md={8} sx={{ width: '100%', overflow: 'hidden' }}>
         <style>{`
           #Feld0:hover,
           #Feld1:hover,
@@ -73,6 +78,11 @@ const RevolutionTelephone = () => {
               transform-origin: 50% 50%;
               animation: ring 2s ease 10s infinite;
               transform: rotate(0deg);
+          }
+          .scale {
+            transform: scale(1.5);
+            margin-bottom: 4rem;
+            margin-top: 4rem;
           }
           .cls-8,
           .cls-9 {
@@ -103,7 +113,7 @@ const RevolutionTelephone = () => {
             }
           }
         `}</style>
-        <svg id="Revolutionstelefon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537.46 361.7">
+        <svg id="Revolutionstelefon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537.46 361.7" className={hasHydrated && isDesktop ? '' : 'scale'}>
           <defs></defs>
           <g id="b">
             <path
@@ -350,7 +360,7 @@ const RevolutionTelephone = () => {
           maxWidth: '300px',
         }}
       >
-        <List dense={true} sx={{ py: 0, border: '4px solid black', backgroundColor: 'background.default', color: 'text.primary', transform: 'rotate(5deg)' }}>
+        <List dense={true} sx={{ py: 0, border: '4px solid black', backgroundColor: 'background.default', color: 'text.primary', transform: [, , 'rotate(5deg)'] }}>
           {names.map((element, index) => (
             <ListItem
               key={index}
@@ -377,11 +387,6 @@ const RevolutionTelephone = () => {
           ))}
         </List>
       </Grid>
-      {activeElement && (
-        <Typography component="h4" variant="h6" color="text.secondary" sx={{ pt: 2 }}>
-          {activeElement.description}
-        </Typography>
-      )}
     </Grid>
   )
 }

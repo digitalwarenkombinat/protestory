@@ -12,7 +12,7 @@ export default function concert() {
       <Head>
         <title>If I can&apos;t dance to it, it&apos;s not my revolution</title>
       </Head>
-      <Container maxWidth={false} component="section">
+      <Container maxWidth="lg" component="section">
         <Concert />
       </Container>
     </Layout>
