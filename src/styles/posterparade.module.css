@@ -78,40 +78,37 @@
 }
 
 .antifascism2_1,
-.antifascism2_2 {
-  transform: scale(1.2) translate(0%, 15%);
+.antifascism2_2,
+.antifascism2_3 {
+  transform: scale(1.1) translate(-10%, -30%);
 }
 
-.antifascism2_3,
 .antifascism2_4 {
-  transform: scale(1) translate(0%, 15%);
+  transform: scale(1) translate(0%, -5%);
 }
 
-.antifascism2_5 {
-  transform: scale(1.2) translate(-7%, -20%);
-}
-
-.antifascism2_6 {
-  transform: scale(1.7) translate(-20%, -30%);
-}
-
+.antifascism2_5,
+.antifascism2_6,
 .antifascism2_7,
 .antifascism2_8 {
-  transform: scale(1.4) translate(0%, 30%);
+  transform: scale(1.2) translate(5%, 30%);
 }
 
 .antifascism2_10,
 .antifascism2_11 {
-  transform: scale(1) translate(0%);
+  transform: scale(1.1) translate(-10%, 10%);
 }
 
-.antifascism2_12,
+.antifascism2_12 {
+  transform: scale(2.3) translate(10%, 25%);
+}
+
 .antifascism2_13 {
-  transform: scale(1.3) translate(-7%, 15%);
+  transform: scale(2.2) translate(30%, -40%);
 }
 
 .antifascism2_14 {
-  transform: scale(2) translate(30%, -30%);
+  transform: scale(1) translate(0%);
 }
 
 .peace_0 {
@@ -158,57 +155,53 @@
   transform: scale(1) translate(0%);
 }
 
-.peace2_1,
+.peace2_1 {
+  transform: scale(1.1) translate(0%, -40%);
+}
+
 .peace2_2 {
-  transform: scale(1.1) translate(0%, -33%);
+  transform: scale(1) translate(0%, -8%);
 }
 
-.peace2_3 {
-  transform: scale(1.1) translate(-0%, 15%);
-}
-
+.peace2_3,
 .peace2_4,
 .peace2_5 {
-  transform: scale(3.2) translate(30%, 25%);
+  transform: scale(2) translate(30%, 15%);
 }
 
 .peace2_6,
 .peace2_7,
 .peace2_8 {
-  transform: scale(3.2) translate(0%, 25%);
+  transform: scale(2) translate(0%, 15%);
 }
 
 .peace2_9,
 .peace2_10 {
-  transform: scale(3.2) translate(-30%, 25%);
+  transform: scale(2) translate(-30%, 15%);
 }
 
 .peace2_11,
 .peace2_12,
 .peace2_13 {
-  transform: scale(3.2) translate(30%, -7%);
+  transform: scale(2) translate(30%, -16%);
 }
 
 .peace2_14,
 .peace2_15,
 .peace2_16 {
-  transform: scale(3.2) translate(0%, -7%);
+  transform: scale(2) translate(0%, -16%);
 }
 
 .peace2_17,
 .peace2_18,
 .peace2_19,
 .peace2_20 {
-  transform: scale(3.2) translate(-30%, -7%);
+  transform: scale(2) translate(-30%, -16%);
 }
 
 .peace2_21,
-.peace2_22 {
-  transform: scale(1.1) translate(0%, 15%);
-}
-
-.peace2_23,
-.peace2_24 {
+.peace2_22,
+.peace2_23 {
   transform: scale(1) translate(0%);
 }
 
@@ -267,45 +260,40 @@
 }
 
 .solidarity_1,
-.solidarity_2 {
-  transform: scale(1.7) translate(-20%, -25%);
-}
-
+.solidarity_2,
 .solidarity_3 {
-  transform: scale(1.5) translate(20%, 25%);
+  transform: scale(1.3) translate(-15%, -45%);
 }
 
 .solidarity_4 {
-  transform: scale(2.3) translate(20%, 25%);
+  transform: scale(1.3) translate(10%, -40%);
 }
 
-.solidarity_5 {
-  transform: scale(2.7) translate(20%, 25%);
-}
-
-.solidarity_6 {
-  transform: scale(3.5) translate(20%, 25%);
-}
-
+.solidarity_5,
+.solidarity_6,
 .solidarity_7 {
-  transform: scale(1) translate(0%);
+  transform: scale(1.7) translate(20%, 15%);
 }
 
 .solidarity_8 {
-  transform: scale(1.5) translate(20%, 10%);
+  transform: scale(1.1) translate(20%, -10%);
 }
 
 .solidarity_9 {
-  transform: scale(2.3) translate(30%, 10%);
+  transform: scale(2.3) translate(30%, 0%);
 }
 
 .solidarity_10 {
-  transform: scale(2) translate(-30%, 15%);
+  transform: scale(1.3) translate(-35%, 5%);
 }
 
 .solidarity_11,
 .solidarity_12 {
-  transform: scale(3) translate(35%, -45%);
+  transform: scale(3) translate(35%, -50%);
+}
+
+.solidarity_13 {
+  transform: scale(1) translate(0%);
 }
 
 .environment_0,
@@ -355,11 +343,11 @@
 
 .peace3_1,
 .peace3_2 {
-  transform: scale(1.7) translate(-15%, -5%);
+  transform: scale(1.7) translate(-15%, -20%);
 }
 
 .peace3_3 {
-  transform: scale(3.2) translate(-5%, -20%);
+  transform: scale(3.2) translate(-5%, -30%);
 }
 
 .peace3_4,
@@ -369,48 +357,47 @@
 
 .peace3_6,
 .peace3_7 {
-  transform: scale(1.7) translate(-15%, -5%);
+  transform: scale(1.7) translate(-15%, -20%);
 }
 
-.peace3_8,
-.peace3_9 {
+.peace3_8 {
   transform: scale(1) translate(0%);
 }
 
-.peace3_10 {
+.peace3_9 {
   transform: scale(1.5) translate(20%, 25%);
 }
 
-.peace3_11 {
-  transform: scale(2.8) translate(-30%, -5%);
+.peace3_10 {
+  transform: scale(2.5) translate(-20%, -10%);
 }
 
+.peace3_11,
 .peace3_12,
-.peace3_13,
-.peace3_14 {
-  transform: scale(1.8) translate(-20%, 25%);
+.peace3_13 {
+  transform: scale(1.8) translate(-25%, 5%);
 }
 
-.peace3_15,
+.peace3_14,
+.peace3_15 {
+  transform: scale(1.4) translate(20%, -5%);
+}
+
 .peace3_16 {
-  transform: scale(2.2) translate(20%, 5%);
+  transform: scale(2) translate(10%, -10%);
 }
 
-.peace3_17 {
-  transform: scale(3.5) translate(5%, -5%);
-}
-
+.peace3_17,
 .peace3_18,
-.peace3_19,
+.peace3_19 {
+  transform: scale(1.8) translate(35%, -35%);
+}
+
 .peace3_20 {
-  transform: scale(1.8) translate(30%, -25%);
+  transform: scale(1.8) translate(35%, -35%);
 }
 
 .peace3_21 {
-  transform: scale(1.2) translate(0%, -30%);
-}
-
-.peace3_22 {
   transform: scale(1) translate(0%);
 }
 

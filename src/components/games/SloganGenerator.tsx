@@ -74,6 +74,7 @@ const SloganGenerator = () => {
           font-size: 3rem;          
           font-weight: 400;
           line-height: 1.235;
+          fill: #311b92;
         }
         .roll {
           animation: rollY ease 2s;

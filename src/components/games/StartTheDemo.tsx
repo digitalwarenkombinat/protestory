@@ -39,8 +39,8 @@ const StartTheDemo = () => {
   }
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto">
-      <Grid item sx={{ mt: 4 }}>
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto" my="2rem">
+      <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
           Get the Protest started!
         </Typography>
@@ -98,7 +98,7 @@ const StartTheDemo = () => {
           max={6}
         >
           {getLinkedItems().map((item) => (
-            <Link key={item.id} href={item.link} passHref>
+            <Link key={item.id} href={item.link} passHref style={{ textDecoration: 'none' }}>
               <Box sx={{ display: 'flex', cursor: 'pointer' }}>
                 <Avatar
                   alt={item.name}

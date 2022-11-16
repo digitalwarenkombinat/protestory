@@ -132,11 +132,17 @@ export const posterParade = {
 
 export const concert = {
   de: {
-    description: 'Bitte wähle ein Jahr aus!',
+    description1: 'If I can`t dance to it, it`s not my revolution',
+    description2: 'If I can`t dance to it, it`s not my revolution',
+    description3: 'If I can`t dance to it, it`s not my revolution',
+    select: 'Bitte wähle ein Jahr aus!',
     loading: 'Audio lädt',
   },
   en: {
-    description: 'Please choose a year!',
+    description1: 'EN If I can`t dance to it, it`s not my revolution',
+    description2: 'EN If I can`t dance to it, it`s not my revolution',
+    description3: 'EN If I can`t dance to it, it`s not my revolution',
+    select: 'Please choose a year!',
     loading: 'Audio loading',
   },
 }

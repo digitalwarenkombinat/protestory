@@ -43,9 +43,9 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
 
       .imageContainer {
         position: sticky;
-        top: 4rem;
+        top: 2rem;
         width: 100%;
-        height: 75vh;
+        height: 100vh;
         overflow: hidden;
         box-sizing: border-box;
       }
@@ -86,6 +86,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
         text-align: center;
         width: 100%;
         hyphens: auto;
+        background-color: rgba(255, 255, 255, 0.8);
       }
 
       .close-read-kicker {
@@ -102,6 +103,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
         margin-bottom: 0;
         text-align: center;
         max-width: 20em;
+        background-color: rgba(255, 255, 255, 0.8);
       }
 
       @media (min-width: 1024px) {
@@ -129,10 +131,15 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
         .appHeader,
         .appHeading {
           text-align: left;
+          background-color: transparent;
         }
 
         .appHeading {
           text-align: left;
+        }
+
+        .appText {
+          background-color: transparent;
         }
       }
 

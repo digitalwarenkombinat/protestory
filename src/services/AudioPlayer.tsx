@@ -119,7 +119,7 @@ const Player = ({ activeDecade }) => {
       {!ready && !loading && (
         <Box p={2}>
           <Typography component="p" variant="h4">
-            {hasHydrated && concert[language].description}
+            {hasHydrated && concert[language].select}
           </Typography>
         </Box>
       )}
@@ -133,13 +133,14 @@ const Player = ({ activeDecade }) => {
       {ready && (
         <>
           <Grid container alignItems="center" justifyContent="center" textAlign="center">
-            <Grid item xs={12}>
+            <Grid item xs={12} md={4}>
               <AudioControls />
             </Grid>
             {/* <AudioSeekBar /> */}
             <Grid
               item
               xs={12}
+              md={4}
               sx={{
                 backgroundColor: 'text.secondary',
                 border: '2px solid black',
@@ -152,6 +153,7 @@ const Player = ({ activeDecade }) => {
             <Grid
               item
               xs={12}
+              md={8}
               sx={{
                 backgroundColor: 'text.secondary',
                 border: '2px solid black',
