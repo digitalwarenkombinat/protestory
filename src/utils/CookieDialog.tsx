@@ -32,7 +32,6 @@ export interface CookieDialogStrings {
   // Options Dialog
   optionsDialogTitle: string
   optionsDialogDescriptionAbove: string
-  optionsDialogDescriptionBelow: string
   optionsDialogSave: string
   optionsDialogAccept: string
 }
@@ -40,23 +39,11 @@ export interface CookieDialogStrings {
 export const cookieDialogText: CookieDialogStrings = {
   mainDialogTitle: 'Social Media Inhalte',
   mainDialogDescription:
-    'Wir nutzen Cookies, um Ihnen die bestmögliche Nutzung unserer Webseite zu ' +
-    'ermöglichen und unsere Kommunikation mit Ihnen zu verbessern. Wir berücksichtigen hierbei ' +
-    'Ihre Präferenzen und verarbeiten Daten für Marketing, Analytics und Personalisierung nur, ' +
-    'wenn Sie uns durch Klicken auf "Zustimmen und weiter" Ihre Einwilligung geben oder über den ' +
-    'Button „Cookie Präferenzen setzen“ eine spezifische Auswahl festlegen. Sie können Ihre ' +
-    'Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Informationen zu den einzelnen ' +
-    'verwendeten Cookies sowie die Widerrufsmöglichkeit finden Sie in unserer Datenschutzerklärung und in der Cookie-Richtlinie.',
+    'Wir nutzen Cookies, um dir die Social Media Posts zum Thema #protestory anzeigen zu können. Wir verarbeiten die Daten nur, wenn du uns durch Klicken auf "Zustimmen und Weiter" deine Einwilligung gibst oder über den Button "Einstellungen" eine spezifische Auswahl festlegst.',
   mainDialogOptions: 'Einstellungen',
   mainDialogAccept: 'Zustimmen und Weiter',
-  optionsDialogTitle: 'Ihre Einstellungen zu Cookies für diese Website',
-  optionsDialogDescriptionAbove:
-    'Wir nutzen Cookies, um Ihnen die bestmögliche Nutzung unserer Webseite zu ermöglichen und ' +
-    'unsere Kommunikation mit Ihnen zu verbessern. Treffen Sie hier Ihre persönliche Präferenz:',
-  optionsDialogDescriptionBelow:
-    'Detaillierte Informationen zu den Cookies und eingesetzten Tracking Tools können Sie unserer ' +
-    'Datenschutzerklärung oder der Cookie-Richtlinie entnehmen. Sie können Ihre gesetzte Präferenz ' +
-    'jederzeit anpassen, indem Sie diesen Cookie Manager über den Link in der Datenschutzerklärung aufrufen.',
+  optionsDialogTitle: 'Deine Einstellungen zu Cookies für diese Website',
+  optionsDialogDescriptionAbove: 'Wir nutzen Cookies, um dir die Social Media Posts zum Thema #protestory anzeigen zu können. Triff hier deine persönliche Präferenz:',
   optionsDialogSave: 'Auswahl speichern',
   optionsDialogAccept: 'Alle akzeptieren',
 }
@@ -96,14 +83,14 @@ export const CookieDialog = (props: CookieDialogProps) => {
         <>
           <DialogTitle>{cookieDialogText.mainDialogTitle}</DialogTitle>
           <DialogContent>
-            <Typography variant="body1">{cookieDialogText.mainDialogDescription}</Typography>
+            <Typography variant="h6">{cookieDialogText.mainDialogDescription}</Typography>
           </DialogContent>
           <DialogActions>
-            <Button variant="text" onClick={handleOptionsClick}>
-              <Typography variant="body1">{cookieDialogText.mainDialogOptions}</Typography>
+            <Button variant="contained" color="primary" onClick={handleOptionsClick}>
+              <Typography variant="h6">{cookieDialogText.mainDialogOptions}</Typography>
             </Button>
-            <Button variant="contained" color="primary" onClick={handleAcceptAll}>
-              <Typography variant="body1">{cookieDialogText.mainDialogAccept}</Typography>
+            <Button variant="text" onClick={handleAcceptAll}>
+              <Typography variant="h6">{cookieDialogText.mainDialogAccept}</Typography>
             </Button>
           </DialogActions>
         </>
@@ -112,7 +99,7 @@ export const CookieDialog = (props: CookieDialogProps) => {
         <>
           <DialogTitle>{cookieDialogText.optionsDialogTitle}</DialogTitle>
           <DialogContent>
-            <Typography variant="body1">{cookieDialogText.optionsDialogDescriptionAbove}</Typography>
+            <Typography variant="h6">{cookieDialogText.optionsDialogDescriptionAbove}</Typography>
             <Box
               sx={{
                 margin: '0 4px',
@@ -137,31 +124,23 @@ export const CookieDialog = (props: CookieDialogProps) => {
                           color="primary"
                         />
                       }
-                      label={<Typography variant="body1">{category.title}</Typography>}
+                      label={<Typography variant="h6">{category.title}</Typography>}
                       labelPlacement="end"
                     />
-                    <Typography
-                      variant="body2"
-                      sx={{
-                        fontSize: '11px',
-                      }}
-                    >
-                      {category.description}
-                    </Typography>
+                    <Typography variant="body1">{category.description}</Typography>
                   </Box>
                 )
               })}
             </Box>
-            <Typography variant="body1">{cookieDialogText.optionsDialogDescriptionBelow}</Typography>
           </DialogContent>
           <DialogActions>
             <Box marginRight="auto">
-              <Button variant="text" onClick={handleAccept} size="small">
-                <Typography variant="body1">{cookieDialogText.optionsDialogSave}</Typography>
+              <Button variant="contained" color="primary" onClick={handleAccept} size="small">
+                <Typography variant="h6">{cookieDialogText.optionsDialogSave}</Typography>
               </Button>
             </Box>
-            <Button variant="contained" color="primary" onClick={handleAcceptAll}>
-              <Typography variant="body1">{cookieDialogText.optionsDialogAccept}</Typography>
+            <Button variant="text" onClick={handleAcceptAll}>
+              <Typography variant="h6">{cookieDialogText.optionsDialogAccept}</Typography>
             </Button>
           </DialogActions>
         </>

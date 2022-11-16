@@ -87,7 +87,7 @@ export const items = [
     name: 'If I can`t dance to it, it`s not my revolution',
     source: 'startthedemo/smartphone.svg',
     description:
-      'Die beste Demo ist die, bei der gute Musik läuft und Lieder auch mal mitgesungen werden. Du hast eine Playlist mit klassischen Protestliedern zusammengestellt, aber auch mit neueren empowernden Songs. Falls ihr noch Inspiration sucht, schaut mal bei "If I can´t cance to it, it is not my revolution" rein.',
+      'Die beste Demo ist die, bei der gute Musik läuft und Lieder auch mal mitgesungen werden. Du hast eine Playlist mit klassischen Protestliedern zusammengestellt, aber auch mit neueren empowernden Songs. Falls ihr noch Inspiration sucht, schaut mal bei "If I can´t dance to it, it is not my revolution" rein.',
   },
   {
     active: false,

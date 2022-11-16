@@ -9,6 +9,7 @@ import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
 import { CookieDialog, CookieDialogCategory } from 'utils/CookieDialog'
 import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
 
 const categories: CookieDialogCategory[] = [
   {
@@ -37,30 +38,32 @@ const SocialWall = () => {
   const [instagramAccepted, setInstagramAccepted] = useState(false)
   const [facebookAccepted, setFacebookAccepted] = useState(false)
 
-  useEffect(() => {
+  function setSocialMediaAcceptance() {
     setTwitterAccepted(acceptedCategories.some((category) => category['key'] === 'twitter'))
     setInstagramAccepted(acceptedCategories.some((category) => category['key'] === 'instagram'))
     setFacebookAccepted(acceptedCategories.some((category) => category['key'] === 'facebook'))
+  }
+
+  useEffect(() => {
+    setSocialMediaAcceptance()
   }, [])
 
   const handleAccept = (acceptedCategories: CookieDialogCategory[]) => {
     useStore.getState().changeAcceptedCategories(acceptedCategories)
-    setTwitterAccepted(acceptedCategories.some((category) => category['key'] === 'twitter'))
-    setInstagramAccepted(acceptedCategories.some((category) => category['key'] === 'instagram'))
-    setFacebookAccepted(acceptedCategories.some((category) => category['key'] === 'facebook'))
+    setSocialMediaAcceptance()
     setCookieDialogVisible(false)
   }
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em">
-      <Grid item maxWidth="lg" mx="auto">
-        <Typography component="h2" variant="h2" color="text.secondary">
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="6rem">
+      <Grid item maxWidth="md" mx="auto">
+        <Typography sx={{ mb: 4 }} component="h2" variant="h2" color="text.secondary">
           Social Media Wall
         </Typography>
-        <Typography component="h3" variant="h4" color="text.secondary">
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && tweetwall[language].description1}
         </Typography>
-        <Typography component="h3" variant="h4" color="text.secondary" sx={{ my: 2 }}>
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && tweetwall[language].description2}
         </Typography>
       </Grid>
@@ -94,6 +97,16 @@ const SocialWall = () => {
                   </Grid>
                 ))}
               </>
+            )}
+            {!(twitterAccepted && instagramAccepted && facebookAccepted) && (
+              <Grid item maxWidth="lg" mx="auto">
+                <Typography component="h3" variant="h4" color="text.secondary">
+                  {hasHydrated && tweetwall[language].description3}
+                </Typography>
+                <Button variant="text" onClick={() => setCookieDialogVisible(true)}>
+                  <Typography variant="body1">{hasHydrated && tweetwall[language].settings}</Typography>
+                </Button>
+              </Grid>
             )}
           </Grid>
         </NoSsr>

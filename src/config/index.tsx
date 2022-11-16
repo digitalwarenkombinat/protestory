@@ -108,10 +108,14 @@ export const tweetwall = {
   de: {
     description1: 'Auf dieser Seite sammeln wir Social Media Beiträge mit Bezug zum Projekt PROTESTORY!',
     description2: 'Verwende den Hashtag #protestory und finde deinen Post hier.',
+    description3: 'Du hast deine Einwillung zur Darstellung von Social Media Beiträgen nicht erteilt.',
+    settings: 'Passe hier deine Einstellungen an',
   },
   en: {
     description1: 'EN Auf dieser Seite sammeln wir Social Media Beiträge mit Bezug zum Projekt PROTESTORY!',
     description2: 'EN Verwende den Hashtag #protestory und finde deinen Post hier.',
+    description3: 'EN Du hast deine Einwillung zur Darstellung von Social Media Beiträgen nicht erteilt',
+    settings: 'EN Einstellungen anpassen',
   },
 }
 
