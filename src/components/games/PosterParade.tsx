@@ -5,6 +5,7 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 
 import { useIntersection } from 'utils/useIntersection'
+import { ScrollIcon } from 'services/ScrollIcon'
 
 interface PosterParadeProps {
   id: string
@@ -168,6 +169,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
               <Typography component="h2" variant="h2" color="text.primary" className="appHeading">
                 {header}
               </Typography>
+              <ScrollIcon />
             </Box>
           </Box>
           <Box className="caption-spacer cover"></Box>
