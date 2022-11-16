@@ -14,9 +14,9 @@
     "@emotion/cache": "^11.10.5",
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
-    "@mui/icons-material": "^5.10.9",
-    "@mui/lab": "^5.0.0-alpha.107",
-    "@mui/material": "^5.10.13",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/lab": "^5.0.0-alpha.108",
+    "@mui/material": "^5.10.14",
     "clsx": "^1.2.1",
     "next": "^13.0.3",
     "react": "^18.2.0",
@@ -31,8 +31,8 @@
     "@next/eslint-plugin-next": "^13.0.3",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
     "babel-loader": "^9.1.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
@@ -40,6 +40,6 @@
     "eslint-plugin-react": "^7.31.10",
     "next-export-optimize-images": "^1.9.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   }
 }
