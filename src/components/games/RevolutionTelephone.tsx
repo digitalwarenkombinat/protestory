@@ -42,7 +42,7 @@ const RevolutionTelephone = () => {
   }
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2em" maxWidth="xl" mx="auto">
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2rem" maxWidth="xl" mx="auto">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
           Revolutions-Telefon

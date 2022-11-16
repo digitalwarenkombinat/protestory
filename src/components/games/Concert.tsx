@@ -39,7 +39,6 @@ export const Concert = () => {
           border: '8px solid black',
           borderRadius: '1rem',
           transform: 'perspective(90px) rotateX(-.5deg)',
-          marginTop: '2rem',
         }}
       >
         <Box
@@ -49,7 +48,7 @@ export const Concert = () => {
             gridRow: '4 / span 5',
             border: '8px solid black',
             borderRadius: '1rem',
-            minHeight: '50vw',
+            minHeight: ['50vw', '25vw'],
           }}
         ></Box>
         <Box

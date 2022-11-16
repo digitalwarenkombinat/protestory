@@ -16,7 +16,7 @@ import useStore from 'utils/store'
 import { concert } from 'config'
 import { useHasHydrated } from 'utils/useHasHydrated'
 
-const TimeLabel = () => {
+export const TimeLabel = () => {
   const { duration, position } = useAudioPosition({
     highRefreshRate: true,
   })
@@ -26,7 +26,7 @@ const TimeLabel = () => {
   return <Typography component="p" variant="h4">{`${formatTime(elapsed)} / ${formatTime(duration)}`}</Typography>
 }
 
-const AudioControls: FunctionComponent<{}> = () => {
+export const AudioControls = () => {
   const { play, pause, stop, mute, playing } = useAudioPlayer()
   const [muted, setMuted] = useState(false)
 
