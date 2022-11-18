@@ -1,21 +1,33 @@
-import Image from 'next/image'
-import { useRef, useMemo, useState } from 'react'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useMemo, useRef, useState } from 'react'
 
-import { useIntersection } from 'utils/useIntersection'
+import { posterParade } from 'config'
 import { ScrollIcon } from 'services/ScrollIcon'
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
+import { useIntersection } from 'utils/useIntersection'
+
+interface Source {
+  text: string
+  link: string
+}
 
 interface PosterParadeProps {
   id: string
   image: string
   header: string
   texts: string[]
+  sources: Source[]
   styles: any
 }
 
-function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
+function PosterParade({ id, image, header, texts, sources, styles }: PosterParadeProps) {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const ScrollContainerRef = useRef(null)
   const [activeTransform, setActiveTransform] = useState(0)
   const handler = useMemo(
@@ -166,7 +178,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
           <Box className="caption-wrapper cover">
             <Box className="appHeader">
               <Typography component="p" variant="body1" color="text.primary" className="close-read-kicker">
-                Analyse
+                {hasHydrated && posterParade[language].analysis}
               </Typography>
               <Typography component="h2" variant="h2" color="text.primary" className="appHeading">
                 {header}
@@ -185,6 +197,22 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
           ))}
         </Box>
       </Box>
+      {sources && (
+        <Box mt={'2rem'} mb={'8rem'} textAlign={'center'}>
+          <Typography component="p" variant="h5" color="text.primary" sx={{ bgcolor: 'background.default', mb: 2 }}>
+            {hasHydrated && posterParade[language].sources}
+          </Typography>
+          {sources.map((source, index) => (
+            <Box key={index}>
+              <Link color="inherit" href={source.link}>
+                <Typography component="p" variant="h6" color="text.primary" sx={{ bgcolor: 'background.default' }}>
+                  {source.text}
+                </Typography>
+              </Link>
+            </Box>
+          ))}
+        </Box>
+      )}
     </Container>
   )
 }

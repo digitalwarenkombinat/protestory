@@ -75,8 +75,8 @@ export const startTheDemo = {
 
 export const protestart = {
   de: {
-    title: 'Mediensammlung',
-    description: 'Mediensammlung',
+    title: 'Materialsammlung',
+    description: 'Materialsammlung',
   },
   en: {
     title: 'Protest Art',
@@ -136,12 +136,16 @@ export const posterParade = {
     description2:
       'Einige davon kannst du dir hier näher anschauen, Details über ihren protestgeschichtlichen Kontext erfahren sowie Metaphern und Symbole erkunden, die auf den Postern genutzt werden.',
     description3: 'Klicke auf ein Poster, um mehr dazu zu erfahren.',
+    analysis: 'Analyse',
+    sources: 'Literatur',
   },
   en: {
     description1: 'EN In vielen Jahrzehnten linker jugendlicher Protestkultur sind vielfältige Plakate entstanden, die im Archiv der Arbeiterjugendbewegung gesammelt wurden.',
     description2:
       'EN Einige davon kannst du dir hier näher anschauen, Details über ihren protestgeschichtlichen Kontext erfahren sowie Metaphern und Symbole erkunden, die auf den Postern genutzt werden.',
     description3: 'EN Klicke auf ein Poster, um mehr dazu zu erfahren.',
+    analysis: 'Analysis',
+    sources: 'Literature',
   },
 }
 

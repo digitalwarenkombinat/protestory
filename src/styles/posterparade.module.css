@@ -9,64 +9,61 @@
 
 .antifascism_1,
 .antifascism_2 {
-  transform: scale(1) translate(2%, 30%);
+  transform: scale(1) translate(0%, 25%);
 }
 .antifascism_3,
 .antifascism_4 {
-  transform: scale(1.3) translate(10%, -30%);
+  transform: scale(1.3) translate(10%, -45%);
 }
 
 .antifascism_5,
-.antifascism_6 {
-  transform: scale(1.8) translate(25%, 15%);
-}
-
+.antifascism_6,
 .antifascism_7 {
-  transform: scale(2.5) translate(25%, 10%);
+  transform: scale(1.8) translate(25%, 0%);
 }
 
-.antifascism_8,
+.antifascism_8 {
+  transform: scale(1.8) translate(-20%, 0%);
+}
+
 .antifascism_9 {
-  transform: scale(1.8) translate(-20%, 10%);
+  transform: scale(2.5) translate(-20%, 5%);
 }
 
 .antifascism_10 {
-  transform: scale(2.4) translate(-26.5%, 9%);
+  transform: scale(1.8) translate(-20%, 0%);
 }
 
 .antifascism_11,
 .antifascism_12 {
-  transform: scale(1) translate(0%, 10%);
+  transform: scale(1.1) translate(0%, -20%);
 }
 
 .antifascism_13 {
-  transform: scale(1.1) translate(0%, -10%);
+  transform: scale(1.1) translate(0%, -30%);
 }
 
-.antifascism_14 {
-  transform: scale(1.8) translate(20%, -15%);
-}
-
+.antifascism_14,
 .antifascism_15 {
-  transform: scale(2.2) translate(21.5%, -20%);
+  transform: scale(1.8) translate(20%, -30%);
 }
 
 .antifascism_16 {
-  transform: scale(1.8) translate(-20%, -20%);
+  transform: scale(1.8) translate(-25%, -30%);
 }
 
 .antifascism_17 {
-  transform: scale(2.8) translate(-30%, -15%);
+  transform: scale(3.2) translate(-30%, -20%);
 }
 
 .antifascism_18,
 .antifascism_19 {
-  transform: scale(1.8) translate(-30%, -15%);
+  transform: scale(1.8) translate(-25%, -30%);
 }
 
 .antifascism_20,
 .antifascism_21 {
-  transform: scale(1.2) translate(0%, -25%);
+  transform: scale(1.3) translate(0%, -50%);
 }
 
 .antifascism_22 {
@@ -115,38 +112,23 @@
   transform: scale(1) translate(0%);
 }
 
-.peace_1 {
-  transform: scale(2) translate(20%, 1%);
-}
-
-.peace_2 {
-  transform: scale(7) translate(22.8%, 14%);
-}
-
-.peace_3 {
-  transform: scale(2.7) translate(-15.2%, 10%);
-}
-
+.peace_1,
+.peace_2,
+.peace_3,
 .peace_4 {
-  transform: scale(1.6) translate(13.2%, 33%);
+  transform: scale(1.7) translate(10%, 5%);
 }
 
 .peace_5 {
-  transform: scale(2) translate(17.5%, -33%);
+  transform: scale(2.5) translate(20%, 10%);
 }
 
-.peace_6 {
-  transform: scale(6) translate(-40%, 0%);
-}
-
+.peace_6,
 .peace_7 {
-  transform: scale(4) translate(7%, -45%);
+  transform: scale(4.3) translate(25%, -50%);
 }
 
-.peace_8 {
-  transform: scale(2.5) translate(-28%, -28%);
-}
-
+.peace_8,
 .peace_9 {
   transform: scale(1) translate(0%);
 }
@@ -210,49 +192,49 @@
 }
 
 .youth_1 {
-  transform: scale(2.5) translate(-30%, 35%);
+  transform: scale(2.8) translate(-35%, 35%);
 }
 
 .youth_2,
 .youth_3,
 .youth_4 {
-  transform: scale(3.5) translate(30%, 15%);
+  transform: scale(3.5) translate(30%, 10%);
 }
 
 .youth_5,
 .youth_6,
 .youth_7 {
-  transform: scale(2.5) translate(30%, 15%);
+  transform: scale(1.8) translate(30%, 10%);
 }
 
 .youth_8 {
-  transform: scale(3.5) translate(-30%, 5%);
+  transform: scale(2.5) translate(-35%, -5%);
 }
 
 .youth_9,
 .youth_10 {
-  transform: scale(3) translate(30%, -5%);
+  transform: scale(2.7) translate(30%, -10%);
 }
 
 .youth_11,
 .youth_12,
 .youth_13,
 .youth_14 {
-  transform: scale(3.5) translate(30%, 25%);
+  transform: scale(3.8) translate(30%, 18%);
 }
 
 .youth_15,
 .youth_16 {
-  transform: scale(1.1) translate(0%, -15%);
+  transform: scale(1) translate(0%, -30%);
 }
 
 .youth_17,
 .youth_18 {
-  transform: scale(1.5) translate(0%, 15%);
+  transform: scale(1.2) translate(0%);
 }
 
 .youth_19 {
-  transform: scale(1) translate(0%, 0%);
+  transform: scale(1) translate(0%);
 }
 
 .solidarity_0 {
@@ -296,22 +278,22 @@
   transform: scale(1) translate(0%);
 }
 
-.environment_0,
-.environment_1 {
+.environment_0 {
   transform: scale(1) translate(0%);
 }
 
+.environment_1,
 .environment_2,
 .environment_3 {
-  transform: scale(2) translate(0%, -5%);
+  transform: scale(2.2) translate(0%, -20%);
 }
 
 .environment_4 {
-  transform: scale(2.4) translate(30%, -15%);
+  transform: scale(2.3) translate(30%, -20%);
 }
 
 .environment_5 {
-  transform: scale(3) translate(-30%, -35%);
+  transform: scale(3) translate(-30%, -50%);
 }
 
 .environment_6 {
@@ -320,21 +302,25 @@
 
 .environment_7,
 .environment_8 {
-  transform: scale(2) translate(0%, 35%);
+  transform: scale(1.2) translate(0%, 15%);
 }
 
 .environment_9 {
-  transform: scale(1.6) translate(15%, -15%);
+  transform: scale(1.6) translate(0%, -15%);
 }
 
 .environment_10,
-.environment_11 {
-  transform: scale(1.4) translate(0%, 15%);
+.environment_11,
+.environment_12 {
+  transform: scale(1.2) translate(0%, 10%);
 }
 
-.environment_12,
 .environment_13 {
   transform: scale(1) translate(0%);
+}
+
+.environment_14 {
+  transform: scale(1.5) translate(15%, -30%);
 }
 
 .peace3_0 {
@@ -407,36 +393,236 @@
 }
 
 .solidarity2_2,
-.solidarity2_3 {
-  transform: scale(1.1) translate(0%, -25%);
-}
-
-.solidarity2_4 {
-  transform: scale(3.3) translate(-25%, -45%);
-}
-
+.solidarity2_3,
+.solidarity2_4,
 .solidarity2_5 {
-  transform: scale(1) translate(0%);
+  transform: scale(1.1) translate(0%, -50%);
 }
 
 .solidarity2_6 {
-  transform: scale(1.2) translate(0%, 30%);
+  transform: scale(1.2) translate(0%, 20%);
 }
 
 .solidarity2_7 {
-  transform: scale(1.1) translate(0%, -10%);
+  transform: scale(1.1) translate(0%, -30%);
 }
 
 .solidarity2_8,
 .solidarity2_9 {
-  transform: scale(1.5) translate(0%, 10%);
+  transform: scale(1.4) translate(0%, -12%);
 }
 
 .solidarity2_10,
 .solidarity2_11 {
-  transform: scale(1.8) translate(15%, 20%);
+  transform: scale(1.8) translate(15%, 5%);
 }
 
 .solidarity2_12 {
+  transform: scale(1) translate(0%);
+}
+
+.democracy_0 {
+  transform: scale(1) translate(0%);
+}
+
+.democracy_1,
+.democracy_2,
+.democracy_3,
+.democracy_4 {
+  transform: scale(2) translate(10%, 13%);
+}
+
+.democracy_5,
+.democracy_6,
+.democracy_7 {
+  transform: scale(1.2) translate(0%, -5%);
+}
+
+.democracy_8 {
+  transform: scale(2.2) translate(-10%, 15%);
+}
+
+.democracy_9 {
+  transform: scale(1) translate(0%, -5%);
+}
+
+.democracy_10,
+.democracy_11 {
+  transform: scale(3.2) translate(35%, 35%);
+}
+
+.democracy_12,
+.democracy_13,
+.democracy_14 {
+  transform: scale(3.2) translate(40%, 15%);
+}
+
+.democracy_15,
+.democracy_16 {
+  transform: scale(3.2) translate(35%, -12%);
+}
+
+.democracy_17,
+.democracy_18 {
+  transform: scale(3.8) translate(23%, -12%);
+}
+
+.democracy_19,
+.democracy_20 {
+  transform: scale(3.4) translate(5%, -15%);
+}
+
+.democracy_21,
+.democracy_22 {
+  transform: scale(3.2) translate(-8%, -12%);
+}
+
+.democracy_23,
+.democracy_24 {
+  transform: scale(3.1) translate(-20%, -13%);
+}
+
+.democracy_25,
+.democracy_26 {
+  transform: scale(3.3) translate(-35%, -7%);
+}
+
+.democracy_27,
+.democracy_28,
+.democracy_29 {
+  transform: scale(3.3) translate(-35%, 3%);
+}
+
+.democracy_30,
+.democracy_31,
+.democracy_32 {
+  transform: scale(3.5) translate(-40%, 15%);
+}
+
+.democracy_33,
+.democracy_34 {
+  transform: scale(3.3) translate(-40%, 35%);
+}
+
+.democracy_35,
+.democracy_36 {
+  transform: scale(4.2) translate(-5%, 15%);
+}
+
+.democracy_37,
+.democracy_38,
+.democracy_39 {
+  transform: scale(1) translate(0%, -45%);
+}
+
+.democracy_40 {
+  transform: scale(1) translate(0%, 0%);
+}
+
+.youth3_0 {
+  transform: scale(1) translate(0%);
+}
+
+.youth3_1 {
+  transform: scale(1.1) translate(0%, 20%);
+}
+
+.youth3_2 {
+  transform: scale(1.5) translate(-15%, 30%);
+}
+
+.youth3_3,
+.youth3_4 {
+  transform: scale(2.8) translate(30%, -35%);
+}
+
+.youth3_5,
+.youth3_6 {
+  transform: scale(1.4) translate(15%, 25%);
+}
+
+.youth3_7,
+.youth3_8 {
+  transform: scale(3) translate(-30%, 20%);
+}
+
+.youth3_9,
+.youth3_10,
+.youth3_11 {
+  transform: scale(1.5) translate(15%, -5%);
+}
+
+.youth3_12 {
+  transform: scale(2.4) translate(-30%, 3%);
+}
+
+.youth3_13 {
+  transform: scale(2.8) translate(0%, -15%);
+}
+
+.youth3_14 {
+  transform: scale(2.8) translate(0%, -35%);
+}
+
+.youth3_15,
+.youth3_16 {
+  transform: scale(2.8) translate(-30%, -17%);
+}
+
+.youth3_17,
+.youth3_18 {
+  transform: scale(2.8) translate(-30%, -35%);
+}
+
+.youth3_19,
+.youth3_20 {
+  transform: scale(1) translate(0%, -50%);
+}
+
+.youth3_21 {
+  transform: scale(1) translate(0%);
+}
+
+.youth2_0 {
+  transform: scale(1) translate(0%);
+}
+
+.youth2_1 {
+  transform: scale(1.8) translate(-35%, 0%);
+}
+
+.youth2_2 {
+  transform: scale(2.8) translate(-35%, -5%);
+}
+
+.youth2_3 {
+  transform: scale(1.1) translate(0%, -15%);
+}
+
+.youth2_4 {
+  transform: scale(3.5) translate(0%, -15%);
+}
+
+.youth2_5,
+.youth2_6 {
+  transform: scale(1.4) translate(5%, 8%);
+}
+
+.youth2_7,
+.youth2_8 {
+  transform: scale(2.5) translate(-15%, 0%);
+}
+
+.youth2_9,
+.youth2_10 {
+  transform: scale(1) translate(0%);
+}
+
+.youth2_11,
+.youth2_12 {
+  transform: scale(1.8) translate(-20%, -40%);
+}
+
+.youth2_13 {
   transform: scale(1) translate(0%);
 }

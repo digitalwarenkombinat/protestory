@@ -22,6 +22,7 @@ export default function PosterParadeItem() {
           image={`/posterParade/${id}.webp`}
           header={posterParadeTexts[id as string].header}
           texts={posterParadeTexts[id as string].texts}
+          sources={posterParadeTexts[id as string].sources}
           styles={styles}
         />
       )}
