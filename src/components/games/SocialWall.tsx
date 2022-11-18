@@ -71,20 +71,20 @@ const SocialWall = () => {
       {!cookieDialogVisible && (
         <NoSsr defer>
           <Grid container justifyContent="center" spacing={{ xs: 1, sm: 2, md: 3 }}>
-            {twitterAccepted && socialwall.twitter && (
-              <>
-                {socialwall.twitter.map((item, index) => (
-                  <Grid item key={index}>
-                    <TwitterEmbed url={item} width={380} />
-                  </Grid>
-                ))}
-              </>
-            )}
             {instagramAccepted && socialwall.instagram && (
               <>
                 {socialwall.instagram.map((item, index) => (
                   <Grid item key={index}>
                     <InstagramEmbed url={item} width={380} />
+                  </Grid>
+                ))}
+              </>
+            )}
+            {twitterAccepted && socialwall.twitter && (
+              <>
+                {socialwall.twitter.map((item, index) => (
+                  <Grid item key={index}>
+                    <TwitterEmbed url={item} width={380} height={650} />
                   </Grid>
                 ))}
               </>
