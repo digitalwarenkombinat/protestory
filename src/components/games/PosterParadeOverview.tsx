@@ -93,7 +93,7 @@ export default function PosterParadeOverview() {
 const Banner = ({ item, contentPosition = 'left' }) => {
   let items = []
   const content = (
-    <Grid item xs={12} md={4} key={item.name}>
+    <Grid item xs={12} md={6} lg={4} key={item.name}>
       <CardContent
         sx={{
           display: 'flex',
@@ -115,11 +115,11 @@ const Banner = ({ item, contentPosition = 'left' }) => {
     const mediaItem = item.items[i]
 
     const media = (
-      <Grid item xs={12} md={4} key={mediaItem.href} sx={{ p: 1 }} alignSelf={'center'}>
+      <Grid item xs={12} md={3} lg={4} key={mediaItem.href} sx={{ p: 1 }} alignSelf={'center'}>
         <Link href={`/posterparade/${encodeURIComponent(mediaItem.href)}`} passHref>
           <CardMedia
             sx={{
-              height: '33vh',
+              height: '50vh',
               overflow: 'hidden',
               backgroundSize: 'contain',
             }}
@@ -154,6 +154,9 @@ const Banner = ({ item, contentPosition = 'left' }) => {
     >
       <Grid
         container
+        alignItems="center"
+        textAlign="center"
+        justifyContent="center"
         sx={{
           backgroundColor: 'secondary.main',
         }}

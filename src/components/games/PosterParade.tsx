@@ -88,6 +88,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
         width: 100%;
         hyphens: auto;
         background-color: rgba(255, 255, 255, 0.8);
+        margin-right: 1rem
       }
 
       .close-read-kicker {
@@ -156,6 +157,7 @@ function PosterParade({ id, image, header, texts, styles }: PosterParadeProps) {
               width: '100%',
               height: 'auto',
             }}
+            priority
             alt="Poster Parade"
           />
         </Box>

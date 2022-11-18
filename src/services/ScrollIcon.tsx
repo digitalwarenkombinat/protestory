@@ -5,12 +5,12 @@ export const ScrollIcon = () => {
       .icon-scroll,
       .icon-scroll:before {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
       }
       .icon-scroll {
         width: 60px;
         height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
         border: 4px solid #000;
         border-radius: 25px;
       }
@@ -19,8 +19,11 @@ export const ScrollIcon = () => {
         width: 10px;
         height: 20px;
         background: #000;
-        margin-left: -2px;
         top: 8px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
         border-radius: 4px;
         animation-duration: 2s;
         animation-iteration-count: infinite;
