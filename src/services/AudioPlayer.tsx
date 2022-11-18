@@ -1,4 +1,4 @@
-import { useEffect, useState, FunctionComponent } from 'react'
+import { useEffect, useState } from 'react'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import IconButton from '@mui/material/IconButton'

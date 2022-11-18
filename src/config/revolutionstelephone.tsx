@@ -14,7 +14,8 @@ export const names = [
   {
     name: 'Che Guevara',
     value: '#1406',
-    description: 'Che Guevara war ein marxistischer Revolutionär, Guerillaführer und Autor.',
+    description:
+      'T-Shirt-Motiv, Arzt, Guerillero, Revolutionär, Wirtschaftsminister, Antiimperialist, Symbolfigur. Che Guevara kämpfte für die Befreiung des TriKont (der unterdrückten Länder des globalen Südens) in Kuba, im Kongo, in Angola und Bolivien.',
   },
   {
     name: 'Antonio Gramsci',
