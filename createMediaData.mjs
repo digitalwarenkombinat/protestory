@@ -9,7 +9,6 @@ async function getImages(dir) {
         return {
           name: file.substr(0, file.lastIndexOf('.')),
           source: `${dir.split('/')[1]}/${file}`,
-          description: file.substr(0, file.lastIndexOf('.')),
         }
       })
 
@@ -20,11 +19,7 @@ async function getImages(dir) {
 }
 
 export async function createData() {
-  const mediaDataHome = await getImages('public/protestart')
-  const mediaDataPoster = await getImages('public/posterParade')
-  const mediaDataChat = await getImages('public/chat')
-  const mediaData = mediaDataHome.concat(mediaDataPoster.concat(mediaDataChat))
-
+  const mediaData = await getImages('public/mediadata')
   const mediaDataFile = `export const mediaData = ${JSON.stringify(mediaData, null, 2)};`
   const mediaDataFilePath = 'src/config/mediaData.tsx'
   await fs.writeFile(mediaDataFilePath, mediaDataFile, 'utf-8')

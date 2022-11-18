@@ -73,6 +73,17 @@ export const startTheDemo = {
   },
 }
 
+export const protestart = {
+  de: {
+    title: 'Mediensammlung',
+    description: 'Mediensammlung',
+  },
+  en: {
+    title: 'Protest Art',
+    description: 'EN Protest Art',
+  },
+}
+
 export const sloganGenerator = {
   de: {
     slogan: 'Drücke den roten Hebel!',

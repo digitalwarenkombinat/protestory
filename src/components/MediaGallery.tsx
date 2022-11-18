@@ -1,11 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 import Masonry from '@mui/lab/Masonry'
+import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
+import Typography from '@mui/material/Typography'
+import { protestart } from 'config'
 import { mediaData } from 'config/mediaData'
 import { useState } from 'react'
 import { MediaDialog } from 'services/MediaDialog'
 
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
+
 export const MediaGallery = () => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const [open, setOpen] = useState(false)
   const [selectedItem, setSelectedItem] = useState(null)
 
@@ -20,7 +28,15 @@ export const MediaGallery = () => {
   }
   return (
     <div>
-      <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={{ xs: 1, sm: 2, md: 3 }} sx={{ pt: 2 }}>
+      <Box my="2rem" alignItems="center" textAlign="center" justifyContent="center">
+        <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
+          {hasHydrated && protestart[language].title}
+        </Typography>
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
+          {hasHydrated && protestart[language].description}
+        </Typography>
+      </Box>
+      <Masonry columns={{ xs: 1, sm: 2, md: 4 }} spacing={2} defaultHeight={450} defaultColumns={4} defaultSpacing={2}>
         {mediaData.map((item, index) => (
           <Button
             key={index}
