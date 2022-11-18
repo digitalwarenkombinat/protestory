@@ -41,6 +41,7 @@ export default function BasicMenu() {
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
+        disableScrollLock
         open={open}
         onClose={handleClose}
         MenuListProps={{

@@ -46,7 +46,7 @@ const SocialWall = () => {
 
   useEffect(() => {
     setSocialMediaAcceptance()
-  }, [])
+  }, [acceptedCategories])
 
   const handleAccept = (acceptedCategories: CookieDialogCategory[]) => {
     useStore.getState().changeAcceptedCategories(acceptedCategories)
@@ -98,12 +98,12 @@ const SocialWall = () => {
                 ))}
               </>
             )}
-            {!(twitterAccepted && instagramAccepted && facebookAccepted) && (
+            {!(twitterAccepted || instagramAccepted || facebookAccepted) && (
               <Grid item maxWidth="lg" mx="auto">
-                <Typography component="h3" variant="h4" color="text.secondary">
+                <Typography component="h3" variant="h4" color="text.secondary" sx={{ my: 2 }}>
                   {hasHydrated && tweetwall[language].description3}
                 </Typography>
-                <Button variant="text" onClick={() => setCookieDialogVisible(true)}>
+                <Button variant="outlined" sx={{ color: 'accent.main' }} onClick={() => setCookieDialogVisible(true)}>
                   <Typography variant="body1">{hasHydrated && tweetwall[language].settings}</Typography>
                 </Button>
               </Grid>

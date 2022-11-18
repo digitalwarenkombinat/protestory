@@ -8,7 +8,7 @@ export default function tweetwall() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Tweetwall</title>
+        <title>Social Media Wall</title>
       </Head>
       <Container sx={{ backgroundColor: 'secondary.main' }} maxWidth={false} component="section">
         <SocialWall />

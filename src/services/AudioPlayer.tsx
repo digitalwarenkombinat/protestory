@@ -71,7 +71,7 @@ export const AudioControls = () => {
       </IconButton>
       <IconButton aria-label="mute" onClick={() => setMuted((lastState) => !lastState)}>
         {muted ? (
-          <VolumeUpIcon
+          <VolumeOffIcon
             sx={{
               height: '3rem',
               width: '3rem',
@@ -79,7 +79,7 @@ export const AudioControls = () => {
             }}
           />
         ) : (
-          <VolumeOffIcon
+          <VolumeUpIcon
             sx={{
               height: '3rem',
               width: '3rem',

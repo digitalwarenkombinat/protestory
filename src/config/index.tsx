@@ -124,13 +124,13 @@ export const posterParade = {
     description1: 'In vielen Jahrzehnten linker jugendlicher Protestkultur sind vielfältige Plakate entstanden, die im Archiv der Arbeiterjugendbewegung gesammelt wurden.',
     description2:
       'Einige davon kannst du dir hier näher anschauen, Details über ihren protestgeschichtlichen Kontext erfahren sowie Metaphern und Symbole erkunden, die auf den Postern genutzt werden.',
-    description3: 'Klick einfach auf ein Poster, um mehr dazu zu erfahren.',
+    description3: 'Klicke auf ein Poster, um mehr dazu zu erfahren.',
   },
   en: {
     description1: 'EN In vielen Jahrzehnten linker jugendlicher Protestkultur sind vielfältige Plakate entstanden, die im Archiv der Arbeiterjugendbewegung gesammelt wurden.',
     description2:
       'EN Einige davon kannst du dir hier näher anschauen, Details über ihren protestgeschichtlichen Kontext erfahren sowie Metaphern und Symbole erkunden, die auf den Postern genutzt werden.',
-    description3: 'EN Klick einfach auf ein Poster, um mehr dazu zu erfahren.',
+    description3: 'EN Klicke auf ein Poster, um mehr dazu zu erfahren.',
   },
 }
 
