@@ -1,6 +1,14 @@
-export const completeMessage = {
-  de: 'Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Unten findest du noch weitere Inspiration für den nächsten Protest.',
-  en: 'EN Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Unten findest du noch weitere Inspiration für den nächsten Protest.',
+export const cartMessage = {
+  de: {
+    playing: 'Gut! Du hast schon einige Gegenstände gefunden, die ihr für die Demo braucht. Finde noch mehr!',
+    finish:
+      'Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Unten findest du noch weitere Inspiration für den nächsten Protest.',
+  },
+  en: {
+    playing: 'EN Gut! Du hast schon einige Gegenstände gefunden, die ihr für die Demo braucht. Finde noch mehr!',
+    finish:
+      'EN Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Unten findest du noch weitere Inspiration für den nächsten Protest.',
+  },
 }
 
 export const items = [

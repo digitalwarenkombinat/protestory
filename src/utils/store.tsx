@@ -3,7 +3,7 @@ import { persist } from 'zustand/middleware'
 import { items } from 'config/startthedemo'
 import { CookieDialogCategory } from './CookieDialog'
 
-interface Item {
+export interface Item {
   active: boolean
   link: string
   linkText?: string
@@ -21,6 +21,7 @@ type Store = {
   items: Item[]
   getLinkedItems: () => Item[]
   getCorrectItems: () => Item[]
+  getActivatedCorrectItems: () => Item[]
   allCorrectItemsActivated: () => boolean
   // eslint-disable-next-line no-unused-vars
   activateItem: (itemId: string) => void
@@ -46,6 +47,11 @@ const useStore = create<Store>()(
       getLinkedItems: () => get().items.filter((linkItems) => linkItems.link !== ''),
 
       getCorrectItems: () => get().items.filter((correctItems) => correctItems.leave !== true),
+
+      getActivatedCorrectItems: () =>
+        get()
+          .getCorrectItems()
+          .filter((item) => item.active === true),
 
       allCorrectItemsActivated: () =>
         get()

@@ -84,6 +84,13 @@ let theme = createTheme({
         },
       },
     },
+    MuiBadge: {
+      styleOverrides: {
+        badge: {
+          fontSize: '1.25rem',
+        },
+      },
+    },
   },
 })
 

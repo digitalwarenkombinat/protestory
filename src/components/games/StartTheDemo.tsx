@@ -10,6 +10,7 @@ import { startTheDemo } from 'config'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { Cart } from 'services/Cart'
 import { StartTheDemoSVG } from 'services/StartTheDemoSVG'
 import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
@@ -60,6 +61,11 @@ const StartTheDemo = () => {
           backgroundClip: 'padding-box',
         }}
       >
+        <Grid container justifyContent="end">
+          <Grid item>
+            <Cart />
+          </Grid>
+        </Grid>
         <Grid container alignItems="center">
           {splitSVG && (
             <Grid

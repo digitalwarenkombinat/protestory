@@ -1,5 +1,5 @@
 import BackspaceIcon from '@mui/icons-material/Backspace'
-import Box from '@mui/material/Box'
+import Fade from '@mui/material/Fade'
 import Grid from '@mui/material/Grid'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
@@ -11,10 +11,33 @@ import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
 import { AudioControls, TimeLabel } from './AudioPlayer'
 
-export const Call = ({ number, caller, onEnd }) => {
+const Dialing = ({ number, onEnd }) => {
   const hasHydrated = useHasHydrated()
   const { language } = useStore()
-  const { ready, loading, load, playing, ended } = useAudioPlayer({
+  return (
+    <>
+      <Typography component="p" variant="h5" color="text.secondary">
+        {hasHydrated && revolutionstelephone[language].callText}
+        {` `}
+        {number}
+      </Typography>
+      {number && (
+        <IconButton
+          aria-label="Delete"
+          sx={{
+            color: 'accent.main',
+          }}
+          onClick={() => onEnd()}
+        >
+          <BackspaceIcon sx={{ fontSize: '1.5rem' }} />
+        </IconButton>
+      )}
+    </>
+  )
+}
+
+export const Call = ({ number, caller, onEnd }) => {
+  const { ready, load } = useAudioPlayer({
     format: 'mp3',
     autoplay: false,
   })
@@ -26,73 +49,16 @@ export const Call = ({ number, caller, onEnd }) => {
         src: `./revolutionstelephone/${number.slice(1)}.mp3`,
         autoplay: true,
         onend: () => onEnd(),
+        onstop: () => onEnd(),
       })
   }, [number, caller])
 
   return (
     <Grid item xs={12} sx={{ minHeight: ['12rem', '8rem'], display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      {!ready && !loading && (
-        <>
-          <Typography component="p" variant="h5" color="text.secondary">
-            {hasHydrated && revolutionstelephone[language].callText}
-            {` `}
-            {number}
-          </Typography>
-          {number && (
-            <IconButton
-              aria-label="Delete"
-              sx={{
-                color: 'accent.main',
-              }}
-              onClick={() => onEnd()}
-            >
-              <BackspaceIcon sx={{ fontSize: '1.5rem' }} />
-            </IconButton>
-          )}
-        </>
-      )}
-      {loading && (
-        <>
-          <Typography component="p" variant="h5" color="text.secondary">
-            {hasHydrated && revolutionstelephone[language].callText}
-            {` `}
-            {number}
-          </Typography>
-          {number && (
-            <IconButton
-              aria-label="Delete"
-              sx={{
-                color: 'accent.main',
-              }}
-              onClick={() => onEnd()}
-            >
-              <BackspaceIcon sx={{ fontSize: '1.5rem' }} />
-            </IconButton>
-          )}
-        </>
-      )}
-      {(playing || ended) && !caller && (
-        <>
-          <Typography component="p" variant="h5" color="text.secondary">
-            {hasHydrated && revolutionstelephone[language].callText}
-            {` `}
-            {number}
-          </Typography>
-          {number && (
-            <IconButton
-              aria-label="Delete"
-              sx={{
-                color: 'accent.main',
-              }}
-              onClick={() => onEnd()}
-            >
-              <BackspaceIcon sx={{ fontSize: '1.5rem' }} />
-            </IconButton>
-          )}
-        </>
-      )}
-      {ready && caller && (
-        <>
+      {!caller ? (
+        <Dialing number={number} onEnd={onEnd} />
+      ) : (
+        <Fade in={ready}>
           <Grid container alignItems="center" justifyContent="center" textAlign="center">
             <Grid item xs={12}>
               <Typography component="p" variant="h5" color="text.secondary">
@@ -116,7 +82,7 @@ export const Call = ({ number, caller, onEnd }) => {
               <TimeLabel />
             </Grid>
           </Grid>
-        </>
+        </Fade>
       )}
     </Grid>
   )
