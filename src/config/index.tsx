@@ -73,6 +73,19 @@ export const startTheDemo = {
   },
 }
 
+export const print = {
+  de: {
+    title: 'Get the Protest started - Checklist',
+    description:
+      'Hier findet ihr nochmal auf einen Blick alle wichtigen Dinge, die ihr bei der Vorbereitung einer Demo beachten müsst. Viel Erfolg bei eurer nächsten Demo-Aktion!',
+  },
+  en: {
+    title: 'Get the Protest started - Checklist',
+    description:
+      'Hier findet ihr nochmal auf einen Blick alle wichtigen Dinge, die ihr bei der Vorbereitung einer Demo beachten müsst. Viel Erfolg bei eurer nächsten Demo-Aktion!',
+  },
+}
+
 export const protestart = {
   de: {
     title: 'Materialsammlung',

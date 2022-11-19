@@ -1,7 +1,7 @@
 import create from 'zustand'
 import { persist } from 'zustand/middleware'
 import { items } from 'config/startthedemo'
-import { CookieDialogCategory } from './CookieDialog'
+import { CookieDialogCategory } from '../services/CookieDialog'
 
 export interface Item {
   active: boolean
@@ -12,6 +12,7 @@ export interface Item {
   source: string
   description: string
   leave?: boolean
+  print?: string
 }
 
 type Store = {

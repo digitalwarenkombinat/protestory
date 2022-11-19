@@ -15,6 +15,7 @@ import { cartMessage } from 'config/startthedemo'
 import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
 import { DemoPrintList } from './DemoPrintList'
+import { print } from 'config'
 
 export const Cart = () => {
   const hasHydrated = useHasHydrated()
@@ -54,7 +55,7 @@ export const Cart = () => {
     <div>
       <NoSsr defer>
         <div style={{ display: 'none' }}>
-          <DemoPrintList ref={componentRef} items={getActivatedCorrectItems()} />
+          <DemoPrintList ref={componentRef} items={getActivatedCorrectItems()} print={hasHydrated && print[language]} />
         </div>
       </NoSsr>
       <IconButton

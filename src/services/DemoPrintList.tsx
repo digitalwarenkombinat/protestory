@@ -1,24 +1,31 @@
+import AppBar from '@mui/material/AppBar'
 import Avatar from '@mui/material/Avatar'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import { PureComponent } from 'react'
-import Image from 'next/image'
-import { title } from 'config'
 import Typography from '@mui/material/Typography'
+import Image from 'next/image'
+import { PureComponent } from 'react'
+
+import { title } from 'config'
 import { Item } from 'utils/store'
 import icon from '/public/icon.svg'
+
 type Props = {
   items?: Item[]
+  print: {
+    title: string
+    description: string
+  }
 }
 
 export class DemoPrintList extends PureComponent<Props> {
   constructor(props) {
     super(props)
   }
+
   render() {
-    const { items } = this.props
+    const { items, print } = this.props
 
     return (
       <div>
@@ -42,9 +49,7 @@ export class DemoPrintList extends PureComponent<Props> {
                   alt={'Logo PROTESTORY!'}
                   width={300}
                   style={{
-                    width: '20vw',
-                    height: 'auto',
-                    maxHeight: '200px',
+                    maxHeight: '100px',
                   }}
                 />
               </Typography>
@@ -60,9 +65,12 @@ export class DemoPrintList extends PureComponent<Props> {
             </Toolbar>
           </AppBar>
         </Box>
-        <Container maxWidth="lg" component="section" sx={{ mt: '2rem' }}>
-          <Typography sx={{ mb: 2 }} variant="h2" color="text.primary">
-            Get the Protest started!
+        <Container component="section" sx={{ mt: '2rem' }}>
+          <Typography sx={{ mb: 2 }} component="h2" variant="h4" color="text.primary">
+            {print.title}
+          </Typography>
+          <Typography sx={{ mb: 2 }} component="h3" variant="h6" color="text.primary">
+            {print.description}
           </Typography>
           {items.map((item) => (
             <Box key={item.id} sx={{ display: 'flex', alignItems: 'center' }}>
@@ -73,13 +81,18 @@ export class DemoPrintList extends PureComponent<Props> {
                   backgroundColor: 'text.secondary',
                   height: '40px',
                   width: '40px',
-                  margin: '0.25rem',
+                  margin: 0,
                   padding: '0.25rem',
                 }}
               />
-              <Typography variant="h4" color="text.primary">
-                {item.name}
-              </Typography>
+              <Box textAlign="left" sx={{ mb: '0.25rem' }}>
+                <Typography component="p" variant="body1" color="text.primary">
+                  {item.name}
+                </Typography>
+                <Typography component="span" variant="body2" color="text.primary">
+                  {item.print}
+                </Typography>
+              </Box>
             </Box>
           ))}
         </Container>
