@@ -148,8 +148,9 @@ const Banner = ({ item, contentPosition = 'left' }) => {
         color: 'text.secondary',
         backgroundColor: 'rgba(0, 0, 0, 0)',
         boxShadow: 'none',
-        border: '16px solid transparent',
-        borderImage: 'url(/icons/frame.svg) 32 32 round',
+        border: '32px solid',
+        borderImageSource: 'url(/icons/frame.svg)',
+        borderImageSlice: [8, 12, 16, 20],
       }}
     >
       <Grid
