@@ -76,11 +76,15 @@ export const startTheDemo = {
 export const protestart = {
   de: {
     title: 'Materialsammlung',
-    description: 'Materialsammlung',
+    description1:
+      'Das Archiv der Arbeiterjugendbewegung sammelt seit 40 Jahren Zeugnisse der Geschichte der Arbeiter:innenjugendbewegung und stellt diese für Forschungszwecke sowie für die Jugend- und Erwachsenenbildung zur Verfügung.',
+    description2:
+      'In dieser Sammlung finden sich viele Plakate, Fotografien, Aufkleber, Buttons, Transparente und andere Objekte, die Demonstrationen und Proteste der Arbeiter:innenjugend bezeugen. Einige davon könnte ihr euch hier ansehen.',
   },
   en: {
     title: 'Protest Art',
-    description: 'EN Protest Art',
+    description1: 'EN Protest Art',
+    description2: 'EN Protest Art',
   },
 }
 
@@ -151,9 +155,9 @@ export const posterParade = {
 
 export const concert = {
   de: {
-    description1: 'If I can`t dance to it, it`s not my revolution',
-    description2: 'If I can`t dance to it, it`s not my revolution',
-    description3: 'If I can`t dance to it, it`s not my revolution',
+    description1: 'Kein Protest ohne Musik, keine Demo ohne Lieder zum Mitsingen.',
+    description2: 'Hier könnt ihr in eine Auswahl bekannter Protestlieder aus den letzten Jahrzehnten hineinhören.',
+    description3: 'Zum Mitsingen gibt es die Noten und Texte direkt dazu.',
     select: 'Bitte wähle ein Jahr aus!',
     loading: 'Audio lädt',
   },
