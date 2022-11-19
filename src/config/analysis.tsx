@@ -133,9 +133,9 @@ export const posterParadeTexts = {
       'Damit verknüpft war die imperialistische Idee der geografischen Erweiterung des Deutschen Reiches v. a. in Richtung Osteuropa.',
       'Die Marschstiefel sind in diesem Kontext also nicht bloß ein Teil der Uniform von Soldaten, sondern ein Symbol für die Eroberungspläne des nationalsozialistischen Regimes.',
       'Der Begriff „Reichskristallnacht“ ist eine veraltete Bezeichnung für die nationalsozialistischen Angriffe auf Synagogen und jüdische Mitmenschen, die vor allem in der Nacht vom 9. auf den 10.11.1938 und in den Folgetagen deutschlandweit und in Österreich stattfanden.',
-      'Die verharmlosende und euphemistische Bezeichnung „Reichkristallnacht“ hat keine gänzlich geklärte Herkunft. „Reichs-“ bezieht sich vermutlich auf die reichsweiten Pogrome, „-Kristallnacht“ ist auf die vielen Glasscherben der zerstörten Wohnräume und Synagogen zurückzuführen.',
+      'Die verharmlosende und euphemistische Bezeichnung „Reichskristallnacht“ hat keine gänzlich geklärte Herkunft. „Reichs-“ bezieht sich vermutlich auf die reichsweiten Pogrome, „-Kristallnacht“ ist auf die vielen Glasscherben der zerstörten Wohnräume und Synagogen zurückzuführen.',
       'Deswegen gilt der Begriff als problematisch und wurde in jüngster Zeit durch „Novemberpogrome“ oder „Reichspogromnacht“ ersetzt.',
-      'Das nationalsozialistische Regime nutzte ein Attentat auf den Diplomaten und Botschaftssekretär Ernst vom Rath (1909–1938) als Rechtfertigung für die Novemberprogrome. Schlägertrupps des nationalsozialistischen Regimes zerstörten Synagogen, jüdische Geschäfte und jüdischen Wohnraum und setzten diese in Brand.',
+      'Das nationalsozialistische Regime nutzte ein Attentat auf den Diplomaten und Botschaftssekretär Ernst vom Rath (1909–1938) als Rechtfertigung für die Novemberpogrome. Schlägertrupps des nationalsozialistischen Regimes zerstörten Synagogen, jüdische Geschäfte und jüdischen Wohnraum und setzten diese in Brand.',
       'Jüdische Mitmenschen wurden körperlich misshandelt, ermordet und in Konzentrationslager deportiert. Die Novemberpogrome gelten als radikaler Wendepunkt von der Diskriminierung der Juden ab 1933 hin zur systematischen Ermordung der Juden in der Shoah.',
       'Zum 40-jährigen Gedenken trug das Plakat die Überschrift „Nie wieder Reichskristallnacht“ und lud zu einem Fackelzug und einer Kundgebung am Platz der ehemaligen Synagoge in Gelsenkirchen ein.',
       'Der ehemalige SPD-Bundestagsabgeordnete Klaus Thüsing hielt anlässlich dessen eine Rede.',
@@ -245,7 +245,7 @@ export const posterParadeTexts = {
         link: 'https://www.reaktorpleite.de/geschichte.html#Fakten',
       },
       {
-        text: 'Rückblick: 15 Jahre Bürgerinitative Umweltschutz Hamm',
+        text: 'Rückblick: 15 Jahre Bürgerinitiative Umweltschutz Hamm',
         link: 'https://www.machtvonunten.de/lokales-hamm/192-rueckblick-15-jahre-buergerinitative-umweltschutz-hamm.html',
       },
       {
@@ -315,7 +315,7 @@ export const posterParadeTexts = {
     texts: [
       'Ganz schön viele verschiedene Menschen! Vom Kleinkind über Arbeiter:innen und Angestellte bis hin zu Rentner:innen sind diese illustrierten Menschen allen Alters und aller sozialen Schichten in einem vereint: in ihrem „Nein“ zum Rüstungswahn.',
       'Der Hintergrund dieser Demonstration ist die Zeit des NATO-Doppelbeschlusses aus dem Jahr 1979. In Westdeutschland kam es vermehrt zu Großdemonstrationen. Auch wenn oft jüngere Menschen die Mehrheit bei solchen Demonstrationen beziehungsweise Ostermärschen bildet, sind hier alle Altersklassen und Gesellschaftsschichten vertreten.',
-      'Typisch für Friedensdemonstrationen sind die hier abgebildeten Fahnen, Transparente und Schilder mit der symbolischen Friedentaube oder beispielsweise kurzen Leitsprüchen wie „Nein zu Atom“.',
+      'Typisch für Friedensdemonstrationen sind die hier abgebildeten Fahnen, Transparente und Schilder mit der symbolischen Friedenstaube oder beispielsweise kurzen Leitsprüchen wie „Nein zu Atom“.',
       'Der erste Ostermarsch in Deutschland fand im Jahr 1960 statt und führte als mehrtägiger Marsch von Hamburg über Bremen, Hannover und Braunschweig nach Bergen-Hohne.',
       'Bergen-Hohne war ein Raketenübungsgelände der Bundeswehr, wo, Berichten zufolge, eine Batterie Honest-John-Raketen mit atomaren Sprengköpfen stationiert worden war. Hieran nahmen circa 120 Teilnehmer:innen teil.',
       'Seitdem finden alljährlich rings um die Osterfeiertage bundesweit Ostermärsche statt, immer unter dem Motto: Für den Frieden und gegen Waffen.',
