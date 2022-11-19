@@ -114,6 +114,9 @@ const Player = ({ activeDecade }) => {
         display: 'flex',
         backgroundColor: 'background.default',
         justifyContent: 'center',
+        height: '139.72px',
+        borderBottomLeftRadius: '79.33px',
+        borderBottomRightRadius: '79.33px',
       }}
     >
       {!ready && !loading && (
@@ -133,14 +136,12 @@ const Player = ({ activeDecade }) => {
       {ready && (
         <>
           <Grid container alignItems="center" justifyContent="center" textAlign="center">
-            <Grid item xs={12} md={4}>
+            <Grid item xs={4}>
               <AudioControls />
             </Grid>
-            {/* <AudioSeekBar /> */}
             <Grid
               item
-              xs={12}
-              md={4}
+              xs={4}
               sx={{
                 backgroundColor: 'text.secondary',
                 border: '2px solid black',
@@ -152,8 +153,7 @@ const Player = ({ activeDecade }) => {
             </Grid>
             <Grid
               item
-              xs={12}
-              md={8}
+              xs={8}
               sx={{
                 backgroundColor: 'text.secondary',
                 border: '2px solid black',

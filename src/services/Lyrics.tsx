@@ -9,13 +9,20 @@ export const Lyrics = ({ activeDecade }) => (
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        bgcolor: 'transparent',
+        boxShadow: 'none',
       }}
     >
-      {activeDecade?.decade ? (
-        <CardMedia component="img" image={`./concert/${activeDecade.key}.webp`} alt={`Lyrics ${activeDecade.name}`} />
-      ) : (
-        <CardMedia component="img" image={`./concert/start.webp`} alt={`If I can't dance to it, it's not my revolution`} />
-      )}
+      <CardMedia
+        component="img"
+        image={activeDecade?.decade ? `./concert/${activeDecade.key}.webp` : './concert/start.webp'}
+        alt={activeDecade?.decade ? `Lyrics ${activeDecade.name}` : `If I can't dance to it, it's not my revolution`}
+        sx={{
+          height: '455px',
+          borderRadius: '64.75px',
+          objectFit: 'fill',
+        }}
+      />
     </Card>
   </Grid>
 )
