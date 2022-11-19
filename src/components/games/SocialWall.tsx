@@ -7,7 +7,7 @@ import { tweetwall } from 'config'
 import { socialwall } from 'config/socialwall'
 import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
-import { CookieDialog, CookieDialogCategory } from 'utils/CookieDialog'
+import { CookieDialog, CookieDialogCategory } from 'services/CookieDialog'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 
