@@ -3,7 +3,7 @@
   font-style: 'normal';
   font-display: 'swap';
   font-weight: 400;
-  src: local('Hey August'), url(/fonts/HeyAugust.woff2) format('woff2');
+  src: local('HeyAugust'), url('/fonts/HeyAugust.woff2') format('woff2');
 }
 
 @font-face {
@@ -11,5 +11,5 @@
   font-style: 'normal';
   font-display: 'swap';
   font-weight: 400;
-  src: local('Fabrik'), url(/fonts/Fabrik.woff2) format('woff2');
+  src: local('Fabrik'), url('/fonts/Fabrik.woff2') format('woff2');
 }

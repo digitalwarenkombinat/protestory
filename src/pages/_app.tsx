@@ -21,7 +21,7 @@ export default function MyApp(props: MyAppProps) {
         <title>PROTESTORY!</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta name="description" content="PROTESTORY! - jugendkulturellen Protest digital erleben und historisches Wissen nutzen" />
-        <link rel="preload" href="/fonts/HeyAugust.woff2" as="font" crossOrigin="" />
+        <link rel="preload" href="./fonts/HeyAugust.woff2" as="font" crossOrigin="" />
         <link rel="preload" href="./fonts/Fabrik.woff2" as="font" crossOrigin="" />
         <link rel="icon" href="./favicon.ico" sizes="any" />
         <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
