@@ -55,7 +55,7 @@ export const Cart = () => {
     <div>
       <NoSsr defer>
         <div style={{ display: 'none' }}>
-          <DemoPrintList ref={componentRef} items={getActivatedCorrectItems()} print={hasHydrated && print[language]} />
+          <DemoPrintList ref={componentRef} items={getActivatedCorrectItems()} printTitle={hasHydrated && print[language].title} />
         </div>
       </NoSsr>
       <IconButton

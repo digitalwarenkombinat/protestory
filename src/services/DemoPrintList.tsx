@@ -13,10 +13,7 @@ import icon from '/public/icon.svg'
 
 type Props = {
   items?: Item[]
-  print: {
-    title: string
-    description: string
-  }
+  printTitle: string
 }
 
 export class DemoPrintList extends PureComponent<Props> {
@@ -25,7 +22,7 @@ export class DemoPrintList extends PureComponent<Props> {
   }
 
   render() {
-    const { items, print } = this.props
+    const { items, printTitle } = this.props
 
     return (
       <div>
@@ -67,10 +64,7 @@ export class DemoPrintList extends PureComponent<Props> {
         </Box>
         <Container component="section" sx={{ mt: '2rem' }}>
           <Typography sx={{ mb: 2 }} component="h2" variant="h4" color="text.primary">
-            {print.title}
-          </Typography>
-          <Typography sx={{ mb: 2 }} component="h3" variant="h6" color="text.primary">
-            {print.description}
+            {printTitle}
           </Typography>
           {items.map((item) => (
             <Box key={item.id} sx={{ display: 'flex', alignItems: 'center' }}>
