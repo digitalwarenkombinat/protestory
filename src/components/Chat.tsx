@@ -22,7 +22,6 @@ interface MessageProps {
   link?: string
   audio?: string
   image?: string
-  isPortrait?: boolean
 }
 
 interface ChatProps {
@@ -31,7 +30,18 @@ interface ChatProps {
   list: MessageProps[]
 }
 
-const ChatImage = ({ image = '', alt = '', isPortrait = true }) => <Image src={image} alt={alt} width={isPortrait ? 225 : 300} height={isPortrait ? 400 : 258} />
+const ChatImage = ({ image = '', alt = '' }) => (
+  <Image
+    src={image}
+    alt={alt}
+    width={300}
+    height={400}
+    style={{
+      width: '100%',
+      height: 'auto',
+    }}
+  />
+)
 
 const timeoutValue = 3000
 
@@ -98,6 +108,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
+          padding: '0.5rem',
         }}
       >
         {messageList.map((message, index) => (
@@ -106,8 +117,8 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
             component="div"
             variant="h5"
             sx={{
-              m: 2,
-              p: 2,
+              m: '0.5rem',
+              p: '0.5rem',
               borderRadius: 1,
               width: '66%',
               alignSelf: message.from === ChatSpeaker.QUESTION ? 'flex-end' : 'flex-start',
@@ -128,27 +139,27 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
       </DialogContent>
       {showQuestion && (
         <DialogActions
+          disableSpacing
           sx={{
             justifyContent: 'center',
             textTransform: 'none',
           }}
         >
-          <Button
-            sx={{
-              textTransform: 'none',
-            }}
-            onClick={(event) => selectAnswer(event, messageIndex)}
-          >
-            {list[messageIndex].text}
-          </Button>
-          <Button
-            sx={{
-              textTransform: 'none',
-            }}
-            onClick={(event) => selectAnswer(event, messageIndex + 1)}
-          >
-            {list[messageIndex + 1].text}
-          </Button>
+          {[messageIndex, messageIndex + 1].map((message, index) => (
+            <Button
+              key={index}
+              sx={{
+                textTransform: 'none',
+                padding: '0.5rem',
+                flexBasis: '100%',
+              }}
+              onClick={(event) => selectAnswer(event, message)}
+            >
+              <Typography component="span" variant="h6">
+                {list[message].text}
+              </Typography>
+            </Button>
+          ))}
         </DialogActions>
       )}
     </div>
@@ -162,10 +173,11 @@ const ChatTitle = ({ title }) => {
       sx={{
         display: 'flex',
         alignItems: 'center',
+        padding: '0.5rem',
         backgroundColor: 'secondary.main',
       }}
     >
-      <Avatar sx={{ height: '6rem', width: '6rem', mr: '1rem' }} alt="Avatar Chat" src="chat/avatar-chat.webp" />
+      <Avatar sx={{ height: '6rem', width: '6rem', m: 0 }} alt="Avatar Chat" src="chat/avatar-chat.webp" />
       <Typography variant="h2" color="text.secondary">
         {title}
       </Typography>

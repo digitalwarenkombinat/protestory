@@ -91,7 +91,6 @@ export const Cart = () => {
           '& .MuiPopover-paper': {
             backgroundColor: 'primary.main',
             width: 'auto',
-            maxWidth: '25%',
             marginLeft: '-.5rem',
             marginTop: '1rem',
             padding: '0.25rem',

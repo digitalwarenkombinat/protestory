@@ -79,7 +79,7 @@ export default function BasicMenu() {
               }}
             />
             <Link href={item.href} passHref style={{ textDecoration: 'none' }}>
-              <MenuItem onClick={handleClose}>
+              <MenuItem onClick={handleClose} sx={{ whiteSpace: 'normal' }}>
                 <Typography component="h3" variant="h4" color="text.secondary">
                   {hasHydrated && item.title}
                 </Typography>

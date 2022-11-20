@@ -14,7 +14,7 @@ export default function PosterParadeItem() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Poster Parade {id}</title>
+        <title>Poster Parade</title>
       </Head>
       {id && (
         <PosterParade

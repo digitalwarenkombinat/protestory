@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react'
-
 import CancelRoundedIcon from '@mui/icons-material/CancelRounded'
 import HelpIcon from '@mui/icons-material/Help'
 import Dialog from '@mui/material/Dialog'
 import Fab from '@mui/material/Fab'
+import { useEffect, useState } from 'react'
 
 import { chat } from 'config/chat'
 import useStore from 'utils/store'
@@ -28,12 +27,8 @@ const HelpDialog = ({ onClose, open }) => {
         },
         '& .MuiDialog-paper': {
           backgroundColor: 'background.default',
-          maxHeight: '75vh',
-          minWidth: '600px',
-          minHeight: 400,
-          marginBottom: '96px',
-          marginRight: '24px',
-          border: 'none',
+          maxHeight: '66vh',
+          marginBottom: '8rem',
         },
       }}
       maxWidth="sm"

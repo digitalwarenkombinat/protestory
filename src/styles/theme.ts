@@ -73,7 +73,6 @@ let theme = createTheme({
           backgroundColor: backgroundColor,
           border: '4px solid #f50057',
           borderRadius: '25px',
-          width: '25%',
         },
       },
     },

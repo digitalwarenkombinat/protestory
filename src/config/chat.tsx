@@ -77,7 +77,6 @@ export const chat = {
       text: '',
       from: ChatSpeaker.BOT,
       image: '/chat/1983.webp',
-      isPortrait: true,
     },
     {
       id: 7,
@@ -182,7 +181,6 @@ export const chat = {
       text: '',
       from: ChatSpeaker.BOT,
       image: '/chat/1928.webp',
-      isPortrait: false,
     },
     {
       id: 27,
