@@ -75,7 +75,7 @@ const StartTheDemo = () => {
                 cursor: 'pointer',
               }}
             >
-              <Image src={left} alt={'Show previous image'} width={60} height={60} onClick={() => updateViewBox(imagePart - 1)} />
+              <Image src={left} alt={'Show previous image'} width={40} height={40} onClick={() => updateViewBox(imagePart - 1)} />
             </Grid>
           )}
           <Grid item xs={splitSVG ? 10 : 12}>
@@ -91,7 +91,7 @@ const StartTheDemo = () => {
                 cursor: 'pointer',
               }}
             >
-              <Image src={right} alt={'Show next image'} width={60} height={60} onClick={() => updateViewBox(imagePart + 1)} />
+              <Image src={right} alt={'Show next image'} width={40} height={40} onClick={() => updateViewBox(imagePart + 1)} />
             </Grid>
           )}
         </Grid>
