@@ -165,7 +165,7 @@ const ChatTitle = ({ title }) => {
         backgroundColor: 'secondary.main',
       }}
     >
-      <Avatar sx={{ height: '6rem', width: '6rem', mr: '1rem' }} alt="Avatar Chat" src="avatar-chat.png" />
+      <Avatar sx={{ height: '6rem', width: '6rem', mr: '1rem' }} alt="Avatar Chat" src="chat/avatar-chat.webp" />
       <Typography variant="h2" color="text.secondary">
         {title}
       </Typography>

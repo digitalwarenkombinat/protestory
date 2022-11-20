@@ -7,9 +7,9 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import Image from 'next/image'
 
 import DigitalwarenkombinatIcon from '/public/copyright.svg'
-import ArchivIcon from '/public/footer/archiv.png'
-import KSBIcon from '/public/footer/ksb.png'
-import KSBHorizontalIcon from '/public/footer/ksb_horizontal.png'
+import ArchivIcon from '/public/footer/archiv.webp'
+import KSBIcon from '/public/footer/ksb.webp'
+import KSBHorizontalIcon from '/public/footer/ksb_horizontal.webp'
 
 function Copyright(props: any) {
   return (
