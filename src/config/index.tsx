@@ -187,9 +187,11 @@ export const legalNotice = {
     description3:
       'PROTESTORY! ist ein Projekt des Archiv der Arbeiterjugendbewegung und wurde gemeinsam mit dem Digitalwarenkombinat umgesetzt. Das Projekt PROTESTORY! wurde entwickelt im Rahmen von „dive in. Programm für digitale Interaktionen“ der Kulturstiftung des Bundes, gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien (BKM) im Programm NEUSTART KULTUR.',
     description4:
-      'Die Digitalisate entstammen allesamt der Sammlung des Archiv der Arbeiterjugendbewegung. Noch ein Abschnitt zu Lizenzen und Nutzungsrechten. Der Quellcode läuft unter einer MIT license. ',
-    description5: 'PROTESTORY! ist ein Angebot des Archiv der Arbeiterjugendbewegung',
-    description6: 'PROTESTORY! ist eine Produktion des Digitalwarenkombinat',
+      'Die Digitalisate entstammen allesamt der Sammlung des Archivs der Arbeiterjugendbewegung. Wir danken allen Rechteinhaber*innen, die uns ihre Materialien zur Verfügung gestellt haben. In einigen Fällen konnten die Rechteinhaber*innen nicht ermittelt werden. Etwaige Inhaber*innen von Urheber- und/oder Nutzungsrechten an Materialien, die auf der Webplattform PROTESTORY! genutzt wurden, mögen sich bitte an das Archiv der Arbeiterjugendbewegung wenden.',
+    description5:
+      'Der Quellcode läuft unter einer MIT license. Die für die Titel verwendete freie Schriftart „Hey August“ stammt von Syafrizal a.k.a. Khurasan (dafont.com). Die für die Fließtexte verwendete Schriftart „Fabrik“ stammt von Peter Wiegel (peter-wiegel.de). Vielen Dank, dass ihr diese Schriftarten frei zur Verfügung stellt! Des Weiteren stammt das Telefongeräusch aus dem Sound „Phone Dialing With Dialtone“ von KevanGC (soundbible.com) und läuft unter einer Public Domain.',
+    description6: 'PROTESTORY! ist ein Angebot des Archiv der Arbeiterjugendbewegung',
+    description7: 'PROTESTORY! ist eine Produktion des Digitalwarenkombinat',
   },
   en: {
     title: 'EN Über das Projekt',
@@ -200,9 +202,11 @@ export const legalNotice = {
     description3:
       'EN PROTESTORY! ist ein Projekt des Archiv der Arbeiterjugendbewegung und wurde gemeinsam mit dem Digitalwarenkombinat umgesetzt. Das Projekt PROTESTORY! wurde entwickelt im Rahmen von „dive in. Programm für digitale Interaktionen“ der Kulturstiftung des Bundes, gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien (BKM) im Programm NEUSTART KULTUR.',
     description4:
-      'EN Die Digitalisate entstammen allesamt der Sammlung des Archiv der Arbeiterjugendbewegung. Noch ein Abschnitt zu Lizenzen und Nutzungsrechten. Der Quellcode läuft unter einer MIT license. ',
-    description5: 'EN PROTESTORY! ist ein Angebot des Archiv der Arbeiterjugendbewegung',
-    description6: 'EN PROTESTORY! ist eine Produktion des Digitalwarenkombinat',
+      'EN Die Digitalisate entstammen allesamt der Sammlung des Archivs der Arbeiterjugendbewegung. Wir danken allen Rechteinhaber*innen, die uns ihre Materialien zur Verfügung gestellt haben. In einigen Fällen konnten die Rechteinhaber*innen nicht ermittelt werden. Etwaige Inhaber*innen von Urheber- und/oder Nutzungsrechten an Materialien, die auf der Webplattform PROTESTORY! genutzt wurden, mögen sich bitte an das Archiv der Arbeiterjugendbewegung wenden.',
+    description5:
+      'EN Der Quellcode läuft unter einer MIT license. Die für die Titel verwendete freie Schriftart „Hey August“ stammt von Syafrizal a.k.a. Khurasan (dafont.com). Die für die Fließtexte verwendete Schriftart „Fabrik“ stammt von Peter Wiegel (peter-wiegel.de). Vielen Dank, dass ihr diese Schriftarten frei zur Verfügung stellt! Des Weiteren stammt das Telefongeräusch aus dem Sound „Phone Dialing With Dialtone“ von KevanGC (soundbible.com) und läuft unter einer Public Domain.',
+    description6: 'EN PROTESTORY! ist ein Angebot des Archiv der Arbeiterjugendbewegung',
+    description7: 'EN PROTESTORY! ist eine Produktion des Digitalwarenkombinat',
   },
 }
 

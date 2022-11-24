@@ -115,7 +115,7 @@ export const chat = {
     },
     {
       id: 14,
-      text: "Es gibt zum Beispiel die Anwendung 'If I can´t dance to it, it´s not my revolution'. Hier findest Du Protestlieder aus den verschiedenen Jahrzehnten. Du kannst sie Dir anhören (und mitsingen) und findest historische Materialien. Darüber hinaus sind aber auch zahlreiche Informationen über die Lieder für Dich aufbereitet. Hast Du Lust auf eine kleine Zeitreise?",
+      text: "Es gibt zum Beispiel die Anwendung 'If I can´t dance to it, it´s not my revolution'. Hier findest Du Protestlieder aus den verschiedenen Jahrzehnten. Du kannst sie Dir anhören (und mitsingen) und findest historische Materialien. Hast Du Lust auf eine kleine Zeitreise?",
       from: ChatSpeaker.BOT,
     },
     {

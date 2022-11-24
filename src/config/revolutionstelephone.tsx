@@ -9,7 +9,7 @@ export const names = [
     name: 'Martin Niemöller',
     value: '#1401',
     description:
-      'Martin Niemöller war evangelischer Theologe und engagierte sich als Teil der Bekennenden Kirche gegen die Deutsche Christen, einer sich eng an faschistischen Ideologien orientierten Strömung der protestantischen Kirche.',
+      'Martin Niemöller war ein evangelischer Theologe und engagierte sich als Teil der Bekennenden Kirche gegen die Deutschen Christen, einer sich eng an faschistischen Ideologien orientierenden Strömung der protestantischen Kirche.',
   },
   {
     name: 'Che Guevara',
@@ -21,7 +21,7 @@ export const names = [
     name: 'Antonio Gramsci',
     value: '#2201',
     description:
-      'Antonio Gramsci war italienische Marxist und Mitbegründer der kommunistischen Partei seines Landes. Bekanntheit erlangte er vor allem als Theoretiker und Philosoph.',
+      'Antonio Gramsci war ein italienischer Marxist und Mitbegründer der kommunistischen Partei seines Landes. Bekanntheit erlangte er vor allem als Theoretiker und Philosoph.',
   },
   {
     name: 'Elfriede Brauns',
@@ -44,7 +44,7 @@ export const names = [
     name: 'Rosa Luxemburg',
     value: '#0503',
     description:
-      'Rosa Luxemburg war eine der wichtigsten Köpfe der polnischen und der deutschen Sozialdemokratie. Sie bekämpfte den Nationalismus und Militarismus und drängte darauf, eine revolutionäre Praxis zu erarbeiten.',
+      'Rosa Luxemburg war einer der wichtigsten Köpfe der polnischen und deutschen Sozialdemokratie. Sie bekämpfte den Nationalismus und Militarismus und drängte darauf, eine revolutionäre Praxis zu erarbeiten.',
   },
   {
     name: 'Karl Liebknecht',

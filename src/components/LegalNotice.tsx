@@ -9,7 +9,7 @@ const LegalNotice = () => {
   const hasHydrated = useHasHydrated()
   const { language } = useStore()
   return (
-    <Grid container textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto" my="2rem">
+    <Grid container textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto" mt="8rem" mb="16rem">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
           {hasHydrated && legalNotice[language].title}
@@ -58,6 +58,9 @@ const LegalNotice = () => {
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
           Konzeption: Sophie Reinlassöder, Arne Schott
+        </Typography>
+        <Typography component="h3" variant="h4" color="secondary.main">
+          Recherche: Julia Wember, Flemming Menges
         </Typography>
       </Grid>
       <Grid item md={6}>
