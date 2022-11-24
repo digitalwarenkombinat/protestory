@@ -131,4 +131,28 @@ export const mediaData = [
     name: 'Rückseite der Zeitschrift „Die andere Jugendzeitschrift“, 1993. Mit Humor wird auf das Lied „El pueblo unido“ aus der Zeit der chilenischen Volksfront angespielt. Außerdem illustriert die Fotostory wörtlich den Text der ersten Strophe der „Internationale“. (AAJB Artikelbibliographie ZA 1148, 1993-4)',
     source: 'mediadata/ZA_1148_1993_4.webp',
   },
+  {
+    name: 'Songtexte und Akkorde „Die Moorsoldaten“ von 1934',
+    source: 'mediadata/Songtexte_und_Akkorde_0001.webp',
+  },
+  {
+    name: 'Songtexte und Akkorde „Einheitsfrontlied“ von 1934',
+    source: 'mediadata/Songtexte_und_Akkorde_0002.webp',
+  },
+  {
+    name: 'Songtexte und Akkorde „Rauch-Haus-Song“ von 1972',
+    source: 'mediadata/Songtexte_und_Akkorde_0003.webp',
+  },
+  {
+    name: 'Songtexte und Akkorde „Schrei nach Liebe“ von 1993',
+    source: 'mediadata/Songtexte_und_Akkorde_0004.webp',
+  },
+  {
+    name: 'Songtexte und Akkorde „El pueblo unido“ von 1973',
+    source: 'mediadata/Songtexte_und_Akkorde_0005.webp',
+  },
+  {
+    name: 'Fotografie einer Demonstration am 11.10.1986. Unter dem Motto "Frieden braucht Bewegung" demonstriert hier die SJD-Die Falken im Hunsrück für einen Wandel der Politik für Frieden und Abrüstung. Der Hunsrück war zum Standort einer NATO Basis geworden, die Atomwaffen stationierte. Die Demonstration soll mehr als 180.000 umfasst haben. (AAJB Fotosammlung 09/0079)',
+    source: 'mediadata/9_79_Großdemo_der_Friedensbewegung.webp',
+  },
 ]
