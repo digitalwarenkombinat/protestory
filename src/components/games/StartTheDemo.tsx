@@ -40,7 +40,7 @@ const StartTheDemo = () => {
   }
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto" my="2rem">
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto" mt="8rem" mb="16rem">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
           Get the Protest started!
@@ -67,39 +67,38 @@ const StartTheDemo = () => {
           </Grid>
         </Grid>
         <Grid container alignItems="center">
-          {splitSVG && (
-            <Grid
-              item
-              xs={1}
-              sx={{
-                cursor: 'pointer',
-              }}
-            >
-              <Image src={left} alt={'Show previous image'} width={40} height={40} onClick={() => updateViewBox(imagePart - 1)} />
-            </Grid>
-          )}
+          <Grid
+            item
+            xs={1}
+            sx={{
+              display: { xs: 'block', xl: 'none' },
+              cursor: 'pointer',
+            }}
+          >
+            <Image src={left} alt={'Show previous image'} width={40} height={40} onClick={() => updateViewBox(imagePart - 1)} />
+          </Grid>
           <Grid item xs={splitSVG ? 10 : 12}>
             <NoSsr defer>
               <StartTheDemoSVG viewBox={viewBox} />
             </NoSsr>
           </Grid>
-          {splitSVG && (
-            <Grid
-              item
-              xs={1}
-              sx={{
-                cursor: 'pointer',
-              }}
-            >
-              <Image src={right} alt={'Show next image'} width={40} height={40} onClick={() => updateViewBox(imagePart + 1)} />
-            </Grid>
-          )}
+          <Grid
+            item
+            xs={1}
+            sx={{
+              display: { xs: 'block', xl: 'none' },
+              cursor: 'pointer',
+            }}
+          >
+            <Image src={right} alt={'Show next image'} width={40} height={40} onClick={() => updateViewBox(imagePart + 1)} />
+          </Grid>
         </Grid>
         <AvatarGroup
           sx={{
             alignContent: 'center',
             flexWrap: 'wrap',
             flexDirection: 'column',
+            marginTop: '8rem',
           }}
           max={6}
         >

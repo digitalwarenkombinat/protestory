@@ -7,7 +7,6 @@ import IconButton from '@mui/material/IconButton'
 import NoSsr from '@mui/material/NoSsr'
 import Popover from '@mui/material/Popover'
 import Typography from '@mui/material/Typography'
-import Link from 'next/link'
 import { MouseEvent, useCallback, useEffect, useRef, useState } from 'react'
 import { useReactToPrint } from 'react-to-print'
 
@@ -91,6 +90,7 @@ export const Cart = () => {
           '& .MuiPopover-paper': {
             backgroundColor: 'primary.main',
             width: 'auto',
+            maxWidth: ['66%', '33%'],
             marginLeft: '-.5rem',
             marginTop: '1rem',
             padding: '0.25rem',
@@ -118,23 +118,21 @@ export const Cart = () => {
           </Typography>
         )}
         {getActivatedCorrectItems().map((item) => (
-          <Link key={item.id} href={item.link} style={{ textDecoration: 'none' }}>
-            <Box onClick={handleClose} sx={{ display: 'flex', alignItems: 'center' }}>
-              <Avatar
-                alt={item.name}
-                src={item.source}
-                sx={{
-                  backgroundColor: 'text.secondary',
-                  height: '40px',
-                  width: '40px',
-                  margin: '0.25rem',
-                }}
-              />
-              <Typography component="p" variant="body1" color="text.secondary">
-                {hasHydrated && item.name}
-              </Typography>
-            </Box>
-          </Link>
+          <Box key={item.id} onClick={handleClose} sx={{ display: 'flex', alignItems: 'center' }}>
+            <Avatar
+              alt={item.name}
+              src={item.source}
+              sx={{
+                backgroundColor: 'text.secondary',
+                height: '40px',
+                width: '40px',
+                margin: '0.25rem',
+              }}
+            />
+            <Typography component="p" variant="body1" color="text.secondary">
+              {hasHydrated && item.name}
+            </Typography>
+          </Box>
         ))}
       </Popover>
     </div>

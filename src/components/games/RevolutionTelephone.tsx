@@ -42,7 +42,7 @@ const RevolutionTelephone = () => {
   }
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2rem" maxWidth="xl" mx="auto">
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" mt="8rem" mb="16rem" maxWidth="xl" mx="auto">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
           Revolutions-Telefon
@@ -50,7 +50,7 @@ const RevolutionTelephone = () => {
         <Typography sx={{ my: 4 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && revolutionstelephone[language].description1}
         </Typography>
-        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="text.secondary">
+        <Typography sx={{ mt: 4, mb: 16 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && revolutionstelephone[language].description2}
         </Typography>
       </Grid>

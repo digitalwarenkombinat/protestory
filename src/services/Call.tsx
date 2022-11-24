@@ -60,7 +60,7 @@ export const Call = ({ number, caller, onEnd }) => {
       ) : (
         <Fade in={ready}>
           <Grid container alignItems="center" justifyContent="center" textAlign="center">
-            <Grid item xs={12}>
+            <Grid item xs={10}>
               <Typography component="p" variant="h5" color="text.secondary">
                 {caller?.description}
               </Typography>

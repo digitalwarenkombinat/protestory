@@ -10,7 +10,7 @@ export default function PosterParadeOverview() {
   const hasHydrated = useHasHydrated()
   const { language } = useStore()
   return (
-    <Grid container alignItems="center" textAlign="center" flexDirection="column" justifyContent="center" my="2rem">
+    <Grid container alignItems="center" textAlign="center" flexDirection="column" justifyContent="center" mt="8rem" mb="16rem">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
           Posterparade

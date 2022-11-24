@@ -28,7 +28,7 @@ export const MediaGallery = () => {
   }
   return (
     <div>
-      <Box my="2rem" alignItems="center" textAlign="center" justifyContent="center">
+      <Box mt="8rem" alignItems="center" textAlign="center" justifyContent="center">
         <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
           {hasHydrated && protestart[language].title}
         </Typography>
@@ -39,7 +39,7 @@ export const MediaGallery = () => {
           {hasHydrated && protestart[language].description2}
         </Typography>
       </Box>
-      <Masonry columns={{ xs: 1, sm: 2, md: 4 }} spacing={2} defaultHeight={450} defaultColumns={4} defaultSpacing={2}>
+      <Masonry columns={{ xs: 1, sm: 2, md: 4 }} spacing={2} defaultHeight={450} defaultColumns={4} defaultSpacing={2} sx={{ marginBottom: '16rem' }}>
         {mediaData.map((item, index) => (
           <Button
             key={index}

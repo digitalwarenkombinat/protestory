@@ -14,7 +14,7 @@ export const Concert = () => {
   const [activeDecade, setActiveDecade] = useState({})
 
   return (
-    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" my="2rem">
+    <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" mt="8rem" mb="16rem">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
           If I can`t dance to it, it`s not my revolution
@@ -22,11 +22,8 @@ export const Concert = () => {
         <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
           {hasHydrated && concert[language].description1}
         </Typography>
-        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
+        <Typography sx={{ mt: 4, mb: 8 }} component="h3" variant="h4" color="secondary.main">
           {hasHydrated && concert[language].description2}
-        </Typography>
-        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
-          {hasHydrated && concert[language].description3}
         </Typography>
       </Grid>
       <Grid item sx={{ width: '100%' }}>

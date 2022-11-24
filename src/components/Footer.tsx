@@ -1,9 +1,8 @@
+import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Link from '@mui/material/Link'
-import { useTheme } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
-import useMediaQuery from '@mui/material/useMediaQuery'
 import Image from 'next/image'
 
 import DigitalwarenkombinatIcon from '/public/copyright.svg'
@@ -25,8 +24,6 @@ function Copyright(props: any) {
 }
 
 export const Footer = () => {
-  const theme = useTheme()
-  const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
   return (
     <Container
       maxWidth={false}
@@ -52,7 +49,12 @@ export const Footer = () => {
         </Grid>
         <Grid item xs={12} mt={2}>
           <Link color="inherit" href="https://www.kulturstiftung-des-bundes.de/dive-in">
-            {isDesktop ? <Image src={KSBHorizontalIcon} alt={'Kulturstiftung des Bundes'} height={138} /> : <Image src={KSBIcon} alt={'Kulturstiftung des Bundes'} width={160} />}
+            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+              <Image src={KSBHorizontalIcon} alt={'Kulturstiftung des Bundes'} height={138} />
+            </Box>
+            <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+              <Image src={KSBIcon} alt={'Kulturstiftung des Bundes'} width={160} />
+            </Box>
           </Link>
         </Grid>
         <Grid item xs={12} mt={2}>

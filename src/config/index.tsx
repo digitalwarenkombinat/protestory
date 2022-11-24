@@ -166,14 +166,12 @@ export const concert = {
   de: {
     description1: 'Kein Protest ohne Musik, keine Demo ohne Lieder zum Mitsingen.',
     description2: 'Hier könnt ihr in eine Auswahl bekannter Protestlieder aus den letzten Jahrzehnten hineinhören.',
-    description3: 'Zum Mitsingen gibt es die Noten und Texte direkt dazu.',
     select: 'Bitte wähle ein Jahr aus!',
     loading: 'Audio lädt',
   },
   en: {
     description1: 'EN If I can`t dance to it, it`s not my revolution',
     description2: 'EN If I can`t dance to it, it`s not my revolution',
-    description3: 'EN If I can`t dance to it, it`s not my revolution',
     select: 'Please choose a year!',
     loading: 'Audio loading',
   },
