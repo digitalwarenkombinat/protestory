@@ -20,7 +20,7 @@ export const Lyrics = ({ activeDecade }) => (
         sx={{
           height: '455px',
           borderRadius: '64.75px',
-          objectFit: 'fill',
+          objectPosition: 'top',
         }}
       />
     </Card>
