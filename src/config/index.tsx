@@ -60,12 +60,14 @@ export const banner = {
 
 export const startTheDemo = {
   de: {
+    title: 'Kunst des Protestes',
     description:
       'Du hast gemeinsam mit Freund:innen eine Demonstration gegen die Erweiterung eines Braunkohletagebaus angemeldet. Da es sich um deine erste selbstorganisierte Demo handelt, ist alles etwas chaotisch. Alle benötigten Dinge befinden sich irgendwo in deinem WG-Zimmer.',
     subDescription:
       'Finde alle 17 Objekte, die du für die Demo brauchst. Tippe oder klicke dazu auf die verschiedenen Gegenstände. Nebenbei entdeckst du dabei weitere Mini-Games zum Thema Protest.',
   },
   en: {
+    title: 'Art of Protest',
     description:
       'EN Du hast gemeinsam mit Freund:innen eine Demonstration gegen die Erweiterung eines Braunkohletagebaus angemeldet. Da es sich um deine erste selbstorganisierte Demo handelt, ist alles etwas chaotisch. Alle benötigten Dinge befinden sich irgendwo in deinem WG-Zimmer.',
     subDescription:
@@ -75,16 +77,16 @@ export const startTheDemo = {
 
 export const print = {
   de: {
-    title: 'Get the Protest started - Demo-Checklist',
+    title: 'Kunst des Protestes: Demo-Checklist',
   },
   en: {
-    title: 'Get the Protest started - Demo-Checklist',
+    title: 'Art of Protest: Demo-Checklist',
   },
 }
 
 export const protestart = {
   de: {
-    title: 'Materialsammlung',
+    title: 'Protestkunst',
     description1:
       'Das Archiv der Arbeiterjugendbewegung sammelt seit 40 Jahren Zeugnisse der Geschichte der Arbeiter:innenjugendbewegung und stellt diese für Forschungszwecke sowie für die Jugend- und Erwachsenenbildung zur Verfügung.',
     description2:

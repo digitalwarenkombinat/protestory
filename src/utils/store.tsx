@@ -6,6 +6,7 @@ import { CookieDialogCategory } from '../services/CookieDialog'
 export interface Item {
   active: boolean
   link: string
+  linkName?: string
   linkText?: string
   name: string
   id: string

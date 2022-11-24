@@ -9,7 +9,7 @@ export default function artofprotest() {
   return (
     <Layout headerTitle={title}>
       <Head>
-        <title>Get the Protest started!</title>
+        <title>Kunst des Protestes</title>
       </Head>
       <Container sx={{ backgroundColor: 'secondary.main' }} maxWidth={false} component="section">
         <StartTheDemo />

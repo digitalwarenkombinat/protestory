@@ -112,6 +112,8 @@ export const Cart = () => {
                   <DownloadIcon sx={{ fontSize: '1.5rem' }} />
                 </IconButton>
               </>
+            ) : count === 0 ? (
+              cartMessage[language].start
             ) : (
               cartMessage[language].playing
             )}

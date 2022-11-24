@@ -43,7 +43,7 @@ const StartTheDemo = () => {
     <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" maxWidth="lg" mx="auto" mt="8rem" mb="16rem">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
-          Get the Protest started!
+          {hasHydrated && startTheDemo[language].title}
         </Typography>
         <Typography component="h3" variant="h4" color="text.secondary">
           {hasHydrated && startTheDemo[language].description}
@@ -115,7 +115,7 @@ const StartTheDemo = () => {
                 />
                 <Box sx={{ textAlign: 'left' }}>
                   <Typography component="h4" variant="h2" color="text.secondary">
-                    {hasHydrated && item.active ? item.name : ''}
+                    {hasHydrated && item.active ? item.linkName : ''}
                   </Typography>
                   <Typography component="p" variant="h6" color="text.secondary">
                     {hasHydrated && item.active && item.linkText}

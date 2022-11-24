@@ -1,11 +1,13 @@
 export const cartMessage = {
   de: {
+    start: 'Sobald du Gegenstände gefunden hast, die ihr für die Demo braucht, erscheinen diese hier.',
     playing: 'Sehr gut! Du hast etwas gefunden, was ihr für die Demo braucht. Finde auch die restlichen Gegenstände!',
     finish:
       'Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Hier kannst du dir die Checklist noch als PDF herunterladen. Unten findest du noch weitere Inspiration für den nächsten Protest.',
   },
   en: {
-    playing: 'Sehr gut! Du hast etwas gefunden, was ihr für die Demo braucht. Finde auch die restlichen Gegenstände!',
+    start: 'EN Sobald du Gegenstände gefunden hast, die ihr für die Demo braucht, erscheinen diese hier.',
+    playing: 'EN Sehr gut! Du hast etwas gefunden, was ihr für die Demo braucht. Finde auch die restlichen Gegenstände!',
     finish:
       'EN Herzlichen Glückwunsch! Du hast alle notwendigen Gegenstände gefunden, die ihr für die Demo braucht. Jetzt kann es endlich losgehen! Hier kannst du dir die Checklist noch als PDF herunterladen. Unten findest du noch weitere Inspiration für den nächsten Protest.',
   },
@@ -34,8 +36,9 @@ export const items = [
   {
     active: false,
     link: 'revolutiontelephone',
-    name: 'Revolutionstelefon',
+    linkName: 'Revolutionstelefon',
     linkText: 'Gedanken von historischen Personen zum Thema Protest',
+    name: 'Pressekontakt',
     id: 'festnetz',
     source: 'startthedemo/festnetz.svg',
     description:
@@ -75,9 +78,10 @@ export const items = [
   {
     active: false,
     link: 'slogangenerator',
+    linkName: 'Slogan-Generator',
     linkText: 'Inspiration für deinen nächsten Demo-Rufe',
     id: 'megafon',
-    name: 'Slogan-Generator',
+    name: 'Megafon',
     source: 'startthedemo/megafon.svg',
     description:
       'Ein Megafon ist wichtig, z.B. um Sprechchöre anzustimmen. Als Ergänzung zu Lautsprechern und Mikrofon ist es auch mobiler einsetzbar, sobald sich die Demonstration in Bewegung setzt. Und deine Stimme ist vielleicht nicht kräftig genug, um über einige Hundert Meter hinweg hörbar zu sein.',
@@ -96,9 +100,10 @@ export const items = [
   {
     active: false,
     link: 'concert',
+    linkName: 'If I can`t dance to it, it`s not my revolution',
     linkText: 'Protestsongs aus mehreren Jahrzehnten - zum Mitsingen',
     id: 'smartphone',
-    name: 'If I can`t dance to it, it`s not my revolution',
+    name: 'Playlist',
     source: 'startthedemo/smartphone.svg',
     description:
       'Die beste Demo ist die, bei der gute Musik läuft und Lieder auch mal mitgesungen werden. Du hast eine Playlist mit klassischen Protestliedern zusammengestellt, aber auch mit neueren empowernden Songs. Falls ihr noch Inspiration sucht, schaut mal bei "If I can´t dance to it, it is not my revolution" rein.',
@@ -177,9 +182,10 @@ export const items = [
   {
     active: false,
     link: 'posterparade',
+    linkName: 'Posterparade',
     linkText: 'Demoplakate und ihre Geschichte',
     id: 'plakate',
-    name: 'Posterparade',
+    name: 'Plakate',
     source: 'startthedemo/plakate.svg',
     description:
       'Instagram, Twitter, Mailinglisten, alles schön und gut. Aber manche Leute werden auch einfach durch Plakate in ihrem Kiez auf eine Demo aufmerksam. Vergesst also nicht, auch im Analogen Werbung für eure Demo zu machen, damit sich möglichst verschiedene Menschen für euer Anliegen einsetzen und euch unterstützen können.',
@@ -188,9 +194,10 @@ export const items = [
   {
     active: false,
     link: 'protestart',
+    linkName: 'Protestkunst',
     linkText: 'Ein Blick in die Sammlung des Archivs der Arbeiterjugendbewegung',
     id: 'transparente',
-    name: 'Protestkunst',
+    name: 'Transparente',
     source: 'startthedemo/transparente.svg',
     description:
       'Keine Demo kommt ohne Plakate, Parolen und Transparente aus. Für die erste Reihe habt ihr ein großes Banner drucken lassen, auf dem "Kohle stoppen, Klima und Dörfer retten!" steht.',
@@ -199,9 +206,10 @@ export const items = [
   {
     active: false,
     link: 'socialmediawall',
+    linkName: 'Social Media Wall',
     linkText: 'PROTESTORY! im Netz',
     id: 'laptop',
-    name: 'Social Media Wall',
+    name: 'Social Media',
     source: 'startthedemo/laptop.svg',
     description:
       'Je jünger eure Zielgruppe für die Demo, desto wichtiger ist Social Media – das ist klar. Wenn ihr sehr früh mit der Demoplanung angefangen habt, ist es gut, bereits einige Wochen vorher den Termin bekannt zu machen, denn die wenigsten entscheiden sich spontan an einer Demo teilzunehmen.',
@@ -221,7 +229,7 @@ export const items = [
     active: false,
     link: '',
     id: 'ordner_weste',
-    name: 'Kontakte zu Demo-Ordner:innen (gelbe Warnweste)',
+    name: 'Kontakte zu Demo-Ordner:innen',
     source: 'startthedemo/ordner_weste.svg',
     description:
       'Diesen Job macht keiner gern und auf vielen Demos werden noch spontan Ordner:innen gesucht. Ihr habt zum Glück schon eine Liste mit Menschen, die sich freiwillig bereit erklärt haben, als Ordner:innen die Demo zu flankieren. Sie sollen vor allem die Demo-Auflagen durchsetzen, also z.B. eingreifen, wenn jemand aggressiv wird oder Gegenstände dabei hat, die untersagt sind.',
