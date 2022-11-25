@@ -4,29 +4,29 @@ import Typography from '@mui/material/Typography'
 
 import { concert } from 'config/concert'
 
-export const Timeline = ({ setActiveDecade }) => (
+export const Timeline = ({ setActiveElement }) => (
   <Box
     sx={{
       position: 'relative',
       display: 'flex',
       backgroundColor: 'text.secondary',
       alignItems: 'center',
-      justifyContent: 'flex-start',
+      justifyContent: 'center',
       borderBottom: '8px solid black',
       overflow: 'auto',
-      height: '73.36px',
-      borderTopLeftRadius: '79.33px',
-      borderTopRightRadius: '79.33px',
+      height: '212.08px',
+      borderRadius: '79.33px',
       paddingTop: '8px',
       px: '8px',
     }}
   >
-    {concert.timeline.map(({ index, decade }) => (
+    {concert.timeline.map(({ index, year }) => (
       <Button
         key={index}
-        onClick={() => setActiveDecade(concert.timeline[index])}
+        onClick={() => setActiveElement(concert.timeline[index])}
         sx={{
           color: 'text.primary',
+          margin: 0.5,
           textTransform: 'none',
           borderRight: '2px solid black',
           borderRadius: 0,
@@ -38,7 +38,7 @@ export const Timeline = ({ setActiveDecade }) => (
         }}
       >
         <Typography component="p" variant="h4">
-          {decade}
+          {year}
         </Typography>
       </Button>
     ))}

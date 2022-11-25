@@ -2,7 +2,6 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import { concert } from 'config'
 import { useState } from 'react'
-import { AudioPlayer } from 'services/AudioPlayer'
 import { Lyrics } from 'services/Lyrics'
 import { Timeline } from 'services/Timeline'
 import useStore from 'utils/store'
@@ -11,7 +10,7 @@ import { useHasHydrated } from 'utils/useHasHydrated'
 export const Concert = () => {
   const hasHydrated = useHasHydrated()
   const { language } = useStore()
-  const [activeDecade, setActiveDecade] = useState({})
+  const [activeElement, setActiveElement] = useState({})
 
   return (
     <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" mt="8rem" mb="16rem">
@@ -43,12 +42,11 @@ export const Concert = () => {
           <path d="M1183.53 211.64h-55.18c-15.11 0-27.36 12.25-27.36 27.36v302.02c0 14.73 11.94 26.67 26.67 26.67h12.38l43.49-356.05Z" className="n" />
           <rect width="896.32" height="220.08" x="152.51" y="567.69" rx="79.33" ry="79.33" className="m" />
           <foreignObject x="156.51" y="571.69" width="888.32" height="212.08">
-            <Timeline setActiveDecade={setActiveDecade} />
-            <AudioPlayer activeDecade={activeDecade} />
+            <Timeline setActiveElement={setActiveElement} />
           </foreignObject>
           <rect width="802.98" height="458" x="197.51" y="49.43" rx="64.75" ry="64.75" className="m" />
           <foreignObject x="201.51" y="51.43" width="794.98" height="452">
-            <Lyrics activeDecade={activeDecade} />
+            <Lyrics activeElement={activeElement} />
           </foreignObject>
         </svg>
       </Grid>
