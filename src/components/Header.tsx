@@ -21,7 +21,7 @@ export const Header = ({ title }: HeaderProps) => {
           bgcolor: 'primary.main',
         }}
       >
-        <Toolbar disableGutters>
+        <Toolbar>
           <Typography
             sx={{
               transform: 'rotate(-10deg)',
@@ -46,6 +46,7 @@ export const Header = ({ title }: HeaderProps) => {
             sx={{
               color: 'secondary.main',
               flexGrow: 1,
+              fontSize: { sm: '6rem', lg: '8rem' },
             }}
           >
             {title}

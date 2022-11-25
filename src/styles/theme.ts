@@ -53,7 +53,7 @@ let theme = createTheme({
     MuiSvgIcon: {
       styleOverrides: {
         root: {
-          fontSize: '6rem',
+          fontSize: '5rem',
         },
       },
     },
@@ -62,8 +62,8 @@ let theme = createTheme({
         root: {
           backgroundColor: secondaryColor,
           position: 'fixed',
-          bottom: 64,
-          right: 64,
+          bottom: '2rem',
+          right: '1rem',
         },
       },
     },
