@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 
@@ -31,7 +31,7 @@ interface ChatProps {
 }
 
 const ChatImage = ({ image = '', alt = '' }) => (
-  <Image
+  <img
     src={image}
     alt={alt}
     width={300}
@@ -90,7 +90,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
 
   const checkForQuestion = (activeMessage: MessageProps) => {
     if (activeMessage.link) {
-      setTimeout(() => Router.push(activeMessage.link), 1000)
+      setTimeout(() => Router.push(activeMessage.link), timeoutValue)
     }
 
     if (list[activeMessage.id + 1]) {

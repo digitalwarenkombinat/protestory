@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
-import Image from 'next/image'
-import Link from 'next/link'
+import CustomLink from 'services/CustomLink'
 import { useMemo, useRef, useState } from 'react'
 
 import { posterParade } from 'config'
@@ -160,7 +160,7 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
       `}</style>
       <Box className="imageWrapper">
         <Box className="imageContainer">
-          <Image
+          <img
             className={className}
             src={image}
             width={800}
@@ -169,7 +169,6 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
               width: '100%',
               height: 'auto',
             }}
-            priority
             alt="Poster Parade"
           />
         </Box>
@@ -204,11 +203,11 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
           </Typography>
           {sources.map((source, index) => (
             <Box key={index}>
-              <Link color="inherit" href={source.link}>
+              <CustomLink href={source.link}>
                 <Typography component="p" variant="h6" color="text.primary" sx={{ bgcolor: 'background.default' }}>
                   {source.text}
                 </Typography>
-              </Link>
+              </CustomLink>
             </Box>
           ))}
         </Box>
