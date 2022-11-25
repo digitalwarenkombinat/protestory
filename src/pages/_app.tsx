@@ -19,8 +19,22 @@ export default function MyApp(props: MyAppProps) {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>PROTESTORY!</title>
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <meta name="description" content="PROTESTORY! - jugendkulturellen Protest digital erleben und historisches Wissen nutzen" />
+        <meta name="title" content="PROTESTORY!" />
+        <meta name="description" content="PROTESTORY! | jugendkulturellen Protest digital erleben und historisches Wissen nutzen" />
+        <meta name="copyright" content="Digitalwarenkombinat" />
+        <meta name="keywords" content="Protest, Archiv, Demokratie, Arbeiterjugend, Open Source, Webdesign, Entwicklung, Digitalwarenkombinat" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://protestory.de/" />
+        <meta property="og:title" content="PROTESTORY!" />
+        <meta property="og:description" content="PROTESTORY! | jugendkulturellen Protest digital erleben und historisches Wissen nutzen" />
+        <meta property="og:image" content="https://protestory.de/icon-512.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://protestory.de/" />
+        <meta property="twitter:title" content="PROTESTORY!" />
+        <meta property="twitter:description" content="PROTESTORY! | jugendkulturellen Protest digital erleben und historisches Wissen nutzen" />
+        <meta property="twitter:image" content="https://protestory.de/icon-512.png" />
         <link rel="preload" href="./fonts/HeyAugust.woff2" as="font" crossOrigin="" />
         <link rel="preload" href="./fonts/Fabrik.woff2" as="font" crossOrigin="" />
         <link rel="icon" href="./favicon.ico" sizes="any" />
