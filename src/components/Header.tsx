@@ -1,6 +1,6 @@
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import Link from '@mui/material/Link'
+import CustomLink from 'services/CustomLink'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Image from 'next/image'
@@ -27,7 +27,7 @@ export const Header = ({ title }: HeaderProps) => {
               transform: 'rotate(-10deg)',
             }}
           >
-            <Link color="inherit" href="/">
+            <CustomLink href="/">
               <Image
                 priority
                 src={icon}
@@ -39,7 +39,7 @@ export const Header = ({ title }: HeaderProps) => {
                   maxHeight: '200px',
                 }}
               />
-            </Link>
+            </CustomLink>
           </Typography>
           <Typography
             variant="h1"

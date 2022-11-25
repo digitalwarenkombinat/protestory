@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { startTheDemo } from 'config'
 import Image from 'next/image'
-import Link from 'next/link'
+import CustomLink from 'services/CustomLink'
 import { useEffect, useState } from 'react'
 import { Cart } from 'services/Cart'
 import { StartTheDemoSVG } from 'services/StartTheDemoSVG'
@@ -103,7 +103,7 @@ const StartTheDemo = () => {
           max={6}
         >
           {getLinkedItems().map((item) => (
-            <Link key={item.id} href={item.link} passHref style={{ textDecoration: 'none' }}>
+            <CustomLink key={item.id} href={item.link}>
               <Box sx={{ display: 'flex', cursor: 'pointer' }}>
                 <Avatar
                   alt={item.name}
@@ -122,7 +122,7 @@ const StartTheDemo = () => {
                   </Typography>
                 </Box>
               </Box>
-            </Link>
+            </CustomLink>
           ))}
         </AvatarGroup>
       </Grid>

@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Image from 'next/image'
-import Link from 'next/link'
+import CustomLink from 'services/CustomLink'
 import Carousel from 'react-material-ui-carousel'
 
 import { posterParadeItems } from 'config/analysis'
@@ -93,7 +93,7 @@ const Poster = ({ item, contentPosition = 'left' }) => {
 
     const media = (
       <Grid item xs={12} md={3} lg={4} key={mediaItem.href} sx={{ p: 1 }} alignSelf={'center'}>
-        <Link href={`/posterparade/${encodeURIComponent(mediaItem.href)}`} passHref>
+        <CustomLink href={`/posterparade/${encodeURIComponent(mediaItem.href)}`}>
           <CardMedia
             sx={{
               height: '50vh',
@@ -103,7 +103,7 @@ const Poster = ({ item, contentPosition = 'left' }) => {
             image={mediaItem.image}
             title={mediaItem.name}
           ></CardMedia>
-        </Link>
+        </CustomLink>
       </Grid>
     )
 

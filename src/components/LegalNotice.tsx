@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography'
 import useStore from 'utils/store'
 import { legalNotice } from 'config'
 import { useHasHydrated } from 'utils/useHasHydrated'
-import Link from 'next/link'
+import CustomLink from 'services/CustomLink'
 
 const LegalNotice = () => {
   const hasHydrated = useHasHydrated()
@@ -27,12 +27,15 @@ const LegalNotice = () => {
           {hasHydrated && legalNotice[language].description4}
         </Typography>
         <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
+          {hasHydrated && legalNotice[language].description5}
+        </Typography>
+        <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
           #protestory #proletariart #kulturstiftungdesbundes #ProgrammDiveIn #NeustartKultur #aajb #archivderarbeiterjugendbewegung #digitalwarenkombinat
         </Typography>
       </Grid>
       <Grid item md={6}>
         <Typography sx={{ my: 2 }} component="h3" variant="h4" color="secondary.main">
-          {hasHydrated && legalNotice[language].description5}
+          {hasHydrated && legalNotice[language].description6}
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
           Archiv der Arbeiterjugendbewegung
@@ -44,14 +47,10 @@ const LegalNotice = () => {
           45739 Oer-Erkenschwick
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          <Link color="inherit" href="https://www.arbeiterjugend.de">
-            www.arbeiterjugend.de
-          </Link>
+          <CustomLink href="https://www.arbeiterjugend.de">www.arbeiterjugend.de</CustomLink>
         </Typography>
         <Typography sx={{ my: 2 }} component="h3" variant="h4" color="secondary.main">
-          <Link color="inherit" href="mailto:archiv@arbeiterjugend.de">
-            Email: archiv@arbeiterjugend.de
-          </Link>
+          <CustomLink href="mailto:archiv@arbeiterjugend.de">Email: archiv@arbeiterjugend.de</CustomLink>
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
           Projektleitung: Maria Daldrup
@@ -65,7 +64,7 @@ const LegalNotice = () => {
       </Grid>
       <Grid item md={6}>
         <Typography sx={{ my: 2 }} component="h3" variant="h4" color="secondary.main">
-          {hasHydrated && legalNotice[language].description6}
+          {hasHydrated && legalNotice[language].description7}
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
           Digitalwarenkombinat GbR
@@ -77,14 +76,10 @@ const LegalNotice = () => {
           04317 Leipzig
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          <Link color="inherit" href="https://digitalwarenkombinat.de/">
-            www.digitalwarenkombinat.de
-          </Link>
+          <CustomLink href="https://digitalwarenkombinat.de/">www.digitalwarenkombinat.de</CustomLink>
         </Typography>
         <Typography sx={{ my: 2 }} component="h3" variant="h4" color="secondary.main">
-          <Link color="inherit" href="mailto:info@digitalwarenkombinat.de">
-            E-Mail: info@digitalwarenkombinat.de
-          </Link>
+          <CustomLink href="mailto:info@digitalwarenkombinat.de">E-Mail: info@digitalwarenkombinat.de</CustomLink>
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
           Konzeption, Grafik: Anne Mühlich

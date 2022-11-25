@@ -6,7 +6,7 @@ import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import Typography from '@mui/material/Typography'
 import { menu } from 'config/menu'
-import Link from 'next/link'
+import CustomLink from 'services/CustomLink'
 import { MouseEvent, useState } from 'react'
 import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
@@ -78,13 +78,13 @@ export default function BasicMenu() {
                 borderColor: '#FFF',
               }}
             />
-            <Link href={item.href} passHref style={{ textDecoration: 'none' }}>
+            <CustomLink href={item.href}>
               <MenuItem onClick={handleClose} sx={{ whiteSpace: 'normal' }}>
                 <Typography component="h3" variant="h4" color="text.secondary">
                   {hasHydrated && item.title}
                 </Typography>
               </MenuItem>
-            </Link>
+            </CustomLink>
           </div>
         ))}
       </Menu>
