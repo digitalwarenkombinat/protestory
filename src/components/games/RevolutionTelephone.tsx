@@ -22,7 +22,7 @@ const RevolutionTelephone = () => {
   const hasHydrated = useHasHydrated()
   const { language } = useStore()
   const theme = useTheme()
-  const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
   const [telephoneNumber, setTelephoneNumber] = useState('')
   const [activeElement, setActiveElement] = useState(null)
 
@@ -31,7 +31,6 @@ const RevolutionTelephone = () => {
   }
 
   function dialNumber(digit: string) {
-    telephoneNumber.length === 5 && resetTelephoneNumber()
     telephoneNumber.length === 4 && setActiveElement(names.find((element) => element.value === telephoneNumber.concat(digit)))
     return setTelephoneNumber((previousNumber) => previousNumber.concat(digit))
   }
@@ -45,7 +44,7 @@ const RevolutionTelephone = () => {
     <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" mt="8rem" mb="16rem" maxWidth="xl" mx="auto">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="text.secondary">
-          Revolutions-Telefon
+          Revolutionstelefon
         </Typography>
         <Typography sx={{ my: 4 }} component="h3" variant="h4" color="text.secondary">
           {hasHydrated && revolutionstelephone[language].description1}
@@ -113,7 +112,7 @@ const RevolutionTelephone = () => {
             }
           }
         `}</style>
-        <svg id="Revolutionstelefon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537.46 361.7" className={hasHydrated && isDesktop ? '' : 'scale'}>
+        <svg id="Revolutionstelefon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537.46 361.7" className={hasHydrated && isMobile ? 'scale' : ''}>
           <defs></defs>
           <g id="b">
             <path
