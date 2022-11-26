@@ -18,7 +18,7 @@ export const posterParadeItems = [
   {
     name: 'Frieden',
     caption:
-      'Der Frieden nach dem Zweiten Weltkrieg fühlte sich durch die Teilung der Welt in politische Blöcke und den darauffolgenden Kalten Krieg fragil an. Linke Kritik fokussierte sich seit den 1950er Jahren insbesondere auf die Wiederbewaffnung in der BRD und später auf die NATO und die Stationierung von (Atom-)Waffen in Westeuropa. Einer der grundlegenden Gedanken dabei war, dass von Deutschland nie wieder Waffengewalt ausgehen sollte. In diesem Kontext ist u.a. das Plakat aus den 1950er Jahren zu sehen, dass gewaltsame Räumungen im Grenzstreifen zwischen DDR und BRD thematisiert.',
+      'Der Frieden nach dem Zweiten Weltkrieg fühlte sich durch die Teilung der Welt in politische Blöcke und den darauffolgenden Kalten Krieg fragil an. Linke Kritik fokussierte sich seit den 1950er Jahren insbesondere auf die Wiederbewaffnung in der BRD und später auf die NATO und die Stationierung von (Atom-)Waffen in Westeuropa. Einer der grundlegenden Gedanken dabei war, dass von Deutschland nie wieder Waffengewalt ausgehen sollte.',
     contentPosition: 'middle',
     items: [
       {
@@ -66,7 +66,7 @@ export const posterParadeItems = [
   {
     name: 'Antifaschismus',
     caption:
-      'Seit den Anfängen der Bundesrepublik Deutschland nach dem Zweiten Weltkrieg war der Kampf gegen den Faschismus ein wichtiges Thema linker Arbeiter:innenjugendproteste. Die Tatsache, dass viele ehemalige NSDAP-Angehörige nach 1949 wichtige Positionen des Staates begleiteten, befeuerte immer wieder die öffentliche Debatte. Auch das Gedenken an nationalsozialistische Verbrechen gehöre und gehört zu den Kernthemen u.a. der Falken.',
+      'Seit den Anfängen der Bundesrepublik Deutschland nach dem Zweiten Weltkrieg war der Kampf gegen den Faschismus ein wichtiges Thema linker Arbeiter:innenjugendproteste. Die Tatsache, dass viele ehemalige NSDAP-Angehörige nach 1945 wichtige Positionen des Staates bekleideten, befeuerte immer wieder die öffentliche Debatte. Auch das Gedenken an nationalsozialistische Verbrechen gehörte und gehört zu den Kernthemen u.a. der Falken.',
     contentPosition: 'middle',
     items: [
       {
@@ -82,7 +82,7 @@ export const posterParadeItems = [
   {
     name: 'Umwelt',
     caption:
-      'Das Thema Umwelt spielte in linken Arbeiter:innenjugendprotesten der Nachkriegszeit eine eher untergeordnete Rolle und trat expliziter erst in den 1980er Jahren hervor. Insbesondere im Kontext mit Atomenergie werden die Themen Umwelt und Frieden aber auch verknüpft, denn die Gefahr, die von Atomwaffen ausgeht, wurde nicht nur als Bedrohung für den Menschen, sondern auch für seine Umwelt betrachtet. Die staatlich propagierte Differenzierung zwischen ziviler und militärischer Nutzung von Atomenergie wurde dabei immer seltener von Seiten linker Proteste übernommen.',
+      'Das Thema Umwelt spielte in linken Arbeiter:innenjugendprotesten der Nachkriegszeit eine eher untergeordnete Rolle und trat expliziter erst in den 1980er Jahren hervor. Insbesondere im Kontext mit Atomenergie wurden die Themen Umwelt und Frieden aber auch verknüpft. Die Gefahr, die von Atomwaffen ausgeht, wurde nicht nur als Bedrohung für den Menschen, sondern auch für seine Umwelt betrachtet. Die staatlich propagierte Differenzierung zwischen ziviler und militärischer Nutzung von Atomenergie wurde dabei immer seltener von Seiten linker Proteste übernommen.',
     contentPosition: 'middle',
     items: [
       {
@@ -433,24 +433,24 @@ export const posterParadeTexts = {
     header: 'Jugend für Ausländerfreundlichkeit',
     texts: [
       'An dieser Stelle ist das Logo des Jugendverbandes „SJD – Die Falken“ zu sehen, von dem das Plakat herausgegeben wurde. Die Falken setzen sich für mehr Demokratie, soziale Gerechtigkeit, Selbstbestimmung und Frieden. Mit diesem Plakat bezogen sie Anfang der 1990er Stellung gegen Rassismus und „Ausländerfeindlichkeit“.',
-      'Hier ist eine rote Fahne zu sehen. Die rote Fahne ist ein Symbol der Arbeiterbewegung. Ihre Geschichte reicht weit zurück: Bereits im Zuge der Julirevolution 1830 etwa versammelten sich Arbeiter:innen einer Tuchfabrik unter ihr, um für bessere Bedingungen zu demonstrieren.',
+      'Hier ist eine rote Fahne zu sehen. Die rote Fahne ist ein Symbol der Arbeiter:innenbewegung. Ihre Geschichte reicht weit zurück: Bereits im Zuge der Julirevolution 1830 etwa versammelten sich Arbeiter:innen einer Tuchfabrik unter ihr, um für bessere Bedingungen zu demonstrieren.',
       'Während der Revolutionen von 1848/49 gewann die rote Fahne größere Popularität. In den folgenden Jahrzehnten etablierte sie sich als Symbol der Arbeiterbewegung.',
-      'Das Rot wurde oftmals als Symbol des blutigen Kampfes der Arbeiter:innen für ihre Rechte und Freiheiten interpretiert. Auch beim Schlesischen Weberaufstand 1844 versammelten sich die Arbeiter:innen unter einer roten Fahne. Durch die Revolutionsjahre 1848/49 gewann die rote Fahne größere Popularität. In den folgenden Jahrzehnten wurde die rote Farbe immer mehr zum Symbol der Arbeiterbewegung.',
+      'Das Rot wurde oftmals als Symbol des blutigen Kampfes der Arbeiter:innen für ihre Rechte und Freiheiten interpretiert. Auch beim Schlesischen Weberaufstand 1844 versammelten sich die Arbeiter:innen unter einer roten Fahne. Durch die Revolutionsjahre 1848/49 gewann die rote Fahne größere Popularität. In den folgenden Jahrzehnten wurde die rote Farbe immer mehr zum Symbol der Arbeiter:innenbewegung.',
       'Mit dem 1863 gegründeten Allgemeinen Deutschen Arbeiterverein (ADAV), welcher auch die Rote Fahne als Symbolik trug, wurde das Rot zur Farbe der Sozialdemokratie.',
       'In den Folgejahrzehnten wählten auch sozialistische und kommunistische Bewegungen die rote Fahne zu ihrem Symbol. In Deutschland haben daher sowohl die SPD als auch die Linke die Farbe Rot als prägende Parteifarbe.',
-      'Auch Staaten, deren Gesellschaftsform Kommunismus oder Sozialismus ist, haben häufig einen roten Grundton in ihrer Flagge. Bis heute verwenden unterschiedliche Staaten, Parteien, Organisationen und Bewegungen die rote Fahne und stellen sich auf diese Weise in die Tradition der Arbeiterbewegung.',
+      'Auch Staaten, deren Gesellschaftsform Kommunismus oder Sozialismus ist, haben häufig einen roten Grundton in ihrer Flagge. Bis heute verwenden unterschiedliche Staaten, Parteien, Organisationen und Bewegungen die rote Fahne und stellen sich auf diese Weise in die Tradition der Arbeiter:innenbewegung.',
       'Auf einem Transparent geschrieben steht hier die Parole „Dem Hass keine Chance“. Der Slogan plädiert für Vielfalt, Offenheit und Toleranz und setzt sich gegen Hass, Gewalt und Rassismus ein. Demonstrant:innen nutzen Transparente, um ihre Forderungen in die Öffentlichkeit zu tragen.',
       '„Internationale Solidarität – Jetzt“ – Solidarität bezeichnet ein Zusammengehörigkeitsgefühl von Individuen und Gruppen. Das Konzept der Solidarität erlebte sowohl innergesellschaftlich als auch auf internationaler Ebene in der zweiten Hälfte des 20. Jahrhunderts ihre Blütezeit.',
-      'In der Arbeiterbewegung steht Solidarität für den Zusammenhalt der Arbeit:innen untereinander. Hiermit eng verbunden ist die internationale Solidarität, insbesondere die Beziehungen zwischen Industrie- und Entwicklungsländern.',
+      'In der Arbeiter:innenbewegung steht Solidarität für den Zusammenhalt der Arbeit:innen untereinander. Hiermit eng verbunden ist die internationale Solidarität, insbesondere die Beziehungen zwischen Industrie- und Entwicklungsländern.',
       'In den Jahren 1978-1979 kam es in Nicaragua zur sandinistischen Revolution. Der Diktator Anastasio Somoza wurde gestürzt und der linksorientierte Frente Sandinista de Liberación Nacional kam in an die Macht.',
       'Unterstützt durch die USA versuchten Konterrevolutionäre die Revolution während des Contra-Krieges (1981-1990) rückgängig zu machen und kämpften gegen die linksgerichtete sandinistische Regierung.',
-      'Zu der Contra-Gruppierung gehörten Anhänger Somozas, Teile der bürgerlichen Opposition, Bauern, enttäuschte Sandinisten und Teile der indigenen Bevölkerung.',
+      'Zu der Contra-Gruppierung gehörten Anhänger:innen Somozas, Teile der bürgerlichen Opposition, Bauern, enttäuschte Sandinisten und Teile der indigenen Bevölkerung.',
       'Der Contra-Krieg dauerte bis 1990 an und forderte zahlreiche Todesopfer. Mit dem Ende des Krieges wurde der politischen Gewalt jedoch kein Ende gesetzt. Bis in die zweite Hälfte der 1990 Jahre starben knapp 2000 weitere Menschen.',
-      'Der Begriff „Ausländerfeindlichkeit“ bezeichnet eine negative Einstellung gegenüber Ausländerinnen und Ausländern. Von Vorurteilen geprägt, werden die Ausländer:innen im eigenen Land ausgegrenzt und angefeindet.',
+      'Der Begriff „Ausländerfeindlichkeit“ bezeichnet eine negative Einstellung gegenüber Ausländer:innen. Von Vorurteilen geprägt, werden die Ausländer:innen im eigenen Land ausgegrenzt und angefeindet.',
       'Der hier stehende Begriff „AusländerFREUNDlichkeit“ drückt das genaue Gegenteil aus und soll der „Ausländerfeindlichkeit“ und die Bedeutung, die dem Begriff zukommt, entgegenwirken.',
       'Die „Gelbe Hand“ ist ein Symbol für Toleranz und gegen Ausländerfeindlichkeit.',
-      'Hinter dem Logo steht der Verein „Mach meinen Kumpel nicht an!“. Der Verein wurde am 18.11.1986 von dem Deutschen Gewerkschaftsbund und „ran“ in Düsseldorf gegründet und stellt somit einen der der ältesten antirassistischen Organisationen in Deutschland dar.',
-      'Die „Gelbe Hand“ steht für das Engagement gegen Fremdenfeindlichkeit, Rassismus und Rechtsextremismus und spricht vor allem Jugendliche an.',
+      'Hinter dem Logo steht der Verein „Mach meinen Kumpel nicht an!“. Der Verein wurde am 18.11.1986 vom Deutschen Gewerkschaftsbund und „ran“ in Düsseldorf gegründet und stellt somit eine der ältesten antirassistischen Organisationen in Deutschland dar.',
+      'Die „Gelbe Hand“ steht für das Engagement gegen Fremdenfeindlichkeit, Rassismus und Rechtsextremismus.',
     ],
     sources: [
       {
@@ -475,7 +475,7 @@ export const posterParadeTexts = {
     header: 'BAFÖG Demo',
     texts: [
       'Mit „Eugen“ ist das ehemalige Abgeordnetenhochhaus des Bundestages in Bonn gemeint: Das vom Architekten Egon Eiermann geschaffene Hochhaus war als „Langer Eugen“ bekannt.',
-      'Das Zittern von „Eugen“, dem Abgeordnetenhaus, meinte also, dass die Abgeordneten aufgrund der geplanten Demonstration am Zittern sind.',
+      'Das Zittern von „Eugen“, dem Abgeordnetenhaus, meinte also, dass die Abgeordneten aufgrund der geplanten Demonstration vor Sorge zittern.',
       'Die Elefanten stellen hier die Studierendenschaft dar. Elefanten, als Herdentiere bekannt, stehen für Weisheit, Stärke und Zusammenhalt.',
       'Den Sprechblasen ist zu entnehmen, dass sie für den Erhalt des BAföG plädieren.',
       'Bonn war von 1949 bis 1990 Hauptstadt der Bundesrepublik Deutschland.',

@@ -16,7 +16,7 @@ export const article = {
     },
     {
       title: 'Protestkunst',
-      text: 'Unter Protestkunst sammeln wir für euch alles, was auf kreative Weise für Proteste und Demonstration entstanden ist. Demofotos aus den 1920ern, Plakate aus den 1980ern sowie Buttons, Sticker und Kleidungsstücke. Diese Materialsammlung bietet einen Einblick in die Sammlung des Archivs der Arbeiterjugendbewegung.',
+      text: 'Unter Protestkunst sammeln wir für euch vieles, was auf kreative Weise für Proteste und Demonstration entstanden ist. Demofotos aus den 1920ern, Plakate aus den 1980ern oder auch Buttons, Sticker und Kleidungsstücke: Die Materialsammlung bietet einen Einblick in die Bestände des Archivs der Arbeiterjugendbewegung.',
     },
   ],
   en: [
@@ -30,7 +30,7 @@ export const article = {
     },
     {
       title: 'Protest art',
-      text: 'EN Unter Protestkunst sammeln wir für euch alles, was auf kreative Weise für Proteste und Demonstration entstanden ist. Demofotos aus den 1920ern, Plakate aus den 1980ern sowie Buttons, Sticker und Kleidungsstücke. Diese Materialsammlung bietet einen Einblick in die Sammlung des Archivs der Arbeiterjugendbewegung.',
+      text: 'EN Unter Protestkunst sammeln wir für euch vieles, was auf kreative Weise für Proteste und Demonstration entstanden ist. Demofotos aus den 1920ern, Plakate aus den 1980ern oder auch Buttons, Sticker und Kleidungsstücke: Die Materialsammlung bietet einen Einblick in die Bestände des Archivs der Arbeiterjugendbewegung.',
     },
   ],
 }
@@ -130,11 +130,11 @@ export const revolutionstelephone = {
   },
 }
 
-export const socialWallText = {
+export const tweetwall = {
   de: {
     description1: 'Auf dieser Seite sammeln wir Social Media Beiträge mit Bezug zum Projekt PROTESTORY!',
     description2: 'Verwende den Hashtag #protestory und finde deinen Post hier.',
-    description3: 'Du hast deine Einwilligung zur Darstellung von Medieninhalten Dritter nicht erteilt.',
+    description3: 'Du hast deine Einwilligung zur Darstellung von Social Media Beiträgen nicht erteilt.',
     settings: 'Passe hier deine Einstellungen an',
   },
   en: {
