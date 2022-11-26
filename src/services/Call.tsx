@@ -46,7 +46,7 @@ export const Call = ({ number, caller, onEnd }) => {
     number &&
       caller !== null &&
       load({
-        src: `./revolutionstelephone/${number.slice(1)}.mp3`,
+        src: `../revolutionstelephone/${number.slice(1)}.mp3`,
         autoplay: true,
         onend: () => onEnd(),
         onstop: () => onEnd(),
