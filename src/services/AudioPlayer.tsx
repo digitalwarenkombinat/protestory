@@ -9,12 +9,9 @@ import StopIcon from '@mui/icons-material/Stop'
 import VolumeUpIcon from '@mui/icons-material/VolumeUp'
 import VolumeOffIcon from '@mui/icons-material/VolumeOff'
 import Grid from '@mui/material/Grid'
-import { AudioPlayerProvider, useAudioPlayer, useAudioPosition } from 'react-use-audio-player'
+import { useAudioPlayer, useAudioPosition } from 'react-use-audio-player'
 
 import { formatTime } from 'utils/util'
-import useStore from 'utils/store'
-import { concert } from 'config'
-import { useHasHydrated } from 'utils/useHasHydrated'
 
 export const TimeLabel = () => {
   const { duration, position } = useAudioPosition({
@@ -92,90 +89,39 @@ export const AudioControls = () => {
   )
 }
 
-const Player = ({ activeDecade }) => {
-  const hasHydrated = useHasHydrated()
-  const { language } = useStore()
-  const { ready, loading, load } = useAudioPlayer({
-    format: 'mp3',
-    autoplay: false,
-  })
-
-  useEffect(() => {
-    activeDecade &&
-      load({
-        src: `./concert/${activeDecade.key}.mp3`,
-        autoplay: true,
-      })
-  }, [activeDecade])
-
+const Player = ({ activeElement }) => {
   return (
     <Card
       sx={{
         display: 'flex',
         backgroundColor: 'background.default',
         justifyContent: 'center',
-        height: '139.72px',
+        height: '106.04px',
         borderBottomLeftRadius: '79.33px',
         borderBottomRightRadius: '79.33px',
       }}
     >
-      {!ready && !loading && (
-        <Box p={2}>
+      <Grid container alignItems="center" justifyContent="center" textAlign="center">
+        <Grid
+          item
+          xs={8}
+          sx={{
+            backgroundColor: 'text.secondary',
+            borderRadius: '20px',
+            margin: '.5rem',
+          }}
+        >
           <Typography component="p" variant="h4">
-            {hasHydrated && concert[language].select}
+            {activeElement.title}
           </Typography>
-        </Box>
-      )}
-      {loading && (
-        <Box p={2}>
-          <Typography component="p" variant="h4">
-            {hasHydrated && concert[language].loading}
-          </Typography>
-        </Box>
-      )}
-      {ready && (
-        <>
-          <Grid container alignItems="center" justifyContent="center" textAlign="center">
-            <Grid item xs={4}>
-              <AudioControls />
-            </Grid>
-            <Grid
-              item
-              xs={4}
-              sx={{
-                backgroundColor: 'text.secondary',
-                border: '2px solid black',
-                borderRadius: '20px',
-                margin: '.5rem',
-              }}
-            >
-              <TimeLabel />
-            </Grid>
-            <Grid
-              item
-              xs={8}
-              sx={{
-                backgroundColor: 'text.secondary',
-                border: '2px solid black',
-                borderRadius: '20px',
-                margin: '.5rem',
-              }}
-            >
-              <Typography component="p" variant="h4">
-                {activeDecade.title}
-              </Typography>
-            </Grid>
-          </Grid>
-        </>
-      )}
+        </Grid>
+      </Grid>
     </Card>
   )
 }
 
-export const AudioPlayer = ({ activeDecade }) => (
+export const AudioPlayer = ({ activeElement }) => (
   <Grid item xs={12}>
-    <AudioPlayerProvider>
-      <Player activeDecade={activeDecade} />
-    </AudioPlayerProvider>
+    <Player activeElement={activeElement} />
   </Grid>
 )

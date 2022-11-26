@@ -130,11 +130,11 @@ export const revolutionstelephone = {
   },
 }
 
-export const tweetwall = {
+export const socialWallText = {
   de: {
     description1: 'Auf dieser Seite sammeln wir Social Media Beiträge mit Bezug zum Projekt PROTESTORY!',
     description2: 'Verwende den Hashtag #protestory und finde deinen Post hier.',
-    description3: 'Du hast deine Einwilligung zur Darstellung von Social Media Beiträgen nicht erteilt.',
+    description3: 'Du hast deine Einwilligung zur Darstellung von Medieninhalten Dritter nicht erteilt.',
     settings: 'Passe hier deine Einstellungen an',
   },
   en: {

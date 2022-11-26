@@ -14,8 +14,9 @@ export const Timeline = ({ setActiveElement }) => (
       justifyContent: 'center',
       borderBottom: '8px solid black',
       overflow: 'auto',
-      height: '212.08px',
-      borderRadius: '79.33px',
+      height: '106.04px',
+      borderTopLeftRadius: '79.33px',
+      borderTopRightRadius: '79.33px',
       paddingTop: '8px',
       px: '8px',
     }}

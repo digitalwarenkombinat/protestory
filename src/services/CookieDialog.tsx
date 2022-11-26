@@ -38,11 +38,11 @@ export interface CookieDialogStrings {
 export const cookieDialogText: CookieDialogStrings = {
   mainDialogTitle: 'Social Media Inhalte',
   mainDialogDescription:
-    'Wir nutzen Cookies, um dir die Social Media Posts zum Thema #protestory anzeigen zu können. Wir verarbeiten die Daten nur, wenn du uns durch Klicken auf "Zustimmen und Weiter" deine Einwilligung gibst oder über den Button "Einstellungen" eine spezifische Auswahl festlegst.',
+    'Wir nutzen Cookies, um dir Medieninhalte Dritter anzeigen zu können. Wir verarbeiten die Daten nur, wenn du uns durch Klicken auf "Zustimmen und Weiter" deine Einwilligung gibst oder über den Button "Einstellungen" eine spezifische Auswahl festlegst.',
   mainDialogOptions: 'Einstellungen',
   mainDialogAccept: 'Zustimmen und Weiter',
   optionsDialogTitle: 'Deine Einstellungen zu Cookies für diese Website',
-  optionsDialogDescriptionAbove: 'Wir nutzen Cookies, um dir die Social Media Posts zum Thema #protestory anzeigen zu können. Triff hier deine persönliche Präferenz:',
+  optionsDialogDescriptionAbove: 'Wir nutzen Cookies, um dir Medieninhalte Dritter anzeigen zu können. Triff hier deine persönliche Präferenz:',
   optionsDialogSave: 'Auswahl speichern',
   optionsDialogAccept: 'Alle akzeptieren',
 }

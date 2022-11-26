@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import { concert } from 'config'
 import { useState } from 'react'
+import { AudioPlayer } from 'services/AudioPlayer'
 import { Lyrics } from 'services/Lyrics'
 import { Timeline } from 'services/Timeline'
 import useStore from 'utils/store'
@@ -43,6 +44,7 @@ export const Concert = () => {
           <rect width="896.32" height="220.08" x="152.51" y="567.69" rx="79.33" ry="79.33" className="m" />
           <foreignObject x="156.51" y="571.69" width="888.32" height="212.08">
             <Timeline setActiveElement={setActiveElement} />
+            <AudioPlayer activeElement={activeElement} />
           </foreignObject>
           <rect width="802.98" height="458" x="197.51" y="49.43" rx="64.75" ry="64.75" className="m" />
           <foreignObject x="201.51" y="51.43" width="794.98" height="452">
