@@ -7,15 +7,12 @@ import { useTheme } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { startTheDemo } from 'config'
-import Image from 'next/image'
 import CustomLink from 'services/CustomLink'
 import { useEffect, useState } from 'react'
 import { Cart } from 'services/Cart'
 import { StartTheDemoSVG } from 'services/StartTheDemoSVG'
 import useStore from 'utils/store'
 import { useHasHydrated } from 'utils/useHasHydrated'
-import left from '/public/icons/left.svg'
-import right from '/public/icons/right.svg'
 
 const StartTheDemo = () => {
   const hasHydrated = useHasHydrated()
@@ -74,8 +71,9 @@ const StartTheDemo = () => {
               display: { xs: 'block', xl: 'none' },
               cursor: 'pointer',
             }}
+            onClick={() => updateViewBox(imagePart - 1)}
           >
-            <Image src={left} alt={'Show previous image'} width={40} height={40} onClick={() => updateViewBox(imagePart - 1)} />
+            <img src="../icons/left.svg" alt={'Show previous image'} width={40} height={40} />
           </Grid>
           <Grid item xs={splitSVG ? 10 : 12}>
             <NoSsr defer>
@@ -89,8 +87,9 @@ const StartTheDemo = () => {
               display: { xs: 'block', xl: 'none' },
               cursor: 'pointer',
             }}
+            onClick={() => updateViewBox(imagePart + 1)}
           >
-            <Image src={right} alt={'Show next image'} width={40} height={40} onClick={() => updateViewBox(imagePart + 1)} />
+            <img src="../icons/right.svg" alt={'Show next image'} width={40} height={40} />
           </Grid>
         </Grid>
         <AvatarGroup

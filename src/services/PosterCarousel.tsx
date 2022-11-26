@@ -1,12 +1,9 @@
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-import Image from 'next/image'
 import CustomLink from 'services/CustomLink'
 import Carousel from 'react-material-ui-carousel'
 
 import { posterParadeItems } from 'config/analysis'
-import left from '/public/icons/left.svg'
-import right from '/public/icons/right.svg'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Card from '@mui/material/Card'
@@ -32,8 +29,8 @@ export default function PosterCarousel() {
         },
       }}
       NextIcon={
-        <Image
-          src={right}
+        <img
+          src="../icons/right.svg"
           alt={'Show next image'}
           width={60}
           height={60}
@@ -46,8 +43,8 @@ export default function PosterCarousel() {
         />
       }
       PrevIcon={
-        <Image
-          src={left}
+        <img
+          src="../icons/left.svg"
           alt={'Show previous image'}
           width={60}
           height={60}

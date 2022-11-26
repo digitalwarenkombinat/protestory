@@ -4,12 +4,10 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import Image from 'next/image'
 import { PureComponent } from 'react'
 
 import { title } from 'config'
 import { Item } from 'utils/store'
-import icon from '/public/icon.svg'
 
 type Props = {
   items?: Item[]
@@ -40,9 +38,8 @@ export class DemoPrintList extends PureComponent<Props> {
                   transform: 'rotate(-10deg)',
                 }}
               >
-                <Image
-                  priority
-                  src={icon}
+                <img
+                  src={'../../icon.svg'}
                   alt={'Logo PROTESTORY!'}
                   width={300}
                   style={{

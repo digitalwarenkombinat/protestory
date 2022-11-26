@@ -3,9 +3,7 @@ import Box from '@mui/material/Box'
 import CustomLink from 'services/CustomLink'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import Image from 'next/image'
 import BasicMenu from './Menu'
-import icon from '/public/icon.svg'
 
 interface HeaderProps {
   title: false | string
@@ -28,9 +26,8 @@ export const Header = ({ title }: HeaderProps) => {
             }}
           >
             <CustomLink href="/">
-              <Image
-                priority
-                src={icon}
+              <img
+                src="../../icon.svg"
                 alt={'Logo PROTESTORY!'}
                 width={300}
                 style={{

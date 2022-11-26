@@ -35,12 +35,12 @@ export default function MyApp(props: MyAppProps) {
         <meta property="twitter:title" content="PROTESTORY!" />
         <meta property="twitter:description" content="PROTESTORY! | jugendkulturellen Protest digital erleben und historisches Wissen nutzen" />
         <meta property="twitter:image" content="https://protestory.de/icon-512.png" />
-        <link rel="preload" href="./fonts/HeyAugust.woff2" as="font" crossOrigin="" />
-        <link rel="preload" href="./fonts/Fabrik.woff2" as="font" crossOrigin="" />
-        <link rel="icon" href="./favicon.ico" sizes="any" />
-        <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-        <link rel="manifest" href="./manifest.webmanifest" />
+        <link rel="preload" href="../fonts/HeyAugust.woff2" as="font" crossOrigin="" />
+        <link rel="preload" href="../fonts/Fabrik.woff2" as="font" crossOrigin="" />
+        <link rel="icon" href="../favicon.ico" sizes="any" />
+        <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../manifest.webmanifest" />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />

@@ -24,6 +24,7 @@ module.exports = {
       },
     ],
     'react/prop-types': 'off',
+    '@next/next/no-img-element': 'off',
   },
   settings: {
     react: {

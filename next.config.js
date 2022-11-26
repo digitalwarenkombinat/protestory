@@ -1,6 +1,6 @@
-const withExportImages = require('next-export-optimize-images')
-
-module.exports = withExportImages({
+module.exports = {
+  trailingSlash: true,
+  assetPrefix: `../`,
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       config.resolve.alias = {
@@ -14,4 +14,4 @@ module.exports = withExportImages({
 
     return config
   },
-})
+}

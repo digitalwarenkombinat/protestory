@@ -64,7 +64,7 @@ export const chat = {
     {
       id: 4,
       text: 'Klar, hier geht´s lang.',
-      link: '/protestart',
+      link: '../protestart',
       from: ChatSpeaker.BOT,
     },
     {
@@ -136,19 +136,19 @@ export const chat = {
     {
       id: 18,
       text: 'Hier geht´s lang.',
-      link: '/concert',
+      link: '../concert',
       from: ChatSpeaker.BOT,
     },
     {
       id: 19,
       text: 'Klar, hier geht´s lang.',
-      link: '/protestart',
+      link: '../protestart',
       from: ChatSpeaker.BOT,
     },
     {
       id: 20,
       text: 'Sehr schön :) Hier geht´s los.',
-      link: '/artofprotest',
+      link: '../artofprotest',
       from: ChatSpeaker.BOT,
     },
     {
