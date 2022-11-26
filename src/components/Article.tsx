@@ -26,7 +26,7 @@ export const Article = () => {
           flexWrap="wrap"
           alignItems="center"
           sx={{
-            '&:nth-child(2n)': {
+            '&:nth-of-type(2n)': {
               flexDirection: [null, null, null, 'row-reverse'],
             },
             '&:not(:first-of-type)': {
