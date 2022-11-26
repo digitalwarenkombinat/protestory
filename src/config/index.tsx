@@ -130,7 +130,7 @@ export const revolutionstelephone = {
   },
 }
 
-export const tweetwall = {
+export const socialWallText = {
   de: {
     description1: 'Auf dieser Seite sammeln wir Social Media Beiträge mit Bezug zum Projekt PROTESTORY!',
     description2: 'Verwende den Hashtag #protestory und finde deinen Post hier.',
