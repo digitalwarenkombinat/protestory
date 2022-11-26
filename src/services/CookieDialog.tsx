@@ -11,7 +11,6 @@ import { useState, useEffect, ChangeEvent } from 'react'
 
 export type CookieDialogProps = {
   visible: boolean
-  categories: CookieDialogCategory[]
   // eslint-disable-next-line no-unused-vars
   onAccept: (categories: CookieDialogCategory[]) => void
 }
@@ -49,6 +48,28 @@ export const cookieDialogText: CookieDialogStrings = {
 }
 
 export const CookieDialog = (props: CookieDialogProps) => {
+  const defaultCategories: CookieDialogCategory[] = [
+    {
+      key: 'twitter',
+      title: 'Twitter',
+      description: 'Inhalte von Twitter anzeigen.',
+    },
+    {
+      key: 'instagram',
+      title: 'Instagram',
+      description: 'Inhalte von Instagram anzeigen.',
+    },
+    {
+      key: 'youtube',
+      title: 'Youtube',
+      description: 'Inhalte von Youtube anzeigen.',
+    },
+    {
+      key: 'facebook',
+      title: 'Facebook',
+      description: 'Inhalte von Facebook anzeigen.',
+    },
+  ]
   const [visible, setVisible] = useState(props.visible)
   const [optionsVisible, setOptionsVisible] = useState(false)
   const [categories, setCategories] = useState<{
@@ -64,11 +85,11 @@ export const CookieDialog = (props: CookieDialogProps) => {
   }
 
   const handleAccept = () => {
-    props.onAccept(props.categories.filter((category) => categories[category.key] ?? category.isNecessary ?? false))
+    props.onAccept(defaultCategories.filter((category) => categories[category.key] ?? category.isNecessary ?? false))
   }
 
   const handleAcceptAll = () => {
-    props.onAccept(props.categories)
+    props.onAccept(defaultCategories)
   }
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -105,7 +126,7 @@ export const CookieDialog = (props: CookieDialogProps) => {
                 margin: '0 4px',
               }}
             >
-              {props.categories?.map((category, index) => {
+              {defaultCategories?.map((category, index) => {
                 return (
                   <Box
                     key={index}
