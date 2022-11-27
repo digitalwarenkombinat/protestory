@@ -1,19 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
+import { useEffect, useRef, useState } from 'react'
 
 import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
+import DialogActions from '@mui/material/DialogActions'
 import DialogContent from '@mui/material/DialogContent'
 import DialogContentText from '@mui/material/DialogContentText'
-import DialogActions from '@mui/material/DialogActions'
 import DialogTitle from '@mui/material/DialogTitle'
 import Typography from '@mui/material/Typography'
 
 import { ChatSpeaker } from 'context/data'
-import { Wave } from './Wave'
 import { AudioPlayerProvider } from 'react-use-audio-player'
 import { Sound } from 'services/Sound'
+import useStore from 'utils/store'
+import { Wave } from './Wave'
 
 interface MessageProps {
   id: number
@@ -88,9 +89,14 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
     id !== null && setMessageList((ml) => [...ml, list[id]])
   }
 
+  const routeToLink = (link: string) => {
+    useStore.getState().chatInitialDisplayed()
+    Router.push(link)
+  }
+
   const checkForQuestion = (activeMessage: MessageProps) => {
     if (activeMessage.link) {
-      setTimeout(() => Router.push(activeMessage.link), timeoutValue)
+      setTimeout(() => routeToLink(activeMessage.link), timeoutValue)
     }
 
     if (list[activeMessage.id + 1]) {
