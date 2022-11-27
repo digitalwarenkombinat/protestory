@@ -37,6 +37,8 @@ const Dialing = ({ number, onEnd }) => {
 }
 
 export const Call = ({ number, caller, onEnd }) => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const { ready, load } = useAudioPlayer({
     format: 'mp3',
     autoplay: false,
@@ -62,7 +64,7 @@ export const Call = ({ number, caller, onEnd }) => {
           <Grid container alignItems="center" justifyContent="center" textAlign="center">
             <Grid item xs={10}>
               <Typography component="p" variant="h5" color="text.secondary">
-                {caller?.description}
+                {hasHydrated && caller?.description[language]}
               </Typography>
             </Grid>
             <Grid item xs={12} md={4}>
