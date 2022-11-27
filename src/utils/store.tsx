@@ -6,14 +6,14 @@ import { CookieDialogCategory } from '../services/CookieDialog'
 export interface Item {
   active: boolean
   link: string
-  linkName?: string
-  linkText?: string
-  name: string
+  linkName?: {}
+  linkText?: {}
+  name: {}
   id: string
   source: string
-  description: string
+  description: {}
   leave?: boolean
-  print?: string
+  print?: {}
 }
 
 type Store = {
