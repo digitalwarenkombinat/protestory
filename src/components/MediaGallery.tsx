@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Masonry from '@mui/lab/Masonry'
 import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { protestart } from 'config'
 import { mediaData } from 'config/mediaData'
@@ -39,15 +38,15 @@ export const MediaGallery = () => {
           {hasHydrated && protestart[language].description2}
         </Typography>
       </Box>
-      <Masonry columns={{ xs: 1, sm: 2, md: 4 }} spacing={2} defaultHeight={450} defaultColumns={4} defaultSpacing={2} sx={{ marginBottom: '16rem' }}>
+      <Masonry columns={{ xs: 1, sm: 2, md: 4 }} defaultHeight={450} defaultColumns={4} sx={{ marginBottom: '16rem' }}>
         {mediaData.map((item, index) => (
-          <Button
+          <Box
             key={index}
-            disableRipple
             onClick={() => handleClickOpen(item)}
             sx={{
               transition: 'all .25s linear',
               backfaceVisibility: 'hidden',
+              cursor: 'pointer',
               '&:hover': {
                 opacity: '0.5',
               },
@@ -63,7 +62,7 @@ export const MediaGallery = () => {
                 height: 'auto',
               }}
             />
-          </Button>
+          </Box>
         ))}
       </Masonry>
       {selectedItem && <MediaDialog selectedItem={selectedItem} open={open} onClose={handleClose} />}
