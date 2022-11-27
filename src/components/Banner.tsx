@@ -1,4 +1,5 @@
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded'
+import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
@@ -41,20 +42,26 @@ const LeftTriangle = () => {
             },
           }}
         >
-          <Grid container justifyContent="flex-start" alignItems="flex-start" pt={8} pl={8} height="50vh">
-            <Grid item>
-              <IconButton
-                size="large"
-                edge="start"
-                aria-label="Read more"
-                sx={{
-                  color: 'accent.main',
-                }}
-              >
-                <ArrowForwardRoundedIcon />
-              </IconButton>
-            </Grid>
+          <Grid container justifyContent="flex-start" alignItems="flex-start" mt="5vh" ml={{ xs: 2, sm: 6, lg: 12 }} height="50vh">
             <Grid item xs={12}>
+              <Typography variant="h2">
+                <IconButton
+                  size="small"
+                  edge="start"
+                  aria-label="Read more"
+                  sx={{
+                    color: 'accent.main',
+                  }}
+                >
+                  <ArrowForwardRoundedIcon
+                    sx={{
+                      fontSize: '3rem',
+                    }}
+                  />
+                </IconButton>
+              </Typography>
+            </Grid>
+            <Grid item xs={6} ml={1}>
               <Typography component="h3" variant="h4">
                 {hasHydrated && banner[language].leftDescription1}
               </Typography>
@@ -67,26 +74,21 @@ const LeftTriangle = () => {
             </Grid>
           </Grid>
         </Box>
-        <Grid container pt={[4, 12]} pl={[4, 20]}>
-          <Grid item>
-            <Typography
-              variant="h2"
-              sx={{
-                color: 'text.secondary',
-                backgroundImage: `linear-gradient(0, transparent 0.2em, #f50057 0.2em, #f50057 0.8em, transparent 0.8em)`,
-                backgroundSize: '1px 1.6em',
-                backgroundPosition: '1px center',
-                backgroundRepeat: 'repeat',
-                paddingLeft: '0.2em',
-                paddingRight: '0.2em',
-                marginLeft: '-0.2em',
-                marginRight: '-0.2em',
-              }}
-            >
-              {hasHydrated && banner[language].leftTitle}
-            </Typography>
-          </Grid>
-        </Grid>
+        <Box sx={{ display: 'flex', justifyContent: 'flex-start', mt: '5vh', ml: { xs: 8, sm: 12, lg: 18 } }}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: 'text.secondary',
+              backgroundImage: `linear-gradient(0, transparent 0.2em, #f50057 0.2em, #f50057 0.8em, transparent 0.8em)`,
+              backgroundSize: '1px 1.6em',
+              backgroundPosition: '1px center',
+              backgroundRepeat: 'repeat',
+              lineHeight: '1.5',
+            }}
+          >
+            {hasHydrated && banner[language].leftTitle}
+          </Typography>
+        </Box>
       </CustomLink>
     </Box>
   )
@@ -122,20 +124,26 @@ const RightTriangle = () => {
             },
           }}
         >
-          <Grid container justifyContent="center" pr={4} pt="50vh" pl="50vw" textAlign="right">
-            <Grid item>
-              <IconButton
-                size="large"
-                edge="start"
-                aria-label="Read more"
-                sx={{
-                  color: 'accent.main',
-                }}
-              >
-                <ArrowForwardRoundedIcon />
-              </IconButton>
-            </Grid>
+          <Grid container justifyContent="flex-end" pr={{ xs: 2, sm: 4, lg: 8 }} pt="60vh" pl="30vw" textAlign="right">
             <Grid item xs={12}>
+              <Typography variant="h2">
+                <IconButton
+                  size="small"
+                  edge="start"
+                  aria-label="Read more"
+                  sx={{
+                    color: 'accent.main',
+                  }}
+                >
+                  <ArrowBackRoundedIcon
+                    sx={{
+                      fontSize: '3rem',
+                    }}
+                  />
+                </IconButton>
+              </Typography>
+            </Grid>
+            <Grid item xs={12} mt={{ xs: 2, sm: 6, lg: 12 }}>
               <Typography component="h3" variant="h4">
                 {hasHydrated && banner[language].rightDescription1}
               </Typography>
@@ -148,26 +156,21 @@ const RightTriangle = () => {
             </Grid>
           </Grid>
         </Box>
-        <Grid container justifyContent="flex-end" pr={[2, 4]} pt="50vh">
-          <Grid item>
-            <Typography
-              variant="h2"
-              sx={{
-                color: 'text.secondary',
-                backgroundImage: `linear-gradient(0, transparent 0.2em, #f50057 0.2em, #f50057 0.8em, transparent 0.8em)`,
-                backgroundSize: '1px 1.6em',
-                backgroundPosition: '1px center',
-                backgroundRepeat: 'repeat',
-                paddingLeft: '0.2em',
-                paddingRight: '0.2em',
-                marginLeft: '-0.2em',
-                marginRight: '-0.2em',
-              }}
-            >
-              {hasHydrated && banner[language].rightTitle}
-            </Typography>
-          </Grid>
-        </Grid>
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: '60vh', mr: { xs: 8, sm: 12, lg: 18 } }}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: 'text.secondary',
+              backgroundImage: `linear-gradient(0, transparent 0.2em, #f50057 0.2em, #f50057 0.8em, transparent 0.8em)`,
+              backgroundSize: '1px 1.6em',
+              backgroundPosition: '1px center',
+              backgroundRepeat: 'repeat',
+              lineHeight: '1.5',
+            }}
+          >
+            {hasHydrated && banner[language].rightTitle}
+          </Typography>
+        </Box>
       </CustomLink>
     </Box>
   )
