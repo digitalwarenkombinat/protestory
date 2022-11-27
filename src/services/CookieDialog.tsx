@@ -9,6 +9,10 @@ import Switch from '@mui/material/Switch'
 import Typography from '@mui/material/Typography'
 import { useState, useEffect, ChangeEvent } from 'react'
 
+import { cookieDialogText } from 'config/cookie'
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
+
 export type CookieDialogProps = {
   visible: boolean
   // eslint-disable-next-line no-unused-vars
@@ -22,52 +26,29 @@ export interface CookieDialogCategory {
   isNecessary?: boolean
 }
 
-export interface CookieDialogStrings {
-  // Main Dialog
-  mainDialogTitle: string
-  mainDialogDescription: string
-  mainDialogAccept: string
-  mainDialogOptions: string
-  // Options Dialog
-  optionsDialogTitle: string
-  optionsDialogDescriptionAbove: string
-  optionsDialogSave: string
-  optionsDialogAccept: string
-}
-
-export const cookieDialogText: CookieDialogStrings = {
-  mainDialogTitle: 'Social Media Inhalte',
-  mainDialogDescription:
-    'Wir nutzen Cookies, um dir Medieninhalte Dritter anzeigen zu können. Wir verarbeiten die Daten nur, wenn du uns durch Klicken auf "Zustimmen und Weiter" deine Einwilligung gibst oder über den Button "Einstellungen" eine spezifische Auswahl festlegst.',
-  mainDialogOptions: 'Einstellungen',
-  mainDialogAccept: 'Zustimmen und Weiter',
-  optionsDialogTitle: 'Deine Einstellungen zu Cookies für diese Website',
-  optionsDialogDescriptionAbove: 'Wir nutzen Cookies, um dir Medieninhalte Dritter anzeigen zu können. Triff hier deine persönliche Präferenz:',
-  optionsDialogSave: 'Auswahl speichern',
-  optionsDialogAccept: 'Alle akzeptieren',
-}
-
 export const CookieDialog = (props: CookieDialogProps) => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const defaultCategories: CookieDialogCategory[] = [
     {
       key: 'twitter',
       title: 'Twitter',
-      description: 'Inhalte von Twitter anzeigen.',
+      description: hasHydrated && cookieDialogText[language].descriptionTwitter,
     },
     {
       key: 'instagram',
       title: 'Instagram',
-      description: 'Inhalte von Instagram anzeigen.',
+      description: hasHydrated && cookieDialogText[language].descriptionInstagram,
     },
     {
       key: 'youtube',
       title: 'Youtube',
-      description: 'Inhalte von Youtube anzeigen.',
+      description: hasHydrated && cookieDialogText[language].descriptionYoutube,
     },
     {
       key: 'facebook',
       title: 'Facebook',
-      description: 'Inhalte von Facebook anzeigen.',
+      description: hasHydrated && cookieDialogText[language].descriptionFacebook,
     },
   ]
   const [visible, setVisible] = useState(props.visible)
@@ -102,25 +83,25 @@ export const CookieDialog = (props: CookieDialogProps) => {
     <Dialog open={visible} scroll="paper">
       {!optionsVisible && (
         <>
-          <DialogTitle>{cookieDialogText.mainDialogTitle}</DialogTitle>
+          <DialogTitle>{hasHydrated && cookieDialogText[language].mainDialogTitle}</DialogTitle>
           <DialogContent>
-            <Typography variant="h6">{cookieDialogText.mainDialogDescription}</Typography>
+            <Typography variant="h6">{hasHydrated && cookieDialogText[language].mainDialogDescription}</Typography>
           </DialogContent>
           <DialogActions>
             <Button variant="contained" color="primary" onClick={handleOptionsClick}>
-              <Typography variant="h6">{cookieDialogText.mainDialogOptions}</Typography>
+              <Typography variant="h6">{hasHydrated && cookieDialogText[language].mainDialogOptions}</Typography>
             </Button>
             <Button variant="text" onClick={handleAcceptAll}>
-              <Typography variant="h6">{cookieDialogText.mainDialogAccept}</Typography>
+              <Typography variant="h6">{hasHydrated && cookieDialogText[language].mainDialogAccept}</Typography>
             </Button>
           </DialogActions>
         </>
       )}
       {optionsVisible && (
         <>
-          <DialogTitle>{cookieDialogText.optionsDialogTitle}</DialogTitle>
+          <DialogTitle>{hasHydrated && cookieDialogText[language].optionsDialogTitle}</DialogTitle>
           <DialogContent>
-            <Typography variant="h6">{cookieDialogText.optionsDialogDescriptionAbove}</Typography>
+            <Typography variant="h6">{hasHydrated && cookieDialogText[language].optionsDialogDescriptionAbove}</Typography>
             <Box
               sx={{
                 margin: '0 4px',
@@ -157,11 +138,11 @@ export const CookieDialog = (props: CookieDialogProps) => {
           <DialogActions>
             <Box marginRight="auto">
               <Button variant="contained" color="primary" onClick={handleAccept} size="small">
-                <Typography variant="h6">{cookieDialogText.optionsDialogSave}</Typography>
+                <Typography variant="h6">{hasHydrated && cookieDialogText[language].optionsDialogSave}</Typography>
               </Button>
             </Box>
             <Button variant="text" onClick={handleAcceptAll}>
-              <Typography variant="h6">{cookieDialogText.optionsDialogAccept}</Typography>
+              <Typography variant="h6">{hasHydrated && cookieDialogText[language].optionsDialogAccept}</Typography>
             </Button>
           </DialogActions>
         </>

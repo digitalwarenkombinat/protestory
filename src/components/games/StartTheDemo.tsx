@@ -105,7 +105,7 @@ const StartTheDemo = () => {
             <CustomLink key={item.id} href={item.link}>
               <Box sx={{ display: 'flex', cursor: 'pointer' }}>
                 <Avatar
-                  alt={item.name}
+                  alt={hasHydrated && item.name[language]}
                   src={item.source}
                   sx={{
                     backgroundColor: 'text.secondary',
@@ -114,10 +114,10 @@ const StartTheDemo = () => {
                 />
                 <Box sx={{ textAlign: 'left' }}>
                   <Typography component="h4" variant="h2" color="text.secondary">
-                    {hasHydrated && item.active ? item.linkName : ''}
+                    {hasHydrated && item.active ? item.linkName[language] : ''}
                   </Typography>
                   <Typography component="p" variant="h6" color="text.secondary">
-                    {hasHydrated && item.active && item.linkText}
+                    {hasHydrated && item.active && item.linkText[language]}
                   </Typography>
                 </Box>
               </Box>

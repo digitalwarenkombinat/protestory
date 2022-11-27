@@ -14,11 +14,12 @@ import { ChatSpeaker } from 'context/data'
 import { AudioPlayerProvider } from 'react-use-audio-player'
 import { Sound } from 'services/Sound'
 import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
 import { Wave } from './Wave'
 
 interface MessageProps {
   id: number
-  text: string
+  text: {}
   from: ChatSpeaker
   link?: string
   audio?: string
@@ -26,7 +27,7 @@ interface MessageProps {
 }
 
 interface ChatProps {
-  title: string
+  title: {}
   relation: object
   list: MessageProps[]
 }
@@ -47,6 +48,8 @@ const ChatImage = ({ image = '', alt = '' }) => (
 const timeoutValue = 3000
 
 export const Chat = ({ title, relation, list }: ChatProps) => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   const [messageList, setMessageList] = useState([] as MessageProps[])
   const [isTyping, setIsTyping] = useState(true)
   const [showQuestion, setShowQuestion] = useState(false)
@@ -108,7 +111,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
 
   return (
     <div>
-      <ChatTitle title={title} />
+      <ChatTitle title={hasHydrated && title[language]} />
       <DialogContent
         dividers
         sx={{
@@ -131,7 +134,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
               backgroundColor: message.from === ChatSpeaker.QUESTION ? 'secondary.dark' : 'secondary.light',
             }}
           >
-            {message.text}
+            {hasHydrated && message.text[language]}
             {message.image && <ChatImage {...message} />}
             {message.audio && (
               <AudioPlayerProvider>
@@ -162,7 +165,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
               onClick={(event) => selectAnswer(event, message)}
             >
               <Typography component="span" variant="h6">
-                {list[message].text}
+                {list[message].text[language]}
               </Typography>
             </Button>
           ))}

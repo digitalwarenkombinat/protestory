@@ -54,7 +54,7 @@ export const Cart = () => {
     <div>
       <NoSsr defer>
         <div style={{ display: 'none' }}>
-          <DemoPrintList ref={componentRef} items={getActivatedCorrectItems()} printTitle={hasHydrated && print[language].title} />
+          <DemoPrintList ref={componentRef} items={getActivatedCorrectItems()} printTitle={hasHydrated && print[language].title} language={hasHydrated && language} />
         </div>
       </NoSsr>
       <IconButton
@@ -122,7 +122,7 @@ export const Cart = () => {
         {getActivatedCorrectItems().map((item) => (
           <Box key={item.id} onClick={handleClose} sx={{ display: 'flex', alignItems: 'center' }}>
             <Avatar
-              alt={item.name}
+              alt={hasHydrated && item.name[language]}
               src={item.source}
               sx={{
                 backgroundColor: 'text.secondary',
@@ -132,7 +132,7 @@ export const Cart = () => {
               }}
             />
             <Typography component="p" variant="body1" color="text.secondary">
-              {hasHydrated && item.name}
+              {hasHydrated && item.name[language]}
             </Typography>
           </Box>
         ))}

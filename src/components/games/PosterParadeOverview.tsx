@@ -13,7 +13,7 @@ export default function PosterParadeOverview() {
     <Grid container alignItems="center" textAlign="center" flexDirection="column" justifyContent="center" mt="8rem" mb="16rem">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
-          Posterparade
+          {hasHydrated && posterParade[language].title}
         </Typography>
         <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
           {hasHydrated && posterParade[language].description1}

@@ -180,20 +180,21 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
                 {hasHydrated && posterParade[language].analysis}
               </Typography>
               <Typography component="h2" variant="h2" color="text.primary" className="appHeading">
-                {header}
+                {hasHydrated && header[language]}
               </Typography>
               <ScrollIcon />
             </Box>
           </Box>
           <Box className="caption-spacer cover"></Box>
 
-          {texts.map((text, index) => (
-            <Box key={index} className="caption-wrapper">
-              <Typography component="p" variant="h5" color="text.primary" sx={{ bgcolor: 'background.default' }} className="appText">
-                {text}
-              </Typography>
-            </Box>
-          ))}
+          {hasHydrated &&
+            texts[language].map((text, index) => (
+              <Box key={index} className="caption-wrapper">
+                <Typography component="p" variant="h5" color="text.primary" sx={{ bgcolor: 'background.default' }} className="appText">
+                  {text}
+                </Typography>
+              </Box>
+            ))}
         </Box>
       </Box>
       {sources && (

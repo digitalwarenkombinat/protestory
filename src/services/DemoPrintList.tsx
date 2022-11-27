@@ -12,6 +12,7 @@ import { Item } from 'utils/store'
 type Props = {
   items?: Item[]
   printTitle: string
+  language: string
 }
 
 export class DemoPrintList extends PureComponent<Props> {
@@ -20,7 +21,7 @@ export class DemoPrintList extends PureComponent<Props> {
   }
 
   render() {
-    const { items, printTitle } = this.props
+    const { items, printTitle, language } = this.props
 
     return (
       <div>
@@ -66,7 +67,7 @@ export class DemoPrintList extends PureComponent<Props> {
           {items.map((item) => (
             <Box key={item.id} sx={{ display: 'flex', alignItems: 'center' }}>
               <Avatar
-                alt={item.name}
+                alt={item.name[language]}
                 src={item.source}
                 sx={{
                   backgroundColor: 'text.secondary',
@@ -78,10 +79,10 @@ export class DemoPrintList extends PureComponent<Props> {
               />
               <Box textAlign="left" sx={{ mb: '0.25rem' }}>
                 <Typography component="p" variant="body1" color="text.primary">
-                  {item.name}
+                  {item.name[language]}
                 </Typography>
                 <Typography component="span" variant="body2" color="text.primary">
-                  {item.print}
+                  {item.print[language]}
                 </Typography>
               </Box>
             </Box>

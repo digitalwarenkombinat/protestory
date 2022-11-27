@@ -39,7 +39,7 @@ export const menu = {
       href: '/artofprotest',
     },
     {
-      title: 'Protest art',
+      title: 'Protest Art',
       href: '/protestart',
     },
     {
@@ -47,19 +47,19 @@ export const menu = {
       href: '/socialmediawall',
     },
     {
-      title: 'Posterparade',
+      title: 'Poster Parade',
       href: '/posterparade',
     },
     {
-      title: 'If I can`t dance to it, it`s not my revolution',
+      title: 'If I Can`t Dance to It, It`s Not My Revolution',
       href: '/concert',
     },
     {
-      title: 'Slogan-Generator',
+      title: 'Slogan Generator',
       href: '/slogangenerator',
     },
     {
-      title: 'Revolutionstelefon',
+      title: 'Revolution Telephone',
       href: '/revolutiontelephone',
     },
     {

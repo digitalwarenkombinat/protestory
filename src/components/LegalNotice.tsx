@@ -53,13 +53,13 @@ const LegalNotice = () => {
           <CustomLink href="mailto:archiv@arbeiterjugend.de">Email: archiv@arbeiterjugend.de</CustomLink>
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          Projektleitung: Maria Daldrup
+          {hasHydrated && legalNotice[language].description8}: Maria Daldrup
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          Konzeption: Sophie Reinlassöder, Arne Schott
+          {hasHydrated && legalNotice[language].description9}: Sophie Reinlassöder, Arne Schott
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          Recherche: Julia Wember, Flemming Menges
+          {hasHydrated && legalNotice[language].description10}: Julia Wember, Flemming Menges
         </Typography>
       </Grid>
       <Grid item md={6}>
@@ -82,16 +82,16 @@ const LegalNotice = () => {
           <CustomLink href="mailto:info@digitalwarenkombinat.de">E-Mail: info@digitalwarenkombinat.de</CustomLink>
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          Konzeption, Grafik: Anne Mühlich
+          {hasHydrated && legalNotice[language].description11}: Anne Mühlich
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          Entwicklung: Gerd Müller
+          {hasHydrated && legalNotice[language].description12}: Gerd Müller
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
           UX/UI: Natalie Bührmann
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
-          Sprecherin: Nina Heinke
+          {hasHydrated && legalNotice[language].description13}: Nina Heinke
         </Typography>
       </Grid>
     </Grid>

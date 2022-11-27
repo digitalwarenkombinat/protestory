@@ -1,12 +1,14 @@
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-import CustomLink from 'services/CustomLink'
 import Carousel from 'react-material-ui-carousel'
 
 import { posterParadeItems } from 'config/analysis'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import Card from '@mui/material/Card'
+import CustomLink from 'services/CustomLink'
+import useStore from 'utils/store'
+import { useHasHydrated } from 'utils/useHasHydrated'
 
 export default function PosterCarousel() {
   return (
@@ -65,6 +67,8 @@ export default function PosterCarousel() {
 }
 
 const Poster = ({ item, contentPosition = 'left' }) => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   let items = []
   const content = (
     <Grid item xs={12} md={6} lg={4} key={item.name}>
@@ -76,10 +80,10 @@ const Poster = ({ item, contentPosition = 'left' }) => {
         }}
       >
         <Typography variant="h3" align="center" color="text.secondary" gutterBottom>
-          {item.name}
+          {hasHydrated && item.name[language]}
         </Typography>
         <Typography component="h4" variant="h6" align="center" color="text.secondary">
-          {item.caption}
+          {hasHydrated && item.caption[language]}
         </Typography>
       </CardContent>
     </Grid>
@@ -98,7 +102,6 @@ const Poster = ({ item, contentPosition = 'left' }) => {
               backgroundSize: 'contain',
             }}
             image={mediaItem.image}
-            title={mediaItem.name}
           ></CardMedia>
         </CustomLink>
       </Grid>

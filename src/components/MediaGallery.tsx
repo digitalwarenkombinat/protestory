@@ -54,7 +54,7 @@ export const MediaGallery = () => {
           >
             <img
               src={item.source}
-              alt={item.name}
+              alt={hasHydrated && item.name[language]}
               loading="lazy"
               style={{
                 border: '8px solid white',
