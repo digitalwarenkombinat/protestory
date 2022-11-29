@@ -17,6 +17,7 @@ export default function PosterCarousel() {
       navButtonsAlwaysVisible={true}
       sx={{
         px: [0, 8],
+        overflow: 'visible',
       }}
       navButtonsProps={{
         style: {
