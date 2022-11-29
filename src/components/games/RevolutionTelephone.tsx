@@ -22,7 +22,7 @@ const RevolutionTelephone = () => {
   const hasHydrated = useHasHydrated()
   const { language } = useStore()
   const theme = useTheme()
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   const [telephoneNumber, setTelephoneNumber] = useState('')
   const [activeElement, setActiveElement] = useState(null)
 
@@ -78,11 +78,6 @@ const RevolutionTelephone = () => {
               animation: ring 2s ease 10s infinite;
               transform: rotate(0deg);
           }
-          .scale {
-            transform: scale(1.5);
-            margin-bottom: 4rem;
-            margin-top: 4rem;
-          }
           .cls-8,
           .cls-9 {
             stroke: #000;
@@ -109,6 +104,13 @@ const RevolutionTelephone = () => {
             }   /* return center */
             80% {
               transform: rotate(0deg);
+            }
+          }
+          @media (orientation: portrait) {
+            .scale {
+              transform: scale(1.5);
+              margin-bottom: 4rem;
+              margin-top: 4rem;
             }
           }
         `}</style>
