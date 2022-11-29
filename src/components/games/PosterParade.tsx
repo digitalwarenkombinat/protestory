@@ -48,12 +48,8 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
   useIntersection(ScrollContainerRef, paragraph, handler, options)
 
   return (
-    <Container maxWidth="lg" component="section">
+    <Container maxWidth="lg" component="section" sx={{ px: { sm: 5, md: 8 } }}>
       <style>{`
-      .imageWrapper {
-          margin-top: 2rem;
-        }
-
       .imageContainer {
         position: sticky;
         top: 2rem;
@@ -61,6 +57,7 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
         height: 100vh;
         overflow: hidden;
         box-sizing: border-box;
+        margin-top: 2rem;
       }
 
       .imageInnerContainer {
@@ -83,7 +80,7 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
       }
 
       .caption-wrapper {
-        min-height: 75vh;
+        min-height: 66vh;
         display: flex;
         align-items: center;
       }
@@ -203,12 +200,18 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
             {hasHydrated && posterParade[language].sources}
           </Typography>
           {sources.map((source, index) => (
-            <Box key={index}>
-              <CustomLink href={source.link}>
+            <Box key={index} my={1}>
+              {source.link ? (
+                <CustomLink href={source.link}>
+                  <Typography component="p" variant="h6" color="text.primary" sx={{ bgcolor: 'background.default' }}>
+                    {source.text}
+                  </Typography>
+                </CustomLink>
+              ) : (
                 <Typography component="p" variant="h6" color="text.primary" sx={{ bgcolor: 'background.default' }}>
                   {source.text}
                 </Typography>
-              </CustomLink>
+              )}
             </Box>
           ))}
         </Box>
