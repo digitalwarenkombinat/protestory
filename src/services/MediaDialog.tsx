@@ -13,12 +13,12 @@ export function MediaDialog({ onClose, selectedItem, open }) {
   }
 
   return (
-    <Dialog onClose={handleClose} aria-labelledby="dialog" open={open} maxWidth="md">
+    <Dialog onClose={handleClose} onClick={handleClose} aria-labelledby="dialog" open={open} maxWidth="md" disableScrollLock>
       <DialogTitle id="dialog-title">{hasHydrated && selectedItem.name[language]}</DialogTitle>
       <DialogContent sx={{ textAlign: 'center' }}>
         <img
           src={selectedItem.source}
-          alt={hasHydrated && selectedItem.name[language]}
+          alt={hasHydrated ? selectedItem.name[language] : 'Dialog'}
           width={300}
           height={300}
           style={{
