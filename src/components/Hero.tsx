@@ -17,7 +17,7 @@ export const Hero = ({ title }: HeroProps) => (
         </Typography>
       </Grid>
       <Grid item>
-        <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mb: 4 }}>
+        <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mb: { sm: 2, md: 4 } }}>
           <ArrowDownwardRoundedIcon />
         </IconButton>
       </Grid>
