@@ -7,7 +7,7 @@ import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
 import IconButton from '@mui/material/IconButton'
 import MusicNoteIcon from '@mui/icons-material/MusicNote'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AudioPlayerProvider } from 'react-use-audio-player'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -26,13 +26,17 @@ const RevolutionTelephone = () => {
   const [telephoneNumber, setTelephoneNumber] = useState('')
   const [activeElement, setActiveElement] = useState(null)
 
+  useEffect(() => {
+    telephoneNumber.length === 5 && setTimeout(() => setActiveElement(names.find((element) => element.value === telephoneNumber)), 2000)
+    telephoneNumber.length === 6 && resetTelephoneNumber()
+  }, [telephoneNumber])
+
   function isElementActive(element: { name: string; value: string }) {
     return telephoneNumber.length === 5 && telephoneNumber === element.value
   }
 
   function dialNumber(digit: string) {
-    telephoneNumber.length === 4 && setActiveElement(names.find((element) => element.value === telephoneNumber.concat(digit)))
-    return setTelephoneNumber((previousNumber) => previousNumber.concat(digit))
+    setTelephoneNumber((previousNumber) => previousNumber.concat(digit))
   }
 
   function resetTelephoneNumber() {
