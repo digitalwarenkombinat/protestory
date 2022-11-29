@@ -122,7 +122,7 @@ export const Cart = () => {
         {getActivatedCorrectItems().map((item) => (
           <Box key={item.id} onClick={handleClose} sx={{ display: 'flex', alignItems: 'center' }}>
             <Avatar
-              alt={hasHydrated && item.name[language]}
+              alt={hasHydrated ? item.name[language] : 'Avatar'}
               src={item.source}
               sx={{
                 backgroundColor: 'text.secondary',
