@@ -19,6 +19,7 @@ export interface Item {
 type Store = {
   language: string
   showChatInitial: boolean
+  showCompletedCart: boolean
   acceptedCategories: CookieDialogCategory[]
   items: Item[]
   getLinkedItems: () => Item[]
@@ -29,6 +30,7 @@ type Store = {
   activateItem: (itemId: string) => void
   changeLanguage: () => void
   chatInitialDisplayed: () => void
+  chatCompletedDisplayed: () => void
   changeAcceptedCategories: (
     // eslint-disable-next-line no-unused-vars
     categories: CookieDialogCategory[]
@@ -41,6 +43,8 @@ const useStore = create<Store>()(
       language: 'de',
 
       showChatInitial: true,
+
+      showCompletedCart: false,
 
       acceptedCategories: [],
 
@@ -73,6 +77,11 @@ const useStore = create<Store>()(
       chatInitialDisplayed: () =>
         set(() => ({
           showChatInitial: false,
+        })),
+
+      chatCompletedDisplayed: () =>
+        set(() => ({
+          showCompletedCart: true,
         })),
 
       changeAcceptedCategories: (categories) =>

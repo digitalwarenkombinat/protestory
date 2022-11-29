@@ -18,7 +18,7 @@ import { print } from 'config'
 
 export const Cart = () => {
   const hasHydrated = useHasHydrated()
-  const { getActivatedCorrectItems, getCorrectItems, allCorrectItemsActivated, language } = useStore()
+  const { getActivatedCorrectItems, getCorrectItems, allCorrectItemsActivated, chatCompletedDisplayed, showCompletedCart, language } = useStore()
   const count = getActivatedCorrectItems().length
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const iconRef = useRef()
@@ -33,8 +33,13 @@ export const Cart = () => {
   }
 
   const isFirstOrLastElement = (count) => {
+    if (showCompletedCart) {
+      return false
+    }
+
     const firstElement = 1
     const lastElement = getCorrectItems().length
+    count === lastElement && chatCompletedDisplayed()
     return count === firstElement || count === lastElement
   }
 
