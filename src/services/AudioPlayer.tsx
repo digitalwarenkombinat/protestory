@@ -12,6 +12,9 @@ import Grid from '@mui/material/Grid'
 import { useAudioPlayer, useAudioPosition } from 'react-use-audio-player'
 
 import { formatTime } from 'utils/util'
+import useStore from 'utils/store'
+import { concert } from 'config'
+import { useHasHydrated } from 'utils/useHasHydrated'
 
 export const TimeLabel = () => {
   const { duration, position } = useAudioPosition({
@@ -90,6 +93,8 @@ export const AudioControls = () => {
 }
 
 const Player = ({ activeElement }) => {
+  const hasHydrated = useHasHydrated()
+  const { language } = useStore()
   return (
     <Card
       sx={{
@@ -112,7 +117,7 @@ const Player = ({ activeElement }) => {
           }}
         >
           <Typography component="p" variant="h4">
-            {activeElement.title}
+            {activeElement?.title || (hasHydrated && concert[language].select)}
           </Typography>
         </Grid>
       </Grid>
