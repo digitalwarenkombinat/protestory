@@ -31,7 +31,7 @@ const LeftTriangle = () => {
         <Box
           sx={{
             color: 'text.secondary',
-            opacity: 0.75,
+            opacity: 0,
             position: 'absolute',
             width: '100%',
             height: '100%',
@@ -113,7 +113,7 @@ const RightTriangle = () => {
         <Box
           sx={{
             color: 'text.secondary',
-            opacity: 0.75,
+            opacity: 0,
             position: 'absolute',
             width: '100%',
             height: '100%',
