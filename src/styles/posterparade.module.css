@@ -74,25 +74,26 @@
 }
 
 .antifascism2_1,
-.antifascism2_2,
-.antifascism2_3 {
-  transform: scale(1.1) translate(-10%, -30%);
+.antifascism2_2 {
+  transform: scale(1.1) translate(-5%, -30%);
 }
 
+.antifascism2_3,
 .antifascism2_4 {
-  transform: scale(1) translate(0%, -5%);
+  transform: scale(1.2) translate(10%, -5%);
 }
 
 .antifascism2_5,
 .antifascism2_6,
 .antifascism2_7,
-.antifascism2_8 {
+.antifascism2_8,
+.antifascism2_9 {
   transform: scale(1.2) translate(5%, 30%);
 }
 
 .antifascism2_10,
 .antifascism2_11 {
-  transform: scale(1.1) translate(-10%, 10%);
+  transform: scale(1) translate(-5%, 10%);
 }
 
 .antifascism2_12 {
@@ -379,7 +380,7 @@
 }
 
 .peace3_20 {
-  transform: scale(1.8) translate(35%, -35%);
+  transform: scale(1.1) translate(0%, -55%);
 }
 
 .peace3_21 {
@@ -545,10 +546,13 @@
   transform: scale(3) translate(-30%, 20%);
 }
 
-.youth3_9,
+.youth3_9 {
+  transform: scale(2.5) translate(30%, 5%);
+}
+
 .youth3_10,
 .youth3_11 {
-  transform: scale(1.5) translate(15%, -5%);
+  transform: scale(2.4) translate(0%, 5%);
 }
 
 .youth3_12 {

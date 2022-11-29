@@ -48,7 +48,16 @@ function PosterParade({ id, image, header, texts, sources, styles }: PosterParad
   useIntersection(ScrollContainerRef, paragraph, handler, options)
 
   return (
-    <Container maxWidth="lg" component="section" sx={{ px: { sm: 5, md: 8 } }}>
+    <Container
+      maxWidth={false}
+      component="section"
+      sx={{
+        maxWidth: '100vh',
+        '@media (orientation: portrait)': {
+          maxWidth: '100vw',
+        },
+      }}
+    >
       <style>{`
       .imageContainer {
         position: sticky;
