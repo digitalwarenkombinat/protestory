@@ -14,7 +14,6 @@ import { ChatSpeaker } from 'context/data'
 import { AudioPlayerProvider } from 'react-use-audio-player'
 import { Sound } from 'services/Sound'
 import useStore from 'utils/store'
-import { useHasHydrated } from 'utils/useHasHydrated'
 import { Wave } from './Wave'
 
 interface MessageProps {
@@ -48,7 +47,6 @@ const ChatImage = ({ image = '', alt = '' }) => (
 const timeoutValue = 3000
 
 export const Chat = ({ title, relation, list }: ChatProps) => {
-  const hasHydrated = useHasHydrated()
   const { language } = useStore()
   const [messageList, setMessageList] = useState([] as MessageProps[])
   const [isTyping, setIsTyping] = useState(true)
@@ -74,7 +72,6 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
   const showNextMessage = (id: number = null) => {
     setIsTyping(false)
     const activeMessage = id ? list[relation[id]] : list[messageIndex]
-
     showAnswer(id)
     setMessageList((ml) => [...ml, activeMessage])
     setMessageIndex(relation[activeMessage.id])
@@ -111,7 +108,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
 
   return (
     <div>
-      <ChatTitle title={hasHydrated && title[language]} />
+      <ChatTitle title={title[language]} />
       <DialogContent
         dividers
         sx={{
@@ -134,7 +131,7 @@ export const Chat = ({ title, relation, list }: ChatProps) => {
               backgroundColor: message.from === ChatSpeaker.QUESTION ? 'secondary.dark' : 'secondary.light',
             }}
           >
-            {hasHydrated && message.text[language]}
+            {message.text[language]}
             {message.image && <ChatImage {...message} />}
             {message.audio && (
               <AudioPlayerProvider>

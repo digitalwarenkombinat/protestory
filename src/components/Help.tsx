@@ -59,8 +59,8 @@ export const Help = () => {
   return (
     <>
       <Fab color="primary" aria-label="help" onClick={handleClickOpen}>
-        {open && <CancelRoundedIcon />}
-        {!open && <HelpIcon />}
+        {open && <CancelRoundedIcon sx={{ fontSize: '4.5rem' }} />}
+        {!open && <HelpIcon sx={{ fontSize: '4.5rem' }} />}
       </Fab>
       <HelpDialog open={open} onClose={handleClose} />
     </>
