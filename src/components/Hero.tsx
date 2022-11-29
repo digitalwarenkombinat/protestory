@@ -12,7 +12,7 @@ export const Hero = ({ title }: HeroProps) => (
   <Container disableGutters maxWidth="xl" component="section">
     <Grid container justifyContent="center" alignItems="flex-end" sx={{ height: 'calc(100vh - 10rem)' }}>
       <Grid item xs={12}>
-        <Typography variant="h1" align="center" color="secondary.main" gutterBottom sx={{ fontSize: { xs: '4rem', lg: '16rem' } }}>
+        <Typography variant="h1" align="center" color="secondary.main" gutterBottom sx={{ fontSize: { xs: '4rem', sm: '8rem', lg: '16rem' } }}>
           {title}
         </Typography>
       </Grid>
