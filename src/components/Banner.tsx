@@ -23,7 +23,7 @@ const LeftTriangle = () => {
         left: 0,
         right: '5px',
         bottom: '5px',
-        background: "url('./home/artofprotest.webp') center/cover",
+        background: "url('../home/artofprotest.webp') center/cover",
         clipPath: 'polygon(0 0, 100% 0, 0 100%)',
       }}
     >
@@ -42,7 +42,7 @@ const LeftTriangle = () => {
             },
           }}
         >
-          <Grid container justifyContent="flex-start" alignItems="flex-start" mt="5vh" ml={{ xs: 2, sm: 6, lg: 12 }} height="50vh">
+          <Grid container justifyContent="flex-start" alignItems="flex-start" mt="5vh" pl={{ xs: 2, lg: 12 }} height="50vh">
             <Grid item xs={12}>
               <Typography variant="h2">
                 <IconButton
@@ -61,7 +61,7 @@ const LeftTriangle = () => {
                 </IconButton>
               </Typography>
             </Grid>
-            <Grid item xs={6} ml={1}>
+            <Grid item xs={5} ml={1}>
               <Typography component="h3" variant="h4">
                 {hasHydrated && banner[language].leftDescription1}
               </Typography>
@@ -105,7 +105,7 @@ const RightTriangle = () => {
         left: '5px',
         right: 0,
         bottom: 0,
-        background: "url('./home/protestart.webp') center/cover",
+        background: "url('../home/protestart.webp') center/cover",
         clipPath: 'polygon(100% 100%, 100% 0, 0 100%)',
       }}
     >
