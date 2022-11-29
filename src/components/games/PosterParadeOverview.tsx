@@ -25,7 +25,7 @@ export default function PosterParadeOverview() {
           {hasHydrated && posterParade[language].description3}
         </Typography>
       </Grid>
-      <Grid item sx={{ width: '100%' }}>
+      <Grid item sx={{ width: '100%', mb: 8 }}>
         <PosterCarousel />
       </Grid>
     </Grid>
