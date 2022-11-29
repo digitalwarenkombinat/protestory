@@ -31,7 +31,7 @@ const LeftTriangle = () => {
         <Box
           sx={{
             color: 'text.secondary',
-            opacity: 0,
+            opacity: 0.75,
             position: 'absolute',
             width: '100%',
             height: '100%',
@@ -113,7 +113,7 @@ const RightTriangle = () => {
         <Box
           sx={{
             color: 'text.secondary',
-            opacity: 0,
+            opacity: 0.75,
             position: 'absolute',
             width: '100%',
             height: '100%',
@@ -124,7 +124,7 @@ const RightTriangle = () => {
             },
           }}
         >
-          <Grid container justifyContent="flex-end" pr={{ xs: 2, sm: 4, lg: 8 }} pt="60vh" pl="30vw" textAlign="right">
+          <Grid container justifyContent="flex-end" pr={{ xs: 1, sm: 4, lg: 8 }} pt="55vh" pl="30vw" textAlign="right">
             <Grid item xs={12}>
               <Typography variant="h2">
                 <IconButton
@@ -143,7 +143,7 @@ const RightTriangle = () => {
                 </IconButton>
               </Typography>
             </Grid>
-            <Grid item xs={12} mt={{ xs: 2, sm: 6, lg: 12 }}>
+            <Grid item xs={10} mt={{ xs: 2, sm: 4, lg: 12 }} pr={1}>
               <Typography component="h3" variant="h4">
                 {hasHydrated && banner[language].rightDescription1}
               </Typography>
@@ -156,7 +156,7 @@ const RightTriangle = () => {
             </Grid>
           </Grid>
         </Box>
-        <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: '60vh', mr: { xs: 8, sm: 12, lg: 18 } }}>
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: '55vh', mr: { xs: 7, sm: 12, lg: 18 } }}>
           <Typography
             variant="h2"
             sx={{
