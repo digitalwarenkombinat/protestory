@@ -13,7 +13,7 @@ export const Article = () => {
       maxWidth={false}
       component="article"
       sx={{
-        padding: ['2rem', '8em 1em 12em'],
+        padding: ['2rem', '8rem 2rem 12rem'],
         position: 'relative',
         backgroundColor: 'secondary.main',
         color: 'text.secondary',
@@ -30,7 +30,7 @@ export const Article = () => {
               flexDirection: [null, null, null, 'row-reverse'],
             },
             '&:not(:first-of-type)': {
-              marginTop: ['4em', '8em'],
+              marginTop: ['4rem', '8rem'],
             },
           }}
         >
@@ -39,7 +39,7 @@ export const Article = () => {
             flexGrow={1}
             flexBasis="15rem"
             pt="1em"
-            px={[0, 0, 0, '8em']}
+            px={[0, 0, 0, '8rem']}
             sx={{
               '* + *': {
                 marginTop: '0.5em',
