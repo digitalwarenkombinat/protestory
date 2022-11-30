@@ -81,7 +81,7 @@ const StartTheDemo = () => {
                 padding: 0,
               }}
             >
-              <img src="../icons/left.svg" alt={'Show previous image'} width={40} height={40} />
+              <img src="../symbol/left.svg" alt={'Show previous image'} width={40} height={40} />
             </Button>
           </Grid>
           <Grid item xs={splitSVG ? 10 : 12}>
@@ -104,7 +104,7 @@ const StartTheDemo = () => {
                 padding: 0,
               }}
             >
-              <img src="../icons/right.svg" alt={'Show next image'} width={40} height={40} />
+              <img src="../symbol/right.svg" alt={'Show next image'} width={40} height={40} />
             </Button>
           </Grid>
         </Grid>

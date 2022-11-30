@@ -33,7 +33,7 @@ export default function PosterCarousel() {
       }}
       NextIcon={
         <img
-          src="../icons/right.svg"
+          src="../symbol/right.svg"
           alt={'Show next image'}
           width={60}
           height={60}
@@ -47,7 +47,7 @@ export default function PosterCarousel() {
       }
       PrevIcon={
         <img
-          src="../icons/left.svg"
+          src="../symbol/left.svg"
           alt={'Show previous image'}
           width={60}
           height={60}
@@ -127,7 +127,7 @@ const Poster = ({ item, contentPosition = 'left' }) => {
         backgroundColor: 'rgba(0, 0, 0, 0)',
         boxShadow: 'none',
         border: '32px solid',
-        borderImageSource: 'url(/icons/frame.svg)',
+        borderImageSource: 'url(/symbol/frame.svg)',
         borderImageSlice: [8, 12, 16, 20],
       }}
     >
