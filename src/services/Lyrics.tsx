@@ -41,8 +41,13 @@ export const Lyrics = ({ activeElement }) => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          paddingTop: isTablet && '10px',
           bgcolor: 'transparent',
           boxShadow: 'none',
+          '@media (orientation: portrait)': {
+            px: isTablet && '20px',
+            alignItems: isTablet ? 'baseline' : 'center',
+          },
         }}
       >
         {activeElement?.link ? (
@@ -55,7 +60,7 @@ export const Lyrics = ({ activeElement }) => {
                     position: relative;
                   }
                 `}</style>
-                <YouTubeEmbed url={activeElement.link} height={isTablet ? 300 : 455} width={isTablet ? 400 : 650} youTubeProps={{ containerClassName: 'youtubeContainer' }} />
+                <YouTubeEmbed url={activeElement.link} height={isTablet ? 270 : 455} width={isTablet ? 480 : 650} youTubeProps={{ containerClassName: 'youtubeContainer' }} />
               </Box>
             ) : (
               <>
@@ -91,7 +96,7 @@ export const Lyrics = ({ activeElement }) => {
             image={activeElement?.link ? activeElement.link : '../concert/start.webp'}
             alt={activeElement?.link ? `Lyrics ${activeElement.name}` : `If I can't dance to it, it's not my revolution`}
             sx={{
-              height: '455px',
+              height: isTablet ? '435px' : '455px',
               borderRadius: '64.75px',
               objectPosition: 'top',
             }}
