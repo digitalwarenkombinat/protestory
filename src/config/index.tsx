@@ -102,12 +102,14 @@ export const protestart = {
 
 export const sloganGenerator = {
   de: {
+    title: 'Slogan-Generator',
     slogan: 'Drücke den roten Hebel!',
     description1: 'Keine Demo kommt ohne gute Parolen und Sprechchöre aus.',
     description2: 'Hier kannst du dir Inspiration holen und zu verschiedenen Protestthemen Demoslogans und Parolen finden.',
     description3: 'Drücke einfach auf den roten runden Hebel und sei gespannt, welche Parole es dir auswirft.',
   },
   en: {
+    title: 'Slogan Generator',
     slogan: 'Push the red handle!',
     description1: 'No demo can do without good slogans and chants.',
     description2: 'Here you can get inspiration and find slogans for different protest topics.',

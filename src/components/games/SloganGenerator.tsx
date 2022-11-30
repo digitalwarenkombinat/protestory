@@ -33,7 +33,7 @@ const SloganGenerator = () => {
     <Grid container alignItems="center" textAlign="center" flexWrap="wrap" justifyContent="center" mt="8rem" mb="16rem">
       <Grid item>
         <Typography sx={{ mb: 4 }} variant="h2" color="secondary.main">
-          Slogan-Generator
+          {hasHydrated && sloganGenerator[language].title}
         </Typography>
         <Typography sx={{ my: 4 }} component="h3" variant="h4" color="secondary.main">
           {hasHydrated && sloganGenerator[language].description1}
