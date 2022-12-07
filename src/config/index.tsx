@@ -198,7 +198,7 @@ export const legalNotice = {
       'Die Digitalisate entstammen allesamt der Sammlung des Archivs der Arbeiterjugendbewegung. Wir danken allen Rechteinhaber*innen, die uns ihre Materialien zur Verfügung gestellt haben. In einigen Fällen konnten die Rechteinhaber*innen nicht ermittelt werden. Etwaige Inhaber*innen von Urheber- und/oder Nutzungsrechten an Materialien, die auf der Webplattform PROTESTORY! genutzt wurden, mögen sich bitte an das Archiv der Arbeiterjugendbewegung wenden.',
     description5:
       'Der Quellcode läuft unter einer MIT license. Die für die Titel verwendete freie Schriftart „Hey August“ stammt von Syafrizal a.k.a. Khurasan (dafont.com). Die für die Fließtexte verwendete Schriftart „Fabrik“ stammt von Peter Wiegel (peter-wiegel.de). Vielen Dank, dass ihr diese Schriftarten frei zur Verfügung stellt! Des Weiteren stammt das Telefongeräusch aus dem Sound „Phone Dialing With Dialtone“ von KevanGC (soundbible.com) und läuft unter einer Public Domain.',
-    description6: 'PROTESTORY! ist ein Angebot des Archiv der Arbeiterjugendbewegung',
+    description6: 'PROTESTORY! ist ein Angebot des Zeltlagerplatz e.V. und des Archivs der Arbeiterjugendbewegung',
     description7: 'PROTESTORY! ist eine Produktion des Digitalwarenkombinat',
     description8: 'Projektleitung',
     description9: 'Konzeption',
@@ -219,7 +219,7 @@ export const legalNotice = {
       'The digital items are all from the collection of the Archive of the Workers´ Youth Movement. We would like to thank all copyright holders who have made their collections available to us. In some cases, the rights holders could not be identified. Any owners of copyrights and/or rights of use to content that has been used on the PROTESTORY! web platform should please contact the Archive of the Workers´ Youth Movement.',
     description5:
       'The source code runs under an MIT license. The free font "Hey August" used for the titles is by Syafrizal a.k.a. Khurasan (dafont.com). The font "Fabrik" used for the body texts is by Peter Wiegel (peter-wiegel.de). Thanks a lot for making these fonts freely available! Furthermore the phone noise is from the sound "Phone Dialing With Dialtone" by KevanGC (soundbible.com) and runs under a public domain.',
-    description6: 'PROTESTORY! is an offer of the Archive of the Workers´ Youth Movement',
+    description6: 'PROTESTORY! is an offer of the Zeltlagerplatz e.V. and the Archive of the Workers´ Youth Movement',
     description7: 'PROTESTORY! is a production of the Digitalwarenkombinat',
     description8: 'Project Manager',
     description9: 'Conception',

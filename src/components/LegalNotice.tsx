@@ -38,12 +38,21 @@ const LegalNotice = () => {
           {hasHydrated && legalNotice[language].description6}
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
+          Zeltlagerplatz e. V.
+        </Typography>
+        <Typography component="h3" variant="h4" color="secondary.main">
+          Saarstraße 14
+        </Typography>
+        <Typography sx={{ mb: 2 }} component="h3" variant="h4" color="secondary.main">
+          12161 Berlin
+        </Typography>
+        <Typography component="h3" variant="h4" color="secondary.main">
           Archiv der Arbeiterjugendbewegung
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
           Haardgrenzweg 77
         </Typography>
-        <Typography sx={{ my: 2 }} component="h3" variant="h4" color="secondary.main">
+        <Typography sx={{ mb: 2 }} component="h3" variant="h4" color="secondary.main">
           45739 Oer-Erkenschwick
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
@@ -72,7 +81,7 @@ const LegalNotice = () => {
         <Typography component="h3" variant="h4" color="secondary.main">
           Eilenburger Straße 27
         </Typography>
-        <Typography sx={{ my: 2 }} component="h3" variant="h4" color="secondary.main">
+        <Typography sx={{ mb: 2 }} component="h3" variant="h4" color="secondary.main">
           04317 Leipzig
         </Typography>
         <Typography component="h3" variant="h4" color="secondary.main">
