@@ -36,7 +36,7 @@ export const mediaData = [
   },
   {
     name: {
-      de: 'Dortmund 1976. Demonstration des Unterbezirk Dortmund der Sozialistischen Jugend Deutschlands - Die Falken. (Archiv der Arbeiterjugendbewegung, Fotosammlung, 07/0334)',
+      de: 'Dortmund 1976. Demonstration des Unterbezirks Dortmund der Sozialistischen Jugend Deutschlands - Die Falken. (Archiv der Arbeiterjugendbewegung, Fotosammlung, 07/0334)',
       en: 'Dortmund 1976. demonstration of the Dortmund branch of the Socialist Youth of Germany – Falcons. (Archiv der Arbeiterjugendbewegung, Fotosammlung, 07/0334)',
     },
     source: '../mediadata/7_334_SJD-Demo_Dortmund_1976.webp',
@@ -85,14 +85,14 @@ export const mediaData = [
   },
   {
     name: {
-      de: 'Aufkleber der Solidaritätskampagne mit Südafrika, 1989. Der Ökumenischen Rates der Kirchen unterstützte eine internationale Kampagne gegen den Ölkonzern Shell, der an Geschäften mit dem Südafrikanischen Apartheits-Regime. Die beiden Kirchenjugenden BDKJ und aej unterstützten diese Kampagne. (Archiv der Arbeiterjugendbewegung, Sammlung Aufkleber, Aufkleber 54)',
+      de: 'Aufkleber der Solidaritätskampagne mit Südafrika, 1989. Der Ökumenische Rat der Kirchen unterstützte eine internationale Kampagne gegen den Ölkonzern Shell, der an Geschäften mit dem Südafrikanischen Apartheits-Regime beteiligt war. Die beiden Kirchenjugenden BDKJ und aej unterstützten diese Kampagne. (Archiv der Arbeiterjugendbewegung, Sammlung Aufkleber, Aufkleber 54)',
       en: 'Sticker of the solidarity campaign with South Africa, 1989. The World Council of Churches supported an international campaign against the oil company Shell, which was involved in business with the South African apartheid regime. The two church youth organizations BDKJ and aej supported this campaign. (Archiv der Arbeiterjugendbewegung, Sammlung Aufkleber, Aufkleber 54)',
     },
     source: '../mediadata/Aufkleber_54.webp',
   },
   {
     name: {
-      de: 'Flugblatt für ein Ferienlager, 1973. Das Zeltlagerinformationsblättchen zeigt ein Kind, dass glücklich im Stechschritt zur Sonne marschiert. Das Kinderlager borgt seinen Namen aus der ersten Strophe des wichtigsten Liedes der Arbeiter:innenjugendbewegung „Dem Morgenrot entgegen“. (Archiv der Arbeiterjugendbewegung, Flugblattsammlung, Flugblatt 592)',
+      de: 'Flugblatt für ein Ferienlager, 1973. Das Zeltlagerinformationsblättchen zeigt ein Kind, das glücklich im Stechschritt zur Sonne marschiert. Das Kinderlager borgt seinen Namen aus der ersten Strophe des wichtigsten Liedes der Arbeiter:innenjugendbewegung „Dem Morgenrot entgegen“. (Archiv der Arbeiterjugendbewegung, Flugblattsammlung, Flugblatt 592)',
       en: 'Summer camp flyer, 1973. The camp information leaflet shows a child happily marching to the sun in goose step. The children´s camp borrows its name from the first verse of the most important song of the workers´ youth movement, "Towards the Dawn" ("Dem Morgenrot entgegen"). (Archiv der Arbeiterjugendbewegung, Flugblattsammlung, Flugblatt 592)',
     },
     source: '../mediadata/FL_592.webp',
@@ -176,7 +176,7 @@ export const mediaData = [
   },
   {
     name: {
-      de: 'Plakat der Jusos, 1984. Seit den 1970er Jahren forderten die deutschen Gewerkschaften im Zusammenhang mit der Humanisierung der Arbeitswelt Arbeitszeitverkürzungen. Dies mündete in besonders erbittert geführten Streiks der IG Metall 1984. Die Forderung wird hier mit der Entwicklung der Arbeitslosenzahlen gegengeschnitten. (Archiv der Arbeiterjugendbewegung, Plakatsammlung, PL-A 188)',
+      de: 'Plakat der Jusos, 1984. Seit den 1970er Jahren forderten die deutschen Gewerkschaften im Zusammenhang mit der Humanisierung der Arbeitswelt Arbeitszeitverkürzungen. Dies mündete in besonders erbittert geführte Streiks der IG Metall 1984. Die Forderung wird hier mit der Entwicklung der Arbeitslosenzahlen gegengeschnitten. (Archiv der Arbeiterjugendbewegung, Plakatsammlung, PL-A 188)',
       en: 'Poster of the Young Socialists, 1984. Since the 1970s, German trade unions have been demanding reductions in working hours in connection with the humanization of the world of work. This culminated in particularly bitter strikes by the metalworkers´ union IG Metall in 1984. The demand is contrasted here with the development of unemployment figures. (Archiv der Arbeiterjugendbewegung, Plakatsammlung, PL-A 188)',
     },
     source: '../mediadata/PL-A_188.webp',
@@ -267,7 +267,7 @@ export const mediaData = [
   },
   {
     name: {
-      de: 'Fotografie einer Demonstration am 11.10.1986. Unter dem Motto "Frieden braucht Bewegung" demonstriert hier die SJD-Die Falken im Hunsrück für einen Wandel der Politik für Frieden und Abrüstung. Der Hunsrück war zum Standort einer NATO Basis geworden, die Atomwaffen stationierte. Die Demonstration soll mehr als 180.000 umfasst haben. (Archiv der Arbeiterjugendbewegung, Fotosammlung, 09/0079)',
+      de: 'Fotografie einer Demonstration am 11.10.1986. Unter dem Motto "Frieden braucht Bewegung" demonstriert hier die SJD-Die Falken im Hunsrück für einen Wandel der Politik für Frieden und Abrüstung. Der Hunsrück war zum Standort einer NATO Basis geworden, die Atomwaffen stationierte. Die Demonstration soll mehr als 180.000 Personen umfasst haben. (Archiv der Arbeiterjugendbewegung, Fotosammlung, 09/0079)',
       en: 'Photograph of a demonstration on 11.10.1986. Under the motto "Peace needs movement" the Socialist Youth of Germany – Falcons in the Hunsrück region demonstrated here for a change in policy for peace and disarmament. The Hunsrück had become the site of a NATO base that stationed nuclear weapons. The demonstration is said to have numbered more than 180,000. (Archiv der Arbeiterjugendbewegung, Fotosammlung, 09/0079)',
     },
     source: '../mediadata/9_79_Großdemo_der_Friedensbewegung.webp',

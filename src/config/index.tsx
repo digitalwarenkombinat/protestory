@@ -89,7 +89,7 @@ export const protestart = {
     description1:
       'Das Archiv der Arbeiterjugendbewegung sammelt seit 40 Jahren Zeugnisse der Geschichte der Arbeiter:innenjugendbewegung und stellt diese für Forschungszwecke sowie für die Jugend- und Erwachsenenbildung zur Verfügung.',
     description2:
-      'In dieser Sammlung finden sich viele Plakate, Fotografien, Aufkleber, Buttons, Transparente und andere Objekte, die Demonstrationen und Proteste der Arbeiter:innenjugend bezeugen. Einige davon könnte ihr euch hier ansehen.',
+      'In dieser Sammlung finden sich viele Plakate, Fotografien, Aufkleber, Buttons, Transparente und andere Objekte, die Demonstrationen und Proteste der Arbeiter:innenjugend bezeugen. Einige davon könnt ihr euch hier ansehen.',
   },
   en: {
     title: 'Protest Art',

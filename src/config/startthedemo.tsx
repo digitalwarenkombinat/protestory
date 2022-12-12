@@ -107,7 +107,7 @@ export const items = [
     active: false,
     link: '/slogangenerator',
     linkName: { de: 'Slogan-Generator', en: 'Slogan Generator' },
-    linkText: { de: 'Inspiration für deinen nächsten Demo-Rufe', en: 'Inspiration for your next demo chants' },
+    linkText: { de: 'Inspiration für deine nächsten Demo-Rufe', en: 'Inspiration for your next demo chants' },
     id: 'megafon',
     name: { de: 'Megafon', en: 'Megaphone' },
     source: '../startthedemo/megafon.svg',
