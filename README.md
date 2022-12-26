@@ -1,6 +1,6 @@
 # [PROTESTORY!](https://www.protestory.de/)
 
-![PROTESTORY!](http://protestory.de/bg.png)
+![PROTESTORY!](http://protestory.de/image_bg.png)
 
 Durch Protest verschaffen sich junge Menschen Gehör, üben politischen Einfluss aus und gestalten kreativ die demokratische Gesellschaft. PROTESTORY! bietet eine Auseinandersetzung mit Protesten der Arbeiter:innenjugend vom 20. Jahrhundert bis heute und macht jugendkulturellen Protest digital erlebbar und historisches Wissen nutzbar.
 
