@@ -15,4 +15,4 @@ The project **PROTESTORY!** has been developed as part of "dive in. Programme fo
 
 The digital items were taken from the collection of the Archive of the Workers´ Youth Movement, which made them available to us. 
 
-_The source code runs under an MIT license. The free font "Hey August" used for the titles is by Syafrizal a.k.a. Khurasan (dafont.com). The font "Fabrik" used for the body texts is by Peter Wiegel (peter-wiegel.de). Thanks a lot for making these fonts freely available! Furthermore the phone noise is from the sound "Phone Dialing With Dialtone" by KevanGC (soundbible.com) and runs under a public domain._
+_The source code runs under an MIT license. The free font "Hey August" used for the titles is by Syafrizal a.k.a. Khurasan (dafont.com). The font "Fabrik" used for the body texts is by Peter Wiegel (peter-wiegel.de). Furthermore the phone noise is from the sound "Phone Dialing With Dialtone" by KevanGC (soundbible.com) and runs under a public domain._
