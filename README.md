@@ -2,8 +2,17 @@
 
 ![PROTESTORY!](http://protestory.de/image_bg.png)
 
-Durch Protest verschaffen sich junge Menschen Gehör, üben politischen Einfluss aus und gestalten kreativ die demokratische Gesellschaft. PROTESTORY! bietet eine Auseinandersetzung mit Protesten der Arbeiter:innenjugend vom 20. Jahrhundert bis heute und macht jugendkulturellen Protest digital erlebbar und historisches Wissen nutzbar.
+**PROTESTORY!** is a web application that offers a playful exploration of protest cultures of working-class youth from the early 20th century until today. 
 
-Die Kunst des Protestes zeigt euch, was man alles braucht, um Proteste und Demonstrationen zu organisieren. Dazu nehmen wir euch aus einem WG-Zimmer heraus mit auf den Weg und ihr erfahrt auf spielerische Weise mehr über Jugendproteste seit den 1950er Jahren bis heute.
+**PROTESTORY!** shows the diversity of materials that were created in the context of youth protests in the past decades and still shape our impression of these protests today.
 
-Unter Protestkunst sammeln wir für euch alles, was auf kreative Weise für Proteste und Demonstration entstanden ist. Demofotos aus den 1920ern, Plakate aus den 1980ern sowie Buttons, Sticker und Kleidungsstücke. Diese Materialsammlung bietet einen Einblick in die Sammlung des Archivs der Arbeiterjugendbewegung.
+With the various aesthetic-narrative mini-applications, users can discover the exciting world of past youth protest cultures. 
+The historical resources, all from the Archive of the Workers´ Youth Movement, serve both as a source of knowledge and inspiration. 
+In addition, it is intended to encourage users to perceive archives as a place for writing history and for the systematic collection of current youth protests.
+
+**PROTESTORY!** is a project of the Archive of the Workers´ Youth Movement and was implemented together with the company Digitalwarenkombinat. 
+The project **PROTESTORY!** has been developed as part of "dive in. Programme for Digital Interactions" of the Kulturstiftung des Bundes (German Federal Cultural Foundation) with funding by the Federal Government Commissioner for Culture and the Media (BKM) through the NEUSTART KULTUR programme.”
+
+The digital items were taken from the collection of the Archive of the Workers´ Youth Movement, which made them available to us. 
+
+_The source code runs under an MIT license. The free font "Hey August" used for the titles is by Syafrizal a.k.a. Khurasan (dafont.com). The font "Fabrik" used for the body texts is by Peter Wiegel (peter-wiegel.de). Thanks a lot for making these fonts freely available! Furthermore the phone noise is from the sound "Phone Dialing With Dialtone" by KevanGC (soundbible.com) and runs under a public domain._
